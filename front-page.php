@@ -15,8 +15,7 @@ if( have_rows('website_settings', 'option') ):
       if ( 'Oui' == get_sub_field('alert_condition') ):
          
         get_template_part('partials/elements/popup');
-?> 
-       
+?>     
           <?php
         endif; 
       endwhile; 
@@ -44,6 +43,85 @@ endif;
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <img src="https://via.placeholder.com/150">
+      <h2>
+        Qui sommes-nous?
+      </h2>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div class="col-sm">
+      <h2>
+        Fiduciaire
+      </h2>
+      <p>
+        lorem ipsum
+      </p>
+      <img src="https://via.placeholder.com/150">
+    </div>
+  </div>
+</div>
+
+<div class="container container-l quotations">
+  <div class="row">
+    <div class="col-sm">
+      <h2>
+        Entreprise 1
+      </h2>
+      <img class="img-circle" src="https://via.placeholder.com/150">
+      <div class="quote">
+        <div class="quote-sign-left">"</div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        </p>
+        <div class="quote-sign-right">"</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm">
+      <h2>contrôle</h2>
+    </div>
+  </div>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
+</div>
+
+<div class="container services">
+  <h2>Services</h2>
+  <div class="row">
+    <div class="col-sm">
+      <h3>Service A</h3>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
+      <div class="price">99.-/h</div>
+    </div>
+    <div class="col-sm">
+      <h3>Service B</h3>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
+      <div class="price">99.-/h</div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Valeurs</h2>
+  <div class="row">
+    <div class="col-sm">
+      <h3>Valeur 1</h3>
+      <p></p>
+    </div>
+  </div>
+</div>
+
 <?php
 get_template_part( 'partials/sections/layout','calltoaction' );
 

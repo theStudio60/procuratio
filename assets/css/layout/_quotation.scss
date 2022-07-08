@@ -1,0 +1,18 @@
+.quote {
+  display: flex;
+//  position: absolute;
+}
+//
+//q::before {
+//  content: no-close-quote;
+//}
+//
+//q::after {
+//  content: no-open-quote;
+//}
+
+.quotations img {
+  border-radius: 100%;
+  overflow: hidden;
+  border:red 2px solid;
+}
