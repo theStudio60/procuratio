@@ -1,0 +1,29 @@
+.contact-form {
+    @extend .p-0;
+    @extend .text-dark;
+    overflow-x: hidden;
+    //box-shadow: 0 2px 3px 0 rgba(90, 97, 105, 0.11), 0 15px 22px 0 rgba(90, 97, 105, 0.10), 0 7px 35px 0 rgba(90, 97, 105, 0.10);
+    //border-radius: $spacer;
+}
+
+.gform_heading {}
+
+span.gform_description {
+    font-family: $font-family-base;
+    font-size: $h3-font-size;
+}
+
+.gform_validation_errors,
+span.gfield_required,
+span.gfield_required_text {
+    display: none!important;
+    visibility: hidden!important;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+    .contact-form {
+        margin: 0;
+        padding: 2px;
+        box-shadow: none;
+    }
+}

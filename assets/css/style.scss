@@ -1,0 +1,45 @@
+/*!
+Theme Name: Studio60
+Theme URI: https://studio60.ch
+Description: Site Web sur-mesure créé par Studio60 
+Author: Fabien Dupont, Isaac Aristil
+Version: 0.1
+*/
+
+
+/**
+ * General styles
+ */
+
+@import "variables";
+@import "base";
+@import "reset";
+@import "styles";
+
+/**
+ * Layout styles
+ */
+
+@import "layout/overheader";
+@import "layout/header";
+@import "layout/section";
+@import "layout/gallery";
+@import "layout/footer";
+
+/**
+ * Partials
+ */
+
+@import "partials/hero";
+@import "partials/btn";
+@import "partials/popup";
+@import "partials/contact-form";
+
+/**
+ * Vendor
+ */
+
+@import "./vendor/aos";
+@import "./vendor/slick";
+@import "./vendor/gform";
+//@import "./vendor/fancybox";

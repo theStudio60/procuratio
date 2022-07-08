@@ -1,0 +1,7 @@
+button.gform-add-new-form.primary.add-new-h2,
+div#revisionsdiv.postbox,
+div#wp-content-editor-tools.wp-editor-tools,
+table#post-status-info,
+.wp-editor-expand #wp-content-editor-container {
+    display: none!important;
+}

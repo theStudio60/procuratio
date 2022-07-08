@@ -1,0 +1,47 @@
+//#popupFrame,
+.popup {
+    @extend .h-100,
+    .modal,
+    .w-100,
+    .fixed-top;
+    background: rgba($light, 0.5);
+    height: auto;
+    position: fixed;
+    //display: block;
+    z-index: 20000!important;
+    .container {
+        .row {
+            .col {
+                @extend .col-12,
+                .h-100;
+                .content {
+                    @extend .bg-light,
+                    .m-4,
+                    .p-4,
+                    .rounded;
+                }
+            }
+        }
+    }
+    &__header {
+        @extend .d-flex,
+        .justify-content-between,
+        .p-2;
+        .close {
+            //    @extend .ml-auto;
+            margin-left: auto;
+        }
+    }
+    &--hidden {
+        visibility: hidden!important;
+        display: none!important;
+    }
+    &--visible {
+        visibility: visible!important;
+        display: block!important;
+    }
+}
+
+#popupFrame.popup {
+    display: block;
+}

@@ -1,0 +1,538 @@
+.section {
+    min-height: 480px;
+    max-width: 100vw!important;
+    overflow-x: hidden!important;
+    scroll-behavior: smooth;
+    padding: $navbar-height/1.5 0 $navbar-height/1.5 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    p {
+        font-family: $font-family-base;
+        @media (min-width: $screen-lg-min) {
+            font-size: 20px;
+        }
+    }
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        font-family: $font-family-serif;
+        //font-weight: 600!important;
+        &:focus,
+        &:hover {
+            text-decoration: none;
+            border-bottom: 4px solid !important;
+        }
+    }
+    ul {
+        @extend .p-0;
+        list-style: square;
+        li {
+            @extend .my-2;
+        }
+    }
+    @media (max-width: $screen-md-min) {
+        padding-top: $navbar-height/4;
+        padding-bottom: $navbar-height/4;
+    }
+    &__title {
+        @extend .display-1;
+        margin-bottom: $spacer*3;
+        //display: inline-block;
+        font-family: $font-family-serif;
+        font-weight: $font-weight-bolder;
+        font-size: 2rem;
+        line-height: 1.2;
+        //color: $secondary;
+        color: $dark;
+        @media (max-width: 768px) {
+            margin-top: 16px;
+            margin-bottom: 4px;
+        }
+        //text-shadow: $text-shadow;
+        @media screen and (min-width: $screen-md-min) {
+            @include font-size(3.5rem);
+        }
+    }
+    &__subtitle {
+        @extend .display-3;
+        margin-bottom: $spacer*3;
+        //display: inline-block;
+        font-weight: $font-weight-bolder;
+    }
+    &__§ {
+        font-size: $font-size-base;
+        &--bold {
+            font-weight: $font-weight-bold;
+        }
+        @media (min-width: $screen-lg-min) {
+            font-size: 24px;
+        }
+    }
+    &__link {
+        @extend .text-uppercase;
+        //text-decoration: underline;
+        &:hover {
+            //border-bottom: solid $primary 2px;
+        }
+    }
+    &__content {
+        line-height: $font-size-base*2.4;
+    }
+    &__wysiwyg,
+    &__content {
+        span,
+        p,
+        a {
+            font-size: $font-size-base*1.2;
+            //  line-height: $font-size-base*1.7; //margin-bottom: $paragraph-margin-bottom;
+            //color: $dark;
+            font-weight: 400;
+            @media (min-width: $screen-md-min) {
+                font-size: 18px;
+                //text-align: left;
+            }
+        }
+    }
+    &__row {
+        @extend .row;
+        @extend .w-100;
+        @extend .my-auto,
+        .mx-0;
+    }
+    &__img {
+        img {
+            @extend .img-fluid;
+        }
+    }
+    &__container {
+        @extend .container;
+        &--fluid {
+            @extend .container-fluid;
+        }
+        //*
+        @media (max-width: $screen-md-min) {
+            padding: 0!important;
+        }
+        //*/
+    }
+    &__col {
+        @extend .col-sm-12;
+        @extend .col-md-10;
+        @extend .col-lg-9;
+        @extend .col-xl-9;
+        @extend .mx-auto;
+        height: auto!important;
+        font-weight: $font-weight-base;
+        p {
+            @media (min-width: $screen-lg-min) {
+                font-size: 24px;
+            }
+        }
+        &--left {
+            @extend .col-sm-12,
+            .col-md-12,
+            .col-lg-9,
+            .col-xl-9;
+        }
+        &--right {
+            @extend .col-sm-12,
+            .col-md-12,
+            .col-lg-9,
+            .col-xl-9;
+        }
+        &--card-healthcare {
+            @extend .col-sm-12,
+            .col-md-6,
+            .col-lg-3,
+            .col-xl-3;
+        }
+        &--about {
+            @extend .col-12,
+            .col-lg-9;
+            p {
+                @extend .my-auto;
+            }
+        }
+        &--cta,
+        &--ctc {
+            @extend .col-sm-12,
+            .col-md-6,
+            .col-lg-9,
+            .col-xl-9,
+            .py-0,
+            .my-auto,
+            .order-1,
+            .order-lg-2;
+            p {
+                @extend .my-auto;
+            }
+            &--img {
+                @extend .col-sm-12,
+                .col-md-6,
+                .col-lg-3,
+                .col-xl-3,
+                .h-100,
+                .my-auto,
+                .d-flex,
+                .order-2,
+                .order-lg-1;
+                img {
+                    @extend .img-fluid,
+                    .w-100,
+                    .h-100,
+                    .py-1;
+                }
+                @media (max-width: $screen-md-min) {
+                    padding: 1rem!important;
+                }
+            }
+        }
+        &--contact {
+            @extend .col-sm-12,
+            .col-md-12,
+            .col-lg-6,
+            .col-xl-6;
+            iframe {
+                min-height: 360px;
+                @extend .p-0,
+                .my-sm-4,
+                .my-md-4,
+                .mx-sm-0,
+                .mx-md-0,
+                .h-100;
+                box-shadow: 0 2px 3px 0 rgba(90, 97, 105, 0.11), 0 15px 22px 0 rgba(90, 97, 105, 0.10), 0 7px 35px 0 rgba(90, 97, 105, 0.10);
+                border-radius: 18px;
+            }
+        }
+    }
+    //*
+    //*/
+    &__text_vertical {
+        @extend .my-auto;
+    }
+    &__overlay {
+        @extend .h-100;
+        @extend .w-100;
+        @extend .m-0;
+        @extend .p-0;
+        @extend .d-flex;
+        height: 100%!important;
+        min-height: 400px!important;
+        background-size: cover!important;
+        overflow: hidden!important;
+        //background: $overlay75;
+    }
+    &--page {
+        @extend .p-3;
+    }
+    &--context,
+    &--about {
+        //background: $light!important;
+        //background-color: $light!important;
+        max-width: 100vw!important;
+        overflow-x: hidden!important;
+    }
+    &--cta,
+    &--ctc {
+        //background: $white!important;
+        //background-color: $white!important;
+        max-width: 100vw!important;
+        overflow-x: hidden!important;
+    }
+    &--wmenus {
+        @extend .mt-2;
+        background: $white!important;
+        background-color: $white!important;
+        max-width: 100vw!important;
+        overflow-x: hidden!important;
+        &__container {
+            @extend .p-0,
+            .p-md-2;
+        }
+    }
+    //
+    //
+    /* 
+    * centered section rules 
+    */
+    &--centered {
+        @extend .section;
+        // @extend .my-4;
+        &__container {
+            @extend .container;
+        }
+        &__row {
+            @extend .row;
+        }
+        &__col {
+            @extend .col-sm-12;
+            @extend .col-md-12;
+            @extend .col-lg-12;
+            @extend .col-xl-12;
+            @extend .text-center;
+            @extend .mx-auto;
+        }
+        &__title {
+            @extend .display-4;
+        }
+        &__subtitle {
+            font-size: 36px;
+        }
+        &__img {
+            @extend .img-fluid;
+            @extend .my-4;
+            @extend .mx-auto;
+        }
+        &__link {
+            @extend .text-uppercase;
+            text-decoration: underline;
+        }
+        &__btn {}
+        &--fluid {
+            @extend .container-fluid;
+        }
+    }
+    /*
+    * left section rules
+    */
+    &--left {
+        @extend .section;
+        @extend .my-4;
+        &__container {
+            @extend .container;
+        }
+        &__col {
+            @extend .section__col;
+            &--left {
+                @extend .col-sm-12,
+                .col-md-12,
+                .col-lg-6,
+                .col-xl-6,
+                .my-auto;
+            }
+            &--right {
+                @extend .col-sm-12,
+                .col-md-12,
+                .col-lg-9,
+                .col-xl-9,
+                .my-auto;
+            }
+        }
+        &__title {
+            @extend .display-4;
+        }
+        &__link {
+            @extend .text-uppercase;
+            text-decoration: underline;
+        }
+        &--fluid {
+            @extend .container-fluid;
+        }
+    }
+    &--image--left {
+        @extend .section--left;
+        &__col {
+            &--left {
+                @extend .col-sm-12,
+                .col-md-6,
+                .col-lg-3,
+                .col-xl-3,
+                .my-auto;
+                img {
+                    @extend .img-fluid,
+                    .m-0,
+                    .my-sm-4,
+                    .p-0; //.w-100; //, //.h-100;
+                    object-fit: cover;
+                }
+            }
+            &--right {
+                @extend .col-sm-12,
+                .col-md-6,
+                .col-lg-9,
+                .col-xl-9,
+                .my-auto;
+            }
+        }
+    }
+    /*
+* right section rules
+*/
+    &--right {
+        @extend .section;
+        @extend .my-4;
+        &__container {
+            @extend .container;
+        }
+        &__col {
+            @extend .col-12;
+            // @extend .text-left;
+            @extend .mx-auto;
+            text-align: left;
+            &--left {
+                @extend .col-sm-12,
+                .col-md-12,
+                .col-lg-9,
+                .col-xl-9,
+                .my-auto;
+            }
+            &--right {
+                @extend .col-sm-12,
+                .col-md-12,
+                .col-lg-9,
+                .col-xl-9,
+                .my-auto;
+            }
+        }
+        &__title {
+            @extend .display-4;
+        }
+        &__subtitle {
+            font-size: 36px;
+        }
+        &__img {
+            @extend /*.img-fluid,*/
+            .m-0,
+            .p-4,
+            .w-100; //, //.h-100;
+            object-fit: cover;
+        }
+        &__link {
+            @extend .text-uppercase;
+            text-decoration: underline;
+        }
+        &--fluid {
+            @extend .container-fluid;
+        }
+    }
+    &--image--right {
+        @extend .section--right;
+        &__col {
+            &--left {
+                @extend .col-sm-12,
+                .col-md-6,
+                .col-lg-9,
+                .col-xl-9,
+                .my-auto;
+            }
+            &--right {
+                @extend .my-auto,
+                .col-sm-12,
+                .col-md-6,
+                .col-lg-3,
+                .col-xl-3,
+                .my-auto;
+                img {
+                    @extend .img-fluid,
+                    .m-0,
+                    .my-sm-4,
+                    .p-0; //.w-100; //, //.h-100;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    &--cta--right {
+        @extend .section--right;
+        &__col {
+            &--left {
+                @extend .col-sm-12,
+                .col-md-6,
+                .col-lg-9,
+                .col-xl-9,
+                .my-auto;
+            }
+            &--right {
+                @extend .d-flex,
+                .col-sm-12,
+                .col-md-6,
+                .col-lg-3,
+                .col-xl-3,
+                .my-auto;
+                button {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+
+
+/*
+* sections rules
+*/
+
+.container-top {
+    @extend .container;
+    &--top {
+        @extend .text-center;
+        @extend .p-4;
+    }
+}
+
+.section--cta__bottom {
+    @extend .mt-4;
+}
+
+.post_thumbnail {
+    img {
+        @extend .img-fluid;
+    }
+}
+
+
+/*
+* half half rules
+*/
+
+.halfhalf {
+    @extend .container-fluid;
+    //margin-top: $navbar-height;
+    @media (max-width: $screen-md-min) {
+        padding: 0 0 0 0;
+    }
+    &__col {
+        min-height: 100%;
+        // @extend .mx-auto; 
+        &--content {
+            @extend .my-0;
+            @extend .col-sm-12;
+            @extend .col-md-8;
+            @extend .col-lg-6;
+            @extend .col-xl-6;
+            &--right {
+                @extend .order-1;
+            }
+        }
+        &--img {
+            @extend .my-0;
+            @extend .col-sm-12;
+            @extend .col-md-4;
+            @extend .col-lg-6;
+            @extend .col-xl-6;
+            &--left {
+                @extend .order-2,
+                .order-lg-1;
+            }
+            /*
+            @media (max-width: $screen-md-min) {
+                img {
+                    height: 160px!important;
+                    object-fit: cover;
+                    width: 100%;
+                    max-height: 160px!important;
+                }
+
+            }
+            //*/
+        }
+    }
+    &__img {
+        @extend .img-fluid;
+        height: 100vh;
+        width: 100%;
+        min-height: 480px;
+        max-height: 100vh;
+        object-fit: cover;
+    }
+}
