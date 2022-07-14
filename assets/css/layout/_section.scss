@@ -6,8 +6,10 @@
     padding: $navbar-height/1.5 0 $navbar-height/1.5 0;
     background-size: cover;
     background-repeat: no-repeat;
+    color : $dark;
     p {
         font-family: $font-family-base;
+        color : $dark;
         @media (min-width: $screen-lg-min) {
             font-size: 20px;
         }

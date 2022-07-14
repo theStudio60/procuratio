@@ -251,7 +251,22 @@ footer.footer a{color:#343a40!important;}
     </div><!-- end row -->
   </div><!-- end container -->
  
-
+  <div class="container">
+    <h2>contact</h2>
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <input placeholder="Prénom">
+        <input placeholder="Nom">
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <input placeholder="E-mail">
+        <input placeholder="Téléphone">
+      </div>
+      <div class="col-12">
+        <textarea placeholder="Message"></textarea>
+      </div>
+    </div>
+  </div>
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 my-2 text-center " style="font-size:13px;">

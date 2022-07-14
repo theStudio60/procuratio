@@ -44,7 +44,7 @@ endif;
   <?php endwhile; ?>
 <?php endif; ?>
 
-<div class="container">
+<div class="container-l section presentation">
   <div class="row">
     <div class="col-sm">
       <img src="https://via.placeholder.com/150">
@@ -52,49 +52,71 @@ endif;
         Qui sommes-nous?
       </h2>
       <p>
-        lorem ipsum
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
       </p>
     </div>
-    <div class="col-sm">
+    <div class="col-sm section">
       <h2>
         Fiduciaire
       </h2>
       <p>
-        lorem ipsum
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
       </p>
       <img src="https://via.placeholder.com/150">
     </div>
   </div>
 </div>
 
-<div class="container container-l quotations">
+<div class="container container-l section quotations">
+  <h2>Entreprises</h2>
   <div class="row">
-    <div class="col-sm">
-      <h2>
-        Entreprise 1
-      </h2>
-      <img class="img-circle" src="https://via.placeholder.com/150">
+    <div class="col-sm quote" class="quoter">
+      <div class="row">
+        <div class="col-3 quote-title">
+          <h3>
+            Entreprise 1
+          </h3>
+          <img class="img-circle" src="https://via.placeholder.com/150">
+        </div>
+      </div>
       <div class="quote">
-        <div class="quote-sign-left">"</div>
         <p>
+          <span class="quote-sign-left">«</span>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          <span class="quote-sign-right">»</span>
         </p>
-        <div class="quote-sign-right">"</div>
+      </div>
+    </div>
+    <div class="col-sm quote">
+      <div class="row quote-title">
+        <img class="img-circle col-6" src="https://via.placeholder.com/150">
+        <h3 class="col-6">
+          Entreprise 1
+        </h3>
+      </div>
+      <div class="quote">
+        <p>
+          <span class="quote-sign-left">«</span>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          <span class="quote-sign-right">»</span>
+        </p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm">
-      <h2>contrôle</h2>
+<div class="container-fluid section controle">
+  <div class="container-l">
+    <div class="row">
+      <div class="col-sm">
+        <h2>contrôle</h2>
+      </div>
     </div>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
   </div>
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
 </div>
 
-<div class="container services">
+<div class="container services section">
   <h2>Services</h2>
   <div class="row">
     <div class="col-sm">
@@ -112,12 +134,23 @@ endif;
   </div>
 </div>
 
-<div class="container">
+<div class="container section">
   <h2>Valeurs</h2>
   <div class="row">
-    <div class="col-sm">
+    <div class="col-sm card-value">
+      <div class="picto"></div>
       <h3>Valeur 1</h3>
-      <p></p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
+    </div>
+    <div class="col-sm card-value">
+      <div class="picto"></div>
+      <h3>Valeur 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
+    </div>
+    <div class="col-sm card-value">
+      <div class="picto"></div>
+      <h3>Valeur 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
     </div>
   </div>
 </div>
