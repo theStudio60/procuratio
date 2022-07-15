@@ -291,6 +291,16 @@ footer.footer a{color:#343a40!important;}
       </div>
     </div>
   </div>
+  <nav class="container footer-nav">
+    <ul class="row">
+      <li><a href="#">Qui sommes-nous?</a></li>
+      <li><a href="#">Fiduciaire</a></li>
+      <li><a href="#">Partenaires</a></li>
+      <li><a href="#">Contrôle</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Valeurs</a></li>
+    </ul>
+  </nav>
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 my-2 text-center " style="font-size:13px;">

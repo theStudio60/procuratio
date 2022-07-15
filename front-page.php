@@ -123,13 +123,18 @@ endif;
 <div class="container services section">
   <h2>Services</h2>
   <div class="row">
-    <div class="col-sm">
+    <div class="col-sm card">
+      <div class="hide-arc"></div>
+      <div class="arc"></div>
       <h3>Service A</h3>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
       <div class="price">99.-/h</div>
     </div>
-    <div class="col-sm">
+    <div class="col-sm card">
+      <div class="hide-arc"></div>
+      <div class="arc"></div>
+      <div class="number">1</div>
       <h3>Service B</h3>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>

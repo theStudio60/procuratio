@@ -845,6 +845,11 @@ body{overflow-x:hidden !important;overflow-y:scroll}
 .section--cta--right__col--right button{margin-left:auto}
 .halfhalf__col{min-height:100%}
 .halfhalf__img{height:100vh;width:100%;min-height:480px;max-height:100vh;-o-object-fit:cover;object-fit:cover}
+.services{position:relative}
+.services .card{border:10px solid #002369;margin:1em;padding:1em}
+.services .arc,.services .hide-arc{position:absolute;border:10px solid #002369;background:#fff;width:100px;height:100px;border-radius:100%;top:-50px;left:-50px;-webkit-clip-path:polygon(50% 50%,100% 50%,100% 100%,50% 100%);clip-path:polygon(50% 50%,100% 50%,100% 100%,50% 100%)}
+.services .hide-arc{width:90px;height:90px;border:0;-webkit-clip-path:polygon(44% 44%,100% 28%,100% 100%,37% 100%);clip-path:polygon(44% 44%,100% 28%,100% 100%,37% 100%)}
+.services h3{text-align:center}
 .presentation{background:#f8ffff}
 .controle{background:#002369;color:#f8ffff}
 .controle p{color:#f8ffff}
@@ -867,6 +872,8 @@ p{font-family:"Josefin Sans",sans-serif;color:#002369;font-weight:300}
 .grid-wrapper a:hover{border:none !important;border-bottom:none !important}
 .footer{margin-bottom:-32px !important;margin-top:-32px !important}
 .footer p{color:#f8ffff;margin-bottom:0}
+.footer nav ul{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;height:100px}
+.footer nav ul a,.footer nav ul a:visited{color:#29ffff}
 .footer__col--1 ul li,.footer__col--2 ul li,.footer__col--3 ul li,.footer__col--4 ul li{font-weight:400}
 .footer__row--top{border-bottom:2px solid #2970ff}
 .footer__body{background-image:#002369}
