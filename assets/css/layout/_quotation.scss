@@ -23,6 +23,7 @@ p {
 .quote-title {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .img-circle {
@@ -31,6 +32,9 @@ p {
 .quote {
   position: relative;
   color : $primary;
+  p {
+    font-weight: weight-bold;
+  }
 }
 
 .quotations img {
@@ -40,6 +44,8 @@ p {
 }
 
 .card-value {
+  margin: 1em;
+  padding: .75em;
   color : $light;
   text-align: center;
   background-image: linear-gradient(-135deg, #5D7CBA 0%, #29D1D1 100%);

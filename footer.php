@@ -12,11 +12,11 @@ $bg_color_mobile="";
 $position="";
 ?>
 <?php if ( is_front_page() ) : ?>
-  <?php $bg_color =  "primary"?>
-  <?php $txt_color="white"; ?>
-  <?php $txt_color_mobile="dark"; ?>
+  <?php $bg_color =  "dark"?>
+  <?php $txt_color="light"; ?>
+  <?php $txt_color_mobile="light"; ?>
   <?php $link_color="white"; ?>
-  <?php $bg_color_mobile =  "light"?>
+  <?php $bg_color_mobile =  "dark"?>
   <?php $position =  "absolute;z-index:40" ?>
   <?php $logotype = $logotype_w; ?>
   <?php $logotypeMobile = $logotype_d; ?>
@@ -254,16 +254,40 @@ footer.footer a{color:#343a40!important;}
   <div class="container contact-form">
     <h2>contact</h2>
     <div class="row">
-      <div class="col-md-6 col-lg-4">
-        <input placeholder="Prénom">
-        <input placeholder="Nom">
+      <div class="col-12 col-lg-8">
+        <div class="row">
+          <div class="col-6">
+            <input placeholder="Prénom">
+            <input placeholder="Nom">
+          </div>
+          <div class="col-6">
+            <input placeholder="E-mail">
+            <input placeholder="Téléphone">
+          </div>
+          <div class="col-12">
+            <textarea placeholder="Message"></textarea>
+          </div>
+        </div>
+        
       </div>
-      <div class="col-md-6 col-lg-4">
-        <input placeholder="E-mail">
-        <input placeholder="Téléphone">
-      </div>
-      <div class="col-12">
-        <textarea placeholder="Message"></textarea>
+      <div class="col-12 col-lg-4">
+        <div class="row">
+          <div class="contact-text col-12">
+            <p>
+              079 685 26 78
+            </p>
+            <p>
+              info@procuratiofinances.ch
+            </p>
+            <p>
+              1029 Villars Ste-Croix
+            </p>
+            <p>
+              Z.I. la Pierreire - Route de Bellevue 7
+            </p>
+          </div>
+          <img class="contact-map col-12" src="https://via.placeholder.com/150">
+        </div>
       </div>
     </div>
   </div>
