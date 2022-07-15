@@ -1,34 +1,19 @@
 h2 {
   font-family: $font-title;
   text-transform: uppercase;
+  font-weight: $weight-bold;
 }
 
 h3 {
   font-family: $font-title;
-  font-weight : 300;
+  font-weight : $weight-light;
   text-transform: uppercase;
 }
 
 p {
   font-family: $font-base;
   color : $dark;
-}
-
-.presentation {
-  background : $light;
-}
-
-.controle {
-  background : $dark;
-  color : $light;
-}
-
-.controle p {
-  color : $light;
-}
-
-.price {
-  font-size: 2em;
+  font-weight: $weight-light;
 }
 
 .quoter {
@@ -37,7 +22,7 @@ p {
 
 .quote-title {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .img-circle {

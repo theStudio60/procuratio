@@ -46,23 +46,27 @@ endif;
 
 <div class="container-l section presentation">
   <div class="row">
-    <div class="col-sm">
-      <img src="https://via.placeholder.com/150">
-      <h2>
-        Qui sommes-nous?
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-      </p>
+    <div class="col-sm block">
+      <img src="https://via.placeholder.com/150" class="__img">
+      <div class="section-text">
+        <h2>
+          Qui sommes-nous?
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        </p>
+      </div>
     </div>
-    <div class="col-sm section">
-      <h2>
-        Fiduciaire
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-      </p>
-      <img src="https://via.placeholder.com/150">
+    <div class="col-sm block">
+      <div class="section-text">
+        <h2>
+          Fiduciaire
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        </p>
+      </div>
+      <img class="section-img" src="https://via.placeholder.com/150">
     </div>
   </div>
 </div>
@@ -71,14 +75,14 @@ endif;
   <h2>Entreprises</h2>
   <div class="row">
     <div class="col-sm quote" class="quoter">
-      <div class="row">
-        <div class="col-3 quote-title">
-          <h3>
+<!--      <div class="row">-->
+        <div class="row quote-title">
+          <h3 class="col-6">
             Entreprise 1
           </h3>
-          <img class="img-circle" src="https://via.placeholder.com/150">
+          <img class="img-circle col-6" src="https://via.placeholder.com/150">
         </div>
-      </div>
+<!--      </div>-->
       <div class="quote">
         <p>
           <span class="quote-sign-left">«</span>

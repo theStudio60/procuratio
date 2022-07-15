@@ -1,6 +1,7 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 // Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
@@ -423,6 +424,8 @@ $font-family-base: var(--#{$variable-prefix}font-sans-serif) !default;
 $font-family-code: var(--#{$variable-prefix}font-monospace) !default;
 $font-base: "Josefin Sans", sans-serif;
 $font-title: "Raleway", sans-serif;
+$weight-light: 300;
+$weight-bold: 700;
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
 // $font-size-base affects the font size of the body text
 $font-size-root: null !default;

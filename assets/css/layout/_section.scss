@@ -10,6 +10,7 @@
     p {
         font-family: $font-family-base;
         color : $dark;
+        font-weight: $weight-light;
         @media (min-width: $screen-lg-min) {
             font-size: 20px;
         }
@@ -31,6 +32,12 @@
         li {
             @extend .my-2;
         }
+    }
+    .block {
+      display: flex;
+      img {
+        height: auto;
+      }
     }
     @media (max-width: $screen-md-min) {
         padding-top: $navbar-height/4;
@@ -537,4 +544,20 @@
         max-height: 100vh;
         object-fit: cover;
     }
+}
+
+.presentation {
+  background : $light;
+}
+
+.controle {
+  background : $dark;
+  color : $light;
+  p {
+    color : $light;
+  }
+}
+
+.price {
+  font-size: 2em;
 }

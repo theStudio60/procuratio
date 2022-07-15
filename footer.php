@@ -251,7 +251,7 @@ footer.footer a{color:#343a40!important;}
     </div><!-- end row -->
   </div><!-- end container -->
  
-  <div class="container">
+  <div class="container contact-form">
     <h2>contact</h2>
     <div class="row">
       <div class="col-md-6 col-lg-4">
@@ -276,7 +276,7 @@ footer.footer a{color:#343a40!important;}
         </div>
         <div class="col-12 my-2 text-center " style="font-size:13px">
         <span class="text-<?= $link_color ?>">
-          Site Web : <a href="https://studio60.ch" class="text-<?= $link_color ?>">STUDIO6o</a>
+          Site Web : <a href="https://studio60.ch" class="text-<?= $link_color ?>">STUDIO60</a>
         </span>  
       </div>
     </div><!-- end row -->

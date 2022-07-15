@@ -3,7 +3,6 @@
     .m-0,
     .p-0,
     .w-100;
-  background: $dark;
     margin-bottom: -32px!important;
         margin-top: -32px!important;
     @media (max-width: $screen-md-min) {
@@ -137,7 +136,7 @@
                 @extend .text-uppercase;
             }
             hr {
-                @extend .bg-white,
+                @extend .bg-dark,
                 .w-50;
             }
             ul {

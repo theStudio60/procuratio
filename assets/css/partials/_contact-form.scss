@@ -1,9 +1,14 @@
 .contact-form {
     @extend .p-0;
-    @extend .text-dark;
+    @extend .text-light;
     overflow-x: hidden;
-    //box-shadow: 0 2px 3px 0 rgba(90, 97, 105, 0.11), 0 15px 22px 0 rgba(90, 97, 105, 0.10), 0 7px 35px 0 rgba(90, 97, 105, 0.10);
+    background: $dark;
+//    box-shadow: 0 2px 3px 0 rgba(90, 97, 105, 0.11), 0 15px 22px 0 rgba(90, 97, 105, 0.10), 0 7px 35px 0 rgba(90, 97, 105, 0.10);
     //border-radius: $spacer;
+  textarea,
+  input {
+    width: 100%;
+  }
 }
 
 .gform_heading {}
