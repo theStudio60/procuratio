@@ -25,9 +25,9 @@
 <?php
   $custom_logo_id = get_theme_mod( 'custom_logo' );
   //$logotype_d = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-  $logotype_d = THEME_URI . "/images/logo.png"; 
-  $logotype_w = THEME_URI . "/images/logotype-fff.png"; 
-  $logotype_b = THEME_URI . "/images/logotype-000.png"; 
+  $logotype_d = THEME_URI . "/images/logo-procuratio-black.png"; 
+  $logotype_w = THEME_URI . "/images/logo-procuratio-black.png"; 
+  $logotype_b = THEME_URI . "/images/logo-procuratio-black.png"; 
   $logotype = $logotype_d ; 
   $logotypeMobile = $logotype;
   $bg_color="";

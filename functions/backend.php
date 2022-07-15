@@ -479,15 +479,15 @@ add_action('admin_enqueue_scripts', 'admin_style');
  
 
 
-add_action('map_meta_cap', 'custom_manage_privacy_options', 1, 4);
-function custom_manage_privacy_options($caps, $cap, $user_id, $args)
-{
-  $user_meta = get_userdata($user_id);
-  if (array_intersect(['editor', 'administrator'], $user_meta->roles)) {
-    if ('manage_privacy_options' === $cap) {
-      $manage_name = is_multisite() ? 'manage_network' : 'manage_options';
-      $caps = array_diff($caps, [ $manage_name ]);
-    }
-  }
-  return $caps;
-}
+//add_action('map_meta_cap', 'custom_manage_privacy_options', 1, 4);
+//function custom_manage_privacy_options($caps, $cap, $user_id, $args)
+//{
+//  $user_meta = get_userdata($user_id);
+//  if (array_intersect(['editor', 'administrator'], $user_meta->roles)) {
+//    if ('manage_privacy_options' === $cap) {
+//      $manage_name = is_multisite() ? 'manage_network' : 'manage_options';
+//      $caps = array_diff($caps, [ $manage_name ]);
+//    }
+//  }
+//  return $caps;
+//}
