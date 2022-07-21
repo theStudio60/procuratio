@@ -16,9 +16,10 @@
       ul {
         flex-direction: column;
         height: 100px;
+        li,
         a,
         a:visited {
-          color: $secondary;
+          color: $secondary !important;
         }
       }  
     }

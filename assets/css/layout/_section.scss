@@ -1,24 +1,24 @@
 .section {
-    min-height: 480px;
     max-width: 100vw!important;
     overflow-x: hidden!important;
     scroll-behavior: smooth;
-    padding: $navbar-height/1.5 0 $navbar-height/1.5 0;
+    padding: 1rem 2rem;
     background-size: cover;
     background-repeat: no-repeat;
     color : $dark;
     p {
-        font-family: $font-family-base;
+        font-family: $font-base;
         color : $dark;
         font-weight: $weight-light;
-        @media (min-width: $screen-lg-min) {
-            font-size: 20px;
+        
+        @media (min-width: $screen-md-min) {
+            font-size: 1rem;
         }
     }
     a {
         cursor: pointer;
         text-decoration: none;
-        font-family: $font-family-serif;
+        font-family: $font-base;
         //font-weight: 600!important;
         &:focus,
         &:hover {
@@ -36,72 +36,40 @@
     .block {
       display: flex;
       img {
-        height: auto;
+        object-fit: cover;
       }
     }
-    @media (max-width: $screen-md-min) {
-        padding-top: $navbar-height/4;
-        padding-bottom: $navbar-height/4;
-    }
+
     &__title {
-        @extend .display-1;
-        margin-bottom: $spacer*3;
-        //display: inline-block;
-        font-family: $font-family-serif;
-        font-weight: $font-weight-bolder;
-        font-size: 2rem;
+        font-family: $font-title;
+        font-weight: $weight-bold;
+        font-size: 1.5rem;
         line-height: 1.2;
-        //color: $secondary;
         color: $dark;
-        @media (max-width: 768px) {
-            margin-top: 16px;
-            margin-bottom: 4px;
-        }
-        //text-shadow: $text-shadow;
         @media screen and (min-width: $screen-md-min) {
-            @include font-size(3.5rem);
+            @include font-size(2rem);
         }
+      &--dark {
+        color : $light;
+      }
     }
     &__subtitle {
-        @extend .display-3;
-        margin-bottom: $spacer*3;
-        //display: inline-block;
-        font-weight: $font-weight-bolder;
-    }
-    &__§ {
-        font-size: $font-size-base;
-        &--bold {
-            font-weight: $font-weight-bold;
-        }
-        @media (min-width: $screen-lg-min) {
-            font-size: 24px;
+//        margin-bottom: $spacer*1.5;
+        font-weight: $weight-light;
+        font-size: 1.25rem;
+        @media screen and (min-width: $screen-md-min) {
+            @include font-size(1.5rem);
         }
     }
     &__link {
-        @extend .text-uppercase;
+        //@extend .text-uppercase;
+        color: $secondary
         //text-decoration: underline;
         &:hover {
             //border-bottom: solid $primary 2px;
         }
     }
-    &__content {
-        line-height: $font-size-base*2.4;
-    }
-    &__wysiwyg,
-    &__content {
-        span,
-        p,
-        a {
-            font-size: $font-size-base*1.2;
-            //  line-height: $font-size-base*1.7; //margin-bottom: $paragraph-margin-bottom;
-            //color: $dark;
-            font-weight: 400;
-            @media (min-width: $screen-md-min) {
-                font-size: 18px;
-                //text-align: left;
-            }
-        }
-    }
+    
     &__row {
         @extend .row;
         @extend .w-100;
@@ -131,418 +99,23 @@
         @extend .col-xl-9;
         @extend .mx-auto;
         height: auto!important;
-        font-weight: $font-weight-base;
+        font-weight: $weight-light;
         p {
-            @media (min-width: $screen-lg-min) {
-                font-size: 24px;
-            }
-        }
-        &--left {
-            @extend .col-sm-12,
-            .col-md-12,
-            .col-lg-9,
-            .col-xl-9;
-        }
-        &--right {
-            @extend .col-sm-12,
-            .col-md-12,
-            .col-lg-9,
-            .col-xl-9;
-        }
-        &--card-healthcare {
-            @extend .col-sm-12,
-            .col-md-6,
-            .col-lg-3,
-            .col-xl-3;
-        }
-        &--about {
-            @extend .col-12,
-            .col-lg-9;
-            p {
-                @extend .my-auto;
-            }
-        }
-        &--cta,
-        &--ctc {
-            @extend .col-sm-12,
-            .col-md-6,
-            .col-lg-9,
-            .col-xl-9,
-            .py-0,
-            .my-auto,
-            .order-1,
-            .order-lg-2;
-            p {
-                @extend .my-auto;
-            }
-            &--img {
-                @extend .col-sm-12,
-                .col-md-6,
-                .col-lg-3,
-                .col-xl-3,
-                .h-100,
-                .my-auto,
-                .d-flex,
-                .order-2,
-                .order-lg-1;
-                img {
-                    @extend .img-fluid,
-                    .w-100,
-                    .h-100,
-                    .py-1;
-                }
-                @media (max-width: $screen-md-min) {
-                    padding: 1rem!important;
-                }
-            }
-        }
-        &--contact {
-            @extend .col-sm-12,
-            .col-md-12,
-            .col-lg-6,
-            .col-xl-6;
-            iframe {
-                min-height: 360px;
-                @extend .p-0,
-                .my-sm-4,
-                .my-md-4,
-                .mx-sm-0,
-                .mx-md-0,
-                .h-100;
-                box-shadow: 0 2px 3px 0 rgba(90, 97, 105, 0.11), 0 15px 22px 0 rgba(90, 97, 105, 0.10), 0 7px 35px 0 rgba(90, 97, 105, 0.10);
-                border-radius: 18px;
+            @media (min-width: $screen-md-min) {
+                font-size: 1rem;
             }
         }
     }
-    //*
-    //*/
-    &__text_vertical {
-        @extend .my-auto;
-    }
-    &__overlay {
-        @extend .h-100;
-        @extend .w-100;
-        @extend .m-0;
-        @extend .p-0;
-        @extend .d-flex;
-        height: 100%!important;
-        min-height: 400px!important;
-        background-size: cover!important;
-        overflow: hidden!important;
-        //background: $overlay75;
-    }
-    &--page {
-        @extend .p-3;
-    }
-    &--context,
-    &--about {
-        //background: $light!important;
-        //background-color: $light!important;
-        max-width: 100vw!important;
-        overflow-x: hidden!important;
-    }
-    &--cta,
-    &--ctc {
-        //background: $white!important;
-        //background-color: $white!important;
-        max-width: 100vw!important;
-        overflow-x: hidden!important;
-    }
-    &--wmenus {
-        @extend .mt-2;
-        background: $white!important;
-        background-color: $white!important;
-        max-width: 100vw!important;
-        overflow-x: hidden!important;
-        &__container {
-            @extend .p-0,
-            .p-md-2;
-        }
-    }
-    //
-    //
-    /* 
-    * centered section rules 
-    */
-    &--centered {
-        @extend .section;
-        // @extend .my-4;
-        &__container {
-            @extend .container;
-        }
-        &__row {
-            @extend .row;
-        }
-        &__col {
-            @extend .col-sm-12;
-            @extend .col-md-12;
-            @extend .col-lg-12;
-            @extend .col-xl-12;
-            @extend .text-center;
-            @extend .mx-auto;
-        }
-        &__title {
-            @extend .display-4;
-        }
-        &__subtitle {
-            font-size: 36px;
-        }
-        &__img {
-            @extend .img-fluid;
-            @extend .my-4;
-            @extend .mx-auto;
-        }
-        &__link {
-            @extend .text-uppercase;
-            text-decoration: underline;
-        }
-        &__btn {}
-        &--fluid {
-            @extend .container-fluid;
-        }
-    }
-    /*
-    * left section rules
-    */
-    &--left {
-        @extend .section;
-        @extend .my-4;
-        &__container {
-            @extend .container;
-        }
-        &__col {
-            @extend .section__col;
-            &--left {
-                @extend .col-sm-12,
-                .col-md-12,
-                .col-lg-6,
-                .col-xl-6,
-                .my-auto;
-            }
-            &--right {
-                @extend .col-sm-12,
-                .col-md-12,
-                .col-lg-9,
-                .col-xl-9,
-                .my-auto;
-            }
-        }
-        &__title {
-            @extend .display-4;
-        }
-        &__link {
-            @extend .text-uppercase;
-            text-decoration: underline;
-        }
-        &--fluid {
-            @extend .container-fluid;
-        }
-    }
-    &--image--left {
-        @extend .section--left;
-        &__col {
-            &--left {
-                @extend .col-sm-12,
-                .col-md-6,
-                .col-lg-3,
-                .col-xl-3,
-                .my-auto;
-                img {
-                    @extend .img-fluid,
-                    .m-0,
-                    .my-sm-4,
-                    .p-0; //.w-100; //, //.h-100;
-                    object-fit: cover;
-                }
-            }
-            &--right {
-                @extend .col-sm-12,
-                .col-md-6,
-                .col-lg-9,
-                .col-xl-9,
-                .my-auto;
-            }
-        }
-    }
-    /*
-* right section rules
-*/
-    &--right {
-        @extend .section;
-        @extend .my-4;
-        &__container {
-            @extend .container;
-        }
-        &__col {
-            @extend .col-12;
-            // @extend .text-left;
-            @extend .mx-auto;
-            text-align: left;
-            &--left {
-                @extend .col-sm-12,
-                .col-md-12,
-                .col-lg-9,
-                .col-xl-9,
-                .my-auto;
-            }
-            &--right {
-                @extend .col-sm-12,
-                .col-md-12,
-                .col-lg-9,
-                .col-xl-9,
-                .my-auto;
-            }
-        }
-        &__title {
-            @extend .display-4;
-        }
-        &__subtitle {
-            font-size: 36px;
-        }
-        &__img {
-            @extend /*.img-fluid,*/
-            .m-0,
-            .p-4,
-            .w-100; //, //.h-100;
-            object-fit: cover;
-        }
-        &__link {
-            @extend .text-uppercase;
-            text-decoration: underline;
-        }
-        &--fluid {
-            @extend .container-fluid;
-        }
-    }
-    &--image--right {
-        @extend .section--right;
-        &__col {
-            &--left {
-                @extend .col-sm-12,
-                .col-md-6,
-                .col-lg-9,
-                .col-xl-9,
-                .my-auto;
-            }
-            &--right {
-                @extend .my-auto,
-                .col-sm-12,
-                .col-md-6,
-                .col-lg-3,
-                .col-xl-3,
-                .my-auto;
-                img {
-                    @extend .img-fluid,
-                    .m-0,
-                    .my-sm-4,
-                    .p-0; //.w-100; //, //.h-100;
-                    object-fit: cover;
-                }
-            }
-        }
-    }
-    &--cta--right {
-        @extend .section--right;
-        &__col {
-            &--left {
-                @extend .col-sm-12,
-                .col-md-6,
-                .col-lg-9,
-                .col-xl-9,
-                .my-auto;
-            }
-            &--right {
-                @extend .d-flex,
-                .col-sm-12,
-                .col-md-6,
-                .col-lg-3,
-                .col-xl-3,
-                .my-auto;
-                button {
-                    margin-left: auto;
-                }
-            }
-        }
-    }
-}
-
-
-/*
-* sections rules
-*/
-
-.container-top {
-    @extend .container;
-    &--top {
-        @extend .text-center;
-        @extend .p-4;
-    }
-}
-
-.section--cta__bottom {
-    @extend .mt-4;
-}
-
-.post_thumbnail {
-    img {
-        @extend .img-fluid;
-    }
-}
-
-
-/*
-* half half rules
-*/
-
-.halfhalf {
-    @extend .container-fluid;
-    //margin-top: $navbar-height;
-    @media (max-width: $screen-md-min) {
-        padding: 0 0 0 0;
-    }
-    &__col {
-        min-height: 100%;
-        // @extend .mx-auto; 
-        &--content {
-            @extend .my-0;
-            @extend .col-sm-12;
-            @extend .col-md-8;
-            @extend .col-lg-6;
-            @extend .col-xl-6;
-            &--right {
-                @extend .order-1;
-            }
-        }
-        &--img {
-            @extend .my-0;
-            @extend .col-sm-12;
-            @extend .col-md-4;
-            @extend .col-lg-6;
-            @extend .col-xl-6;
-            &--left {
-                @extend .order-2,
-                .order-lg-1;
-            }
-            /*
-            @media (max-width: $screen-md-min) {
-                img {
-                    height: 160px!important;
-                    object-fit: cover;
-                    width: 100%;
-                    max-height: 160px!important;
-                }
-
-            }
-            //*/
-        }
-    }
-    &__img {
-        @extend .img-fluid;
-        height: 100vh;
-        width: 100%;
-        min-height: 480px;
-        max-height: 100vh;
-        object-fit: cover;
+    &__cta {
+      border: none;
+      border-radius: 5px;
+      padding: .5rem 1rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: $font-base;
+      font-weight: $weight-bold;
+      color: $light;
+      background-image: $gradient
     }
 }
 
@@ -552,8 +125,6 @@
     border: 10px solid $dark;
     margin: 1em;
     padding: 1em;
-//    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 15%);
-//    overflow: visible;
   }
   .arc,
   .hide-arc {
@@ -590,6 +161,29 @@
   }
 }
 
+
+.card-value {
+  margin: 1em;
+  padding: .75em;
+  color : $light;
+  text-align: center;
+  background-image: $gradient;
+  box-shadow: inset -2px -2px 8px 2px rgba(247,255,255,0.35), inset 2px 2px 8px 2px rgba(0,35,105,0.35);
+  border-radius: 10px;
+}
+
+.card-value .picto {
+  border : $light solid 5px;
+  margin : 0 auto;
+  border-radius: 100%;
+  width : 50px;
+  height : 50px;
+}
+
+.card-value p {
+  color : $light;
+}
+
 .price {
-  font-size: 2em;
+  font-size: 2rem;
 }
