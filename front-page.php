@@ -39,3 +39,4 @@ endif;
 get_template_part( 'partials/sections/layout','calltoaction' );
 
 get_footer();
+?>

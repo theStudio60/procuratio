@@ -5,9 +5,9 @@ if( have_rows('group_control') ):
   while( have_rows('group_control') ): the_row();
   $title = get_sub_field('title');
   $content = get_sub_field('wysiwyg');
-
 ?>
-<section class="section controle">
+<section id="control" class="section controle">
+ <br>
   <div class="container-fluid section__container--fluid">
     <div class="container-l">
       <div class="row section__row">
@@ -26,7 +26,7 @@ if( have_rows('group_control') ):
         </div> 
       </div>
     </div>
-    
+    <br>
   </section>
 <?php endwhile; ?>
 <?php endif; ?>

@@ -4,7 +4,7 @@
     $title = get_sub_field('title');
 ?>
  
-   <section class="section quotations">
+   <section class="section quotations" id"partners">
     <div class="container section__container container-l">
       <?php if ($title) :  ?>
         <h2 class="section__title">

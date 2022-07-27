@@ -12,7 +12,7 @@
 
 ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> style="scroll-behavior: smooth;">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -48,7 +48,7 @@
   </style>  
 <?php elseif (is_page_template('healthcare-page.php') ):?>
   <?php $bg_color = "primary"; ?>
-  <?php $bg_color_mobile = "primary"; ?>
+  <?php $bg_color_mobile = ""; ?>
   <?php $position =  "fixed;z-index:40;top:0;" ?>
   <?php $logotype = $logotype_w; ?>
   <?php $logotypeMobile = $logotype_w; ?>
@@ -83,7 +83,6 @@
 <?php else : ?>
   <?php $bg_color =  "white"?>
   <?php $bg_color_mobile =  "white"?>
-  <?php $position =  "fixed;z-index:40;top:0;" ?>
   <?php $logotype = $logotype_d; ?>
   <?php $logotypeMobile = $logotype_d; ?>
   <style>.header__menu .menu-item a.nav-link {color:#343a40!important;}
@@ -92,16 +91,16 @@
     .mobile-menu {background:#e5f3f3!important; }
   </style>  
 <?php  endif?> 
-  <header id="masthead" class="header navbar bg-<?= $bg_color?>" style="position:<?= $position ?> ">
+  <header id="masthead" class="header navbar bg-<?= $bg_color?>">
     <div class="header__container">
+      <div class="header__brand">
+        <a href="<?= get_home_url() ?>">
+          <div class=" header__brand__logo">
+            <img width="auto" height="64px" class=""  src="<?= $logotype ?>" alt="<?= get_bloginfo() ?>">
+          </div>
+        </a>
+      </div>
       <div class="header__row"> 
-        <div class="header__brand">
-          <a href="<?= get_home_url() ?>">
-            <div class=" header__brand__logo">
-              <img width="auto" height="64px" class=""  src="<?= $logotype ?>" alt="<?= get_bloginfo() ?>">
-            </div>
-          </a>
-        </div>
         <div class="header__menu">
           <?php
           wp_nav_menu( array(
@@ -121,6 +120,7 @@
       </div>
     </div>    
   </header>
+  
   <header id="masthead" class="header-mobile bg-<?= $bg_color_mobile?>" >
     <div class="header-mobile__container"> 
       <div class="header-mobile__row "> 

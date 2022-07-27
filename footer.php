@@ -251,7 +251,7 @@ footer.footer a{color:#343a40!important;}
     </div><!-- end row -->
   </div><!-- end container -->
  
-  <div class="container contact-form">
+  <div id="contact" class="container contact-form">
     <h2>contact</h2>
     <div class="row">
       <div class="col-12 col-lg-8">
@@ -293,12 +293,12 @@ footer.footer a{color:#343a40!important;}
   </div>
   <nav class="container footer-nav">
     <ul class="row">
-      <li><a href="#">Qui sommes-nous?</a></li>
-      <li><a href="#">Fiduciaire</a></li>
-      <li><a href="#">Partenaires</a></li>
-      <li><a href="#">Contrôle</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Valeurs</a></li>
+      <li><a href="#quisommesnous">Qui sommes-nous?</a></li>
+      <li><a href="#fiduciaire">Fiduciaire</a></li>
+      <li><a href="#partners">Partenaires</a></li>
+      <li><a href="#control">Contrôle</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#values">Valeurs</a></li>
     </ul>
   </nav>
   <div class="container-fluid">

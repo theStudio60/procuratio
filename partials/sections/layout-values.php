@@ -6,7 +6,7 @@
 
 ?>    
 
-<section class="section">
+<section id="values" class="section">
   <div class="section__container container">
     <?php if ($title) :  ?>
     <h2 class="section__title">

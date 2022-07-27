@@ -171,4 +171,14 @@
             //  border: none;
         }
     }
+    .contact-form {
+      input,
+      textarea {
+        border: none;
+        border-radius: 5px;
+        font-family: $font-base;
+        font-size: 1.25rem;
+        margin: .5em auto;
+      }
+    }
 }

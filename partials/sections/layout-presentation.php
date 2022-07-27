@@ -20,7 +20,7 @@ if( have_rows('group_presentation') ):
   >  
     <div class="container-fluid section__container">
       <div class="row section__row">
-        <div class="col-12 col-lg-6 block">
+        <div class="col-12 col-lg-6 block" id="quisommesnous">
           <div class="section__img col-4"> 
            <img 
             src=" <?php echo $image['url']; ?> ">
@@ -42,7 +42,7 @@ if( have_rows('group_presentation') ):
           </div>   
         </div> 
 
-        <div class="col-12 col-lg-6 block">
+        <div class="col-12 col-lg-6 block" id="fiduciaire">
           <div class="section-text">
             <?php if ($title_2nd) :  ?>
             <h2 class="section__title">

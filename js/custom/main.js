@@ -149,3 +149,18 @@ function scrollToTop() {
 
 scrollToTopBtn.addEventListener("click", scrollToTop);
 document.addEventListener("scroll", handleScroll);
+
+var controller = new ScrollMagic.Controller();
+
+
+var scene = new ScrollMagic.Scene()
+.triggerElement('#quisommesnous')
+.setClassToggle('.section','color-me')
+.addTo(controller)
+.addIndicators();
+
+var scene = new ScrollMagic.Scene()
+.triggerElement('#partners h2')
+.setClassToggle('.section','color-me')
+.addTo(controller)
+.addIndicators();
