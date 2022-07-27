@@ -11,7 +11,7 @@ if( have_rows('group_control') ):
   <div class="container-fluid section__container--fluid">
     <div class="container-l">
       <div class="row section__row">
-        <div class="col-sm section__col">
+        <div class="section__col">
             <?php if ($title) :  ?>
             <h2 class="section__title section__title--dark">
               <?= $title ?>

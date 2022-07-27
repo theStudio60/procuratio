@@ -21,8 +21,10 @@ if( have_rows('group_presentation') ):
     <div class="container-fluid section__container">
       <div class="row section__row">
         <div class="col-12 col-lg-6 block">
-          <img class="section__img" 
+          <div class="section__img col-4"> 
+           <img 
             src=" <?php echo $image['url']; ?> ">
+          </div>
           <div class="section-text">
             <?php if ($title) :  ?>
             <h2 class="section__title">
@@ -51,8 +53,10 @@ if( have_rows('group_presentation') ):
               <?= $content_2nd ?>
             <?php endif;?>
           </div>
-          <img class="section__img" 
+          <div class="section__img col-4"> 
+           <img 
             src=" <?php echo $image_2nd['url']; ?> ">
+          </div>
         </div>
       </div>
     </div>

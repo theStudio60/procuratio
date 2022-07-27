@@ -1,17 +1,29 @@
+<?php  
+
+  if( have_rows('group_values') ):
+  while( have_rows('group_values') ): the_row();
+  $title = get_sub_field('title');
+
+?>    
+
 <section class="section">
-  <div class="container section__container section">
-    <h2 class="section__title">Valeurs</h2>
+  <div class="section__container container">
+    <?php if ($title) :  ?>
+    <h2 class="section__title">
+      <?= $title ?>
+    </h2>
+    <?php endif;?>
     <div class="row section__row">  
       <?php  
 
-        if( have_rows('group_values') ):
-        while( have_rows('group_values') ): the_row();
+        if( have_rows('subgroup_values') ):
+        while( have_rows('subgroup_values') ): the_row();
         $subtitle = get_sub_field('subtitle');
         $image = get_sub_field('picto');
         $content = get_sub_field('wysiwyg');
 
       ?>
-      <div class="col-sm section__col card-value">
+      <div class="section__half card-value">
         <img class="section__img picto" 
           src=" <?php echo $image['url']; ?> ">
         <?php if ($subtitle) :  ?>
@@ -28,3 +40,7 @@
     </div>
   </div>
 </section>
+
+
+<?php endwhile; ?>
+<?php endif; ?>

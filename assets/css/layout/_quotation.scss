@@ -24,6 +24,18 @@ p {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  h3 {
+      text-align: right;
+  }
+}
+
+.quote:nth-of-type(even) {
+  .quote-title {
+    flex-direction: row-reverse;
+    h3 {
+      text-align: left;
+    }
+  }
 }
 
 .img-circle {

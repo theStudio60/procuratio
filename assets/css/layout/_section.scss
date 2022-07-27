@@ -96,7 +96,7 @@
         @extend .col-sm-12;
         @extend .col-md-10;
         @extend .col-lg-9;
-        @extend .col-xl-9;
+        @extend .col-xl-8;
         @extend .mx-auto;
         height: auto!important;
         font-weight: $weight-light;
@@ -116,6 +116,20 @@
       font-weight: $weight-bold;
       color: $light;
       background-image: $gradient
+    }
+    &__half {
+      @extend .col-sm-12;
+      @extend .col-md-10;
+      @extend .col-lg-5;
+      @extend .col-xl-5;
+      @extend .mx-auto;
+      height: auto!important;
+      font-weight: $weight-light;
+      p {
+          @media (min-width: $screen-md-min) {
+              font-size: 1rem;
+          }
+      }
     }
 }
 
@@ -164,7 +178,7 @@
 
 .card-value {
   margin: 1em;
-  padding: .75em;
+  padding: 1em;
   color : $light;
   text-align: center;
   background-image: $gradient;
