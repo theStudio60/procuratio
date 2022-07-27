@@ -847,6 +847,7 @@ p{font-family:"Josefin Sans",sans-serif;color:#002369;font-weight:300}
 .img-circle{display:inline-block}
 .quote{position:relative;color:#2970ff}
 .quote p{font-weight:weight-bold}
+.img-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
 .quotations img{overflow:hidden;border-radius:100%;max-width:100px}
 .grid-wrapper{-webkit-column-width:calc(20vw);-moz-column-width:calc(20vw);column-width:calc(20vw);-webkit-column-gap:1rem;-moz-column-gap:1rem;column-gap:1rem}
 .grid-wrapper img{height:auto;max-width:256px;width:100%;cursor:pointer}
