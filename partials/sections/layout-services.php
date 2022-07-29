@@ -21,7 +21,7 @@
           $content = get_sub_field('wysiwyg');
 
         ?>
-        <div class="section__half card">
+        <div class="section__half card" data-aos="slide-right">
           <div class="hide-arc"></div>
           <div class="arc"></div>
           <?php if ($subtitle) :  ?>

@@ -6,7 +6,7 @@ if( have_rows('group_control') ):
   $title = get_sub_field('title');
   $content = get_sub_field('wysiwyg');
 ?>
-<section id="control" class="section controle">
+<section id="control" class="section controle" data-aos="fade-in">
  <br>
   <div class="container-fluid section__container--fluid">
     <div class="container-l">
@@ -16,9 +16,9 @@ if( have_rows('group_control') ):
             <h2 class="section__title section__title--dark">
               <?= $title ?>
             </h2>
-             <?php endif;?>
+            <?php endif;?>
             <?php if ($content) :  ?>
-              <p> 
+              <p class?"section__content--dark"> 
                 <?= $content?>
               </p>
             <?php endif;?>
@@ -26,7 +26,7 @@ if( have_rows('group_control') ):
         </div> 
       </div>
     </div>
-    <br>
-  </section>
+  <br>
+</section>
 <?php endwhile; ?>
 <?php endif; ?>

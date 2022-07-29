@@ -20,32 +20,34 @@ p {
   min-width : 50%;
 }
 
-.quote-title {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  h3 {
-      text-align: right;
-  }
-}
-
-.quote:nth-of-type(even) {
-  .quote-title {
-    flex-direction: row-reverse;
-    h3 {
-      text-align: left;
-    }
-  }
-}
-
 .img-circle {
   display : inline-block;
 }
 .quote {
   position: relative;
   color : $primary;
+  transition: 0.5s 0s ease-in-out;
   p {
     font-weight: weight-bold;
+  }
+}
+
+.quote-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  h3 {
+      text-align: left;
+  }
+}
+
+
+.quote:nth-of-type(even) {
+  .quote-title {
+    flex-direction: row-reverse;
+    h3 {
+      text-align: right;
+    }
   }
 }
 
@@ -58,4 +60,11 @@ p {
   overflow: hidden;
   border-radius: 100%;
   max-width: 100px;
+}
+
+.show {
+  opacity: 1;
+  left: 0;
+  right: 0;
+  transition: .5s 0s ease-in-out;
 }

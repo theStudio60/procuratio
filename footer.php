@@ -255,20 +255,7 @@ footer.footer a{color:#343a40!important;}
     <h2>contact</h2>
     <div class="row">
       <div class="col-12 col-lg-8">
-        <div class="row">
-          <div class="col-6">
-            <input placeholder="Prénom">
-            <input placeholder="Nom">
-          </div>
-          <div class="col-6">
-            <input placeholder="E-mail">
-            <input placeholder="Téléphone">
-          </div>
-          <div class="col-12">
-            <textarea placeholder="Message"></textarea>
-          </div>
-        </div>
-        
+       <?= do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]')?>
       </div>
       <div class="col-12 col-lg-4">
         <div class="row">

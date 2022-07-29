@@ -36,6 +36,7 @@ add_filter('sanitize_file_name', 'remove_accents');
 add_action( 'admin_menu', 'register_page_menu_item' );
 function register_page_menu_item() {
 
+/* 
 add_menu_page( 
       'homepage', 
       'Page d\'accueil', 
@@ -74,7 +75,7 @@ add_menu_page(
   'dashicons-admin-home', 
   6
 );
-
+//*/
     add_menu_page( 
       'messages', 
       'Messages', 

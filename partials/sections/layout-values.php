@@ -23,7 +23,7 @@
         $content = get_sub_field('wysiwyg');
 
       ?>
-      <div class="section__half card-value">
+      <div class="section__half card-value" data-aos="slide-left">
         <img class="section__img picto" 
           src=" <?php echo $image['url']; ?> ">
         <?php if ($subtitle) :  ?>
