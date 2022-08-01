@@ -1,13 +1,8 @@
 .footer {
     @extend .text-light,
     .m-0,
-    .p-0,
     .w-100;
-    margin-bottom: -32px!important;
-        margin-top: -32px!important;
-    @media (max-width: $screen-md-min) {
-        margin-bottom: -32px!important;
-    }
+    padding: 1rem 2rem;
     p {
       color : $light;
       margin-bottom: 0;
@@ -25,12 +20,12 @@
     }
     &__container {
         @extend .container;
+        margin: 0 auto;
     }
     &__col {
         @extend .col-sm-12,
-        .col-md-6,
-        .col-lg-3,
-        .col-xl-3,
+        .col-lg-9,
+        .col-xl-6,
         .p-0;
         h6 {
             @extend .text-uppercase;

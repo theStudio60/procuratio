@@ -1,15 +1,19 @@
-.hide-left {
-  position: relative;
-  left: -100%;
+h2 {
+  font-family: $font-title;
+  text-transform: uppercase;
+  font-weight: $weight-bold;
 }
 
-.hide-right {
-  position: relative;
-  right: 100%;
+h3 {
+  font-family: $font-title;
+  font-weight : $weight-light;
+  text-transform: uppercase;
 }
 
-.hide-opacity {
-  opacity: 0;
+p {
+  font-family: $font-base;
+  color : $dark;
+  font-weight: $weight-light;
 }
 
 .section {
@@ -85,7 +89,7 @@
         color: $secondary
         //text-decoration: underline;
         &:hover {
-            //border-bottom: solid $primary 2px;
+          border-bottom: solid $secondary 2px;
         }
     }
     
@@ -156,8 +160,8 @@
   position: relative;
   .card {
     border: 10px solid $dark;
-    margin: 1em;
-    padding: 1em;
+    margin: 1rem;
+    padding: 2.5rem 1.5rem;
   }
   .arc,
   .hide-arc {
@@ -210,14 +214,18 @@
   background-image: $gradient;
   box-shadow: inset -2px -2px 8px 2px rgba(247,255,255,0.35), inset 2px 2px 8px 2px rgba(0,35,105,0.35);
   border-radius: 10px;
-}
-
-.card-value .picto {
-  border : $light solid 5px;
-  margin : 0 auto;
-  border-radius: 100%;
-  width : 50px;
-  height : 50px;
+  .img-container {
+    margin: auto auto;
+    width: 50px;
+    height: 80px;
+  }
+  .picto {
+//    border : $light solid 5px;
+    margin : auto auto;
+//    border-radius: 100%;
+    width : 50px;
+    height : auto;
+  }
 }
 
 .card-value p {

@@ -27,9 +27,9 @@
   //$logotype_d = wp_get_attachment_image_src( $custom_logo_id , 'full' );
   $logotype_d = THEME_URI . "/images/logo-procuratio-black.png"; 
   $logotype_w = THEME_URI . "/images/logo-procuratio-black.png"; 
-  $logotype_b = THEME_URI . "/images/logo-procuratio-black.png"; 
-  $logotype = $logotype_d ; 
-  $logotypeMobile = $logotype;
+  $logotype_b = THEME_URI . "/images/logo-procuratio-blue.png"; 
+  $logotype = $logotype_b; 
+  $logotypeMobile = $logotype_b;
   $bg_color="";
   $bg_color_mobile="";
   $position="";
@@ -41,65 +41,21 @@
   <?php $position =  "absolute;z-index:40" ?>
   <?php $logotype = $logotype_w; ?>
   <?php $logotypeMobile = $logotype_d; ?>
-  <style>
-    a.nav-link{color:#00ae9b!important;}
-    .current-menu-item-active a { border-left:solid 2px #00ae9b; }
-    .mobile-menu {background:#e5f3f3!important; }
-  </style>  
-<?php elseif (is_page_template('healthcare-page.php') ):?>
-  <?php $bg_color = "primary"; ?>
-  <?php $bg_color_mobile = ""; ?>
-  <?php $position =  "fixed;z-index:40;top:0;" ?>
-  <?php $logotype = $logotype_w; ?>
-  <?php $logotypeMobile = $logotype_w; ?>
-  <style>
-    .mobile-menu {background:#00ae9b!important; }
-    a.nav-link{color:#fff!important;}
-    .current-menu-item-active a { border-left:solid 2px #fff; }
-  </style>  
-<?php  elseif (is_page_template('formations-page.php') ):?>
-  <?php $bg_color =  "secondary"?>
-  <?php $bg_color_mobile =  "secondary"?>
-  <?php $position =  "fixed;z-index:40;top:0;" ?>
-  <?php $logotype = $logotype_w; ?>
-  <?php $logotypeMobile = $logotype_w; ?>
-  <style>
-    .mobile-menu {background:#00707d!important; }
-    a.nav-link{color:#fff!important;}
-    .current-menu-item-active a { border-left:solid 2px #fff; }
-  </style>  
-<?php  elseif (is_page_template('contact-page.php') ):?>
-  <?php $bg_color =  "white"?>
-  <?php $bg_color_mobile =  "white"?>
-  <?php $position =  "fixed;z-index:40;top:0;" ?>
-  <?php $logotype = $logotype_d; ?>
-  <?php $logotypeMobile = $logotype_d; ?>
-  <style>
-    .header__menu .menu-item a.nav-link {color:#343a40!important;}
-    a.nav-link{color:#00ae9b!important;}
-    .current-menu-item-active a { border-left:solid 2px #343a40!important; }
-    .mobile-menu {background:#e5f3f3!important; }
-  </style>  
-<?php else : ?>
-  <?php $bg_color =  "white"?>
-  <?php $bg_color_mobile =  "white"?>
-  <?php $logotype = $logotype_d; ?>
-  <?php $logotypeMobile = $logotype_d; ?>
-  <style>.header__menu .menu-item a.nav-link {color:#343a40!important;}
-    a.nav-link{color:#00ae9b!important;}
-    .current-menu-item-active a { border-left:solid 2px #00ae9b; }
-    .mobile-menu {background:#e5f3f3!important; }
-  </style>  
 <?php  endif?> 
   <header id="masthead" class="header navbar bg-<?= $bg_color?>">
     <div class="header__container">
       <div class="header__brand">
         <a href="<?= get_home_url() ?>">
           <div class=" header__brand__logo">
-            <img width="auto" height="64px" class=""  src="<?= $logotype ?>" alt="<?= get_bloginfo() ?>">
+            <img width="auto" height="64px" class=""  src="<?= $logotype_b ?>" alt="<?= get_bloginfo() ?>">
           </div>
         </a>
       </div>
+      <div class="header-mobile__language">
+        <a href="#" class="nav-link">DE</a>
+        <a href="#" class="nav-link">EN</a>
+        <a href="#" class="nav-link">FR</a>
+      </div> 
       <div class="header__row"> 
         <div class="header__menu">
           <?php
@@ -121,13 +77,18 @@
     </div>    
   </header>
   
-  <header id="masthead" class="header-mobile bg-<?= $bg_color_mobile?>" >
+  <header id="masthead" class="header-mobile" >
     <div class="header-mobile__container"> 
-      <div class="header-mobile__row "> 
+      <div class="header-mobile__row ">
+        <div class="header-mobile__language">
+          <a href="#" class="nav-link">DE</a>
+          <a href="#" class="nav-link">EN</a>
+          <a href="#" class="nav-link">FR</a>
+        </div> 
         <div class="header-mobile__brand mr-auto">
           <a href="<?= get_home_url() ?>" onclick="closeMenu()" >
             <div class=" header-mobile__brand__logo">
-              <img    class=""  src="<?= $logotypeMobile ?>" alt="<?= get_bloginfo() ?>">
+              <img    class=""  src="<?= $logotype_b ?>" alt="<?= get_bloginfo() ?>">
             </div>
           </a>
         </div>

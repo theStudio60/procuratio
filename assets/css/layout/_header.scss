@@ -24,7 +24,7 @@
     width: 100%;
     justify-content: space-around;
   }
-  .nav-link {
+  a.nav-link {
     font-family: $font-title;
     font-weight: $weight-bold;
     color: $primary !important;
@@ -49,6 +49,7 @@
 .header-mobile {
     height: 96px;
     width: 100vw!important;
+    background: $white;
     @extend .navbar,
     .fixed-top,
     .p-0,
@@ -70,13 +71,20 @@
         .mx-0,
         .p-3,
         .w-100;
+        justify-content: space-between;
     }
     &__brand {
         @extend .my-auto,
         .p-0;
         width: auto;
+        margin: 0 auto;
         a {
             //    display: flex;
+        }
+        a.nav-link {
+          color: $primary !important;
+          font: font-title;
+          font-weight: $weight-bold;
         }
         &__logo {
             @extend .d-flex;
@@ -124,6 +132,16 @@
         margin-right: $spacer;
         cursor: pointer;
     }
+    &__language {
+      display: flex;
+      align-items: center;
+      font-family: $font-title;
+      font-weight: $weight-bold;
+      color: $primary!important;
+      @media (min-width: 992px) {
+        margin: 0 auto;
+      }
+    }
 }
 
 .mobile-menu {
@@ -136,6 +154,11 @@
     //margin-top: 0!important;
     background: $white !important;
     transition: .33s 0s ease-in-out;
+    a.nav-link {
+      color: $primary !important;
+      font: font-title;
+      font-weight: $weight-bold;
+    }
     &--visible {
         left: 0;
         opacity: 1;
@@ -188,7 +211,7 @@
         .dropdown.active .dropdown-toggle.nav-link {
             color: $primary!important;
             text-decoration: none;
-            font-weight: $font-weight-bolder;
+            font-weight: $weight-bold;
             &:hover,
             &:focus {
                 color: $primary!important;

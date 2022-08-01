@@ -24,8 +24,10 @@
 
       ?>
       <div class="section__half card-value" data-aos="slide-left">
-        <img class="section__img picto" 
+        <div class="img-container">
+          <img class="section__img picto" 
           src=" <?php echo $image['url']; ?> ">
+        </div>
         <?php if ($subtitle) :  ?>
           <h3 class="section__subtitle">
             <?= $subtitle ?>

@@ -7,15 +7,12 @@
   ?>
     <div class="container section__container container-l">
       <?php if ($title) :  ?>
-        <h2 class="section__title">
+        <h2 class="section__title" id="<?= $title ?>">
           <?= $title ?>
         </h2>
       <?php endif;?>
       <div class="row section__row">
       <?php  
-
-        $group = get_field('subgroup_partners');
-        print_r($group);
 
         if( have_rows('subgroup_partners') ):
           while( have_rows('subgroup_partners') ): the_row();

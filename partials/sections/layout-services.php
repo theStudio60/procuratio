@@ -2,6 +2,8 @@
   if( have_rows('group_services') ):
   while( have_rows('group_services') ): the_row();
     $title = get_sub_field('title');
+    $content = get_sub_field('description'); 
+    $conclusion = get_sub_field('conclusion'); 
 ?>
  
    <section id="services" class="section">
@@ -10,6 +12,11 @@
         <h2 class="section__title">
           <?= $title ?>
         </h2>
+      <?php endif;?>
+      <?php if ($content) :  ?>
+        <p>
+          <?= $content ?>
+        </p>
       <?php endif;?>
       <div class="row section__row">   
         <?php  
@@ -41,6 +48,11 @@
         <?php endwhile; ?>
         <?php endif; ?>
       </div>
+      <?php if ($conclusion) :  ?>
+        <p>
+          <?= $conclusion ?>
+        </p>
+      <?php endif;?>
     </div>
   </section>
   <?php endwhile; ?>
