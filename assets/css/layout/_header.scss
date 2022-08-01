@@ -73,6 +73,9 @@
         .w-100;
         justify-content: space-between;
     }
+    &__col {
+        @extend .col-4,
+    }
     &__brand {
         @extend .my-auto,
         .p-0;

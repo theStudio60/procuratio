@@ -80,12 +80,12 @@
   <header id="masthead" class="header-mobile" >
     <div class="header-mobile__container"> 
       <div class="header-mobile__row ">
-        <div class="header-mobile__language">
+        <div class="header-mobile__language header-mobile__col">
           <a href="#" class="nav-link">DE</a>
           <a href="#" class="nav-link">EN</a>
           <a href="#" class="nav-link">FR</a>
         </div> 
-        <div class="header-mobile__brand mr-auto">
+        <div class="header-mobile__brand mr-auto header-mobile__col">
           <a href="<?= get_home_url() ?>" onclick="closeMenu()" >
             <div class=" header-mobile__brand__logo">
               <img    class=""  src="<?= $logotype_b ?>" alt="<?= get_bloginfo() ?>">
@@ -96,21 +96,13 @@
           <?php get_template_part('partials/nav/cta','headerMobile')?>
           <span class="p-1"></span>
           <div onclick="openMenu()" title="toggle menu" id="burger" class="header-mobile__burger  header-mobile__burger--visible"  aria-expanded="false">
-            <?php if (is_page_template('healthcare-page.php') ):?>
-              <?php  get_template_part('partials/nav/burger','light'); ?>
-            <?php  elseif (is_page_template('formations-page.php') ):?>
-              <?php get_template_part('partials/nav/burger','light'); ?>
-            <?php else : ?>
+            <?php if ( is_front_page() ):?>
               <?php get_template_part('partials/nav/burger','dark'); ?>
             <?php  endif?>
           </div>
 
           <div onclick="closeMenu()" title="close menu" id="close" class="header-mobile__burger  header-mobile__burger--hidden"  aria-expanded="false"> 
-            <?php if (is_page_template('healthcare-page.php') ):?>
-              <?php  get_template_part('partials/nav/close','light'); ?>
-            <?php  elseif (is_page_template('formations-page.php') ):?>
-              <?php get_template_part('partials/nav/close','light'); ?>
-            <?php else : ?>
+            <?php if ( is_front_page() ):?>
               <?php get_template_part('partials/nav/close','dark'); ?>
             <?php  endif?>
           </div>

@@ -24,7 +24,7 @@ $position="";
 <?php  endif?>
 
 <footer class="footer bg-<?= $bg_color ?> text-<?= $txt_color ?>">
- 
+  <br>
   <div id="contact" class="footer__container contact-form">
     <h2>contact</h2>
     <div class="footer__row">
@@ -76,6 +76,7 @@ $position="";
       </div>
     </div><!-- end row -->
   </div><!-- end container -->
+  <br>
 </footer>
 
 <?php wp_footer(); ?>
