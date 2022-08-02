@@ -38,21 +38,6 @@ function disable_block_editor($use_block_editor) {
  */
 
 acf_add_options_page(array(
-	'page_title' 	=> 'Soins',
-	'menu_title'	=> 'Soins',
-	'menu_slug' 	=> 'soins',
-	'capability'	=> 'edit_posts',
-	'redirect'		=> false
-));
-
-acf_add_options_page(array(
-	'page_title' 	=> 'Formations',
-	'menu_title'	=> 'Formations',
-	'menu_slug' 	=> 'formations',
-	'capability'	=> 'edit_posts',
-	'redirect'		=> false
-)); 
-acf_add_options_page(array(
 		'page_title' 	=> 'Réglages du Site',
 		'menu_title'	=> 'Réglages du site',
 		'menu_slug' 	=> 'site-options',

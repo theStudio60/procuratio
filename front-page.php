@@ -6,22 +6,22 @@
  */
 get_header();
 
-if( have_rows('website_settings', 'option') ): 
-  while( have_rows('website_settings', 'option') ): the_row();
-    if( have_rows('popup_alert') ):
-      while( have_rows('popup_alert') ): the_row();
-
-
-      if ( 'Oui' == get_sub_field('alert_condition') ):
-         
-        get_template_part('partials/elements/popup');
+//if( have_rows('website_settings', 'option') ): 
+//  while( have_rows('website_settings', 'option') ): the_row();
+//    if( have_rows('popup_alert') ):
+//      while( have_rows('popup_alert') ): the_row();
+//
+//
+//      if ( 'Oui' == get_sub_field('alert_condition') ):
+//         
+//        get_template_part('partials/elements/popup');
+//        endif; 
+//      endwhile; 
+//    endif; 
+//  endwhile; 
+//endif; 
 ?>     
           <?php
-        endif; 
-      endwhile; 
-    endif; 
-  endwhile; 
-endif; 
 
 if( have_rows('acf_group_homepage') ): 
   while( have_rows('acf_group_homepage') ): the_row(); 

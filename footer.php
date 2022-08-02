@@ -61,16 +61,19 @@ if( have_rows('contact_infos') ):
       </div>
     </div>
   </div>
-  <nav class="container footer-nav">
-    <ul class="row">
-      <li><a class="nav-link" href="#quisommesnous">Qui sommes-nous?</a></li>
-      <li><a class="nav-link" href="#fiduciaire">Fiduciaire</a></li>
-      <li><a class="nav-link" href="#partners">Partenaires</a></li>
-      <li><a class="nav-link" href="#control">Contrôle</a></li>
-      <li><a class="nav-link" href="#services">Services</a></li>
-      <li><a class="nav-link" href="#values">Valeurs</a></li>
-    </ul>
-  </nav>
+  <?php
+      wp_nav_menu( array(
+      'theme_location'  => 'header-menu',
+      'depth'           => 1, // 1 = no dropdowns, 2 = with dropdowns.
+      'container'       => 'nav',
+      'container_class' => '',
+      'container_id'    => 'navMenu',
+      'menu_class'      => 'header__menu ',
+      'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+      'walker'          => new WP_Bootstrap_Navwalker(),
+      ));
+ 
+  ?>  
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 my-2 text-center " style="font-size:13px;">

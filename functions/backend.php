@@ -31,7 +31,7 @@ add_filter('sanitize_file_name', 'remove_accents');
 /**
  *   add pages shortcuts in wp admin menu
  */
-//*(STAGE) 
+//*(STAGE)
 
 add_action( 'admin_menu', 'register_page_menu_item' );
 function register_page_menu_item() {

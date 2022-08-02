@@ -133,7 +133,7 @@
     }) ; 
 //*/
   </script>
-        <?php get_template_part('partials/elements/popup','appointment')?>
+        <?php //get_template_part('partials/elements/popup','appointment') ?>
 
 
   <?php get_template_part('partials/nav/btn','scollToTop')?>
