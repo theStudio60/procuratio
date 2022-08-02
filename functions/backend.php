@@ -36,46 +36,6 @@ add_filter('sanitize_file_name', 'remove_accents');
 add_action( 'admin_menu', 'register_page_menu_item' );
 function register_page_menu_item() {
 
-/* 
-add_menu_page( 
-      'homepage', 
-      'Page d\'accueil', 
-      'edit_pages', 
-      'post.php?post=39&action=edit', 
-      '', 
-      'dashicons-admin-home', 
-      3
-  );
-add_menu_page( 
-    'about', 
-    'Page Qui sommes-nous', 
-    'edit_pages', 
-    'post.php?post=163&action=edit', 
-    '', 
-    'dashicons-admin-page', 
-    4
-);
-
-add_menu_page( 
-  'formations', 
-  'Page Centre Compétence', 
-  'edit_pages', 
-  'post.php?post=165&action=edit', 
-  '', 
-  'dashicons-admin-home', 
-  5
-);
-
-add_menu_page( 
-  'healthcare', 
-  'Page Soins', 
-  'edit_pages', 
-  'post.php?post=167&action=edit', 
-  '', 
-  'dashicons-admin-home', 
-  6
-);
-//*/
     add_menu_page( 
       'messages', 
       'Messages', 

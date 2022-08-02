@@ -19,10 +19,11 @@ if( have_rows('group_presentation') ):
     class="section presentation"
     data-aos="fade-in"
   >  
+    <br>
     <div class="container-fluid section__container">
       <div class="row section__row">
-        <div class="col-12 col-lg-6 block" id="quisommesnous" data-aos="fade-in">
-          <div class="section__img col-4"> 
+        <div class="col-12 col-lg-6 block" id="quisommesnous" data-aos="fade-down">
+          <div class="section__img section__img--wrap"> 
            <img 
             src=" <?php echo $image['url']; ?> ">
           </div>
@@ -61,7 +62,7 @@ if( have_rows('group_presentation') ):
         </div>
       </div>
     </div>
-    
+    <br>
   </section>
 <?php endwhile; ?>
 <?php endif; ?>

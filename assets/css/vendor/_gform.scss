@@ -69,7 +69,25 @@
             border-top: none;
         }
     }
+
+    .gform_button {
+      border: none;
+      font-family: $font-base;
+      text-transform: uppercase;
+      color: $light;
+      background-image: $gradient !important;
+      transition: .25s 0s ease-in-out;
+    }
+
+    .button:focus,
+    .button:hover {
+      border: none;
+    }
     
+    .gform_button:hover  {
+      font-size: 1.5rem;
+    }
+  
     .ginput_container {
         @extend .w-100;
         input,

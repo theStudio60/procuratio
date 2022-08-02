@@ -23,6 +23,18 @@ $position="";
 
 <?php  endif?>
 
+<?php
+if( have_rows('website_settings', 'option') ): 
+  while( have_rows('website_settings', 'option') ): 
+//  print_r(the_row());
+  the_row(); 
+if( have_rows('contact_infos') ): 
+  while( have_rows('contact_infos') ): the_row();
+  $adress = get_sub_field('post_address');
+  $phone = get_sub_field('phone');
+  $email = get_sub_field('email');
+  $gmap = get_sub_field('gmap_url');
+?>
 <footer class="footer bg-<?= $bg_color ?> text-<?= $txt_color ?>">
   <br>
   <div id="contact" class="footer__container contact-form">
@@ -35,31 +47,28 @@ $position="";
         <div class="row">
           <div class="contact-text col-12">
             <p>
-              079 685 26 78
+              <i class="fa fa-phone mr-2"></i> <?= $phone ?>
             </p>
             <p>
-              info@procuratiofinances.ch
+              <i class="fa fa-envelope mr-2"></i> <?= $email ?>
             </p>
             <p>
-              1029 Villars Ste-Croix
-            </p>
-            <p>
-              Z.I. la Pierreire - Route de Bellevue 7
+              <i class="fa fa-map-marker mr-2"></i> <?= $adress ?>
             </p>
           </div>
-          <img class="contact-map col-12" src="https://via.placeholder.com/150">
+          <iframe class="contact-map col-12"  src="<?= $gmap ?>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
   </div>
   <nav class="container footer-nav">
     <ul class="row">
-      <li><a href="#quisommesnous">Qui sommes-nous?</a></li>
-      <li><a href="#fiduciaire">Fiduciaire</a></li>
-      <li><a href="#partners">Partenaires</a></li>
-      <li><a href="#control">Contrôle</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#values">Valeurs</a></li>
+      <li><a class="nav-link" href="#quisommesnous">Qui sommes-nous?</a></li>
+      <li><a class="nav-link" href="#fiduciaire">Fiduciaire</a></li>
+      <li><a class="nav-link" href="#partners">Partenaires</a></li>
+      <li><a class="nav-link" href="#control">Contrôle</a></li>
+      <li><a class="nav-link" href="#services">Services</a></li>
+      <li><a class="nav-link" href="#values">Valeurs</a></li>
     </ul>
   </nav>
   <div class="container-fluid">
@@ -78,6 +87,13 @@ $position="";
   </div><!-- end container -->
   <br>
 </footer>
+
+<?php
+        endwhile; 
+    endif; 
+  endwhile; 
+endif; 
+?>
 
 <?php wp_footer(); ?>
 </body>

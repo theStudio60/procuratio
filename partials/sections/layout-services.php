@@ -7,6 +7,7 @@
 ?>
  
    <section id="services" class="section">
+    <br>
     <div class="container section__container services">
       <?php if ($title) :  ?>
         <h2 class="section__title">
@@ -28,7 +29,7 @@
           $content = get_sub_field('wysiwyg');
 
         ?>
-        <div class="section__half card" data-aos="slide-right">
+        <div class="section__half card" data-aos="fade-right">
           <div class="hide-arc"></div>
           <div class="arc"></div>
           <?php if ($subtitle) :  ?>
@@ -54,6 +55,7 @@
         </p>
       <?php endif;?>
     </div>
+    <br>
   </section>
   <?php endwhile; ?>
 <?php endif; ?>

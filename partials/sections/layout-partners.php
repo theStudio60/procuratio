@@ -1,5 +1,7 @@
 
  <section class="section quotations" id="partners">
+
+   <br>
   <?php  
     if( have_rows('group_partners') ):
     while( have_rows('group_partners') ): the_row();
@@ -22,7 +24,7 @@
 
 
         ?> 
-        <div class="col-sm section__col quote" class="quoter" data-aos="slide-left">
+        <div class="col-sm section__col quote" class="quoter" data-aos="fade-left">
 
             <div class="row quote-title">
               <?php if ($subtitle) :  ?>
@@ -56,4 +58,5 @@
   <?php endif ?>
   </div>
 </div> 
+<br>
 </section>

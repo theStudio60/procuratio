@@ -14,7 +14,7 @@ AOS.init({
     debounceDelay: 500,
     offset: 120, // offset (in px) from the original trigger point
     delay: 0, // values from 0 to 3000, with step 50ms
-    duration: 400, // values from 0 to 3000, with step 50ms
+    duration: 600, // values from 0 to 3000, with step 50ms
     easing: 'ease-in-out', // default easing for AOS animations
     once: true, // whether animation should happen only once - while scrolling down
     mirror: false // whether elements should animate out while scrolling past them
@@ -151,46 +151,3 @@ function scrollToTop() {
 
 scrollToTopBtn.addEventListener("click", scrollToTop);
 document.addEventListener("scroll", handleScroll);
-//
-//var quote = document.querySelectorAll('.quote');
-//for (var i = 0 ; i < quote.length; i++) {
-//  console.log(quote[i]);
-//}
-
-//var controller = new ScrollMagic.Controller();
-//
-//var scene = new ScrollMagic.Scene({ triggerElement: '#quisommesnous' })
-////.triggerElement('#quisommesnous')
-//.setClassToggle('#quisommesnous', 'show')
-//.addTo(controller)
-//.addIndicators();
-//
-//var scene = new ScrollMagic.Scene()
-//.triggerElement('#fiduciaire')
-//.setClassToggle('#fiduciaire', 'show')
-//.addTo(controller)
-//.addIndicators();
-//
-//var scene = new ScrollMagic.Scene()
-//.triggerElement('#partners')
-//.setClassToggle('.quote', 'show')
-//.addTo(controller)
-//.addIndicators();
-//
-//var scene = new ScrollMagic.Scene()
-//.triggerElement('#control')
-//.setClassToggle('#control', 'show')
-//.addTo(controller)
-//.addIndicators();
-
-//var scene = new ScrollMagic.Scene()
-//.triggerElement('#services')
-//.setClassToggle('.show')
-//.addTo(controller)
-//.addIndicators();
-
-//var scene = new ScrollMagic.Scene()
-//.triggerElement('#values')
-//.setClassToggle('.show')
-//.addTo(controller)
-//.addIndicators();

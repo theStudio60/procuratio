@@ -6,7 +6,7 @@ if( have_rows('group_control') ):
   $title = get_sub_field('title');
   $content = get_sub_field('wysiwyg');
 ?>
-<section id="control" class="section controle" data-aos="fade-in">
+<section id="control" class="section controle" data-aos="fade-up">
  <br>
   <div class="container-fluid section__container--fluid">
     <div class="container-l">
