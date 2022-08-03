@@ -80,7 +80,7 @@
   <header id="masthead" class="header-mobile" >
     <div class="header-mobile__container"> 
       <div class="header-mobile__row ">
-        <div class="header-mobile__language header-mobile__col">
+        <div class="header-mobile__language">
           <a href="#" class="nav-link">DE</a>
           <a href="#" class="nav-link">EN</a>
           <a href="#" class="nav-link">FR</a>

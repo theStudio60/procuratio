@@ -51,10 +51,11 @@ function closePopup() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    var links = document.querySelectorAll(".navbar-nav li a:not([href='#'])");
+    var links = document.querySelectorAll(".mobile-menu li a:not([href='#'])");
 
     for (var x = 0; x < links.length; x++) {
         links[x].onclick = function() {
+            console.log(links[x]);
             closeMenu();
         };
     }
