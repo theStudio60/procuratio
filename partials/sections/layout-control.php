@@ -7,26 +7,22 @@ if( have_rows('group_control') ):
   $content = get_sub_field('wysiwyg');
 ?>
 <section id="control" class="section controle" data-aos="fade-up">
- <br>
-  <div class="container-fluid section__container--fluid">
-    <div class="container-l">
+    <div class="container py-3">
       <div class="row section__row">
-        <div class="section__col">
+        <div class="col-12 col-lg-9">
             <?php if ($title) :  ?>
-            <h2 class="section__title section__title--dark">
+            <h2 class="text-white">
               <?= $title ?>
             </h2>
             <?php endif;?>
             <?php if ($content) :  ?>
-              <p class?"section__content--dark"> 
+              <p class="section__content--dark"> 
                 <?= $content?>
               </p>
             <?php endif;?>
           </div>   
         </div> 
       </div>
-    </div>
-  <br>
 </section>
 <?php endwhile; ?>
 <?php endif; ?>

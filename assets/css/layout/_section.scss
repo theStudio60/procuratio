@@ -217,12 +217,9 @@ p {
   p,
   ul, 
   li {
-    @extend .col-12,
-    .col-md-9;
     color : $light;
   }
   li {
-    @extend .col-md-6;
     list-style : circle;
   }
 }

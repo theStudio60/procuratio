@@ -28,7 +28,7 @@
 
             <div class="row quote-title">
               <?php if ($subtitle) :  ?>
-              <h3 class="section__subtitle col-9 col-md-6">
+              <h3 class="section__subtitle col-9 col-md-6 my-0">
                 <?= $subtitle ?>
               </h3>
               <?php endif;?>
@@ -43,7 +43,7 @@
 
             <div class="col-sm section__col">
               <?php if ($description) :  ?>
-              <p class="quote-text">
+              <p>
                 <?= $description ?>
               </p>
               <?php endif;?>
