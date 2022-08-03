@@ -171,8 +171,12 @@ p {
   .card {
     border: 10px solid $dark;
     margin: 1rem;
-    width: calc(50% - 2rem);
-    min-height: 250px;
+    width: 100%;
+    min-height: 200px;
+    @include media-breakpoint-up(md) {
+      width: calc(50% - 2rem);
+      min-height: 250px;
+    }
   }
   .arc,
   .hide-arc {
@@ -229,7 +233,9 @@ p {
 }
 
 .card-value {
-  margin: 1em;
+  margin: 1rem;
+  min-height: 400px;
+  width: calc(50% -2rem);
   padding: 1em;
   color : $light;
   text-align: center;

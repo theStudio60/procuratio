@@ -9,7 +9,7 @@ if( have_rows('group_control') ):
 <section id="control" class="section controle" data-aos="fade-up">
     <div class="container py-3">
       <div class="row section__row">
-        <div class="col-12 col-lg-9">
+        <div class="col-12 col-lg-9 mx-auto">
             <?php if ($title) :  ?>
             <h2 class="text-white">
               <?= $title ?>

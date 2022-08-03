@@ -8,6 +8,9 @@
  
    <section id="services" class="section">
     <div class="container py-3 section__container services">
+    <div class="row">
+      <div class="col-12 col-lg-9 mx-auto">
+
       <?php if ($title) :  ?>
         <h2 class="section__title">
           <?= $title ?>
@@ -18,41 +21,46 @@
           <?= $content ?>
         </p>
       <?php endif;?>
-      <div class="row">   
-        <?php  
+        <div class="container">
+          <div class="row">
+            <?php  
 
-          if( have_rows('subgroup_services') ):
-          while( have_rows('subgroup_services') ): the_row();
-          $subtitle = get_sub_field('service');
-          $price = get_sub_field('price');
-          $content = get_sub_field('wysiwyg');
+              if( have_rows('subgroup_services') ):
+              while( have_rows('subgroup_services') ): the_row();
+              $subtitle = get_sub_field('service');
+              $price = get_sub_field('price');
+              $content = get_sub_field('wysiwyg');
 
-        ?>
-        <div class="card px-3" data-aos="fade-right">
-          <div class="hide-arc"></div>
-          <div class="arc"></div>
-          <?php if ($subtitle) :  ?>
-            <span class="lead my-auto">
-              <?= $subtitle ?>
-            </span>
-          <?php endif;?>
-          <?php if ($content) :  ?>
-              <?= $content ?>
-          <?php endif;?>
-          <?php if ($price) :  ?>
-            <div class="price">
-              <?= $price ?>
+            ?>
+            <div class="card px-3" data-aos="fade-right">
+              <div class="hide-arc"></div>
+              <div class="arc"></div>
+              <?php if ($subtitle) :  ?>
+                <span class="lead my-auto">
+                  <?= $subtitle ?>
+                </span>
+              <?php endif;?>
+              <?php if ($content) :  ?>
+                  <?= $content ?>
+              <?php endif;?>
+              <?php if ($price) :  ?>
+                <div class="price">
+                  <?= $price ?>
+                </div>
+              <?php endif;?>
             </div>
-          <?php endif;?>
+            <?php endwhile; ?>
+            <?php endif; ?>
+          </div>
         </div>
-        <?php endwhile; ?>
-        <?php endif; ?>
+        <?php if ($conclusion) :  ?>
+          <p>
+            <?= $conclusion ?>
+          </p>
+        <?php endif;?>
       </div>
-      <?php if ($conclusion) :  ?>
-        <p>
-          <?= $conclusion ?>
-        </p>
-      <?php endif;?>
+      
+      </div>
     </div>
   </section>
   <?php endwhile; ?>

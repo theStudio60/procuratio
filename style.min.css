@@ -821,7 +821,7 @@ p{font-family:"Josefin Sans",sans-serif;color:#002369;font-weight:300;text-align
 .section__cta{border:0;border-radius:5px;padding:.5rem 1rem;text-transform:uppercase;text-align:center;font-family:"Josefin Sans",sans-serif;font-weight:700;color:#f8ffff;background-image:linear-gradient(-135deg,#5d7cba 0,#19e1e1 100%)}
 .section__half{height:auto !important;font-weight:300}
 .services{position:relative}
-.services .card{border:10px solid #002369;margin:1rem;width:calc(50% - 2rem);min-height:250px}
+.services .card{border:10px solid #002369;margin:1rem;width:100%;min-height:200px}
 .services .arc,.services .hide-arc{position:absolute;border:10px solid #002369;background:#fff;width:100px;height:100px;border-radius:100%;top:-50px;left:-50px;-webkit-clip-path:polygon(50% 50%,100% 50%,100% 100%,50% 100%);clip-path:polygon(50% 50%,100% 50%,100% 100%,50% 100%)}
 .services .hide-arc{width:90px;height:90px;border:0;-webkit-clip-path:polygon(44% 44%,100% 28%,100% 100%,37% 100%);clip-path:polygon(44% 44%,100% 28%,100% 100%,37% 100%)}
 .services h3{text-align:center}
@@ -831,7 +831,7 @@ p{font-family:"Josefin Sans",sans-serif;color:#002369;font-weight:300;text-align
 .section.controle{background:#002369;color:#f8ffff}
 .section.controle p,.section.controle ul,.section.controle li{color:#f8ffff}
 .section.controle li{list-style:circle}
-.card-value{margin:1em;padding:1em;color:#f8ffff;text-align:center;background-image:linear-gradient(-135deg,#5d7cba 0,#19e1e1 100%);-webkit-box-shadow:inset -2px -2px 8px 2px rgba(247,255,255,0.35),inset 2px 2px 8px 2px rgba(0,35,105,0.35);box-shadow:inset -2px -2px 8px 2px rgba(247,255,255,0.35),inset 2px 2px 8px 2px rgba(0,35,105,0.35);border-radius:10px}
+.card-value{margin:1rem;min-height:400px;width:calc(50% -2rem);padding:1em;color:#f8ffff;text-align:center;background-image:linear-gradient(-135deg,#5d7cba 0,#19e1e1 100%);-webkit-box-shadow:inset -2px -2px 8px 2px rgba(247,255,255,0.35),inset 2px 2px 8px 2px rgba(0,35,105,0.35);box-shadow:inset -2px -2px 8px 2px rgba(247,255,255,0.35),inset 2px 2px 8px 2px rgba(0,35,105,0.35);border-radius:10px}
 .card-value .img-container{margin:auto auto;width:50px;height:80px}
 .card-value .picto{margin:auto auto;width:50px;height:auto}
 .card-value p{color:#f8ffff}
@@ -1631,6 +1631,7 @@ html:not(.no-js) [data-aos=flip-down].aos-animate{-webkit-transform:perspective(
 .navbar-expand-md .navbar-nav-scroll{overflow:visible}
 .navbar-expand-md .navbar-collapse{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important;-ms-flex-preferred-size:auto;flex-basis:auto}
 .navbar-expand-md .navbar-toggler{display:none}
+.services .card{width:calc(50% - 2rem);min-height:250px}
 }@media screen and (min-width:768px){.button,.header-mobile__cta,.slick-prev,.slick-next{font-size:14px}
 }@media(min-width:992px){.d-lg-none,.header-mobile,.header-mobile__burger{display:none !important}
 .d-lg-inline{display:inline !important}

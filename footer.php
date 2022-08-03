@@ -36,27 +36,26 @@ if( have_rows('contact_infos') ):
   $gmap = get_sub_field('gmap_url');
 ?>
 <footer class="footer bg-<?= $bg_color ?> text-<?= $txt_color ?>">
-  <br>
   <div id="contact" class="footer__container contact-form">
     <h2>contact</h2>
-    <div class="footer__row">
-      <div class="footer__col">
+    <div class="row">
+      <div class="col-12 col-lg-6 order-2 order-lg-1">
        <?= do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]')?>
       </div>
-      <div class="col-12 col-lg-3 col-xl-6">
+      <div class="col-12 col-lg-6 order-1 order-lg-2">
         <div class="row">
           <div class="contact-text col-12">
-            <p>
-              <i class="fa fa-phone mr-2"></i> <?= $phone ?>
+            <p class="my-2">
+              <i class="fa fa-phone mr-1"></i> <?= $phone ?>
             </p>
-            <p>
-              <i class="fa fa-envelope mr-2"></i> <?= $email ?>
+            <p class="my-2">
+              <i class="fa fa-envelope mr-1"></i> <?= $email ?>
             </p>
-            <p>
-              <i class="fa fa-map-marker mr-2"></i> <?= $adress ?>
+            <p class="my-2">
+              <i class="fa fa-map-marker mr-1"></i> <?= $adress ?>
             </p>
           </div>
-          <iframe class="contact-map col-12"  src="<?= $gmap ?>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe class="contact-map col-12 mb-3"  src="<?= $gmap ?>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
@@ -88,7 +87,6 @@ if( have_rows('contact_infos') ):
       </div>
     </div><!-- end row -->
   </div><!-- end container -->
-  <br>
 </footer>
 
 <?php
