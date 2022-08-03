@@ -21,15 +21,11 @@ if( have_rows('group_presentation') ):
   >  
     <br>
     <div class="container-fluid section__container">
-      <div class="row section__row">
+      <div class="row mb-3">
         <div class="col-12 col-lg-6 block" id="quisommesnous" data-aos="fade-down">
-          <div class="section__img section__img--wrap"> 
-           <img 
-            src=" <?php echo $image['url']; ?> ">
-          </div>
           <div class="section-text">
             <?php if ($title) :  ?>
-            <h2 class="section__title">
+            <h2 class="section__title mb-3">
               <?= $title ?>
             </h2>
              <?php endif;?>
@@ -43,21 +39,30 @@ if( have_rows('group_presentation') ):
             <?php endif;?>
           </div>   
         </div> 
-
-        <div class="col-12 col-lg-6 block" id="fiduciaire" data-aos="fade-in">
+        <div class="col-12 col-lg-6 d-flex"  data-aos="fade-down"> 
+          <div class="my-3 my-lg-auto mx-auto w-100 d-flex"> 
+           <img class="w-50 m-auto"
+            src=" <?php echo $image['url']; ?> ">
+          </div>  
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12 col-lg-6 d-flex order-2 order-lg-1"  data-aos="fade-down"> 
+          <div class="my-3 my-lg-auto mx-auto w-100 d-flex"> 
+           <img class="w-50 m-auto"
+            src=" <?php echo $image_2nd['url']; ?> ">
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 block order-1 order-lg-2" id="fiduciaire" data-aos="fade-in">
           <div class="section-text">
             <?php if ($title_2nd) :  ?>
-            <h2 class="section__title">
+            <h2 class="section__title mb-3">
               <?= $title_2nd ?>
             </h2>
             <?php endif;?>
             <?php if ($content_2nd) :  ?>
               <?= $content_2nd ?>
             <?php endif;?>
-          </div>
-          <div class="section__img col-4"> 
-           <img 
-            src=" <?php echo $image_2nd['url']; ?> ">
           </div>
         </div>
       </div>

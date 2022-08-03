@@ -59,6 +59,7 @@ p {
     }
     .block {
       display: flex;
+      flex-wrap: wrap;
       img {
         object-fit: cover;
       }
@@ -101,11 +102,16 @@ p {
         .mx-0;
     }
     &__img {
+        margin: 0 auto;
         img {
             @extend .img-fluid;
         }
         &--wrap {
-          float: left;
+          @extend .col-9,
+          .col-md-6,
+          .order-1,
+          .order-md-2;
+//          .col-lg-4;
         }
     }
     &__container {
@@ -188,6 +194,11 @@ p {
   h3 {
     text-align: center;
   }
+  p {
+    @extend .col-12,
+    .col-md-9;
+    margin: 0 auto;
+  }
 }
 
 .presentation {
@@ -206,7 +217,13 @@ p {
   p,
   ul, 
   li {
+    @extend .col-12,
+    .col-md-9;
     color : $light;
+  }
+  li {
+    @extend .col-md-6;
+    list-style : circle;
   }
 }
 
