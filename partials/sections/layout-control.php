@@ -16,9 +16,9 @@ if( have_rows('group_control') ):
             </h2>
             <?php endif;?>
             <?php if ($content) :  ?>
-              <p class="section__content--dark"> 
+              <div class="section__content--dark"> 
                 <?= $content?>
-              </p>
+              </div>
             <?php endif;?>
           </div>   
         </div> 
