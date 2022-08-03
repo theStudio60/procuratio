@@ -44,9 +44,20 @@
   max-width: 100px;
 }
 
-.show {
-  opacity: 1;
-  left: 0;
-  right: 0;
+.target {
+  opacity: 0;
   transition: .5s 0s ease-in-out;
+}
+
+.dropdown {
+  opacity: 1;
+}
+
+.arrow {
+  text-align: center;
+}
+
+.arrow-rotate {
+  transform: rotate(180deg);
+  transform-origin: center;
 }

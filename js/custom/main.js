@@ -152,3 +152,20 @@ function scrollToTop() {
 
 scrollToTopBtn.addEventListener("click", scrollToTop);
 document.addEventListener("scroll", handleScroll);
+
+
+
+var droppers = document.querySelectorAll('.dropper');
+for (var x = 0; x < droppers.length; x++) {
+    droppers[x].onclick = function() {
+        var dropID = this.id.slice(-2);
+        var target = document.getElementById('target-' + dropID + '');
+        var arrow = document.getElementById('arrow-' + dropID + '');
+        target.classList.toggle('d-block');
+        target.classList.toggle('d-none');
+        target.classList.toggle('dropdown');
+        arrow.classList.toggle('arrow-rotate');
+        console.log(arrow);
+        
+    };
+}
