@@ -11,17 +11,18 @@
       ul {
         @extend .m-0,
         .p-0;
-        flex-direction: column;
+//        flex-direction: column;
 //        height: 100px;
         li {
           @extend .m-0;
         }
         a.nav-link,
         a.nav-link:visited {
-          @extend .p-0;
+          @extend .py-2;
           color: $secondary !important;
           font-family: $font-title;
           font-weight: $weight-bold;
+          text-align: center;
         }
       }  
     }

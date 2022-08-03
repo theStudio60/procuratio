@@ -36,9 +36,14 @@ if( have_rows('contact_infos') ):
   $gmap = get_sub_field('gmap_url');
 ?>
 <footer class="footer bg-<?= $bg_color ?> text-<?= $txt_color ?>">
-  <div id="contact" class="footer__container contact-form">
-    <h2>contact</h2>
+  <div id="contact" class="footer__container contact-form mx-auto">
     <div class="row">
+     <div class="col-12">
+       <h2>contact</h2>
+     </div>
+     <div class="col-12 col-lg-9">
+      <div class="container d-flex w-100">
+        <div class="row mx-auto">
       <div class="col-12 col-lg-6 order-2 order-lg-1">
        <?= do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]')?>
       </div>
@@ -58,6 +63,9 @@ if( have_rows('contact_infos') ):
           <iframe class="contact-map col-12 mb-3"  src="<?= $gmap ?>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
+        </div>
+      </div>
+     </div>
     </div>
   </div>
   <?php
@@ -65,14 +73,29 @@ if( have_rows('contact_infos') ):
       'theme_location'  => 'header-menu',
       'depth'           => 1, // 1 = no dropdowns, 2 = with dropdowns.
       'container'       => 'nav',
-      'container_class' => '',
-      'container_id'    => 'navMenu',
-      'menu_class'      => 'header__menu ',
+      'container_class' => 'd-none d-lg-flex w-100 mt-5 mb-2',
+      'container_id'    => 'footerMenu',
+      'menu_class'      => 'footer__menu d-none d-lg-flex w-100 justify-content-around',
       'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
       'walker'          => new WP_Bootstrap_Navwalker(),
       ));
  
   ?>  
+  
+  <?php
+      wp_nav_menu( array(
+      'theme_location'  => 'header-menu',
+      'depth'           => 1, // 1 = no dropdowns, 2 = with dropdowns.
+      'container'       => 'nav',
+      'container_class' => 'd-flex d-lg-none w-100',
+      'container_id'    => 'footerMenu-mobile',
+      'menu_class'      => 'footer__menu d-block d-lg-none mx-auto w-100',
+      'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+      'walker'          => new WP_Bootstrap_Navwalker(),
+      ));
+ 
+  ?>  
+  
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 my-2 text-center " style="font-size:13px;">
