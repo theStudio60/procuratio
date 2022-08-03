@@ -171,7 +171,8 @@ p {
   .card {
     border: 10px solid $dark;
     margin: 1rem;
-    padding: 2.5rem 1.5rem;
+    width: calc(50% - 2rem);
+    min-height: 250px;
   }
   .arc,
   .hide-arc {
@@ -194,10 +195,13 @@ p {
   h3 {
     text-align: center;
   }
+  span.lead {
+    font-family: $font-title;
+  }
   p {
-    @extend .col-12,
-    .col-md-9;
-    margin: 0 auto;
+//    @extend .col-12,
+//    .col-md-9;
+//    margin: 0 auto;
   }
 }
 

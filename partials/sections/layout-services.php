@@ -7,8 +7,7 @@
 ?>
  
    <section id="services" class="section">
-    <br>
-    <div class="container section__container services">
+    <div class="container py-3 section__container services">
       <?php if ($title) :  ?>
         <h2 class="section__title">
           <?= $title ?>
@@ -19,7 +18,7 @@
           <?= $content ?>
         </p>
       <?php endif;?>
-      <div class="row section__row">   
+      <div class="row">   
         <?php  
 
           if( have_rows('subgroup_services') ):
@@ -29,13 +28,13 @@
           $content = get_sub_field('wysiwyg');
 
         ?>
-        <div class="section__half card" data-aos="fade-right">
+        <div class="card px-3" data-aos="fade-right">
           <div class="hide-arc"></div>
           <div class="arc"></div>
           <?php if ($subtitle) :  ?>
-            <h3 class="section__subtitle">
+            <span class="lead my-auto">
               <?= $subtitle ?>
-            </h3>
+            </span>
           <?php endif;?>
           <?php if ($content) :  ?>
               <?= $content ?>
@@ -55,7 +54,6 @@
         </p>
       <?php endif;?>
     </div>
-    <br>
   </section>
   <?php endwhile; ?>
 <?php endif; ?>
