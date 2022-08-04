@@ -60,7 +60,7 @@
 							
       </div> 
 	  //*/ ?>
-	    <div class="mx-auto">
+	    <div class="container w-25 p-0 mx-auto">
 	 	 <?php languages_list_navbar();?>
 	    </div>
       <div class="header__row"> 
