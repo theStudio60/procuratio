@@ -57,8 +57,8 @@ acf_add_options_page(array(
           if($l['language_code']){
 
 
-            if($l['language_code'] == 'de-de'){
-              $l['language_code'] = 'DE';
+            if($l['language_code'] == 'it-it'){
+              $l['language_code'] = 'IT';
             }
             if($l['language_code'] == 'fr-fr'){
               $l['language_code'] = 'FR';
