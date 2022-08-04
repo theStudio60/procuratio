@@ -23,7 +23,7 @@ if( have_rows('group_presentation') ):
     <div class="container-fluid section__container">
       <div class="row mb-3">
         <div class="col-12 col-lg-6 block" id="quisommesnous" data-aos="fade-down">
-          <div class="section-text">
+          <div class="section-text m-auto">
             <?php if ($title) :  ?>
             <h2 class="section__title mb-3">
               <?= $title ?>
@@ -56,7 +56,7 @@ if( have_rows('group_presentation') ):
         <div class="col-12 col-lg-6 block order-1 order-lg-2" id="fiduciaire" data-aos="fade-in">
           <div class="section-text">
             <?php if ($title_2nd) :  ?>
-            <h2 class="section__title mb-3">
+            <h2 class="section__title m-auto">
               <?= $title_2nd ?>
             </h2>
             <?php endif;?>
