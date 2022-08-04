@@ -21,9 +21,7 @@
           <?= $content ?>
         </p>
       <?php endif;?>
-	</div>
-      <div class="col-12 mx-auto">
-				
+ 
         <div class="container">
           <div class="row">
             <?php  
@@ -35,7 +33,7 @@
               $content = get_sub_field('wysiwyg');
 
             ?>
-            <div class="col-12 col-md-6 col-lg-3 card px-3" data-aos="fade-right">
+            <div class="col-12   col-lg-4 card px-3" data-aos="fade-right">
               <div class="hide-arc"></div>
               <div class="arc"></div>
               <?php if ($subtitle) :  ?>
