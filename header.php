@@ -72,7 +72,7 @@
           'container'       => 'nav',
           'container_class' => '',
           'container_id'    => 'navMenu',
-          'menu_class'      => 'header__menu ',
+          'menu_class'      => 'container ',
           'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
           'walker'          => new WP_Bootstrap_Navwalker(),
           ));
