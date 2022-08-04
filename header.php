@@ -51,12 +51,17 @@
           </div>
         </a>
       </div>
+	    <?php 
+	/*
       <div class="header-mobile__language">
         <a href="#" class="nav-link">DE</a>
         <a href="#" class="nav-link">EN</a>
         <a href="#" class="nav-link">FR</a>
-							<?php languages_list_navbar();?>
+							
       </div> 
+	  //*/ ?>
+	    
+	  <?php languages_list_navbar();?>
       <div class="header__row"> 
         <div class="header__menu">
           <?php
@@ -81,12 +86,15 @@
   <header id="masthead" class="header-mobile" >
     <div class="header-mobile__container"> 
       <div class="header-mobile__row ">
+	      <?php /*
         <div class="header-mobile__language">
           <a href="#" class="nav-link">DE</a>
           <a href="#" class="nav-link">EN</a>
           <a href="#" class="nav-link">FR</a>
-									<?php languages_list_navbar();?>
         </div> 
+	      //*/ ?>
+									<?php languages_list_navbar();?>
+	      
         <div class="header-mobile__brand mr-auto header-mobile__col">
           <a href="<?= get_home_url() ?>" onclick="closeMenu()" >
             <div class=" header-mobile__brand__logo">
