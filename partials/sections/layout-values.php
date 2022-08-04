@@ -7,18 +7,16 @@
 ?>    
 
 <section id="values" class="section mt-5">
-
-      <?php if ($title) :  ?>
 	  <div class="container">
     <div class="row"> 
-      	<div class="col-12 col-lg-9">
+      	<div class="col-12 col-lg-9 mx-auto">
+      <?php if ($title) :  ?>
+
       	<h2 class="section__title">
         <?= $title ?>
       	</h2>
-	</div>
-    </div>
-  </div>
-      <?php endif;?> 
+
+      <?php endif;?>  
       <div class="container">
         <div class="row">
        <?php  
@@ -50,7 +48,9 @@
       <?php endif; ?>
         </div>
       </div>
- 
+ 	</div>
+    </div>
+  </div>
 </section>
 
 
