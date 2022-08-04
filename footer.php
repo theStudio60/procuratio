@@ -38,10 +38,9 @@ if( have_rows('contact_infos') ):
 <footer class="footer bg-<?= $bg_color ?> text-<?= $txt_color ?>">
   <div id="contact" class="footer__container contact-form mx-auto">
     <div class="row">
-     <div class="col-12">
-       <h2>contact</h2>
-     </div>
-     <div class="col-12 col-lg-9">
+ 
+     <div class="col-12 col-lg-9 mx-auto">
+			 <h2 class="mb-3" >contact</h2>
       <div class="container d-flex w-100">
         <div class="row mx-auto">
       <div class="col-12 col-lg-6 order-2 order-lg-1">
