@@ -32,7 +32,7 @@
               $content = get_sub_field('wysiwyg');
 
             ?>
-            <div class="card px-3" data-aos="fade-right">
+            <div class="col-3 card px-3" data-aos="fade-right">
               <div class="hide-arc"></div>
               <div class="arc"></div>
               <?php if ($subtitle) :  ?>
