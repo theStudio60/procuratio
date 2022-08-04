@@ -34,7 +34,7 @@
                 
                 <?= $subtitle ?>
               </h3>
-              <i class="fa fa-carret-down col-1 arrow" id="arrow-<?= $counterA; echo $counterB ?>"></i>
+              <i class="fa fa-caret-down col-1 arrow" id="arrow-<?= $counterA; echo $counterB ?>"></i>
               <?php endif;?>
               
               <?php if ($image) :  ?>
