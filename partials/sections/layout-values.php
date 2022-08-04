@@ -28,7 +28,7 @@
         $content = get_sub_field('wysiwyg');
 
       ?>
-        <div class="col-12 col-md-6 mx-auto">
+        <div class="col-12 col-md-6 mx-0 mx-lg-auto">
           <div class="card-value" data-aos="fade-left">
           <div class="img-container">
             <img class="section__img picto" 
