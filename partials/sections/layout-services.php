@@ -21,6 +21,9 @@
           <?= $content ?>
         </p>
       <?php endif;?>
+			</div>
+      <div class="col-12 mx-auto">
+				
         <div class="container">
           <div class="row">
             <?php  
