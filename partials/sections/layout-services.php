@@ -34,7 +34,7 @@
 
             ?>
 	<div class="col-12   col-lg-3">
-            <div class="card px-3" data-aos="fade-right">
+            <div class="card w-100 px-3" data-aos="fade-right">
               <div class="hide-arc"></div>
               <div class="arc"></div>
               <?php if ($subtitle) :  ?>
