@@ -11,11 +11,11 @@
       <?php if ($title) :  ?>
 	  <div class="container">
     <div class="row"> 
-      <div class="col-12 col-lg-9 mx-auto">
-      <h2 class="section__title">
+      	<div class="col-12 col-lg-9">
+      	<h2 class="section__title">
         <?= $title ?>
-      </h2>
-				   </div>
+      	</h2>
+	</div>
     </div>
   </div>
       <?php endif;?> 
