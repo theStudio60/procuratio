@@ -55,6 +55,7 @@
         <a href="#" class="nav-link">DE</a>
         <a href="#" class="nav-link">EN</a>
         <a href="#" class="nav-link">FR</a>
+							<?php languages_list_navbar();?>
       </div> 
       <div class="header__row"> 
         <div class="header__menu">
@@ -84,6 +85,7 @@
           <a href="#" class="nav-link">DE</a>
           <a href="#" class="nav-link">EN</a>
           <a href="#" class="nav-link">FR</a>
+									<?php languages_list_navbar();?>
         </div> 
         <div class="header-mobile__brand mr-auto header-mobile__col">
           <a href="<?= get_home_url() ?>" onclick="closeMenu()" >
