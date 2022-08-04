@@ -60,8 +60,9 @@
 							
       </div> 
 	  //*/ ?>
-	    
-	  <?php languages_list_navbar();?>
+	    <div class="mx-auto">
+	 	 <?php languages_list_navbar();?>
+	    </div>
       <div class="header__row"> 
         <div class="header__menu">
           <?php
