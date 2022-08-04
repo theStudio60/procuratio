@@ -9,7 +9,7 @@
    <section id="services" class="section">
     <div class="container py-3 section__container services">
     <div class="row">
-      <div class="col-12 col-lg-9 ">
+      <div class="col-12 col-lg-9 mx-auto ">
 
       <?php if ($title) :  ?>
         <h2 class="section__title">
@@ -33,7 +33,7 @@
               $content = get_sub_field('wysiwyg');
 
             ?>
-	<div class="col-12   col-lg-3">
+	<div class="col-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card w-100 px-3" data-aos="fade-right">
               <div class="hide-arc"></div>
               <div class="arc"></div>
@@ -56,17 +56,18 @@
             <?php endif; ?><?php //end subgroup_services ?>
 		  
 		
-        <?php if ($conclusion) :  ?>
-		    <div class="col-12 col-lg-9 ">
-          <p>
-            <?= $conclusion ?>
-          </p>
-		  </div>
-        <?php endif;?>
+
 		  
           </div>
         </div>
-
+        <?php if ($conclusion) :  ?>
+		  
+          <p class="mt-3" >
+            <?= $conclusion ?>
+          </p>
+	
+        <?php endif;?>
+	      
       </div>
       
       </div>
