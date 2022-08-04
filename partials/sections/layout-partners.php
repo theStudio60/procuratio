@@ -28,11 +28,13 @@
 
             <div class="row quote-title">
               <?php if ($subtitle) :  ?>
-              <h3 class="section__subtitle col-5 my-0 dropper" id="dropper-<?= $counterA; echo $counterB ?>">
+              <h3 
+									style="cursor:pointer;"
+									class="section__subtitle col-5 my-0 dropper" id="dropper-<?= $counterA; echo $counterB ?>">
                 
                 <?= $subtitle ?>
               </h3>
-              <i class="fa fa-arrow-down col-1 arrow" id="arrow-<?= $counterA; echo $counterB ?>"></i>
+              <i class="fa fa-carret-down col-1 arrow" id="arrow-<?= $counterA; echo $counterB ?>"></i>
               <?php endif;?>
               
               <?php if ($image) :  ?>
