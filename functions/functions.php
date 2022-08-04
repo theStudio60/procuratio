@@ -58,13 +58,13 @@ acf_add_options_page(array(
 
 
             if($l['language_code'] == 'de-de'){
-              $l['language_code'] = 'de';
+              $l['language_code'] = 'DE';
             }
             if($l['language_code'] == 'fr-fr'){
-              $l['language_code'] = 'fr';
+              $l['language_code'] = 'FR';
             }
             if($l['language_code'] == 'en-en'){
-              $l['language_code'] = 'en';
+              $l['language_code'] = 'EN';
             }
             
 
@@ -77,14 +77,14 @@ acf_add_options_page(array(
           //*
           
           if(!$l['active']) :
-            echo '<li><a class="navbar__language-list__item" href="'.$l['url'].'">';
+            echo '<li class="nav-link" ><a style=" text-decoration:none; text-transform:uppercase;" class=" " href="'.$l['url'].'">';
             echo icl_disp_language($l['language_code']);
             //if(!$l['active']) 
             echo '</a></li>';
           endif;
         //*/
         if( $l['active']) :
-        echo '<li><a class="navbar__language-list__item--active" href="'.$l['url'].'">';
+        echo '<li class="nav-link" ><a style=" text-decoration:underline; text-transform:uppercase;" class=" " href="'.$l['url'].'">';
         echo icl_disp_language($l['language_code']);
         //if(!$l['active']) 
         echo '</a></li>';
