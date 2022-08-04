@@ -54,9 +54,9 @@ if( have_rows('group_presentation') ):
           </div>
         </div>
         <div class="col-12 col-lg-6 block order-1 order-lg-2" id="fiduciaire" data-aos="fade-in">
-          <div class="section-text">
+          <div class="section-text  m-auto">
             <?php if ($title_2nd) :  ?>
-            <h2 class="section__title m-auto">
+            <h2 class="section__title">
               <?= $title_2nd ?>
             </h2>
             <?php endif;?>
