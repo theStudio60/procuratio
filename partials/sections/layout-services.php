@@ -33,7 +33,7 @@
               $content = get_sub_field('wysiwyg');
 
             ?>
-	<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+	<div class="col-12 col-md-6 col-lg-4">
             <div class="card w-100 px-3" data-aos="fade-right">
               <div class="hide-arc"></div>
               <div class="arc"></div>
