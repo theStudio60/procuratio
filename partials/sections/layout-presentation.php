@@ -45,7 +45,7 @@ if( have_rows('group_presentation') ):
           </div>  
         </div>
       </div>
-      <div class="d-none d-lg-block p-5"></div>
+      <div class="d-none d-lg-block p-3"></div>
       <div class="row mt-3">
         <div class="col-12 col-lg-6 d-flex order-2 order-lg-1"  data-aos="fade-down"> 
           <div class="my-3 my-lg-auto mx-auto w-100 d-flex"> 
