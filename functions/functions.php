@@ -44,3 +44,57 @@ acf_add_options_page(array(
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
 ));
+
+
+// wpml language list navbar
+
+    function languages_list_navbar(){
+      $languages = icl_get_languages('skip_missing=0&orderby=id&order=ASC');
+      if(!empty($languages)){
+        echo '<ul id="navbar__language-list" class="navbar__language-list">';
+        foreach($languages as $l){
+           //echo '<li class=" ">';
+          if($l['language_code']){
+
+
+            if($l['language_code'] == 'de-de'){
+              $l['language_code'] = 'de';
+            }
+            if($l['language_code'] == 'fr-fr'){
+              $l['language_code'] = 'fr';
+            }
+            if($l['language_code'] == 'en-en'){
+              $l['language_code'] = 'en';
+            }
+            
+
+            //if(!$l['active']) echo '<a class="navbar__language-list__item" href="'.$l['url'].'">';
+            //echo icl_disp_language($l['language_code']);
+            //if(!$l['active']) echo '</a>';
+          }
+          //echo '';
+
+          //*
+          
+          if(!$l['active']) :
+            echo '<li><a class="navbar__language-list__item" href="'.$l['url'].'">';
+            echo icl_disp_language($l['language_code']);
+            //if(!$l['active']) 
+            echo '</a></li>';
+          endif;
+        //*/
+        if( $l['active']) :
+        echo '<li><a class="navbar__language-list__item--active" href="'.$l['url'].'">';
+        echo icl_disp_language($l['language_code']);
+        //if(!$l['active']) 
+        echo '</a></li>';
+        endif;
+       //echo '</li>';
+        }
+        echo '</ul>';
+      }
+    }
+
+// hide wpml bug
+
+add_filter( 'wpml_custom_field_original_data', '__return_null' );
