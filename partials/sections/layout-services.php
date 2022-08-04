@@ -33,7 +33,8 @@
               $content = get_sub_field('wysiwyg');
 
             ?>
-            <div class="col-12   col-lg-4 card px-3" data-aos="fade-right">
+	<div class="col-12   col-lg-3">
+            <div class="card px-3" data-aos="fade-right">
               <div class="hide-arc"></div>
               <div class="arc"></div>
               <?php if ($subtitle) :  ?>
@@ -50,9 +51,11 @@
                 </div>
               <?php endif;?>
             </div><?php //end  card  ?>
+	</div>
             <?php endwhile; ?>
             <?php endif; ?><?php //end subgroup_services ?>
-		  	      
+		  
+		
         <?php if ($conclusion) :  ?>
 		    <div class="col-12 col-lg-9 ">
           <p>
