@@ -36,7 +36,7 @@ if( have_rows('contact_infos') ):
   $gmap = get_sub_field('gmap_url');
 ?>
 <footer class="footer bg-<?= $bg_color ?> text-<?= $txt_color ?>">
-  <div id="contact" class="footer__container contact-form mx-auto">
+  <div id="contact" class="container">
     <div class="row">
  
      <div class="col-12 col-lg-9 mx-auto">
