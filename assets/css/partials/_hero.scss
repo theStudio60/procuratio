@@ -4,7 +4,7 @@
 
 .hero {
     //
-    min-height: 88vh;
+    min-height: 70vh;
     margin: 0 0 0 0!important;
     padding: 0!important;
     display: flex;
@@ -17,6 +17,7 @@
     @media (max-width: $screen-lg-min) {
         height: auto!important;
     }
+    /*
     &--home {
         @extend .h-100;
         height: calc(100vh - $navbar-height)!important;
@@ -25,6 +26,7 @@
         background-position-x: right!important;
         background-position-y: bottom!important;
     }
+    //*/
     /*
     &__slider {
         @extend .d-none,
@@ -148,7 +150,7 @@
         @extend .p-0;
         @extend .d-flex;
         height: 100%!important;
-        min-height: 400px!important;
+        min-height: 70vh!important;
         background-size: cover!important;
         overflow: hidden!important;
         //background: $overlay75;
@@ -199,7 +201,7 @@
             .mb-0;
             @media (max-width: $screen-lg-min) {
                 margin-top: $navbar-height;
-                min-height: calc(100vh - $navbar-height);
+                //min-height: calc(100vh - $navbar-height);
                 // min-height: auto;
             }
             &--default {
