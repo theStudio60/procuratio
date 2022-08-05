@@ -23,6 +23,7 @@ if ( has_post_thumbnail() ) {
     id="hero "
     class="hero d-flex h-75"
     style="
+    background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
     background: url('<?= $backgroundImg[0]; ?>');
@@ -34,7 +35,7 @@ if ( has_post_thumbnail() ) {
         <div class="hero__col hero__col-- "  >
           <?php //<div class="my-auto " style="  border-left:16px solid #00AE9B ;"> ?>
           <div class="my-auto " style=" "> 
-            <div class="p-2" data-aos="fade-right" data-aos-duration="800">
+            <div class="p-0 " data-aos="fade-right" data-aos-duration="800">
               <?php if ($title) :  ?>
                 <h1 class="hero__title mb-2 mt-5 mt-lg-auto"> 
                   <?= $title ?> 
@@ -60,25 +61,11 @@ if ( has_post_thumbnail() ) {
                     if (have_rows('global_settings')):
                       while (have_rows('global_settings')):the_row();
                         $thislink = get_sub_field('main_cta');
-                ?>
-                        <?php
-                        if ($thislink) :
-                          $thislink_title = $thislink['title'];
-                           // $link_target = $link['target'] ? $link['target'] : '_self';
-                        ?>
-                          <button 
-                          class="button" 
-                          onclick="location.href='<?= $thislink['url']?>'"
-                          >
-                            <?= $thislink_title ?>
-                          </button>
-                        <?php endif ; ?>
+                ?> 
                       <?php endwhile; ?>
                     <?php endif; ?>
                   <?php endwhile;?>
-                <?php endif;?>
-
-                <div class="p-2"></div>
+                <?php endif;?> 
 
                 <?php if ($link) :
                   $link_url = $link['url'];
