@@ -94,9 +94,13 @@
           <a href="#" class="nav-link">FR</a>
         </div> 
 	      //*/ ?>
-									<?php languages_list_navbar();?>
+        <div class="ml-0 mr-auto">
+          <?php languages_list_navbar();?>
+
+        </div>
+
 	      
-        <div class="header-mobile__brand mr-auto header-mobile__col">
+        <div class="header-mobile__brand mr-auto ml-auto ">
           <a href="<?= get_home_url() ?>" onclick="closeMenu()" >
             <div class=" header-mobile__brand__logo">
               <img    class=""  src="<?= $logotype_b ?>" alt="<?= get_bloginfo() ?>">
