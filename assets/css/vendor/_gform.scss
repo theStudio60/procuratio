@@ -69,7 +69,7 @@
             border-top: none;
         }
     }
-
+    /*
     .gform_button {
       border: none;
       font-family: $font-base;
@@ -87,7 +87,8 @@
     .gform_button:hover  {
       font-size: 1.5rem;
     }
-  
+  //*/
+    
     .ginput_container {
         @extend .w-100;
         input,
@@ -102,11 +103,12 @@
     .gfield_required .gfield_required_text {
         display: none!important;
     }
-    
+    /*
     .gform_button {
         @extend .button--primary;
         margin: 0 !important;
     }
+    //*/
     
     .gform_wrapper {
         @extend .my-auto;
