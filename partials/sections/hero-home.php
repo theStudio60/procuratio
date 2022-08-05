@@ -74,7 +74,7 @@ if ( has_post_thumbnail() ) {
                     type="button" 
                     style="" 
                     onclick="location.href='<?php echo $link_url ?>'"
-                    class="button button--transparent-primary" 
+                    class="button" 
                   > 
                       <?= $link_title ?>
                   </button> 

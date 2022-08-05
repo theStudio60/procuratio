@@ -61,7 +61,7 @@
       </div> 
 	  //*/ ?>
 	    <div class="container w-25 p-0 mx-auto">
-	 	 <?php // languages_list_navbar();?>
+	 	 <?php languages_list_navbar();?>
 	    </div>
       <div class="header__row"> 
         <div class="header__menu">
@@ -94,7 +94,7 @@
           <a href="#" class="nav-link">FR</a>
         </div> 
 	      //*/ ?>
-									<?php // languages_list_navbar();?>
+									<?php languages_list_navbar();?>
 	      
         <div class="header-mobile__brand mr-auto header-mobile__col">
           <a href="<?= get_home_url() ?>" onclick="closeMenu()" >

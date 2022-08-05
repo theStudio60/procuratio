@@ -9,9 +9,9 @@
     padding: 0!important;
     display: flex;
     background: $primary;
-    background-size: cover;
+    background-size: cover!important;
     background-repeat: no-repeat!important;
-    background-position: center;
+    background-position: center!important;
     z-index: 1;
     //*
     @media (max-width: $screen-lg-min) {
