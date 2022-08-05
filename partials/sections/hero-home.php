@@ -21,16 +21,14 @@ if ( has_post_thumbnail() ) {
 <?php } ;?>  
   <section  
     id="hero "
-    class="hero d-flex h-75"
+    class="hero d-flex  "
     style="
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
+ 
     background: url('<?= $backgroundImg[0]; ?>');
     "
   >  
   <div class="hero__overlay hero__overlay--default h-100 " >
-    <div class="hero__container h-100 mx-auto">
+    <div class="hero__container m-auto">
       <div class="hero__row">
         <div class="hero__col hero__col-- "  >
           <?php //<div class="my-auto " style="  border-left:16px solid #00AE9B ;"> ?>
