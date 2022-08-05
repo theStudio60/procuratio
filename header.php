@@ -103,7 +103,7 @@
         <div class="header-mobile__brand mr-auto ml-auto ">
           <a href="<?= get_home_url() ?>" onclick="closeMenu()" >
             <div class=" header-mobile__brand__logo">
-              <img    class=""  src="<?= $logotype_b ?>" alt="<?= get_bloginfo() ?>">
+              <img style="height:auto;width:160px" src="<?= $logotype_b ?>" alt="<?= get_bloginfo() ?>">
             </div>
           </a>
         </div>
