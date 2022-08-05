@@ -1,20 +1,20 @@
 h2 {
-  font-family: $font-title;
-  text-transform: uppercase;
-  font-weight: $weight-bold;
+    font-family: $font-title;
+    text-transform: uppercase;
+    font-weight: $weight-bold;
 }
 
 h3 {
-  font-family: $font-title;
-  font-weight : $weight-light;
-  text-transform: uppercase;
+    font-family: $font-title;
+    font-weight: $weight-light;
+    text-transform: uppercase;
 }
 
 p {
-  font-family: $font-base;
-  color : $dark;
-  font-weight: $weight-light;
-  text-align: justify;
+    font-family: $font-base;
+    color: $dark;
+    font-weight: $weight-light;
+    text-align: justify;
 }
 
 .section {
@@ -26,14 +26,14 @@ p {
     background-repeat: no-repeat;
     position: relative;
     transition: .5s 0s ease-in-out;
-    color : $dark;
+    color: $dark;
     p {
         font-family: $font-base;
-        color : $dark;
+        color: $dark;
         font-weight: $weight-light;
-        
+        font-size: 1.05rem;
         @media (min-width: $screen-md-min) {
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
     }
     a {
@@ -46,25 +46,24 @@ p {
             text-decoration: none;
             border-bottom: 4px solid !important;
         }
-    } 
+    }
     ul {
         @extend .p-0;
         list-style: square;
         li {
             @extend .my-2;
             font-family: $font-base;
-            color : $dark;
+            color: $dark;
             font-weight: $weight-light;
         }
     }
     .block {
-      display: flex;
-      flex-wrap: wrap;
-      img {
-        object-fit: cover;
-      }
+        display: flex;
+        flex-wrap: wrap;
+        img {
+            object-fit: cover;
+        }
     }
-
     &__title {
         font-family: $font-title;
         font-weight: $weight-bold;
@@ -74,12 +73,12 @@ p {
         @media screen and (min-width: $screen-md-min) {
             @include font-size(2rem);
         }
-      &--dark {
-        color : $light;
-      }
+        &--dark {
+            color: $light;
+        }
     }
     &__subtitle {
-//        margin-bottom: $spacer*1.5;
+        //        margin-bottom: $spacer*1.5;
         font-weight: $weight-light;
         font-size: 1.25rem;
         @media screen and (min-width: $screen-md-min) {
@@ -88,13 +87,11 @@ p {
     }
     &__link {
         //@extend .text-uppercase;
-        color: $secondary
-        //text-decoration: underline;
+        color: $secondary //text-decoration: underline;
         &:hover {
-          border-bottom: solid $secondary 2px;
+            border-bottom: solid $secondary 2px;
         }
     }
-    
     &__row {
         @extend .row;
         @extend .w-100;
@@ -107,11 +104,11 @@ p {
             @extend .img-fluid;
         }
         &--wrap {
-          @extend .col-9,
-          .col-md-6,
-          .order-1,
-          .order-md-2;
-//          .col-lg-4;
+            @extend .col-9,
+            .col-md-6,
+            .order-1,
+            .order-md-2;
+            //          .col-lg-4;
         }
     }
     &__container {
@@ -140,128 +137,128 @@ p {
         }
     }
     &__cta {
-      border: none;
-      border-radius: 5px;
-      padding: .5rem 1rem;
-      text-transform: uppercase;
-      text-align: center;
-      font-family: $font-base;
-      font-weight: $weight-bold;
-      color: $light;
-      background-image: $gradient
+        border: none;
+        border-radius: 5px;
+        padding: .5rem 1rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: $font-base;
+        font-weight: $weight-bold;
+        color: $light;
+        background-image: $gradient
     }
     &__half {
-      @extend .col-sm-12;
-      @extend .col-md-10;
-      @extend .col-lg-5;
-      @extend .col-xl-5;
-      @extend .mx-auto;
-      height: auto!important;
-      font-weight: $weight-light;
-      p {
-          @media (min-width: $screen-md-min) {
-              font-size: 1rem;
-          }
-      }
+        @extend .col-sm-12;
+        @extend .col-md-10;
+        @extend .col-lg-5;
+        @extend .col-xl-5;
+        @extend .mx-auto;
+        height: auto!important;
+        font-weight: $weight-light;
+        p {
+            @media (min-width: $screen-md-min) {
+                font-size: 1rem;
+            }
+        }
     }
 }
 
 .services {
-  position: relative;
-  .card {
-    border: 10px solid $dark;
-    margin: 1rem;
-    width: 100%;
-    min-height: 200px;
-    @include media-breakpoint-up(md) {
-      width: calc(50% - 2rem);
-      min-height: 250px;
+    position: relative;
+    .card {
+        border: 10px solid $dark;
+        margin: 1rem;
+        width: 100%;
+        min-height: 200px;
+        @include media-breakpoint-up(md) {
+            width: calc(50% - 2rem);
+            min-height: 250px;
+        }
     }
-  }
-  .arc,
-  .hide-arc {
-    position: absolute;
-    border: 10px solid $dark;
-    background: $white;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    top: -50px;
-    left: -50px;
-    clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
-  }
-  .hide-arc {
-    width: 90px;
-    height: 90px;
-    border: none;
-    clip-path: polygon(44% 44%,100% 28%,100% 100%,37% 100%);
-  }
-  h3 {
-    text-align: center;
-  }
-  span.lead {
-    font-family: $font-title;
-  }
-  p {
-//    @extend .col-12,
-//    .col-md-9;
-//    margin: 0 auto;
-  }
+    .arc,
+    .hide-arc {
+        position: absolute;
+        border: 10px solid $dark;
+        background: $white;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        top: -50px;
+        left: -50px;
+        clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+    }
+    .hide-arc {
+        width: 90px;
+        height: 90px;
+        border: none;
+        clip-path: polygon(44% 44%, 100% 28%, 100% 100%, 37% 100%);
+    }
+    h3 {
+        text-align: center;
+    }
+    span.lead {
+        font-family: $font-title;
+    }
+    p {
+        //    @extend .col-12,
+        //    .col-md-9;
+        //    margin: 0 auto;
+    }
 }
 
 .presentation {
-  background : $light;
+    background: $light;
 }
 
 .line {
-  height: 2px;
-  width: 100%;
-  background: $primary;
+    height: 2px;
+    width: 100%;
+    background: $primary;
 }
 
 .section.controle {
-  background : $dark;
-  color : $light;
-  p,
-  ul, 
-  li {
-    color : $light;
-  }
-  li {
-    list-style : circle;
-  }
+    background: $dark;
+    color: $light;
+    p,
+    ul,
+    li {
+        color: $light;
+    }
+    li {
+        list-style: circle;
+    }
 }
 
 .card-value {
-  margin: 1rem;
-  min-height: 400px;
-  width: calc(50% -2rem);
-  padding: 1em;
-  color : $light;
-  text-align: center;
-  background-image: $gradient;
-  box-shadow: inset -2px -2px 8px 2px rgba(247,255,255,0.35), inset 2px 2px 8px 2px rgba(0,35,105,0.35);
-  border-radius: 10px;
-  .img-container {
-    margin: auto auto;
-    width: 50px;
-    height: 80px;
-  }
-  .picto {
-//    border : $light solid 5px;
-    margin : auto auto;
-//    border-radius: 100%;
-    width : 50px;
-    height : auto;
-  }
+    margin: 1rem;
+    min-height: 400px;
+    width: calc(50% -2rem);
+    padding: 1em;
+    color: $light;
+    text-align: center;
+    background-image: $gradient;
+    box-shadow: inset -2px -2px 8px 2px rgba(247, 255, 255, 0.35), inset 2px 2px 8px 2px rgba(0, 35, 105, 0.35);
+    border-radius: 10px;
+    .img-container {
+        margin: auto auto;
+        width: 50px;
+        height: 80px;
+    }
+    .picto {
+        //    border : $light solid 5px;
+        margin: auto auto;
+        //    border-radius: 100%;
+        width: 50px;
+        height: auto;
+    }
 }
 
 .card-value p {
-  color : $light;
+    color: $light;
 }
 
 .price {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 //.collapse {

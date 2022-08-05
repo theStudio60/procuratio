@@ -804,7 +804,7 @@ h2{font-family:"Raleway",sans-serif;text-transform:uppercase;font-weight:700}
 h3{font-family:"Raleway",sans-serif;font-weight:300;text-transform:uppercase}
 p{font-family:"Josefin Sans",sans-serif;color:#002369;font-weight:300;text-align:justify}
 .section{max-width:100vw !important;overflow-x:hidden !important;scroll-behavior:smooth;padding:1rem 2rem;background-size:cover;background-repeat:no-repeat;position:relative;-webkit-transition:.5s 0s ease-in-out;transition:.5s 0s ease-in-out;color:#002369}
-.section p{font-family:"Josefin Sans",sans-serif;color:#002369;font-weight:300}
+.section p{font-family:"Josefin Sans",sans-serif;color:#002369;font-weight:300;font-size:1.05rem}
 .section a{cursor:pointer;text-decoration:none;font-family:"Josefin Sans",sans-serif}
 .section a:focus,.section a:hover{text-decoration:none;border-bottom:4px solid !important}
 .section ul{list-style:square}
@@ -1429,7 +1429,7 @@ html:not(.no-js) [data-aos=flip-down].aos-animate{-webkit-transform:perspective(
 .card-columns{-webkit-column-count:3;-moz-column-count:3;column-count:3;-webkit-column-gap:1.25rem;-moz-column-gap:1.25rem;column-gap:1.25rem;orphans:1;widows:1}
 .card-columns .card{display:inline-block;width:100%}
 .header-mobile__language{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
-}@media(min-width:640px){.section p{font-size:1rem}
+}@media(min-width:640px){.section p{font-size:1.2rem}
 .section__col p{font-size:1rem}
 .section__half p{font-size:1rem}
 .hero__content span,.hero__content p,.hero__content a{font-size:18px;text-align:left}

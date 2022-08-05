@@ -25,7 +25,7 @@ get_header();
 
 if( have_rows('acf_group_homepage') ): 
   while( have_rows('acf_group_homepage') ): the_row(); 
-    get_template_part( 'partials/sections/hero', 'home' );
+    //get_template_part( 'partials/sections/hero', 'home' );
     get_template_part( 'partials/sections/layout', 'presentation' );
     get_template_part( 'partials/sections/layout','partners' );
     get_template_part( 'partials/sections/layout','control' );
