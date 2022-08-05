@@ -44,7 +44,7 @@ if( have_rows('contact_infos') ):
          <div class="container d-flex w-100">
            <div class="row mx-0 mx-lg-auto ">
             <div class="col-12 col-lg-9">
-              <h2 class="mb-3 text-uppercase p-0">contact</h2>
+              <h2 class="mb-3 ml-0 text-uppercase p-0">contact</h2>
             </div>
              <div class="col-12 col-lg-6 order-2 order-lg-1 py-0 pr-0 pr-lg-5 pl-0">
                 <div class="my-2 mx-0 p-0  w-100 bg-white  d-flex d-lg-none  " style="height:4px">
