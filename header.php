@@ -144,7 +144,7 @@
     }) ; 
 //*/
   </script>
-        <?php get_template_part('partials/elements/popup') ?>
+        <?php // get_template_part('partials/elements/popup') ?>
 
 
   <?php get_template_part('partials/nav/btn','scollToTop')?>
