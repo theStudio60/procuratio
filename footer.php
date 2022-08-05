@@ -39,11 +39,16 @@ if( have_rows('contact_infos') ):
   <div id="contact" class="container mx-auto">
     <div class="row">
  
-      <div class="col-12 mx-auto">
-      	 <h2 class="mb-3 text-uppercase" >contact</h2>
+      <div class="row w-100">
+
          <div class="container d-flex w-100">
-           <div class="row mx-auto">
-             <div class="col-12 col-lg-6 order-2 order-lg-1">
+           <div class="row mx-0 mx-lg-auto ">
+            <div class="col-12 col-lg-9">
+              <h2 class="mb-3 text-uppercase" >contact</h2>
+            </div>
+             <div class="col-12 col-lg-6 order-2 order-lg-1 p-0 ">
+                <div class="my-2 mx-0 p-0  w-100 bg-white  d-flex d-lg-none  " style="height:4px">
+                </div>
               <?= do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]')?>
              </div>
             <div class="col-12 col-lg-6 order-1 order-lg-2">
@@ -59,7 +64,8 @@ if( have_rows('contact_infos') ):
                     <i class="fa fa-map-marker mr-1"></i> <?= $adress ?>
                   </p>
                 </div>
-                <iframe class="contact-map col-12 mb-3"  src="<?= $gmap ?>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+                <iframe class="contact-map w-100 my-3"  src="<?= $gmap ?>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
