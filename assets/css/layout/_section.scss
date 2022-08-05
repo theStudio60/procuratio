@@ -230,9 +230,10 @@ p {
 }
 
 .card-value {
-    margin: 1rem;
-    min-height: 400px;
-    width: calc(50% -2rem);
+    @extend .my-3;
+    //margin: 1rem;
+    min-height: 320px;
+    //width: calc(50% -2rem);
     padding: 1em;
     color: $light;
     text-align: center;
