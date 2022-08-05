@@ -87,7 +87,7 @@ p {
     }
     &__link {
         //@extend .text-uppercase;
-        color: $secondary //text-decoration: underline;
+        color: $secondary; //text-decoration: underline;
         &:hover {
             border-bottom: solid $secondary 2px;
         }

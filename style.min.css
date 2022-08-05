@@ -814,8 +814,8 @@ p{font-family:"Josefin Sans",sans-serif;color:#002369;font-weight:300;text-align
 .section__title{font-family:"Raleway",sans-serif;font-weight:700;font-size:1.5rem;line-height:1.2;color:#002369}
 .section__title--dark{color:#f8ffff}
 .section__subtitle{font-weight:300;font-size:1.25rem}
-.section__link{color:#29ffff .section__link}
-.section__link :hover{border-bottom:solid #29ffff 2px}
+.section__link{color:#29ffff}
+.section__link:hover{border-bottom:solid #29ffff 2px}
 .section__img{margin:0 auto}
 .section__col{height:auto !important;font-weight:300}
 .section__cta{border:0;border-radius:5px;padding:.5rem 1rem;text-transform:uppercase;text-align:center;font-family:"Josefin Sans",sans-serif;font-weight:700;color:#f8ffff;background-image:linear-gradient(-135deg,#5d7cba 0,#19e1e1 100%)}

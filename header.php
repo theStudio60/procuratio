@@ -46,8 +46,8 @@
     <div class="header__container">
       <div class="header__brand">
         <a href="<?= get_home_url() ?>">
-          <div class=" w-100 d-flex">
-            <img width="auto" height="120px" class="mx-auto"  src="<?= $logotype_b ?>" alt="<?= get_bloginfo() ?>">
+          <div class=" w-100 d-flex py-3">
+            <img width="auto" height="64px" class="mx-auto"  src="<?= $logotype_b ?>" alt="<?= get_bloginfo() ?>">
           </div>
         </a>
       </div>

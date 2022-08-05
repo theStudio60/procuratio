@@ -39,34 +39,36 @@ if( have_rows('contact_infos') ):
   <div id="contact" class="container mx-auto">
     <div class="row">
  
-     <div class="col-12 col-lg-9 mx-auto">
-			 <h2 class="mb-3" >contact</h2>
-      <div class="container d-flex w-100">
-        <div class="row mx-auto">
-      <div class="col-12 col-lg-6 order-2 order-lg-1">
-       <?= do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]')?>
-      </div>
-      <div class="col-12 col-lg-6 order-1 order-lg-2">
-        <div class="row">
-          <div class="contact-text col-12">
-            <p class="my-2">
-              <i class="fa fa-phone mr-1"></i> <?= $phone ?>
-            </p>
-            <p class="my-2">
-              <i class="fa fa-envelope mr-1"></i> <?= $email ?>
-            </p>
-            <p class="my-2">
-              <i class="fa fa-map-marker mr-1"></i> <?= $adress ?>
-            </p>
+      <div class="col-12 mx-auto">
+      	 <h2 class="mb-3 text-uppercase" >contact</h2>
+         <div class="container d-flex w-100">
+           <div class="row mx-auto">
+             <div class="col-12 col-lg-6 order-2 order-lg-1">
+              <?= do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]')?>
+             </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-2">
+              <div class="row">
+                <div class="contact-text col-12">
+                  <p class="my-3">
+                    <i class="fa fa-phone mr-1"></i> <?= $phone ?>
+                  </p>
+                  <p class="my-3">
+                    <i class="fa fa-envelope mr-1"></i> <?= $email ?>
+                  </p>
+                  <p class="my-3">
+                    <i class="fa fa-map-marker mr-1"></i> <?= $adress ?>
+                  </p>
+                </div>
+                <iframe class="contact-map col-12 mb-3"  src="<?= $gmap ?>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
           </div>
-          <iframe class="contact-map col-12 mb-3"  src="<?= $gmap ?>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-        </div>
-      </div>
-     </div>
     </div>
   </div>
+  <div class="py-3">
+
   <?php
       wp_nav_menu( array(
       'theme_location'  => 'header-menu',
@@ -94,6 +96,8 @@ if( have_rows('contact_infos') ):
       ));
  
   ?>  
+  </div>
+
   
   <div class="container-fluid">
     <div class="row">
