@@ -53,7 +53,7 @@ if ( has_post_thumbnail() ) {
                 </div>
                 <br>
               <?php endif;?>
-              <div class="w-100 d-md-flex  text-md-left">
+              <div class="w-100 d-md-flex  text-center">
                 <?php if (have_rows('website_settings','option')):
                   while (have_rows('website_settings','option')):the_row();
                     if (have_rows('global_settings')):

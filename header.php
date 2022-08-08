@@ -34,55 +34,64 @@
   $bg_color_mobile="";
   $position="";
 ?>
-<?php if ( is_front_page() ) : ?>
-  <?php // get_template_part('partials/nav/overheader'); ?>
-  <?php $bg_color =  "transparent"?>
-  <?php $bg_color_mobile =  "light"?>
-  <?php $position =  "absolute;z-index:40" ?>
-  <?php $logotype = $logotype_w; ?>
-  <?php $logotypeMobile = $logotype_d; ?>
-<?php  endif?> 
-  <header id="masthead" class="header navbar bg-<?= $bg_color?>">
-    <div class="header__container">
-      <div class="header__brand">
-        <a href="<?= get_home_url() ?>">
-          <div class=" w-100 d-flex py-3">
-            <img width="auto" height="64px" class="mx-auto"  src="<?= $logotype_b ?>" alt="<?= get_bloginfo() ?>">
+
+  <header id="masthead" class="header navbar bg-white p-0 m-0">
+
+  <?php if( have_rows('website_settings', 'option') ): ?>
+  <?php while( have_rows('website_settings', 'option') ): the_row(); ?>
+    <?php if( have_rows('contact_infos' ) ): ?>
+      <?php while( have_rows('contact_infos' ) ): the_row(); ?>
+        <?php 
+        $post_address_cabinet = get_sub_field('post_address_cabinet');
+        $post_address = get_sub_field('post_address');
+        $phone = get_sub_field('phone');
+        $email = get_sub_field('email'); 
+        ?>
+
+        <div class="overheader ">
+          <div class="d-flex px-2 w-100">
+            <i class="fa fa-phone my-auto mr-1" aria-hidden="true"></i><span class="my-auto"><?= $phone ?></span>
+            <div class="mx-3"></div>
+            <i class="fa fa-envelope my-auto mr-1" aria-hidden="true"></i><span class="my-auto"><?= $email ?></span>
+            <div class="mx-3"></div>
+            <i class="fa fa-map-marker my-auto mr-1" aria-hidden="true"></i><span class="my-auto"><?= $post_address ?></span>
+
+            <div class="my-auto ml-auto mr-0 d-flex">
+              <a href="#" class="ml-2 text-white">DE</a>
+              <a href="#" class="ml-2 text-white">EN</a>
+              <a href="#" class="ml-2 text-white">FR</a>
+            </div> 
+          </div>
+        </div>
+      <?php endwhile ?>
+    <?php endif ?>
+  <?php endwhile ?>
+<?php endif ?>
+    <div class="container-fluid bg-white d-flex py-2 shadow">
+        <a class="ml-0 " href="<?= get_home_url() ?>">
+          <div class=" mx-auto">
+            <img width="auto" height="72px" class="mx-auto"  src="<?= $logotype_b ?>" alt="<?= get_bloginfo() ?>">
           </div>
         </a>
-      </div>
-	    <?php 
-	/*
-      <div class="header-mobile__language">
-        <a href="#" class="nav-link">DE</a>
-        <a href="#" class="nav-link">EN</a>
-        <a href="#" class="nav-link">FR</a>
-							
-      </div> 
-	  //*/ ?>
-	    <div class="container w-25 p-0 mx-auto">
-	 	 <?php languages_list_navbar();?>
-	    </div>
-      <div class="header__row"> 
-        <div class="header__menu">
-          <?php
+        <?php
           wp_nav_menu( array(
           'theme_location'  => 'header-menu',
           'depth'           => 1, // 1 = no dropdowns, 2 = with dropdowns.
-          'container'       => 'nav',
-          'container_class' => '',
-          'container_id'    => 'navMenu',
-          'menu_class'      => 'container ',
+          'container'       => 'div',
+          'container_class' => 'm-auto',
+          'container_id'    => ' ',
+          'menu_class'      => 'm-0 p-0',
           'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
           'walker'          => new WP_Bootstrap_Navwalker(),
           ));
  
           ?>  
-        </div>
-        <?php get_template_part('partials/nav/cta','header')?>
-      </div>
-    </div>    
+        <button onclick= "" class="button">Call to action</button>
+    
+    </div>
+
   </header>
+   
   
   <header id="masthead" class="header-mobile" >
     <div class="header-mobile__container"> 
@@ -95,7 +104,7 @@
         </div> 
 	      //*/ ?>
         <div class="ml-0 mr-auto">
-          <?php languages_list_navbar();?>
+          <?php // languages_list_navbar();?>
 
         </div>
 

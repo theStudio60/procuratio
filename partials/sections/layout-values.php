@@ -13,7 +13,7 @@ if( have_rows('group_values') ):
       	      </h2>
             <?php endif;?>  
             </div>
-            <div class="col-12 mx-auto">
+            <div class="col-12 mx-auto mt-3">
 
             <div class="container ">
               <div class="row">
@@ -24,8 +24,8 @@ if( have_rows('group_values') ):
                     $image = get_sub_field('picto');
                     $content = get_sub_field('wysiwyg');
                     ?>
-                    <div class="col-12 col-md-6 mx-0 mx-lg-auto">
-                      <div class="card-value" data-aos="fade-left">
+                    <div class="col-12 col-lg-4 mx-0 mx-lg-auto">
+                      <div class=" " data-aos="fade-left">
                         <div class="img-container">
                           <img class="section__img picto"  src=" <?php echo $image['url']; ?> ">
                         </div>
