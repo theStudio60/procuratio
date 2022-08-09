@@ -11,7 +11,7 @@ endif;
   <?php while( have_rows('website_settings', 'option') ): the_row(); ?>
     <?php if( have_rows('contact_infos' ) ): ?>
       <?php while( have_rows('contact_infos' ) ): the_row(); ?>
-        <?php 
+        <?php
         $post_address_cabinet = get_sub_field('post_address_cabinet');
         $post_address = get_sub_field('post_address');
         $phone = get_sub_field('phone');
@@ -26,11 +26,12 @@ endif;
                   <div class="mx-auto ">
                     <div class="p-5"></div>
                       <h3 class="section__title text-dark my-5" >
-                      <?php if ($title) :  ?> 
-                        <?= $title ?> 
-                      <?php else :  ?> 
-                        <?= the_title() ?>
-                      <?php endif;?> 
+                      <?php if ($title) :  ?>  
+                        <h2 class="text-white d-flex">
+                                <div class="dash mr-2 ml-n4"></div>
+                                <?= $title ?>
+                        </h2>
+                      <?php endif;?>  
                     </h3>
                     <br class="p-1">
                     <div class="col-12">

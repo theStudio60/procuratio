@@ -35,8 +35,8 @@
   $position="";
   ?>
   
-  
-  <header id="masthead" class="header px-0 py-3 m-0 border-bottom">
+
+  <header id="masthead" class="header px-0 py-3 m-0 border- ">
  
     <div class="container-fluid   d-flex py-2">
         <a class="ml-2 my-auto " href="<?= get_home_url() ?>">
@@ -58,14 +58,14 @@
  
           ?>  
       
-      <div class="my-auto ml-auto mr-2 d-flex">
-              <a href="#" class="ml-2 text-white">DE</a>
-              <a href="#" class="ml-2 text-white">EN</a>
-              <a href="#" class="ml-2 text-white">FR</a>
-            </div> 
-<?php /*
-      <button onclick= "" class="button">Call to action</button>
-    //*/ ?>
+          <div class="my-auto ml-auto mr-0 d-flex">
+              <a href="#" class="nav-link ml-1 text-white">IT</a>
+              <a href="#" class="nav-link ml-1 text-white">EN</a>
+              <a href="#" class="nav-link ml-1 text-white">FR</a>
+          </div> 
+          <?php /*
+          <button onclick= "" class="button">Call to action</button>
+          //*/ ?>
     </div>
 
   </header>
