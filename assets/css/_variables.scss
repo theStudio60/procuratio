@@ -115,7 +115,7 @@ $overlay90-secondary:rgba($secondary, 0.9); //
 $primary-gradient:linear-gradient(270deg, $secondary 50%, $primary 100%);
 $primary-gradient-hover:linear-gradient(270deg, $secondary 0%, $primary 100%);
 $primary-gradient_background: -webkit-gradient(linear, left bottom, right top, from(rgba($primary, .75)), to(rgba($secondary, .75)));
-$overlay-gradient-background-default: -webkit-gradient(linear, left bottom, right top, from(rgba($dark, .25)), to(rgba($dark, .9)));
+$overlay-gradient-background-default: -webkit-gradient(linear, left bottom, right top, from(rgba($dark, .8)), to(rgba($dark, .99)));
 $overlay-gradient-background-primary: -webkit-gradient(linear, left bottom, right top, from(rgba($primary, .75)), to(rgba($secondary, .75)));
 $overlay-gradient-background-secondary: -webkit-gradient(linear, left bottom, right top, from(rgba($primary, .75)), to(rgba($secondary, .75)));
 // Navbar
