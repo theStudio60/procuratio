@@ -22,55 +22,26 @@
 <?php get_template_part('partials/preloader/preloader','script'); ?>
 <body class="page-wrapper">
   <?php wp_body_open(); ?>
-<?php
+  <?php
   $custom_logo_id = get_theme_mod( 'custom_logo' );
   //$logotype_d = wp_get_attachment_image_src( $custom_logo_id , 'full' );
   $logotype_d = THEME_URI . "/images/logo-procuratio-black.png"; 
-  $logotype_w = THEME_URI . "/images/logo-procuratio-black.png"; 
+  $logotype_w = THEME_URI . "/images/logo-procuratio-white.png"; 
   $logotype_b = THEME_URI . "/images/logo-procuratio-blue.png"; 
   $logotype = $logotype_b; 
   $logotypeMobile = $logotype_b;
   $bg_color="";
   $bg_color_mobile="";
   $position="";
-?>
-
-  <header id="masthead" class="header navbar bg-white p-0 m-0">
-
-  <?php if( have_rows('website_settings', 'option') ): ?>
-  <?php while( have_rows('website_settings', 'option') ): the_row(); ?>
-    <?php if( have_rows('contact_infos' ) ): ?>
-      <?php while( have_rows('contact_infos' ) ): the_row(); ?>
-        <?php 
-        $post_address_cabinet = get_sub_field('post_address_cabinet');
-        $post_address = get_sub_field('post_address');
-        $phone = get_sub_field('phone');
-        $email = get_sub_field('email'); 
-        ?>
-
-        <div class="overheader ">
-          <div class="d-flex px-2 w-100">
-            <i class="fa fa-phone my-auto mr-1" aria-hidden="true"></i><span class="my-auto"><?= $phone ?></span>
-            <div class="mx-3"></div>
-            <i class="fa fa-envelope my-auto mr-1" aria-hidden="true"></i><span class="my-auto"><?= $email ?></span>
-            <div class="mx-3"></div>
-            <i class="fa fa-map-marker my-auto mr-1" aria-hidden="true"></i><span class="my-auto"><?= $post_address ?></span>
-
-            <div class="my-auto ml-auto mr-0 d-flex">
-              <a href="#" class="ml-2 text-white">DE</a>
-              <a href="#" class="ml-2 text-white">EN</a>
-              <a href="#" class="ml-2 text-white">FR</a>
-            </div> 
-          </div>
-        </div>
-      <?php endwhile ?>
-    <?php endif ?>
-  <?php endwhile ?>
-<?php endif ?>
-    <div class="container-fluid bg-white d-flex py-2 shadow">
-        <a class="ml-0 " href="<?= get_home_url() ?>">
+  ?>
+  
+  
+  <header id="masthead" class="header px-0 py-3 m-0 border-bottom">
+ 
+    <div class="container-fluid   d-flex py-2">
+        <a class="ml-2 my-auto " href="<?= get_home_url() ?>">
           <div class=" mx-auto">
-            <img width="auto" height="72px" class="mx-auto"  src="<?= $logotype_b ?>" alt="<?= get_bloginfo() ?>">
+            <img width="auto" height="64px" class="mx-auto"  src="<?= $logotype_w ?>" alt="<?= get_bloginfo() ?>">
           </div>
         </a>
         <?php
@@ -86,8 +57,15 @@
           ));
  
           ?>  
-        <button onclick= "" class="button">Call to action</button>
-    
+      
+      <div class="my-auto ml-auto mr-2 d-flex">
+              <a href="#" class="ml-2 text-white">DE</a>
+              <a href="#" class="ml-2 text-white">EN</a>
+              <a href="#" class="ml-2 text-white">FR</a>
+            </div> 
+<?php /*
+      <button onclick= "" class="button">Call to action</button>
+    //*/ ?>
     </div>
 
   </header>
