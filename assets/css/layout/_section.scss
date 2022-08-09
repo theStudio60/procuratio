@@ -26,11 +26,11 @@ p {
     background-repeat: no-repeat;
     position: relative;
     transition: .5s 0s ease-in-out;
-    color: $dark;
+    //color: $dark;
     p {
         font-family: $font-base;
-        color: $dark;
-        font-weight: $weight-light;
+        // color: $dark;
+        font-weight: 300;
         font-size: 1.05rem;
         @media (min-width: $screen-md-min) {
             font-size: 1.2rem;
@@ -65,7 +65,7 @@ p {
         }
     }
     &__title {
-        font-family: $font-title;
+        // font-family: $font-title;
         font-weight: $weight-bold;
         font-size: 1.5rem;
         line-height: 1.2;
@@ -207,7 +207,7 @@ p {
 }
 
 .presentation {
-    background: $light;
+    background: $white;
 }
 
 .line {
