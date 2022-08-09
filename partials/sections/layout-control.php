@@ -1,4 +1,4 @@
-<div class="p-1 bg-primary w-100"></div>
+ 
 <?php  
 
 if( have_rows('group_control') ):
@@ -9,65 +9,84 @@ if( have_rows('group_control') ):
 <section id="control" class="bg-dark" data-aos="fade-up">
     <div class="container py-5">
       <div class="row section__row">
-        <div class="col-12 col-lg-9 mx-auto">
+        <div class="col-12  mx-auto">
             <?php if ($title) :  ?>
             <h2 class="text-white">
+
               <?= $title ?>
             </h2>
+            <div class="dash mr-2 ml-n4"></div>
             <?php endif;?>
             <?php if ($content) :  ?>
+              <div class="text-white d-block d-lg-none "  >
+                  <?= $content?>
+                  
+              </div>
 
 
-
-              <div class="text-white"> 
+              <div class="text-white d-none d-lg-block"> 
                 
                 <style>
                 #summary {
-                  font-size: 16px;
-                  //line-height: 1.5;
+              
+  line-height: 1.5;
                   
                 }
-                #summary p {
+                .text-white p {
+                  font-size: 18px;
+                  color:#fff;
 
+                }
+                #summary p {
+                  font-size: 20px;
                   color:#fff;
 
                 }
                 #summary div.collapse:not(.show) {
-                    height: 60px;
+                    height:192px;
                     overflow: hidden;
 
                     display: -webkit-box;
-                    //-webkit-line-clamp: 2;
+                    -webkit-line-clamp: 2;
                     -webkit-box-orient: vertical;  
                 }
 
                 #summary div.collapsing {
-                    min-height: 420px !important;
+                    min-height: 196px !important;
                 }
 
                 #summary a.collapsed:after  {
-                    content: '+ Lire la suite';
+                    content: 'Lire la suite'; 
+                    width: 100%;
                     font-size:18px;
+                    
+                    margin-top:48px;
                     margin-left:auto ; margin-right:auto;
                     text-align:center;
+                    font-weight:600;
+                    font-family:"Raleway";
                 }
 
                 #summary a:not(.collapsed):after {
-                    content: '- Compacter';
+                    content: '- Réduire';
                     font-size:18px;
+                    padding-top:16px;
                     margin-left:auto ; margin-right:auto;
                     text-align:center;
+                    font-weight:600;
+                    font-family:"Raleway";
                 }
 
 
                 </style>
 
-              <div id="summary">
-                <div class="collapse" id="collapseSummary">
+              <div class="d-none d-lg-block" id="summary">
+                <div class="collapse mb-2" id="collapseSummary">
                   <?= $content?>
                 </div>
-                <a class="collapsed text-white" data-toggle="collapse" href="#collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
+                <a class="collapsed text-secondary" data-toggle="collapse" href="#collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
               </div>
+
           </div>   
 
             <?php endif;?>
@@ -76,5 +95,4 @@ if( have_rows('group_control') ):
       </div>
 </section>
 <?php endwhile; ?>
-<?php endif; ?>
-<div class="p-1 bg-primary w-100"></div>
+<?php endif; ?> 

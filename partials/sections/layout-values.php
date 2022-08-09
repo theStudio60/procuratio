@@ -3,16 +3,22 @@ if( have_rows('group_values') ):
   while( have_rows('group_values') ): the_row();
     $title = get_sub_field('title');
 ?>    
-    <section id="values" class="section mt-5 py-2 py-lg-4 bg-light">
-	    <div class="container">
+    <section id="values" class="section mt-5 py-3 py-lg-4 bg-light "
+    data-aos="slide-up" data-aos-duration="800"  
+    
+    style="        border-top: solid 1px #002369;border-bottom: solid 1px #002369;
+        width: 100%;"
+    >
+	    <div class="container my-3">
         <div class="row"> 
-      	  <div class="col-12 col-lg-9">
+      	  <div class="col-12 col-lg-9 ">
             <?php if ($title) :  ?>
       	      <h2 class="section__title">
               <?= $title ?>
       	      </h2>
             <?php endif;?>  
             </div>
+
             <div class="col-12 mx-auto mt-3">
 
             <div class="container ">

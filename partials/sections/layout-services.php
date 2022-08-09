@@ -9,7 +9,7 @@
    <section id="services" class="section">
     <div class="container py-3 section__container services">
     <div class="row">
-      <div class="col-12 col-lg-9 mx-auto ">
+      <div class="col-12 col-lg-9  ">
 
       <?php if ($title) :  ?>
         <h2 class="section__title">
@@ -20,23 +20,23 @@
         <p>
           <?= $content ?>
         </p>
+	</div>
+  <div class="col-12 m-auto ">
+
       <?php endif;?>
- 
         <div class="container">
           <div class="row">
-            <?php  
-
-              if( have_rows('subgroup_services') ):
+            <?php
+            if( have_rows('subgroup_services') ):
               while( have_rows('subgroup_services') ): the_row();
-              $subtitle = get_sub_field('service');
-              $price = get_sub_field('price');
-              $content = get_sub_field('wysiwyg');
-
+                $subtitle = get_sub_field('service');
+                $price = get_sub_field('price');
+                $content = get_sub_field('wysiwyg'); 
             ?>
-	<div class="col-12 col-md-6 col-lg-4">
-            <div class="card w-100 mx-0 mx-md-auto px-3" data-aos="fade-right">
-              <div class="hide-arc"></div>
-              <div class="arc"></div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card w-100 mx-0 mx-md-auto px-3"   data-aos="flip-up">
+                    <div class="hide-arc"></div>
+                    <div class="arc"></div>
               <?php if ($subtitle) :  ?>
                 <span class="lead my-auto">
                   <?= $subtitle ?>

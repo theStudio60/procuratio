@@ -28,16 +28,17 @@ if ( has_post_thumbnail() ) {
     "
   >  
   <div class="hero__overlay hero__overlay--default h-100 " >
-    <div class="hero__container m-auto">
-      <div class="hero__row">
-        <div class="hero__col hero__col-- "  >
+    <div class="container-fluid m-0 w-100">
+      <div class="row h-100">
+        <div class="col-12 col-lg-8 h-100 d-flex p-0"  >
           <?php //<div class="my-auto " style="  border-left:16px solid #00AE9B ;"> ?>
-          <div class="my-auto " style=" "> 
-            <div class="p-0 " data-aos="fade-right" data-aos-duration="800">
+          <div class="d-flex w-75 mx-auto  " style=" "> 
+            <div class="p-0 my-auto" data-aos="fade-right" data-aos-duration="800">
               <?php if ($title) :  ?>
                 <h1 class="hero__title mb-2 mt-5 mt-lg-auto"> 
                   <?= $title ?> 
                 </h1> 
+
               <?php endif;?>
               <?php if ($subtitle) :  ?>
 
@@ -53,38 +54,80 @@ if ( has_post_thumbnail() ) {
                 </div>
                 <br>
               <?php endif;?>
-              <div class="w-100 d-md-flex  text-center">
-                <?php if (have_rows('website_settings','option')):
+
+
+ 
+              <?php if( have_rows('website_settings', 'option') ): ?>
+  
+
+
+                <div class="w-100 d-md-flex  text-center">
+                  <?php if (have_rows('website_settings','option')):
                   while (have_rows('website_settings','option')):the_row();
                     if (have_rows('global_settings')):
                       while (have_rows('global_settings')):the_row();
                         $thislink = get_sub_field('main_cta');
-                ?> 
+                      ?> 
                       <?php endwhile; ?>
                     <?php endif; ?>
                   <?php endwhile;?>
-                <?php endif;?> 
+                  <?php endif;?> 
 
-                <?php if ($link) :
-                  $link_url = $link['url'];
-                  $link_title = $link['title'];
-                  $link_target = $link['target'] ? $link['target'] : '_self';
-                ?>
-                  <button
+                  <?php if ($link) :
+                    $link_url = $link['url'];
+                    $link_title = $link['title'];
+                    $link_target = $link['target'] ? $link['target'] : '_self';
+                  ?>
+                    <button
                     type="button" 
                     style="" 
                     onclick="location.href='<?php echo $link_url ?>'"
                     class="button" 
-                  > 
-                      <?= $link_title ?>
-                  </button> 
-                <?php endif;?>  
-              </div> 
+                    > 
+                        <?= $link_title ?>
+                    </button> 
+                  <?php endif;?>   
+                </div> 
+              <?php endif;?>   
+              
             </div>
           </div>
-        </div> <!--col -->
+
+        
       </div>
+      <div class="col-12 col-lg-4 p-0 h-100 d-flex">
+        <?php if( have_rows('website_settings', 'option') ) : ?>
+    <?php while( have_rows('website_settings', 'option') ): the_row(); ?>
+    <?php if( have_rows('contact_infos' ) ): ?>
+      <?php while( have_rows('contact_infos' ) ): the_row(); ?>
+        <?php 
+        $post_address_cabinet = get_sub_field('post_address_cabinet');
+        $post_address = get_sub_field('post_address');
+        $phone = get_sub_field('phone');
+        $email = get_sub_field('email'); 
+        ?>
+
+          <div class="mt-auto ml-auto mr-0 mb-0 text-white   d-none d-lg-flex w-100 py-2">
+          
+            <div class="d-block d-xl-flex w-100 my-auto">
+              <i class="fa fa-phone my-auto mr-2 text-secondary" aria-hidden="true"></i><span class="my-auto text-white"><b><?= $phone ?></b></span>
+              <div class="mx-3"></div>
+              <i class="fa fa-envelope my-auto mr-2 text-secondary" aria-hidden="true"></i><span class="my-auto text-white"><b><?= $email ?></b></span>
+              <div class="dash ml-auto mr-0 d-none d-xl-block"></div> 
+            </div>
+  
+ 
+          </div> 
+      <?php endwhile ?>
+    <?php endif ?>
+  <?php endwhile ?>
+<?php endif ?> 
+</div>
+
     </div>
+    
+
+</div>
   </div>
     <?php  /*
     $images = get_sub_field('slider');
@@ -95,7 +138,6 @@ if ( has_post_thumbnail() ) {
         <?php endforeach; ?>
       </div>
     <?php endif; //*/ ?>  
-    
    
   </section>
 <?php endwhile; ?>
