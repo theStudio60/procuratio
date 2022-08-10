@@ -112,8 +112,10 @@
       </div>
     </div>
   </header>
-  <div class="mx-0 p-2  border w-100 d-flex " style="margin-top:96px;">
-          <?php languages_list_navbar_mobile();?>
+  <div class="mx-0 p-2  w-100 d-flex " style="position:absolute;margin-top:96px;">
+    <div class="w-25 ml-auto mr-0">
+      <?php languages_list_navbar_mobile();?>
+    </div>
 
     </div>
   <div id="overlayMenu" class="mobile-menu mobile-menu--hidden " style=" ">
