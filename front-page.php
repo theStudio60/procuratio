@@ -32,6 +32,8 @@ if( have_rows('acf_group_homepage') ):
     get_template_part( 'partials/sections/layout','control' );
     get_template_part( 'partials/sections/layout','services' );
     get_template_part( 'partials/sections/layout','values' );
+    get_template_part( 'partials/sections/layout','contact' );
+
   endwhile;
 endif;
 ?>
