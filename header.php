@@ -84,7 +84,7 @@
           <a href="#" class="nav-link">FR</a>
         </div> 
 	      //*/ ?>
-        <div class="ml-0 mr-auto">
+        <div class="ml-0 mr-auto d-flex ">
           <?php languages_list_navbar();?>
 
         </div>
@@ -98,8 +98,8 @@
           </a>
         </div>
         <div class="d-flex p-0 ml-auto">
-          <?php get_template_part('partials/nav/cta','headerMobile')?>
-          <span class="p-1"></span>
+          <?php // get_template_part('partials/nav/cta','headerMobile')?>
+          <?php //<span class="p-1"></span> ?>
           <div onclick="openMenu()" title="toggle menu" id="burger" class="header-mobile__burger  header-mobile__burger--visible"  aria-expanded="false">
             <?php if ( is_front_page() ):?>
               <?php get_template_part('partials/nav/burger','light'); ?>
