@@ -59,9 +59,11 @@
           ?>  
       
           <div class="my-auto ml-auto mr-0 d-flex">
+              <?php /*
               <a href="#" class="nav-link ml-1 text-white">IT</a>
               <a href="#" class="nav-link ml-1 text-white">EN</a>
               <a href="#" class="nav-link ml-1 text-white">FR</a>
+              //*/ ?>
               <?php languages_list_navbar();?>
           </div> 
           <?php /*
