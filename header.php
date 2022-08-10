@@ -112,7 +112,7 @@
       </div>
     </div>
   </header>
-  <div class="mx-0 p-2  w-100 d-flex d-lg-none" style="position:absolute;margin-top:96px;">
+  <div class="mx-0 p-2  w-100 d-flex d-lg-none" style="position:absolute;z-index:9999;margin-top:96px;">
     <div class="ml-auto mr-0">
       <?php languages_list_navbar_mobile();?>
     </div>
