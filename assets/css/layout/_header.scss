@@ -129,14 +129,13 @@
     }
     &__burger {
         @extend .d-block,
-        .d-lg-none,
         .d-xl-none,
         .my-auto,
         .p-0;
         cursor: pointer;
         margin-left: auto!important;
         margin-right: 0!important;
-        @media (max-width: $screen-lg-min) {
+        @media (max-width: $screen-xl-min) {
             display: none;
         }
         &--visible {
