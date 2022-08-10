@@ -111,11 +111,7 @@
         </div>
       </div>
     </div>
-  </header>
-  <div class="mx-0 p-2  border w-100 d-flex " style="margin-top:96px;">
-          <?php languages_list_navbar_mobile();?>
-
-    </div>
+  </header> 
   <div id="overlayMenu" class="mobile-menu mobile-menu--hidden " style=" ">
 
     <div class="mobile-menu__menu">        
