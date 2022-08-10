@@ -761,8 +761,7 @@ body{overflow-y:scroll;position:absolute;height:100%;width:100%;display:block;ov
 main,.site-main,#page,.site{-ms-flex:1;-webkit-box-flex:1;flex:1}
 a{color:#29ffff}
 h1,h2,h3,h4,h5,h6{font-family:"Josefin Sans","Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important}
-p,span{color:#343a40;font-family:"Raleway",Times,"Times New Roman",Georgia,serif !important}
-p{font-size:1.15rem}
+p{color:#343a40;font-family:"Raleway",Times,"Times New Roman",Georgia,serif !important;font-size:1.15rem}
 body{overflow-x:hidden !important;overflow-y:scroll}
 .overheader{position:sticky;height:36px;background-color:#fff}
 .overheader__container{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:left;-ms-flex-align:left;align-items:left;position:relative;height:100%}
