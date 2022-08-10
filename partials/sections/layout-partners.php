@@ -10,7 +10,7 @@
                       </style>
 <section style="border-bottom:1px solid #002369;border-top:1px solid #002369; overflow-y:visible"
  class="w-100 p-0 bg-light" id="partners"  >
-  <div class="container-fluid  h-100 px-0   ">
+  <div class="container  h-100 px-0   ">
     <div class="row p-0 h-100 w-100">
       <?php  
         if( have_rows('group_partners') ):
@@ -19,7 +19,7 @@
             $title = get_sub_field('title');
             $counterA++;
           ?>
-            <div class="col-12 col-lg-4  text-center h-100  bg-  text-dark my-3 mx-auto "  data-aos="flip-up"  >
+            <div class="col-12 col-lg-6  text-center h-100  bg-  text-dark my-3 mx-auto "  data-aos="flip-up"  >
               <?php if ($title) :  ?>
                 <div class="h-25" style="min-height:96px" >
                 <h3 class=" mx-auto p-4 my-auto text-dark"  >
