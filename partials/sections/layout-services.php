@@ -5,17 +5,19 @@
     $conclusion = get_sub_field('conclusion'); 
 ?>
  
-  <section id="services" class="section">
-    <div class="container py-3  services">
+  <section id="services" class="section section  py-3 py-lg-5">
+    <div class="container m-auto  services">
       <div class="row">
         <div class="col-12 col-lg-9  ">
 
-          <?php if ($title) :  ?>
-            <h3 class="text-dark d-flex">
-              <div class="dash mr-2 ml-n4"></div> 
-              <?= $title ?>
-            </h3>
-          <?php endif;?>
+        <?php if ($title) :  ?>
+                <div class="h-25" style="min-height:96px" >
+                <h3 class=" mx-auto p-4 my-auto text-dark"  >
+                  <?= $title ?>
+                </h3>
+                </div>
+                
+              <?php endif;?>
           <?php if ($content) :  ?>
             <p>
               <?= $content ?>
