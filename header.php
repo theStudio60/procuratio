@@ -84,10 +84,7 @@
           <a href="#" class="nav-link">FR</a>
         </div> 
 	      //*/ ?>
-        <div class="ml-0 mr-auto d-flex ">
-          <?php languages_list_navbar();?>
 
-        </div>
 
 	      
         <div class="header-mobile__brand mr-auto ml-auto ">
@@ -117,6 +114,10 @@
   </header>
 
   <div id="overlayMenu" class="mobile-menu mobile-menu--hidden " style=" ">
+    <div class="mx-0 p-2 my-3 border w-100 d-flex ">
+          <?php languages_list_navbar_mobile();?>
+
+    </div>
     <div class="mobile-menu__menu">        
       <?php wp_nav_menu( array(
       'theme_location'  => 'header-menu',
@@ -127,7 +128,8 @@
       'menu_class'      => 'm-auto p-0',
       'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
       'walker'          => new WP_Bootstrap_Navwalker(),
-      ));?>  
+      ));?> 
+
     </div>
   </div>
   <script>

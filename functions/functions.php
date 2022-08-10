@@ -47,6 +47,52 @@ acf_add_options_page(array(
 
 
 // wpml language list navbar
+function languages_list_navbar_mobile(){
+  $languages = icl_get_languages('skip_missing=0&orderby=id&order=ASC');
+  if(!empty($languages)){
+    echo '<ul id="navbar__language-list" class="w-25 d-block d-lg-flex p-0 ml-0 ml-lg-auto mr-auto">';
+    foreach($languages as $l){
+       //echo '<li class=" ">';
+      if($l['language_code']){
+
+
+        if($l['language_code'] == 'it-it'){
+          $l['language_code'] = 'IT';
+        }
+        if($l['language_code'] == 'fr-fr'){
+          $l['language_code'] = 'FR';
+        }
+        if($l['language_code'] == 'en-en'){
+          $l['language_code'] = 'EN';
+        }
+        
+
+        //if(!$l['active']) echo '<a class="navbar__language-list__item" href="'.$l['url'].'">';
+        //echo icl_disp_language($l['language_code']);
+        //if(!$l['active']) echo '</a>';
+      }
+      //echo '';
+
+      //*
+      
+      if(!$l['active']) :
+        echo '<li class="nav-link" ><a style=" text-decoration:none; text-transform:uppercase;" class=" " href="'.$l['url'].'">';
+        echo icl_disp_language($l['language_code']);
+        //if(!$l['active']) 
+        echo '</a></li>';
+      endif;
+    //*/
+    if( $l['active']) :
+    echo '<li class="nav-link" ><a style=" text-decoration:underline; text-transform:uppercase;" class=" " href="'.$l['url'].'">';
+    echo icl_disp_language($l['language_code']);
+    //if(!$l['active']) 
+    echo '</a></li>';
+    endif;
+   //echo '</li>';
+    }
+    echo '</ul>';
+  }
+}
 
     function languages_list_navbar(){
       $languages = icl_get_languages('skip_missing=0&orderby=id&order=ASC');
