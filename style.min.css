@@ -201,7 +201,7 @@ a.bg-dark:hover,.header a.overheader:hover,a.bg-dark:focus,.header a.overheader:
 .p-3,.header-mobile__row,.button--hero,.button--transparent-primary,.button--primary,.button--secondary{padding:1rem !important}
 .pt-3,.py-3{padding-top:1rem !important}
 .pr-3,.px-3{padding-right:1rem !important}
-.pb-3,.py-3{padding-bottom:1rem !important}
+.pb-3,.header a.nav-link,.py-3{padding-bottom:1rem !important}
 .pl-3,.px-3{padding-left:1rem !important}
 .p-4,.popup .container .row .col .content,.popup .section__container .row .col .content,.popup .footer__container .row .col .content,.popup .hero__container .row .col .content,.popup .hero--page__container .row .col .content,.popup .container .overheader__social-icon .col .content,.popup .section__container .overheader__social-icon .col .content,.popup .footer__container .overheader__social-icon .col .content,.popup .hero__container .overheader__social-icon .col .content,.popup .hero--page__container .overheader__social-icon .col .content,.popup .container .header__row .col .content,.popup .section__container .header__row .col .content,.popup .footer__container .header__row .col .content,.popup .hero__container .header__row .col .content,.popup .hero--page__container .header__row .col .content,.popup .container .section__row .col .content,.popup .section__container .section__row .col .content,.popup .footer__container .section__row .col .content,.popup .hero__container .section__row .col .content,.popup .hero--page__container .section__row .col .content,.popup .container .footer__row .col .content,.popup .section__container .footer__row .col .content,.popup .footer__container .footer__row .col .content,.popup .hero__container .footer__row .col .content,.popup .hero--page__container .footer__row .col .content,.popup .container .footer__body .col .content,.popup .section__container .footer__body .col .content,.popup .footer__container .footer__body .col .content,.popup .hero__container .footer__body .col .content,.popup .hero--page__container .footer__body .col .content,.popup .container .hero__row .col .content,.popup .section__container .hero__row .col .content,.popup .footer__container .hero__row .col .content,.popup .hero__container .hero__row .col .content,.popup .hero--page__container .hero__row .col .content,.popup .container .hero--page__row .col .content,.popup .section__container .hero--page__row .col .content,.popup .footer__container .hero--page__row .col .content,.popup .hero__container .hero--page__row .col .content,.popup .hero--page__container .hero--page__row .col .content{padding:1.5rem !important}
 .pt-4,.py-4{padding-top:1.5rem !important}
@@ -768,7 +768,7 @@ body{overflow-x:hidden !important;overflow-y:scroll}
 .overheader__container{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:left;-ms-flex-align:left;align-items:left;position:relative;height:100%}
 .overheader__container__row{font-size:12px;font-weight:400;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}
 .overheader__container__row div{color:#495057}
-.header{position:absolute;top:0;background:rgba(255,255,255,0) !important;width:100vw !important}
+.header{position:absolute;top:0;background:rgba(255,255,255,0) !important;width:100vw !important;z-index:9999}
 .header__row{width:100%}
 .header__menu{width:100%}
 .header .overheader{height:36px;color:#fff}
