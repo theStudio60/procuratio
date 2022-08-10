@@ -11,7 +11,7 @@ if( have_rows('group_fiduciaire') ):
 ?>
   <section  
     id="fiduciaire"
-    class="bg-dark text-white" 
+    class="section bg-dark text-white  py-3 py-lg-5" 
     data-aos="slide-up" data-aos-duration="800" 
   >  
    

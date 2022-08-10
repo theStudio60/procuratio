@@ -9,7 +9,7 @@
                       }
                       </style>
 <section style="border-bottom:1px solid #002369;border-top:1px solid #002369; overflow-y:visible"
- class="w-100 p-0 bg-light" id="partners"  >
+ class="w-100 section  py-3 py-lg-5 bg-light" id="partners"  >
   <div class="container  h-100 px-0   ">
     <div class="row p-0 h-100 w-100">
       <?php  
