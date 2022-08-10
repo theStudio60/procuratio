@@ -75,6 +75,7 @@
     background: rgba($dark, 1);
     color: $white;
     position: fixed;
+    z-index: 99999!important;
     @extend .navbar,
     .p-0,
     .m-0,

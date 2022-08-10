@@ -778,7 +778,7 @@ body{overflow-x:hidden !important;overflow-y:scroll}
 .header__brand{width:100%;margin:0 auto}
 .header__brand__logo{margin:auto}
 .header__brand__logo img{height:200px;margin:auto}
-.header-mobile{height:96px;width:100vw !important;background:#002369;color:#fff;position:fixed}
+.header-mobile{height:96px;width:100vw !important;background:#002369;color:#fff;position:fixed;z-index:99999 !important}
 .header-mobile__row{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 .header-mobile__brand{width:auto;margin:0 auto}
 .header-mobile__brand a.nav-link{color:#fff !important;font-family:"Josefin Sans","Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-weight:600}
