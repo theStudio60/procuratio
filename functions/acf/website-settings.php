@@ -66,6 +66,7 @@ acf_add_local_field_group(array(
 							),
 							'return_format' => 'array',
 				    	),
+						/*
 						array(
 							'key' => 'field_67009ae00350a',
 							'label' => 'POP-UP Call To Action',
@@ -104,6 +105,8 @@ acf_add_local_field_group(array(
 								),
 							),
 						),
+						//*/
+						/*
 						array(
 							'key' => 'field_677a2caa2d7d8',
 							'label' => 'Section Call To Action',
@@ -119,7 +122,7 @@ acf_add_local_field_group(array(
 							),
 							'layout' => 'block',
 							'sub_fields' => array(
-		 /*
+ 
 								array(
 									'key' => 'field_67709ac06350d',
 									'label' => 'Image',
@@ -144,7 +147,7 @@ acf_add_local_field_group(array(
 									'max_size' => '',
 									'mime_types' => '',
 								),
-								//*/
+						 
 								array(
 									'key' => 'field_677a2caa2d7da',
 									'label' => 'Contenu',
@@ -166,6 +169,7 @@ acf_add_local_field_group(array(
 								),
 							),
 						),
+							//*/
 
 					),
 				),

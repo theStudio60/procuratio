@@ -64,7 +64,7 @@
               <a href="#" class="nav-link ml-1 text-white">EN</a>
               <a href="#" class="nav-link ml-1 text-white">FR</a>
               //*/ ?>
-              <?php languages_list_navbar();?>
+              <?php  languages_list_navbar();?>
           </div> 
           <?php /*
           <button onclick= "" class="button">Call to action</button>
@@ -145,7 +145,7 @@
     }) ; 
 //*/
   </script>
-        <?php // get_template_part('partials/elements/popup') ?>
+        <?php get_template_part('partials/elements/popup') ?>
 
 
   <?php get_template_part('partials/nav/btn','scollToTop')?>
