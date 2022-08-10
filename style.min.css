@@ -787,7 +787,7 @@ body{overflow-x:hidden !important;overflow-y:scroll}
 .header-mobile__burger--hidden{display:none;visibility:hidden;width:0 !important;margin:0 !important;padding:0 !important}
 .header-mobile__cta{margin-left:auto;margin-right:1rem;cursor:pointer}
 .header-mobile__language{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-family:"Raleway",sans-serif;font-weight:700;color:#29ffff !important}
-.mobile-menu{position:fixed !important;min-height:calc(100vh - 96px) !important;z-index:100 !important;background:#002369 !important;-webkit-transition:.9s 0s ease-in-out;transition:.9s 0s ease-in-out}
+.mobile-menu{position:fixed !important;min-height:100vh !important;z-index:100 !important;background:#002369 !important;-webkit-transition:.9s 0s ease-in-out;transition:.9s 0s ease-in-out}
 .mobile-menu a.nav-link{color:#2970ff !important;font:font-title;font-weight:700}
 .mobile-menu--visible{left:0;opacity:1}
 .mobile-menu--hidden{left:100%;visibility:hidden;opacity:0}
