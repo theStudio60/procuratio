@@ -68,9 +68,10 @@
 }
 
 .header-mobile {
-    //    height: 96px;
+    height: 96px;
     width: 100vw!important;
-    background: $white;
+    background: rgba($dark, 1);
+    color: $white;
     @extend .navbar,
     .fixed-top,
     .p-0,
@@ -107,8 +108,8 @@
         }
         a.nav-link {
             color: $white !important;
-            font: font-title;
-            font-weight: $weight-bold;
+            font-family: $font-family-sans-serif;
+            font-weight: 600;
         }
         &__logo {
             @extend .d-flex;
@@ -164,7 +165,7 @@
         align-items: center;
         font-family: $font-title;
         font-weight: $weight-bold;
-        color: $primary!important;
+        color: $secondary!important;
         @include media-breakpoint-up(sm) {
             flex-direction: row;
         }
@@ -178,12 +179,12 @@
     @extend .w-100,
     .d-flex;
     position: fixed!important;
-    min-height: calc( 100vh - 80px)!important;
-    top: 80px;
+    min-height: calc( 100vh - 96px)!important;
+    //top: 80px;
     z-index: 100!important;
     //margin-top: 0!important;
-    background: $white !important;
-    transition: .33s 0s ease-in-out;
+    background: $dark !important;
+    transition: .9s 0s ease-in-out;
     a.nav-link {
         color: $primary !important;
         font: font-title;
@@ -210,22 +211,32 @@
         color: $gray-500;
         font-weight: $font-weight-normal;
         >ul {
+            @extend .m-auto,
+            .p-0;
             display: block;
         }
         li {
+            @extend .mx-auto;
             padding: $spacer $spacer/4;
         }
         a {
             user-select: none;
             font-size: 18px;
+            text-emphasis-color: $secondary;
         }
         a.nav-link {
-            color: $primary !important;
-            font: font-title;
-            font-weight: $weight-bold;
+            color: $white!important;
+            font-family: $font-family-sans-serif;
+            font-weight: 600;
+            text-align: center;
+            &:hover,
+            &:focus {
+                color: $secondary!important;
+                text-decoration: underline;
+            }
         }
         .menu-item a.nav-link {
-            color: $dark;
+            color: $white;
         }
         .menu-item a:hover,
         .menu-item a:focus {
@@ -233,9 +244,9 @@
         }
         .current-menu-item.active a {
             //color: $primary!important;
-            text-decoration: none;
-            font-weight: $font-weight-bolder;
-            border-left: solid 2px #fff;
+            //text-decoration: none;
+            //font-weight: $font-weight-bolder;
+            //border-left: solid 2px #fff;
         }
         .dropdown.active .dropdown-toggle.nav-link {
             color: $primary!important;
