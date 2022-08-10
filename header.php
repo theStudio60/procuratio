@@ -71,7 +71,7 @@
   </header>
    
   
-  <header id="masthead" class="header-mobile" >
+  <header id="masthead" class="header-mobile border-bottom" >
     <div class="header-mobile__container"> 
       <div class="header-mobile__row ">
 	      <?php /*
@@ -90,7 +90,7 @@
         <div class="header-mobile__brand mr-auto ml-auto ">
           <a href="<?= get_home_url() ?>" onclick="closeMenu()" >
             <div class=" header-mobile__brand__logo">
-              <img style="height:auto;width:160px" src="<?= $logotype_b ?>" alt="<?= get_bloginfo() ?>">
+              <img style="height:auto;width:160px" src="<?= $logotype_w ?>" alt="<?= get_bloginfo() ?>">
             </div>
           </a>
         </div>
@@ -99,13 +99,13 @@
           <span class="p-1"></span>
           <div onclick="openMenu()" title="toggle menu" id="burger" class="header-mobile__burger  header-mobile__burger--visible"  aria-expanded="false">
             <?php if ( is_front_page() ):?>
-              <?php get_template_part('partials/nav/burger','dark'); ?>
+              <?php get_template_part('partials/nav/burger','light'); ?>
             <?php  endif?>
           </div>
 
           <div onclick="closeMenu()" title="close menu" id="close" class="header-mobile__burger  header-mobile__burger--hidden"  aria-expanded="false"> 
             <?php if ( is_front_page() ):?>
-              <?php get_template_part('partials/nav/close','dark'); ?>
+              <?php get_template_part('partials/nav/close','light'); ?>
             <?php  endif?>
           </div>
         </div>
@@ -121,7 +121,7 @@
       'container'       => ' ',
       'container_class' => ' ',
       'container_id'    => 'navMenu',
-      'menu_class'      => ' ',
+      'menu_class'      => 'm-auto p-0',
       'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
       'walker'          => new WP_Bootstrap_Navwalker(),
       ));?>  
