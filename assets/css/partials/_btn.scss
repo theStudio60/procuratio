@@ -12,7 +12,7 @@
     //background-position: right;
     font-family: $font-family-sans-serif;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 18px!important;
     text-decoration: none;
     line-height: $input-btn-line-height;
     //letter-spacing: .8px;
@@ -28,6 +28,7 @@
     box-shadow: $box-shadow;
     //*/
     p {
+        font-size: 22px!important;
         margin: auto
     }
     &:focus,
@@ -156,7 +157,7 @@
         padding: 8px 24px;
     }
     @media screen and (min-width: 768px) {
-        font-size: 14px;
+        font-size: 22px;
     }
     &--small {
         font-size: 11px;
