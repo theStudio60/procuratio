@@ -10,16 +10,12 @@
       <div class="row">
         <div class="col-12 col-lg-9  ">
 
-        <?php if ($title) :  ?>
-                <div class="h-25" style="min-height:96px" >
-                <h3 class=" mx-auto p-4 my-auto text-dark"  >
+          <?php if ($title) :  ?>
+              <h3 class="text-dark d-flex mb-3" >
                 <div class="dash mr-2 ml-n4 my-auto"></div>
-
-                  <?= $title ?>
-                </h3>
-                </div>
-                
-              <?php endif;?>
+                <?= $title ?>
+              </h3>  
+          <?php endif;?>
           <?php if ($content) :  ?>
             <p>
               <?= $content ?>
