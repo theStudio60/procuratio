@@ -116,10 +116,7 @@
   <div id="overlayMenu" class="mobile-menu mobile-menu--hidden " style=" ">
 
     <div class="mobile-menu__menu">        
-    <div class="mx-0 p-2 my-3 border w-100 d-flex ">
-          <?php languages_list_navbar_mobile();?>
 
-    </div>
       <?php wp_nav_menu( array(
       'theme_location'  => 'header-menu',
       'depth'           => 1, // 1 = no dropdowns, 2 = with dropdowns.
@@ -129,7 +126,12 @@
       'menu_class'      => 'm-auto p-0',
       'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
       'walker'          => new WP_Bootstrap_Navwalker(),
-      ));?> 
+      ));
+      ?> 
+
+    </div>
+    <div class="mx-0 p-2 my-3 border w-100 d-flex ">
+          <?php languages_list_navbar_mobile();?>
 
     </div>
   </div>
