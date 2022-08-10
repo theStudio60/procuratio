@@ -34,7 +34,7 @@ if( have_rows('group_fiduciaire') ):
       
          
       </div>
-      <div class="row w-100 h-100">
+      <div class="row w-100 h-100 py-2">
                 <?php if( have_rows('repeater_columns') ): ?>
                   <?php while( have_rows('repeater_columns') ): the_row(); ?>
          
@@ -45,9 +45,9 @@ if( have_rows('group_fiduciaire') ):
                         $icon = get_sub_field('icon');
                         $content = get_sub_field('content');
                       ?>
-                      <div class="col-12 col-lg-3 text-center ">
+                      <div class="col-12 col-lg-3  text-center ">
                         <div class="text-center p-2">
-                          <i class="fa fa-2x text-white <?= $icon ?> "> </i>
+                          <i class="fa fa-5x  text-white <?= $icon ?> "> </i>
                           <br>
                           <p class="text-white my-4">
                             <?= $content ?>
