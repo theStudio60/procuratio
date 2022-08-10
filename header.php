@@ -85,7 +85,7 @@
         </div> 
 	      //*/ ?>
         <div class="ml-0 mr-auto">
-          <?php // languages_list_navbar();?>
+          <?php languages_list_navbar();?>
 
         </div>
 

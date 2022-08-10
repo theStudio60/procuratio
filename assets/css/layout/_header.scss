@@ -74,8 +74,8 @@
     width: 100vw!important;
     background: rgba($dark, 1);
     color: $white;
+    position: fixed;
     @extend .navbar,
-    .fixed-top,
     .p-0,
     .m-0,
     .d-block,
