@@ -87,9 +87,9 @@
 
 
 	      
-        <div class="header-mobile__brand mr-auto ml-auto ">
+        <div class="header-mobile__brand mr-auto ml-2 ">
           <a href="<?= get_home_url() ?>" onclick="closeMenu()" >
-            <div class=" header-mobile__brand__logo">
+            <div class=" header-mobile__brand<__logo">
               <img style="height:auto;width:160px" src="<?= $logotype_w ?>" alt="<?= get_bloginfo() ?>">
             </div>
           </a>
