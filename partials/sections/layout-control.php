@@ -35,15 +35,23 @@ if( have_rows('group_control') ):
                   color:#fff;
                 }
                 #summary div.collapse:not(.show) {
-                    //height:192px;
+                    height:64px;
                     overflow: hidden;
                     display: -webkit-box;
-                    -webkit-line-clamp: 2;
+                    -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;  
+               /* Safari 10.1 */
+@media not all and (min-resolution:.001dpcm){ 
+@supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
+ 
+height:auto; 
+ 
+}}
+ 
                 }
 
                 #summary div.collapsing {
-                    min-height: 196px;
+                    min-height: 192px;
                 }
                 #summary a.collapsed:after  {
                     content: 'Lire la suite'; 
