@@ -13,6 +13,8 @@
         <?php if ($title) :  ?>
                 <div class="h-25" style="min-height:96px" >
                 <h3 class=" mx-auto p-4 my-auto text-dark"  >
+                <div class="dash mr-2 ml-n4 my-auto"></div>
+
                   <?= $title ?>
                 </h3>
                 </div>
