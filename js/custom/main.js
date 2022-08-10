@@ -11,8 +11,8 @@ if (isTouch) {
 
 AOS.init({
     disable: 'mobile',
-    debounceDelay: 500,
-    offset: 120, // offset (in px) from the original trigger point
+    debounceDelay: 1500,
+    // offset: 120, // offset (in px) from the original trigger point
     delay: 0, // values from 0 to 3000, with step 50ms
     duration: 600, // values from 0 to 3000, with step 50ms
     easing: 'ease-in-out', // default easing for AOS animations
@@ -133,7 +133,7 @@ function handleScroll() {
     // Do something on scroll
     var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
 
-    if (rootElement.scrollTop / scrollTotal > 0.50) {
+    if (rootElement.scrollTop / scrollTotal > 2.50) {
         // Show button
         scrollToTopBtn.classList.add("showBtn");
     } else {
@@ -166,6 +166,6 @@ for (var x = 0; x < droppers.length; x++) {
         target.classList.toggle('dropdown');
         arrow.classList.toggle('arrow-rotate');
         console.log(arrow);
-        
+
     };
 }

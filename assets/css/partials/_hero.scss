@@ -4,11 +4,11 @@
 
 .hero {
     //
-    min-height: 70vh;
+    min-height: 99vh;
     margin: 0 0 0 0!important;
     padding: 0!important;
     display: flex;
-    background: $primary;
+    background: $dark;
     background-size: cover!important;
     background-repeat: no-repeat!important;
     background-position: center!important;
@@ -79,8 +79,6 @@
         .my-md-auto;
         @extend .p-1;
         @extend .col-12;
-        @extend .col-md-10;
-        @extend .col-lg-9;
         @extend .col-xl-9;
         //@extend .mt-5; //@extend .offset-lg-6;
         //@extend .offset-xl-6;
@@ -150,7 +148,7 @@
         @extend .p-0;
         @extend .d-flex;
         height: 100%!important;
-        min-height: 70vh!important;
+        min-height: 99vh!important;
         background-size: cover!important;
         overflow: hidden!important;
         //background: $overlay75;

@@ -22,69 +22,56 @@
 <?php get_template_part('partials/preloader/preloader','script'); ?>
 <body class="page-wrapper">
   <?php wp_body_open(); ?>
-<?php
+  <?php
   $custom_logo_id = get_theme_mod( 'custom_logo' );
   //$logotype_d = wp_get_attachment_image_src( $custom_logo_id , 'full' );
   $logotype_d = THEME_URI . "/images/logo-procuratio-black.png"; 
-  $logotype_w = THEME_URI . "/images/logo-procuratio-black.png"; 
+  $logotype_w = THEME_URI . "/images/logo-procuratio-white.png"; 
   $logotype_b = THEME_URI . "/images/logo-procuratio-blue.png"; 
   $logotype = $logotype_b; 
   $logotypeMobile = $logotype_b;
   $bg_color="";
   $bg_color_mobile="";
   $position="";
-?>
-<?php if ( is_front_page() ) : ?>
-  <?php // get_template_part('partials/nav/overheader'); ?>
-  <?php $bg_color =  "transparent"?>
-  <?php $bg_color_mobile =  "light"?>
-  <?php $position =  "absolute;z-index:40" ?>
-  <?php $logotype = $logotype_w; ?>
-  <?php $logotypeMobile = $logotype_d; ?>
-<?php  endif?> 
-  <header id="masthead" class="header navbar bg-<?= $bg_color?>">
-    <div class="header__container">
-      <div class="header__brand">
-        <a href="<?= get_home_url() ?>">
-          <div class=" w-100 d-flex py-3">
-            <img width="auto" height="64px" class="mx-auto"  src="<?= $logotype_b ?>" alt="<?= get_bloginfo() ?>">
+  ?>
+  
+
+  <header id="masthead" class="header px-0 py-3 m-0 border- ">
+ 
+    <div class="container-fluid   d-flex py-2">
+        <a class="ml-2 my-auto " href="<?= get_home_url() ?>">
+          <div class=" mx-auto">
+            <img width="auto" height="64px" class="mx-auto"  src="<?= $logotype_w ?>" alt="<?= get_bloginfo() ?>">
           </div>
         </a>
-      </div>
-	    <?php 
-	/*
-      <div class="header-mobile__language">
-        <a href="#" class="nav-link">DE</a>
-        <a href="#" class="nav-link">EN</a>
-        <a href="#" class="nav-link">FR</a>
-							
-      </div> 
-	  //*/ ?>
-	    <div class="container w-25 p-0 mx-auto">
-	 	 <?php languages_list_navbar();?>
-	    </div>
-      <div class="header__row"> 
-        <div class="header__menu">
-          <?php
+        <?php
           wp_nav_menu( array(
           'theme_location'  => 'header-menu',
           'depth'           => 1, // 1 = no dropdowns, 2 = with dropdowns.
-          'container'       => 'nav',
-          'container_class' => '',
-          'container_id'    => 'navMenu',
-          'menu_class'      => 'container ',
+          'container'       => 'div',
+          'container_class' => 'm-auto',
+          'container_id'    => ' ',
+          'menu_class'      => 'm-0 p-0',
           'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
           'walker'          => new WP_Bootstrap_Navwalker(),
           ));
  
           ?>  
-        </div>
-        <?php get_template_part('partials/nav/cta','header')?>
-      </div>
-    </div>    
+      
+          <div class="my-auto ml-auto mr-0 d-flex">
+              <a href="#" class="nav-link ml-1 text-white">IT</a>
+              <a href="#" class="nav-link ml-1 text-white">EN</a>
+              <a href="#" class="nav-link ml-1 text-white">FR</a>
+          </div> 
+          <?php /*
+          <button onclick= "" class="button">Call to action</button>
+          //*/ ?>
+    </div>
+
   </header>
+   
   
-  <header id="masthead" class="header-mobile" >
+  <header id="masthead" class="header-mobile border-bottom" >
     <div class="header-mobile__container"> 
       <div class="header-mobile__row ">
 	      <?php /*
@@ -95,7 +82,7 @@
         </div> 
 	      //*/ ?>
         <div class="ml-0 mr-auto">
-          <?php languages_list_navbar();?>
+          <?php // languages_list_navbar();?>
 
         </div>
 
@@ -103,7 +90,7 @@
         <div class="header-mobile__brand mr-auto ml-auto ">
           <a href="<?= get_home_url() ?>" onclick="closeMenu()" >
             <div class=" header-mobile__brand__logo">
-              <img style="height:auto;width:160px" src="<?= $logotype_b ?>" alt="<?= get_bloginfo() ?>">
+              <img style="height:auto;width:160px" src="<?= $logotype_w ?>" alt="<?= get_bloginfo() ?>">
             </div>
           </a>
         </div>
@@ -112,13 +99,13 @@
           <span class="p-1"></span>
           <div onclick="openMenu()" title="toggle menu" id="burger" class="header-mobile__burger  header-mobile__burger--visible"  aria-expanded="false">
             <?php if ( is_front_page() ):?>
-              <?php get_template_part('partials/nav/burger','dark'); ?>
+              <?php get_template_part('partials/nav/burger','light'); ?>
             <?php  endif?>
           </div>
 
           <div onclick="closeMenu()" title="close menu" id="close" class="header-mobile__burger  header-mobile__burger--hidden"  aria-expanded="false"> 
             <?php if ( is_front_page() ):?>
-              <?php get_template_part('partials/nav/close','dark'); ?>
+              <?php get_template_part('partials/nav/close','light'); ?>
             <?php  endif?>
           </div>
         </div>
@@ -134,7 +121,7 @@
       'container'       => ' ',
       'container_class' => ' ',
       'container_id'    => 'navMenu',
-      'menu_class'      => ' ',
+      'menu_class'      => 'm-auto p-0',
       'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
       'walker'          => new WP_Bootstrap_Navwalker(),
       ));?>  

@@ -36,43 +36,7 @@ if( have_rows('contact_infos') ):
   $gmap = get_sub_field('gmap_url');
 ?>
 <footer class="footer bg-<?= $bg_color ?> text-<?= $txt_color ?>">
-  <div id="contact" class="container mx-auto">
-    <div class="row">
- 
- 
-
-         <div class="container d-flex w-100">
-           <div class="row mx-0 mx-lg-auto ">
-            <div class="col-12 col-lg-9">
-              <h2 class="mb-3 ml-0 text-uppercase p-0">contact</h2>
-            </div>
-             <div class="col-12 col-lg-6 order-2 order-lg-1 py-0 pr-0 pr-lg-5 pl-0">
-                <div class="my-2 mx-0 p-0  w-100 bg-white  d-flex d-lg-none  " style="height:4px">
-                </div>
-              <?= do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]')?>
-             </div>
-            <div class="col-12 col-lg-6 order-1 order-lg-2">
-              <div class="row">
-                <div class="contact-text col-12">
-                  <p class="my-3">
-                    <i class="fa fa-phone mr-1"></i> <?= $phone ?>
-                  </p>
-                  <p class="my-3">
-                    <i class="fa fa-envelope mr-1"></i> <?= $email ?>
-                  </p>
-                  <p class="my-3">
-                    <i class="fa fa-map-marker mr-1"></i> <?= $adress ?>
-                  </p>
-                </div>
-        
-                <iframe class="contact-map w-100 my-3"  src="<?= $gmap ?>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-   
-    </div>
-  </div>
+  
   <div class="py-3">
 
   <?php
@@ -88,7 +52,7 @@ if( have_rows('contact_infos') ):
       ));
  
   ?>  
-        <div class="my-2 mx-2  w-100 bg-primary  d-flex d-lg-none  " style="height:4px">
+        <div class="my-2 mx-2  w-100 bg-white  d-flex d-lg-none  " style="height:2px">
         </div>
   <?php
       wp_nav_menu( array(
@@ -109,7 +73,7 @@ if( have_rows('contact_infos') ):
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 my-2 text-center " style="font-size:13px;">
-        <span>  © <?= date('Y');?> - <?= get_bloginfo(); ?> - <a class="ml-1 mr-2 text-<?= $link_color ?>"href="<?= get_home_url() ?>/login"><i class="text-<?= $link_color ?> fa fa-lock"></i></a> - </span>
+        <span class="text-white">  © <?= date('Y');?> - <?= get_bloginfo(); ?> - <a class="ml-1 mr-2 text-<?= $link_color ?>"href="<?= get_home_url() ?>/login"><i class="text-<?= $link_color ?> fa fa-lock"></i></a> - </span>
           <span> <a class="ml-1 text-<?= $link_color ?>" href="<?= get_home_url() ?>/mention-legales">Mentions Légales</a> - </span>
           <span> <a class="ml-1 text-<?= $link_color ?>" href="<?= get_home_url() ?>/rgpd">Politique de Confidentialité</a></span>
         </div>

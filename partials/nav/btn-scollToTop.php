@@ -1,1 +1,1 @@
-<button class="button--scrollToTop"><span class="m-auto fa fa-lg fa-arrow-up  "></span></button>
+<button class="button--scrollToTop bg-dark"><i class="m-auto fa far fa-lg fa-arrow-up text-white  "></i></button>
