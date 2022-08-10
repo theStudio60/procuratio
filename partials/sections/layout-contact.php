@@ -34,8 +34,8 @@ if( have_rows('contact_infos') ):
   $email = get_sub_field('email');
   $gmap = get_sub_field('gmap_url');
 ?>
-<section class="section  py-3 py-lg-4  bg-<?= $bg_color ?> text-<?= $txt_color ?>">
-  <div id="contact" class="container mx-auto my-3">
+<section  id="contact"  class="section  py-3 py-lg-4  bg-<?= $bg_color ?> text-<?= $txt_color ?>">
+  <div class="container mx-auto my-3">
     <div class="row">
       <div class="col-12 col-lg-9 ">
            
