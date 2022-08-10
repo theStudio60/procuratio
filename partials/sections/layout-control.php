@@ -6,8 +6,8 @@ if( have_rows('group_control') ):
   $title = get_sub_field('title');
   $content = get_sub_field('wysiwyg');
 ?>
-<section id="control" class="bg-dark" data-aos="fade-up">
-    <div class="container   py-3 py-lg-5 ">
+<section id="control" class="section d-flex   py-3 py-lg-5 bg-dark" data-aos="fade-up">
+    <div class="container m-auto   ">
       <div class="row my-3  ">
         <div class="col-12 col-lg-9 mx-auto mx-lg-0 ">
           <?php if ($title) :  ?>

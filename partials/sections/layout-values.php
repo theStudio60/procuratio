@@ -36,9 +36,9 @@ if( have_rows('group_values') ):
                           <img class="my-auto ml-n5 mr-3 img-fluid"  width="64px" src=" <?php echo $image['url']; ?> ">
 
                           <?php if ($subtitle) :  ?>
-                            <h3 class="text-dark my-auto">
+                            <h4 class="text-dark my-auto">
                               <?= $subtitle ?>
-                            </h3>
+                            </h4>
                           <?php endif; ?>
                         </div>
 
