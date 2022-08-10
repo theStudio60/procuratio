@@ -33,7 +33,7 @@ if( have_rows('group_values') ):
                       ?>
                       <div class="col-12 col-lg-4 mx-0 mx-lg-auto" data-aos="flip-left">
                         <div class="d-flex mb-3" >
-                          <img class="my-auto ml-n3 mr-3 img-fluid"  width="64px" src=" <?php echo $image['url']; ?> ">
+                          <img class="my-auto ml-n3 mr-2 img-fluid"  width="64px" src=" <?php echo $image['url']; ?> ">
 
                           <?php if ($subtitle) :  ?>
                             <h4 class="text-dark my-auto">
