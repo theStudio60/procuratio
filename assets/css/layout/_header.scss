@@ -1,6 +1,5 @@
 .header {
     @extend .d-none,
-    .d-lg-block,
     .d-xl-block,
     .py-0;
     position: absolute;
@@ -80,7 +79,7 @@
     .p-0,
     .m-0,
     .d-block,
-    .d-lg-none;
+    .d-xl-none;
     &__container {
         @extend .container-fluid,
         .d-flex,

@@ -74,7 +74,7 @@
   </header>
    
   
-  <header id="masthead" class="header-mobile border-bottom" >
+  <header id="masthead" class="header-mobile border-bottom " >
     <div class="header-mobile__container"> 
       <div class="header-mobile__row ">
 	      <?php /*
