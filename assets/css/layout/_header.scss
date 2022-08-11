@@ -1,12 +1,13 @@
 .header {
     @extend .d-none,
-    .d-xl-block,
+    .d-xl-flex,
     .py-0;
-    position: absolute;
+    position: fixed;
     top: 0;
-    background: rgba(255, 255, 255, 0)!important;
+    background: rgba(255, 255, 255, 0);
     width: 100vw!important;
     z-index: 9999;
+    transition: 400ms;
     &__container {
         @extend .container-fluid;
     }
