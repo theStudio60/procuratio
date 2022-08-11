@@ -36,13 +36,11 @@
   ?>
   
 
-  <header id="masthead" class="header px-0 py-3 m-0 border- ">
+  <header id="masthead" class="header px-0 m-0 " style="height:128px">
  
-    <div class="container-fluid   d-flex py-2">
-        <a class="ml-2 my-auto " href="<?= get_home_url() ?>">
-          <div class=" mx-auto">
-            <img width="auto" height="64px" class="mx-auto"  src="<?= $logotype_w ?>" alt="<?= get_bloginfo() ?>">
-          </div>
+    <div class="container-fluid   d-flex  my-auto">
+        <a class="my-auto " href="<?= get_home_url() ?>">
+            <img width="auto"  class="" id="headerBrand" style="height:72px;margin-left:16px;transition:500ms" src="<?= $logotype_w ?>" alt="<?= get_bloginfo() ?>">
         </a>
         <?php
           wp_nav_menu( array(
@@ -58,17 +56,9 @@
  
           ?>  
       
-          <div class="my-auto ml-auto mr-0 d-flex">
-              <?php /*
-              <a href="#" class="nav-link ml-1 text-white">IT</a>
-              <a href="#" class="nav-link ml-1 text-white">EN</a>
-              <a href="#" class="nav-link ml-1 text-white">FR</a>
-              //*/ ?>
-              <?php  languages_list_navbar();?>
-          </div> 
-          <?php /*
-          <button onclick= "" class="button">Call to action</button>
-          //*/ ?>
+          <div class="my-auto ml-auto mr-0 d-flex"> 
+              <?php languages_list_navbar();?>
+          </div>  
     </div>
 
   </header>
@@ -76,17 +66,7 @@
   
   <header id="masthead" class="header-mobile border-bottom " >
     <div class="header-mobile__container"> 
-      <div class="header-mobile__row ">
-	      <?php /*
-        <div class="header-mobile__language">
-          <a href="#" class="nav-link">DE</a>
-          <a href="#" class="nav-link">EN</a>
-          <a href="#" class="nav-link">FR</a>
-        </div> 
-	      //*/ ?>
-
-
-	      
+      <div class="header-mobile__row "> 
         <div class="header-mobile__brand mr-auto ml-2 ">
           <a href="<?= get_home_url() ?>" onclick="closeMenu()" >
             <div class=" header-mobile__brand<__logo">
@@ -94,9 +74,7 @@
             </div>
           </a>
         </div>
-        <div class="d-flex p-0 ml-auto">
-          <?php // get_template_part('partials/nav/cta','headerMobile')?>
-          <?php //<span class="p-1"></span> ?>
+        <div class="d-flex p-0 ml-auto"> 
           <div onclick="openMenu()" title="toggle menu" id="burger" class="header-mobile__burger  header-mobile__burger--visible"  aria-expanded="false">
             <?php if ( is_front_page() ):?>
               <?php get_template_part('partials/nav/burger','light'); ?>
