@@ -5,8 +5,8 @@
     $conclusion = get_sub_field('conclusion'); 
 ?>
  
-  <section id="services" class="section section  py-3 py-lg-5" >
-    <div class="container m-auto  services"     data-aos="slide-up" >
+  <section id="services" class="section section  py-3 py-lg-5"   data-aos="slide-up">
+    <div class="container m-auto  services"    >
       <div class="row">
 
 
