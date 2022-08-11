@@ -1,32 +1,54 @@
 <?php
 /**
- * Template Name: formations-page
+ * Template Name: Page conseil
  *
  * @package studio_soixante
  */
-get_header();
-if( have_rows('page-formations_acf_group') ): 
-  while( have_rows('page-formations_acf_group') ): the_row(); 
+get_header(); 
     get_template_part( 'partials/sections/hero', 'page' );
-    /* 
-    //*/
-  endwhile;
-endif;
+?>
+<style>body.page-wrapper{background-color:#002369!important;}</style>
+      <section class="section  p-4 m-0 bg-light">
+        <div class="section__container container h-100">
+          <div class="row p-0 my-auto d-flex" style=" ">
+            <div class="section__col  m-auto text-center ">
+              <div class="p-2">
+                <?php if ($title) :  ?> 
+                    <h3 class="section__subtitle text-center  text-<?= $text_color ?> my-4"><?= $title ?></h3>
+                <?php endif;?> 
+                  <div class="section__content lead text-<?= $text_color ?>">
+       
+                      <?php       while ( have_posts() ) :     the_post(); the_content();     endwhile;?>
+ 
+                  </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-if( have_rows('options-group_formations','option') ): 
-  while( have_rows('options-group_formations','option') ): the_row(); 
+    <?php  
+
+    /* 
+    //*/ 
+
+if( have_rows('options-group_conseil','option') ): 
+  while( have_rows('options-group_conseil','option') ): the_row(); 
     $title = get_sub_field('title');
     $intro = get_sub_field('introduction');
-    $bg_color = get_sub_field('background-color');
+    //$bg_color = get_sub_field('background-color');
     $text_color = "";
+    /*
     if ( $bg_color == "white") : $text_color="dark"; $button_type="primary"  ; 
     elseif ( $bg_color == "light") : $text_color="dark"; $button_type="primary"  ; 
     elseif  ( $bg_color == "primary") : $text_color="white"; $button_type="primary"   ;
     elseif  ( $bg_color == "dark") : $text_color="white"; $button_type="primary"   ;
     elseif  ( $bg_color == "secondary") : $text_color="white";  $button_type="secondary" ; 
     endif;
+    //*/
+    
     ?>
-    <section class="section  p-4 m-0 bg-<?= $bg_color ?>">
+    <section class="section  p-4 m-0 bg-dark">
       <div class="section__container container h-100">
         <div class="row p-0 my-auto d-flex" style=" ">
           <div class="section__col  m-auto text-center ">
@@ -48,12 +70,12 @@ if( have_rows('options-group_formations','option') ):
 <?php endif; ?> 
 <hr class="bg-white">
 <div class="row"> 
-  <?php if( have_rows('options-group_formations','option') ): ?>
-    <?php while( have_rows('options-group_formations','option') ): the_row();?>
-      <?php if( have_rows('options-group_formations_repeater') ): ?>
-        <?php while( have_rows('options-group_formations_repeater') ): the_row(); ?>
-          <?php if( have_rows('options-group_formations_repeater-object') ): ?>
-            <?php while( have_rows('options-group_formations_repeater-object') ): the_row();
+  <?php if( have_rows('options-group_conseil','option') ): ?>
+    <?php while( have_rows('options-group_conseil','option') ): the_row();?>
+      <?php if( have_rows('options-group_conseil_repeater') ): ?>
+        <?php while( have_rows('options-group_conseil_repeater') ): the_row(); ?>
+          <?php if( have_rows('options-group_conseil_repeater-object') ): ?>
+            <?php while( have_rows('options-group_conseil_repeater-object') ): the_row();
               $title = get_sub_field('name');
               $icon = get_sub_field('icon');
               $ID = get_sub_field('id');
@@ -101,10 +123,10 @@ if( have_rows('options-group_formations','option') ):
   
   <div class="slick-slider bg-secondary p-0 m-0">
   
-    <?php if( have_rows('options-group_formations_repeater') ): ?>
-      <?php while( have_rows('options-group_formations_repeater') ): the_row(); ?>
-        <?php if( have_rows('options-group_formations_repeater-object') ): ?>
-          <?php while( have_rows('options-group_formations_repeater-object') ): the_row(); ?>
+    <?php if( have_rows('options-group_conseil_repeater') ): ?>
+      <?php while( have_rows('options-group_conseil_repeater') ): the_row(); ?>
+        <?php if( have_rows('options-group_conseil_repeater-object') ): ?>
+          <?php while( have_rows('options-group_conseil_repeater-object') ): the_row(); ?>
           <?php
             $title = get_sub_field('name');
             $content = get_sub_field('wysiwyg');

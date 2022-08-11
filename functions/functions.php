@@ -45,6 +45,22 @@ acf_add_options_page(array(
 		'redirect'		=> false
 ));
 
+acf_add_options_page(array(
+  'page_title' 	=> 'Fiduciaire',
+  'menu_title'	=> 'Fiduciaire',
+  'menu_slug' 	=> 'fiduciaire',
+  'capability'	=> 'edit_posts',
+  'redirect'		=> false, 
+));
+
+acf_add_options_page(array(
+  'page_title' 	=> 'Conseil',
+  'menu_title'	=> 'Conseil',
+  'menu_slug' 	=> 'conseil',
+  'capability'	=> 'edit_posts',
+  'redirect'		=> false, 
+));
+
 
 // wpml language list navbar
 function languages_list_navbar_mobile(){

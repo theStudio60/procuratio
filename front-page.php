@@ -5,7 +5,9 @@
  * @package studio_soixante
  */
 get_header();
-
+?>
+<style>body.page-wrapper{background-color:#002369!important;}</style>
+<?php
 //if( have_rows('website_settings', 'option') ): 
 //  while( have_rows('website_settings', 'option') ): the_row();
 //    if( have_rows('popup_alert') ):
@@ -20,8 +22,7 @@ get_header();
 //    endif; 
 //  endwhile; 
 //endif; 
-?>     
-          <?php
+
 
 if( have_rows('acf_group_homepage') ): 
   while( have_rows('acf_group_homepage') ): the_row(); 

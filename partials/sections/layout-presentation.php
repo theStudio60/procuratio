@@ -15,7 +15,7 @@ if( have_rows('group_presentation') ):
 ?>
   <section  
     id="presentation"
-    class="   " 
+    class=" bg-white" 
   >  
    
     <div class="container  py-3 py-lg-5 ">

@@ -5,13 +5,13 @@ $logotype_w = THEME_URI . "/images/logo-procuratio-black.png";
 $logotype_b = THEME_URI . "/images/logo-procuratio-blue.png"; 
 $logotype = $logotype_d ; 
 $logotypeMobile = $logotype;
-$txt_color="";
-$link_color="";
-$bg_color="";
-$bg_color_mobile="";
-$position="";
+//$txt_color="";
+//$link_color="";
+//$bg_color="";
+//$bg_color_mobile="";
+//$position="";
 ?>
-<?php if ( is_front_page() ) : ?>
+<?php //if ( is_front_page() ) : ?>
   <?php $bg_color =  "dark"?>
   <?php $txt_color= "white"; ?>
   <?php $txt_color_mobile="white"; ?>
@@ -20,7 +20,7 @@ $position="";
   <?php $logotype = $logotype_w; ?>
   <?php $logotypeMobile = $logotype_w; ?>
 
-<?php  endif?>
+<?php // endif ; ?>
 
 <?php
 if( have_rows('website_settings', 'option') ): 
@@ -33,6 +33,12 @@ if( have_rows('contact_infos') ):
   $phone = get_sub_field('phone');
   $email = get_sub_field('email');
   $gmap = get_sub_field('gmap_url');
+?>
+ <?php
+        endwhile; 
+    endif; 
+  endwhile; 
+endif; 
 ?>
 <section  id="contact"  class="section  py-3 py-lg-4  bg-<?= $bg_color ?> text-<?= $txt_color ?>">
   <div class="container mx-auto my-3">
@@ -78,9 +84,4 @@ if( have_rows('contact_infos') ):
     </div>
   </div>
   
-  <?php
-        endwhile; 
-    endif; 
-  endwhile; 
-endif; 
-?>
+ 

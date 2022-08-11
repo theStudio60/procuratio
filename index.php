@@ -5,10 +5,10 @@ get_header();
 if ( has_post_thumbnail() ) { 
   $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
   <section class="hero hero--page" style="background: url('<?php echo $backgroundImg[0]; ?>');">
-    <div class="hero--page__overlay hero--page__overlay--<?= $overlay_color?>">
+    <div class="hero--page__overlay hero--page__overlay--default">
       <div class="hero--page__container " >
         <div class="hero__row">
-          <div class="hero__col bg-primary" >
+          <div class="hero__col" >
           <h1 class="hero__title"  > 
             <?php the_title(); ?>
           </h1>
