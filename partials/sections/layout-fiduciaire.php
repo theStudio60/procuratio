@@ -11,25 +11,30 @@ if( have_rows('group_fiduciaire') ):
 ?>
   <section  
     id="fiduciaire"
-    class="section bg-dark text-white  py-3 py-lg-5" 
+    class="  bg-dark text-white" 
     data-aos="slide-up" data-aos-duration="800" 
   >  
    
     <div class="container  py-3 py-lg-5 ">
       <div class="row my-3">
-        <div class="col-12 col-lg-9 p-4 p-lg-2" id=" " >
+        <div class="col-12 col-lg-9 p-0 p-lg-2" id=" " >
+        <div class="section-text m-auto">
+
               <?php if ($title) :  ?>
                 <h3 class="text-white d-flex mb-3">
-                  <div class="dash mr-2 ml-n4 my-auto"></div>
+                  <div class="dash mr-2 ml-0 ml-lg-n4 my-auto"></div>
                   <?= $title ?>
                 </h3> 
               <?php endif;?>
-              
-              <?php if ($content) :  ?>
-                <?= $content ?>
-              <?php endif;?>
-              
+               
+            <?php if ($content) :  ?>
+              <div class="mt-2 ml-2 ml-lg-0"  >
+                <?= $content?>
 
+              </div>
+            <?php endif;?>
+
+        </div>
         </div>
       
          

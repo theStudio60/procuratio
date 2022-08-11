@@ -6,8 +6,8 @@ if( have_rows('group_control') ):
   $title = get_sub_field('title');
   $content = get_sub_field('wysiwyg');
 ?>
-<section id="control" class="section d-flex   py-3 py-lg-5 bg-dark" data-aos="fade-up">
-    <div class="container m-auto   ">
+<section id="control" class="section d-flex   py-3 py-lg-5 bg-dark"  data-aos="slide-up" >
+    <div class="container m-auto   " >
       <div class="row my-3  ">
         <div class="col-12 col-lg-9 mx-auto mx-lg-0 ">
           <?php if ($title) :  ?>
@@ -40,13 +40,13 @@ if( have_rows('group_control') ):
                     display: -webkit-box;
                     -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;  
-               /* Safari 10.1 */
-@media not all and (min-resolution:.001dpcm){ 
-@supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
- 
-height:auto; 
- 
-}}
+                      /* Safari 10.1 */
+                      @media not all and (min-resolution:.001dpcm){ 
+                      @supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
+                      
+                      height:auto; 
+                      
+                      }}
  
                 }
 
@@ -84,6 +84,9 @@ height:auto;
               </div>   
             <?php endif;?>
         </div> 
+        <div class="col-12 col-lg-3 d-flex">
+          <i class=" m-auto fa fa-5x fa-pie-chart text-white"   ></i>
+        </div>
       </div>
     </div>
 </section>
