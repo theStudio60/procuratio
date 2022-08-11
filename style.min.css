@@ -826,7 +826,7 @@ p{font-family:"Josefin Sans",sans-serif;color:#002369;font-weight:300;text-align
 .section__col{height:auto !important;font-weight:300}
 .section__cta{border:0;border-radius:5px;padding:.5rem 1rem;text-transform:uppercase;text-align:center;font-family:"Josefin Sans",sans-serif;font-weight:700;color:#e7ffff;background-image:linear-gradient(-135deg,#5d7cba 0,#19e1e1 100%)}
 .section__half{height:auto !important;font-weight:300}
-#services .card,.services .card{border:4px solid #002369;margin:1rem;width:100%;min-height:160px}
+#services .card,.services .card{border:4px solid #002369;margin:1rem;width:100%;min-height:120px}
 #services .arc,#services .hide-arc,.services .arc,.services .hide-arc{position:absolute;border:4px solid #002369;background:#fff;width:92px;height:92px;border-radius:100%;top:-46px;left:-46px;-webkit-clip-path:polygon(50% 50%,100% 50%,100% 100%,50% 100%);clip-path:polygon(50% 50%,100% 50%,100% 100%,50% 100%)}
 #services .hide-arc,.services .hide-arc{width:89px;height:89px;border:0;-webkit-clip-path:polygon(44% 44%,100% 28%,100% 100%,30% 100%);clip-path:polygon(44% 44%,100% 28%,100% 100%,30% 100%)}
 #services span.lead,.services span.lead{font-family:"Raleway",sans-serif}
@@ -1638,7 +1638,7 @@ html:not(.no-js) [data-aos=flip-down].aos-animate{-webkit-transform:perspective(
 .navbar-expand-md .navbar-nav-scroll{overflow:visible}
 .navbar-expand-md .navbar-collapse{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important;-ms-flex-preferred-size:auto;flex-basis:auto}
 .navbar-expand-md .navbar-toggler{display:none}
-#services .card,.services .card{width:calc(50% - 2rem);min-height:160px}
+#services .card,.services .card{width:calc(50% - 2rem);min-height:120px}
 }@media screen and (min-width:768px){.button,.header-mobile__cta,.slick-prev,.slick-next{font-size:22px}
 }@media(min-width:992px){.d-lg-none{display:none !important}
 .d-lg-inline{display:inline !important}

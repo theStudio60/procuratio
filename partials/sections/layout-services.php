@@ -43,14 +43,15 @@
                     $content = get_sub_field('wysiwyg'); 
                   ?>
                     <div class="col-12 col-lg-6 col-xl-4 "     data-aos="flip-up" data-aos-duration="1000"   >
-                      <div class="card w-100 mx-0 mx-md-auto px-3"   >
+                      <div class="card w-100 mx-0 mx-md-auto px-3 d-flex"   >
                         <div class="hide-arc"></div>
                         <div class="arc"></div>
                         <?php if ($subtitle) :  ?>
-                          <span class="lead my-auto">
+                          <span class="text-dark font-sans my-auto ml-auto w-75 ">
                             <?= $subtitle ?>
                           </span>
                         <?php endif;?>
+                        <?php /*
                         <?php if ($content) :  ?>
                             <?= $content ?>
                         <?php endif;?>
@@ -59,6 +60,7 @@
                             <?= $price ?>
                           </div>
                         <?php endif;?>
+                        //*/ ?>
                       </div> <?php //end  card  ?>
                     </div>
                   <?php endwhile; ?>
