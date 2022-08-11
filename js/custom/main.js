@@ -14,9 +14,9 @@ AOS.init({
     debounceDelay: 1500,
     // offset: 120, // offset (in px) from the original trigger point
     delay: 0, // values from 0 to 3000, with step 50ms
-    duration: 600, // values from 0 to 3000, with step 50ms
+    duration: 800, // values from 0 to 3000, with step 50ms
     easing: 'ease-in-out', // default easing for AOS animations
-    once: true, // whether animation should happen only once - while scrolling down
+    once: false, // whether animation should happen only once - while scrolling down
     mirror: true // whether elements should animate out while scrolling past them
 
 });
@@ -169,3 +169,56 @@ for (var x = 0; x < droppers.length; x++) {
 
     };
 }
+
+
+
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+        /*
+        var scroll = $(window).scrollTop();
+        if (scroll > 300) {
+            $(".header").css("background", "rgba(0, 35, 105, 1)");
+        } else {
+            $(".header").css("background", "rgba(0, 35, 105, 0);");
+        }
+        //*/
+        var scroll = $(window).scrollTop();
+        if (scroll == $(window).height()) {
+            $(".header").css({ "background-color": "rgba(0, 35, 105, 0)" });
+            $(".header").css({ "height": "128px" });
+            $(".header").css({ "border-bottom": "1px solid rgba(255, 255, 255, 0)" });
+            $("#headerBrand").css({ "height": "72px" });
+            $("#headerBrand").css({ "margin-left": "0px" });
+            //
+            //$("#headerBrand").css({})
+            //
+        }
+        if (scroll > 300) {
+            $(".header").css({ "background-color": "rgba(0, 35, 105, 1)" });
+            $(".header").css({ "height": "80px" });
+            $(".header").css({ "border-bottom": "1px solid rgba(255, 255, 255, 1)" });
+            $("#headerBrand").css({ "height": "48px" });
+            $("#headerBrand").css({ "margin-left": "0px" });
+
+
+
+        } else {
+            $(".header").css({ "background-color": "rgba(0, 35, 105, 0)" });
+            $(".header").css({ "height": "128px" });
+            $(".header").css({ "border-bottom": "1px solid rgba(255, 255, 255, 0)" });
+            $("#headerBrand").css({ "height": "72px" });
+            $("#headerBrand").css({ "margin-left": "0px" });
+
+
+
+        }
+
+
+    })
+})
+
+
+
+//rgba(0, 35, 105, 1)
+//background: rgba(255, 255, 255, 0);
