@@ -275,3 +275,25 @@ p {
 //  top: 0;
 //  height: auto;
 //}
+//*
+#startup {
+    color: $white!important;
+    .container .row .col-12 .section-text h4 {
+        color: $white!important;
+    }
+    .container .row .col-12 .section-text i {
+        color: $white!important;
+    }
+    .container .row .col-12 p {
+        color: $white!important;
+    }
+}
+
+
+/*
+.text-startup,
+.text-startup p {
+    color: $white!important;
+}
+
+//*/
