@@ -18,7 +18,7 @@ if( have_rows('group_fiduciaire') ):
     <div class="container  py-3 py-lg-5 ">
       <div class="row my-3">
         <div class="col-12 col-lg-9 p-0 p-lg-2" id=" " >
-        <div class="section-text m-auto">
+        <div class="section-text m-    a  jjjjj">
 
               <?php if ($title) :  ?>
                 <h3 class="text-white d-flex mb-3">

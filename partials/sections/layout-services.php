@@ -5,38 +5,28 @@
     $conclusion = get_sub_field('conclusion'); 
 ?>
  
-  <section id="services" class="section bg-white  py-3 py-lg-5"   data-aos="slide-up">
-    <div class="container m-auto  services"    >
-      <div class="row">
-
-
-        <?php if ($title) :  ?>
-          <div class="col-12 col-lg-9  ">
-            <h3 class="text-dark d-flex mb-3" >
-              <div class="dash mr-2 ml-n4 my-auto"></div>
-              <?= $title ?>
-            </h3>   
-          </div>
-
-        <?php endif;?>
-
- 
-        <?php if ($content) :  ?>
-          <div class="col-12 col-lg-9  ">
-
-            <p>
-              <?= $content ?>
-            </p>
-          </div>
-
-        <?php endif;?>
+    <section id="services" class="section bg-white  py-3 py-lg-5"   data-aos="slide-up">
+      <div class="container m-auto  services"    >
+        <div class="row">
+          <?php if ($title) :  ?>
+            <div class="col-12 col-lg-9  ">
+              <h3 class="text-dark d-flex mb-3" >
+                <div class="dash mr-2 ml-n4 my-auto"></div>
+                <?= $title ?>
+              </h3>   
+            </div>
+          <?php endif;?>
+          <?php if ($content) :  ?>
+            <div class="col-12 col-lg-9  ">
+              <p>
+                <?= $content ?>
+              </p>
+            </div>
+          <?php endif;?>
           <div class="col-12 col-lg-9">
             <div class="container">
- 
               <div class="row">
-
-                <?php
-                if( have_rows('subgroup_services') ):
+                <?php if( have_rows('subgroup_services') ):
                   while( have_rows('subgroup_services') ): the_row();
                     $subtitle = get_sub_field('service');
                     $price = get_sub_field('price');
@@ -65,17 +55,17 @@
                     </div>
                   <?php endwhile; ?>
                 <?php endif; ?><?php //end subgroup_services ?>
-      
+                        
+              </div>
             </div>
+            <?php if ($conclusion) :  ?>
+              <p class="mt-3" >
+                <?= $conclusion ?>
+              </p>
+            <?php endif;?>
           </div>
-        <?php if ($conclusion) :  ?>
-          <p class="mt-3" >
-            <?= $conclusion ?>
-          </p>
-        <?php endif;?>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
   <?php endwhile; ?>
 <?php endif; ?>

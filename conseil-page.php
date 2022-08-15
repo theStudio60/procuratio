@@ -5,209 +5,241 @@
  * @package studio_soixante
  */
 get_header(); 
+if( have_rows('page-conseil_acf_group') ): 
+  while( have_rows('page-conseil_acf_group') ): the_row(); 
     get_template_part( 'partials/sections/hero', 'page' );
+  endwhile;
+endif;
 ?>
 <style>body.page-wrapper{background-color:#002369!important;}</style>
-      <section class="section  p-4 m-0 bg-light">
-        <div class="section__container container h-100">
-          <div class="row p-0 my-auto d-flex" style=" ">
-            <div class="section__col  m-auto text-center ">
-              <div class="p-2">
-                <?php if ($title) :  ?> 
-                    <h3 class="section__subtitle text-center  text-<?= $text_color ?> my-4"><?= $title ?></h3>
-                <?php endif;?> 
-                  <div class="section__content lead text-<?= $text_color ?>">
-       
-                      <?php       while ( have_posts() ) :     the_post(); the_content();     endwhile;?>
+<div class=" mx-0 bg-dark  " >
+  <div class="container-fluid w-100">
+    <div class="row" style=" ">
+
+      <?php if( have_rows('option-group_conseil','option') ): ?>
+        <?php while( have_rows('option-group_conseil','option') ): the_row(); ?>  
+          <?php if( have_rows('group_control') ): ?>
+            <?php while( have_rows('group_control') ): the_row();
+              $thisTitle = get_sub_field('title');
  
-                  </div> 
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    <?php  
-
-    /* 
-    //*/ 
-
-if( have_rows('options-group_conseil','option') ): 
-  while( have_rows('options-group_conseil','option') ): the_row(); 
-    $title = get_sub_field('title');
-    $intro = get_sub_field('introduction');
-    //$bg_color = get_sub_field('background-color');
-    $text_color = "";
-    /*
-    if ( $bg_color == "white") : $text_color="dark"; $button_type="primary"  ; 
-    elseif ( $bg_color == "light") : $text_color="dark"; $button_type="primary"  ; 
-    elseif  ( $bg_color == "primary") : $text_color="white"; $button_type="primary"   ;
-    elseif  ( $bg_color == "dark") : $text_color="white"; $button_type="primary"   ;
-    elseif  ( $bg_color == "secondary") : $text_color="white";  $button_type="secondary" ; 
-    endif;
-    //*/
-    
-    ?>
-    <section class="section  p-4 m-0 bg-dark">
-      <div class="section__container container h-100">
-        <div class="row p-0 my-auto d-flex" style=" ">
-          <div class="section__col  m-auto text-center ">
-            <div class="p-2">
-              <?php if ($title) :  ?> 
-                    <h3 class="section__subtitle text-center  text-<?= $text_color ?> my-4"><?= $title ?></h3>
-              <?php endif;?>
-              <?php  if ($intro) :  ?>
-                <div class="section__content lead text-<?= $text_color ?>">
-                  <p class="  " style="  ">
-                    <?= $intro ?>
-                  </p>
-                </div>
-              <?php  endif;?>
-            </div>
-          </div>
-        </div>
-  <?php endwhile; ?>
-<?php endif; ?> 
-<hr class="bg-white">
-<div class="row"> 
-  <?php if( have_rows('options-group_conseil','option') ): ?>
-    <?php while( have_rows('options-group_conseil','option') ): the_row();?>
-      <?php if( have_rows('options-group_conseil_repeater') ): ?>
-        <?php while( have_rows('options-group_conseil_repeater') ): the_row(); ?>
-          <?php if( have_rows('options-group_conseil_repeater-object') ): ?>
-            <?php while( have_rows('options-group_conseil_repeater-object') ): the_row();
-              $title = get_sub_field('name');
-              $icon = get_sub_field('icon');
-              $ID = get_sub_field('id');
             ?>
-              <div class="col-10 col-md-4 col-lg-3 p-lg-4 my-2">
-                  <div class="m-auto  p-1 w-100">
-                    <a class="d-flex text-<?= $text_color ?>  " href="#<?= $ID ?>" style="border-bottom:none!important;">
-                    <?php if( $icon ):
-                        $url = $icon['url']; 
-                        $alt = $icon['alt'];
-                        $size = 'thumbnail';
-                        $thumb = $icon['sizes'][ $size ];
-                        $width = $icon['sizes'][ $size . '-width' ];
-                        $height = $icon['sizes'][ $size . '-height' ];
-                      ?>
-                        <div class="d-block my-auto">
-                          <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($alt); ?>" height="32" width="32" />
-                        </div>
-                      <?php endif; ?>
-                      <span class="p-1 my-auto ">
-                        <?= $title ?>  
-                    </span> 
-                    </a>
-                  </div>
+            
+              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-n3"  data-aos="flip-up" data-aos-duration="800"  >
+                  <button class="button m-2 m-lg-auto  p-3 w-75 d-flex bg-dark">
+                    <h4 class="font-sans text-white text-uppercase m-auto ">
+                      <?= $thisTitle ?>
+                    </h4>
+                  </button>
               </div>
             <?php endwhile?>
           <?php endif ?>
         <?php endwhile; ?>
-      <?php endif;?>
-</div>
-      </div>
-    </div>
-  </section>
-  <div class="w-100 bg-light">
-    <div class="container p-4">
-      <div class="row  ">
-        <div class="d-flex">
-          <div class="prev d-flex"><i class="prev fa fa-2x fa-arrow-left text-secondary my-auto"></i> </div>
-          <h4 class="p-2 text-secondary my-auto"><?= the_title(); ?></h4>
-          <div class="next d-flex"><i class="next fa fa-2x fa-arrow-right text-secondary my-auto"></i></div>
-        </div>
-      </div>    
-    </div>
+      <?php endif; ?>
+
+      <?php if( have_rows('option-group_conseil','option') ): ?>
+        <?php while( have_rows('option-group_conseil','option') ): the_row(); ?>  
+          <?php if( have_rows('group_mandats') ): ?>
+            <?php while( have_rows('group_mandats') ): the_row();
+              $thisTitle = get_sub_field('title');
+ 
+            ?>
+            
+              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-n3"  data-aos="flip-up" data-aos-duration="800"  >
+                <button class="button m-2 m-lg-auto  p-3 w-75 d-flex bg-dark">
+                    <h4 class="font-sans text-white text-uppercase m-auto ">
+                      <?= $thisTitle ?>
+                    </h4>
+                </button>
+              </div>
+            <?php endwhile?>
+          <?php endif ?>
+        <?php endwhile; ?>
+      <?php endif; ?>
+
+    </div>  
   </div>
-  
-  <div class="slick-slider bg-secondary p-0 m-0">
-  
-    <?php if( have_rows('options-group_conseil_repeater') ): ?>
-      <?php while( have_rows('options-group_conseil_repeater') ): the_row(); ?>
-        <?php if( have_rows('options-group_conseil_repeater-object') ): ?>
-          <?php while( have_rows('options-group_conseil_repeater-object') ): the_row(); ?>
-          <?php
-            $title = get_sub_field('name');
-            $content = get_sub_field('wysiwyg');
-            $ID = get_sub_field('id');
-            $image = get_sub_field('image');
-            $imageSize='2048x2048';
-            $imageUrl=$image['sizes'][$imageSize]; 
-            $color = get_sub_field('background-color');
-            $button_type="";
-            $text_color = "";
-            $position = get_sub_field('position');
-            $other_position = "";
-            if ( $position == "1") : $other_position="2";  
-            elseif ( $position == "2") : $other_position="1";  
-            endif;
-            if ( $color == "white") : $text_color="dark"; $button_type="primary"  ; 
-            elseif ( $color == "light") : $text_color="dark"; $button_type="primary"  ; 
-            elseif  ( $color == "primary") : $text_color="white"; $button_type="primary"   ;
-            elseif  ( $color == "dark") : $text_color="white"; $button_type="primary"   ;
-            elseif  ( $color == "secondary") : $text_color="white";  $button_type="secondary" ; 
-            endif;
-          ?>
-            <section  class="section  m-0 bg-secondary" style="min-height:50vh">
-              <div class="container" id="<?= $ID ?>" >
-                <div class="row">
-                  <div class="col-12 col-md-8 order-<?= $position ?>  my-auto  text-left bg-secondary" style="padding-bottom:64px">
-                    <div class="p-2 my-md-auto">
-                      <?php if ($title) :  ?> 
-                        <h3 class="section__subtitle text-light  my-4" ><?= $title ?></h3>
-                      <?php endif;?>
-                      <?php  if ($content) :  ?>
-                        <div class="section__content text-light"  >
-                          <p class="" style="  ">
-                            <?= $content ?>
-                          </p>
-                        </div>
-                      <?php  endif;?> 
+</div>
+<?php if( have_rows('option-group_conseil','option') ): 
+  while( have_rows('option-group_conseil','option') ): the_row();  
+    if( have_rows('group_control') ): 
+      while( have_rows('group_control') ): the_row(); 
+      $title = get_sub_field('name');
+      $subtitle = get_sub_field('subtitle');
+      $content = get_sub_field('content'); 
+      ?>
+        <section id="control" class="section d-flex   py-3 py-lg-5 bg-dark"  data-aos="slide-up" >
+            <div class="container m-auto   " >
+              <div class="row my-3  ">
+                <div class="col-12 col-lg-9 mx-auto mx-lg-0 ">
+                  <?php if ($title) :  ?>
+                    <div class="d-flex w-100 ">
+                      <div class="dash mr-2 ml-n4 my-auto"></div>
+                      <h3 class="text-white d-flex mb-3" >
+                          <?= $title ?>
+                      </h3>  
                     </div>
-                  </div>
-                  <div class="d-none d-md-block col-10 col-md-4 my-5 my-md-auto d-flex order-<?= $other_position ?>">
-                    <?php if ($image) :  ?> 
-                      <?php get_template_part( 'partials/elements/this_image','360p' ); ?>
-                    <?php endif;?>
-                  </div>
+                  <?php endif;?>
+                  <?php if ($content) :  ?>
+                    <div class="text-white d-block d-lg-none px-2"  >
+                        <?= $content?>
+                    </div>
+                    <div class="text-white d-none d-lg-block"> 
+                      <style>
+                      #summary { line-height: 1.5; }
+                      .text-white p {
+                        font-size: 18px;
+                        color:#fff;
+                      }
+                      #summary p {
+                        font-size: 20px;
+                        color:#fff;
+                      }
+                      #summary div.collapse:not(.show) {
+                          height:64px;
+                          overflow: hidden;
+                          display: -webkit-box;
+                          -webkit-line-clamp: 3;
+                          -webkit-box-orient: vertical;  
+                            /* Safari 10.1 */
+                            @media not all and (min-resolution:.001dpcm){ 
+                            @supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
+                            height:auto; 
+                            }}
+                      }
+                      #summary div.collapsing {
+                          min-height: 192px;
+                      }
+                      #summary a.collapsed:after  {
+                          content: 'Lire la suite'; 
+                          width: 100%;
+                          font-size:18px; 
+                          margin-left:auto ; margin-right:auto;
+                          text-align:center;
+                          font-weight:600;
+                          font-family:"Raleway";
+                      }
+                    
+                      #summary a:not(.collapsed):after {
+                          content: '- Réduire';
+                          font-size:18px;
+                          padding-top:16px;
+                          margin-left:auto ; margin-right:auto;
+                          text-align:center;
+                          font-weight:600;
+                          font-family:"Raleway";
+                      }
+                      </style>
+                      <div class="d-none d-lg-block" id="summary">
+                        <div class="collapse mb-2" id="collapseSummary">
+                          <?= $content?>
+                        </div>
+                        <a class="collapsed text-secondary" data-toggle="collapse" href="#collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
+                      </div>
+                    </div>   
+                  <?php endif;?>
+                </div> 
+                <div class="col-12 col-lg-3 d-flex">
+                  <i class=" m-auto fa fa-5x fa-pie-chart text-white"   ></i>
                 </div>
               </div>
-            </section>
-          <?php endwhile?>
-        <?php endif ?>
+            </div>
+        </section>
       <?php endwhile; ?>
-    <?php endif; ?>
+      <?php wp_reset_postdata(  ) ;?>
+    <?php endif; ?> 
   <?php endwhile; ?>
+  <?php wp_reset_postdata(  ) ;?>
 <?php endif; ?> 
 
-</div>
-<script>
-    $('.slick-slider').slick({
-        slidesToShow: 1,
-        autoplay: false,
-        autoplaySpeed: 0,
-        speed: 800,
-        cssEase:'linear',
-        infinite: true,
-        focusOnSelect: false, 
-        arrows:true,
-        //dots:true,
-        prevArrow: $('.prev'),
-        nextArrow: $('.next'),
-    });
-    </script>
-<?php if( have_rows('group_flex-content') ): ?>
-  <?php while( have_rows('group_flex-content') ): the_row(); ?>
-    <?php if( have_rows('flex-content') ): ?>
-      <?php while( have_rows('flex-content') ): the_row(); ?>
-        <?php get_template_part( 'partials/flex/layout','default' ); ?>
-        <?php get_template_part( 'partials/flex/layout','center' ); ?>
-        <?php get_template_part( 'partials/flex/layout','halfhalf' ); ?>
+<?php if( have_rows('option-group_conseil','option') ): 
+  while( have_rows('option-group_conseil','option') ): the_row();  
+    if( have_rows('group_mandats') ): 
+      while( have_rows('group_mandats') ): the_row(); 
+      $title = get_sub_field('title');
+      $description = get_sub_field('description'); 
+      $conclusion = get_sub_field('conclusion'); 
+      ?>
+        <section id=" " class="section bg-white  py-3 py-lg-5"   data-aos="slide-up">
+          <div class="container m-auto  services"    >
+            <div class="row">
+              <?php if ($title) :  ?>
+                <div class="col-12 col-lg-9  ">
+                  <h3 class="text-dark d-flex mb-3" >
+                    <div class="dash mr-2 ml-n4 my-auto"></div>
+                    <?= $title ?>
+                  </h3>   
+                </div>
+              <?php endif;?>
+              <?php if ($description) :  ?>
+                <div class="col-12 col-lg-9  ">
+                  <p>
+                    <?= $description ?>
+                  </p>
+                </div>
+              <?php endif;?>
+              <div class="col-12 col-lg-9">
+                <div class="container">
+ 
+                  <div class="row">
+
+                    <?php
+                    if( have_rows('repeater_mandats') ):
+                      while( have_rows('repeater_mandats') ): the_row();
+                        if( have_rows('mandat') ):
+                          while( have_rows('mandat') ): the_row();
+                            $subtitle = get_sub_field('service');
+                            $price = get_sub_field('price');
+                            $content = get_sub_field('wysiwyg'); 
+                    ?>
+                        <div class="col-12 col-lg-6 col-xl-4 "     data-aos="flip-up" data-aos-duration="1000"   >
+                          <div class="card w-100 mx-0 mx-md-auto px-3 d-flex"   >
+                            <div class="hide-arc"></div>
+                            <div class="arc"></div>
+                            <?php if ($subtitle) :  ?>
+                              <span class="text-dark font-sans my-auto ml-auto w-75 ">
+                                <?= $subtitle ?>
+                              </span>
+                            <?php endif;?>
+                            <?php /*
+                            <?php if ($content) :  ?>
+                                <?= $content ?>
+                            <?php endif;?>
+                            <?php if ($price) :  ?>
+                              <div class="price">
+                                <?= $price ?>
+                              </div>
+                            <?php endif;?>
+                            //*/ ?>
+                          </div> <?php //end  card  ?>
+                        </div>
+                      <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php //end subgroup_services ?>
+      
+            </div>
+          </div>
+
+
+
+              <?php if ($conclusion) :  ?>
+                <div class="col-12 col-lg-9  ">
+                  <p>
+                    <?= $conclusion ?>
+                  </p>
+                </div>
+              <?php endif;?>
+            </div>
+          </div>
+        </section>
       <?php endwhile; ?>
-    <?php endif; ?>
+      <?php wp_reset_postdata(  ) ;?>
+    <?php endif; ?> 
   <?php endwhile; ?>
+  <?php wp_reset_postdata(  ) ;?>
 <?php endif; ?> 
-        
-<?php // get_template_part( 'partials/sections/layout','calltoaction' );
+
+<?php get_template_part( 'partials/sections/layout','contact' ); ?>
+<?php
 get_footer();
