@@ -23,10 +23,10 @@ endif;
               $startupsTitle = get_sub_field('title'); 
               ?>
               <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-n3"  data-aos="flip-up" data-aos-duration="800"  >
-                  <button class="button m-2 m-lg-auto d-flex p-3 w-75   bg-dark">
-                    <h4 class="font-sans text-white m-auto">
+                  <button class="button m-2 m-lg-auto d-flex p-3 w-100   bg-dark">
+                    <h5 class="font-sans text-white m-auto">
                       <?= $startupsTitle ?>
-                    </h4>
+                    </h5>
                   </button>
               </div> 
             <?php endwhile; ?>
@@ -37,10 +37,10 @@ endif;
               $enterprisesTitle = get_sub_field('title'); 
               ?>
               <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-n3"  data-aos="flip-up" data-aos-duration="800"  >
-                  <button class="button m-2 m-lg-auto d-flex p-3 w-75   bg-dark">
-                    <h4 class="font-sans text-white m-auto">
+                  <button class="button m-2 m-lg-auto d-flex p-3 w-100   bg-dark">
+                    <h5 class="font-sans text-white m-auto">
                       <?= $enterprisesTitle ?>
-                    </h4>
+                    </h5>
                   </button>
               </div> 
             <?php endwhile; ?>
@@ -51,10 +51,10 @@ endif;
               $personsTitle = get_sub_field('title'); 
               ?>
               <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-n3"  data-aos="flip-up" data-aos-duration="800"  >
-                  <button class="button m-2 m-lg-auto d-flex p-3 w-75   bg-dark">
-                    <h4 class="font-sans text-white m-auto">
+                  <button class="button m-2 m-lg-auto d-flex p-3 w-100   bg-dark">
+                    <h5 class="font-sans text-white m-auto">
                       <?= $personsTitle ?>
-                    </h4>
+                    </h5>
                   </button>
               </div> 
             <?php endwhile; ?>
