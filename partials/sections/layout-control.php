@@ -1,11 +1,11 @@
- 
-<?php  
-
-if( have_rows('group_control') ):
-  while( have_rows('group_control') ): the_row();
-  $title = get_sub_field('title');
-  $content = get_sub_field('wysiwyg');
-?>
+<?php if( have_rows('option-group_conseil','option') ): 
+  while( have_rows('option-group_conseil','option') ): the_row();  
+    if( have_rows('group_control') ): 
+      while( have_rows('group_control') ): the_row(); 
+      $title = get_sub_field('name');
+      $subtitle = get_sub_field('subtitle');
+      $content = get_sub_field('content'); 
+      ?>
 <section id="control" class="section d-flex   py-3 py-lg-5 bg-dark"  data-aos="slide-up" >
     <div class="container m-auto   " >
       <div class="row my-3  ">
@@ -92,3 +92,9 @@ if( have_rows('group_control') ):
 </section>
 <?php endwhile; ?>
 <?php endif; ?> 
+<?php endwhile; ?>
+<?php endif; ?> 
+
+
+
+

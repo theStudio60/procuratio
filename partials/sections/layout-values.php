@@ -4,7 +4,7 @@ if( have_rows('group_values') ):
     $title = get_sub_field('title');
 ?>    
     <section
-     id="values" class="section mt-5 py-3 py-lg-4 bg-light d-flex "
+     id="values" class="section py-3 py-lg-4 bg-light d-flex "
   
     
     style="border-top: solid 1px #002369;border-bottom: solid 1px #002369; width: 100%;"

@@ -144,6 +144,7 @@ endif;
           id="enterprises"
           class="  bg-white text-dark" 
           data-aos="slide-up" data-aos-duration="800" 
+          style="border-top: solid 1px #002369;border-bottom: solid 1px #002369; width: 100%;"
         >  
           <div class="container  py-3 py-lg-5 ">
             <div class="row my-3">
@@ -156,9 +157,10 @@ endif;
                     </h3> 
                   <?php endif;?>
                   <?php if ($content) :  ?>
-                    <div class="mt-2 ml-2 ml-lg-0 text-dark div-white"  >
+                    <div class="mt-2 ml-2 ml-lg-0 text-dark">
                       <?= $content?>
                     </div>
+                    
                   <?php endif;?>
                 </div>
               </div>
@@ -174,19 +176,13 @@ endif;
                       $description = get_sub_field('description');
                     ?>
                     <div class="col-12 col-lg-3  text-center ">
-                      <div class="text-center p-2 m-auto">
-                        <i class="fa fa-5x  text-white <?= $icon ?> "> </i>
+                      <div class="text-center p-2 m-auto"> 
              
-                        <h4 class="text-white text-uppercase mx-auto my-3 ">
+                        <h4 class="text-dark text-uppercase mx-auto my-3 ">
                           <?= $name ?>
                         </h4>
-                        <style>
-                          .div-white p {color:white!important;}
-                        </style>
-                        <style>
-                          .div-centered p {text-align:center!important;}
-                        </style>
-                        <div class="text-white my-2 mx-auto div-white div-centered" >
+ 
+                        <div class="text-dark my-2 mx-auto div-centered" >
                           <?= $description ?>
                         </div>
                       </div>
@@ -209,21 +205,22 @@ endif;
       ?>
         <section  
           id="persons"
-          class="  bg-dark text-white" 
+          class="  bg-light text-dark" 
           data-aos="slide-up" data-aos-duration="800" 
+          style="border-top: solid 1px #002369;border-bottom: solid 1px #002369; width: 100%;"
         >  
           <div class="container  py-3 py-lg-5 ">
             <div class="row my-3">
               <div class="col-12 col-lg-9 p-0 p-lg-2" id=" " >
                 <div class="section-text m-auto">
                   <?php if ($subtitle) :  ?>
-                    <h3 class="text-white d-flex mb-3">
+                    <h3 class="text-dark d-flex mb-3">
                       <div class="dash mr-2 ml-0 ml-lg-n4 my-auto"></div>
                       <?= $subtitle ?>
                     </h3> 
                   <?php endif;?>
                   <?php if ($content) :  ?>
-                    <div class="mt-2 ml-2 ml-lg-0 text-white div-white"  >
+                    <div class="mt-2 ml-2 ml-lg-0 text-dark"  >
                       <?= $content?>
                     </div>
                   <?php endif;?>
@@ -244,21 +241,19 @@ endif;
                       <div class="text-center p-2 m-auto">
                         <i class="fa fa-5x  text-white <?= $icon ?> "> </i>
              
-                        <h4 class="text-white text-uppercase mx-auto my-3 ">
+                        <h4 class="text-dark text-uppercase mx-auto my-3 ">
                           <?= $name ?>
                         </h4>
-                        <style>
-                          .div-white p {color:white!important;}
-                        </style>
+                 
                         <style>
                           .div-centered p {text-align:center!important;}
                         </style>
-                        <div class="text-white my-2 mx-auto div-white div-centered" >
+                        <div class="text-dark my-2 mx-auto div-centered" >
                           <?= $description ?>
                         </div>
                       </div>
                     </div>
-                    <?php endwhile; ?>
+                    <?php endwhile; ?> 
                   <?php endif; ?> 
                 <?php endwhile; ?>
               <?php endif; ?> 
