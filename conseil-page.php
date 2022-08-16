@@ -196,7 +196,7 @@ endif;
                             <div class="hide-arc"></div>
                             <div class="arc"></div>
                             <?php if ($subtitle) :  ?>
-                              <span class="text-dark font-sans my-auto ml-auto w-100 ">
+                              <span class="text-dark font-sans my-auto ml-auto w-75 ">
                                 <?= $subtitle ?>
                               </span>
                             <?php endif;?>
