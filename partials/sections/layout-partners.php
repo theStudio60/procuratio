@@ -161,7 +161,8 @@ div#desc p
       <?php endwhile?> 
     <?php endif; ?>
     <div class="row w-100">
-      <button class="mx-auto button">ctya</button>
+   
+      <button  onclick="location.href='<?php echo site_url(); ?>/fiduciaire'" class="mx-auto button">En savoir plus</button>
     </div>
   </div> 
 </section> 
