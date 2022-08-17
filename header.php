@@ -76,7 +76,14 @@
             </div>
           </a>
         </div>
-        <div class="d-flex p-0 ml-auto"> 
+        <button
+         onclick="location.href='<?php echo site_url(); ?>#contact'" 
+         class="ml-auto mr-2 button"
+        >
+         Contact
+        </button>
+
+        <div class="d-flex p-0 mr-2"> 
           <div onclick="openMenu()" title="toggle menu" id="burger" class="header-mobile__burger  header-mobile__burger--visible"  aria-expanded="false">
             <?php if ( is_front_page() ):?>
               <?php get_template_part('partials/nav/burger','light'); ?>
