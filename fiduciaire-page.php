@@ -243,7 +243,7 @@ endif;
                       $icon = get_sub_field('icon');
                       $description = get_sub_field('description');
                     ?>
-                    <div class="col-12 col-lg-3  text-center ">
+                    <div class="col-12 col-lg-4  text-center ">
                       <div class="text-center p-2 m-auto">
                         <i class="fa fa-5x  text-white <?= $icon ?> "> </i>
              
