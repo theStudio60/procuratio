@@ -11,7 +11,7 @@
     background: $dark;
     background-size: cover!important;
     background-repeat: no-repeat!important;
-    background-position: center!important;
+    background-position: center center!important;
     z-index: 1;
     //*
     @media (max-width: $screen-lg-min) {
@@ -175,7 +175,7 @@
         width: 100vw!important;
         background-size: cover!important;
         background-repeat: no-repeat!important;
-        background-position: bottom right !important;
+        background-position: center center !important;
         @media (max-width: $screen-lg-min) {
             height: auto;
             // min-height: auto;
