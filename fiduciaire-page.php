@@ -11,7 +11,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
   endwhile;
 endif;
 ?>
-<style>body.page-wrapper{background-color:#fff!important;}</style>
+<style>body.page-wrapper{background-color:#002369!important;}</style>
 <div class=" mx-0 bg-dark  " >
   <div class="container-fluid w-100">
     <div class="row" style=" ">
@@ -270,6 +270,6 @@ endif;
     <?php endif; ?>  
   <?php endwhile; ?>
 <?php endif; ?> 
-<?php get_template_part( 'partials/sections/layout','contact' ); ?>
+<?php // get_template_part( 'partials/sections/layout','contact' ); ?>
 <?php
 get_footer();
