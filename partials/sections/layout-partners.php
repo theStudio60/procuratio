@@ -9,7 +9,8 @@ div#desc p
 </style>
 <section style="border-bottom:1px solid #002369;border-top:1px solid #002369; overflow-y:visible"
  class="w-100 section  py-3 py-lg-5 bg-light" id="partners"  >
- <svg  data-aos="zoom-in" width="60px" height="321px" viewBox="0 0 60 321" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="d-none d-md-block" style="position:absolute;bottom:0">
+ <div  data-aos="zoom-in" class="d-none d-md-block" style="position:absolute;bottom:0">
+ <svg width="60px" height="321px" viewBox="0 0 60 321" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
     <defs>
         <radialGradient cx="20.3800471%" cy="50%" fx="20.3800471%" fy="50%" r="131.616295%" gradientTransform="translate(0.203800,0.500000),scale(0.500000,1.000000),rotate(-6.109003),translate(-0.203800,-0.500000)" id="radialGradient-aqh3jvtznl-1">
             <stop stop-color="#FFFFFF" offset="0%"></stop>
@@ -60,6 +61,7 @@ div#desc p
         </g>
     </g>
 </svg>
+</div>
   <div class="container  h-100 px-0   ">
 
 
