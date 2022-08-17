@@ -25,11 +25,13 @@ endif;
             ?>
             
               <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-3 mt-lg-n3"  data-aos="flip-up" data-aos-duration="800"  >
-                <button class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
+                <button 
+                onclick="location.href='#control'"
+                class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
                     <h5 class="font-sans text-white text-uppercase m-auto ">
                       <?= $thisTitle ?>
                     </h5>
-                  </button>
+                </button>
               </div>
             <?php endwhile?>
           <?php endif ?>
@@ -45,7 +47,9 @@ endif;
             ?>
             
               <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-3 mt-lg-n3"  data-aos="flip-up" data-aos-duration="800"  >
-                <button class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
+                <button 
+                onclick="location.href='#mandats'"
+                class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
                     <h5 class="font-sans text-white text-uppercase m-auto ">
                       <?= $thisTitle ?>
                     </h5>
@@ -159,7 +163,7 @@ endif;
       $description = get_sub_field('description'); 
       $conclusion = get_sub_field('conclusion'); 
       ?>
-        <section id=" " class="section bg-white  py-3 py-lg-5"   data-aos="slide-up">
+        <section id="mandats" class="section bg-white  py-3 py-lg-5"   data-aos="slide-up">
           <div class="container m-auto  services"    >
             <div class="row">
               <?php if ($title) :  ?>

@@ -23,7 +23,9 @@ endif;
               $startupsTitle = get_sub_field('title'); 
               ?>
               <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-3 mt-lg-n3"  data-aos="flip-up" data-aos-duration="800"  >
-                <button class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
+                <button 
+                onclick="location.href='#startups'"
+                class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
                     <h5 class="font-sans text-white text-uppercase m-auto ">
                       <?= $startupsTitle ?>
                     </h5>
@@ -37,7 +39,9 @@ endif;
               $enterprisesTitle = get_sub_field('title'); 
               ?>
               <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-3 mt-lg-n3"  data-aos="flip-up" data-aos-duration="800"  >
-                  <button class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
+                  <button
+                  onclick="location.href='#enterprises'"
+                  class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
                     <h5 class="font-sans text-white text-uppercase m-auto ">
                       <?= $enterprisesTitle ?>
                     </h5>
@@ -51,7 +55,9 @@ endif;
               $personsTitle = get_sub_field('title'); 
               ?>
               <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-3 mt-lg-n3 "  data-aos="flip-up" data-aos-duration="800"  >
-                <button class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
+                <button 
+                onclick="location.href='#persons'"
+                class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
                     <h5 class="font-sans text-white text-uppercase m-auto ">
                       <?= $personsTitle ?>
                     </h5>
