@@ -56,7 +56,7 @@
  
           ?>  
       
-          <div class="my-auto ml-auto mr-2 d-flex"> 
+          <div class="my-auto mr-2 d-flex"> 
               <?php languages_list_navbar();?>
           </div>
           <button  onclick="location.href='<?php echo site_url(); ?>#contact'" class="mr-2 button">Contact</button>
@@ -71,7 +71,7 @@
       <div class="header-mobile__row "> 
         <div class="header-mobile__brand mr-auto ml-2 ">
           <a href="<?= get_home_url() ?>" onclick="closeMenu()" >
-            <div class=" header-mobile__brand<__logo">
+            <div class=" header-mobile__brand__logo">
               <img style="height:auto;width:160px" src="<?= $logotype_w ?>" alt="<?= get_bloginfo() ?>">
             </div>
           </a>
@@ -97,7 +97,7 @@
       <?php languages_list_navbar_mobile();?>
     </div>
 
-    </div>
+  </div>
   <div id="overlayMenu" class="mobile-menu mobile-menu--hidden " style=" ">
 
     <div class="mobile-menu__menu">        
