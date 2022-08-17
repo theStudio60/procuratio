@@ -56,9 +56,11 @@
  
           ?>  
       
-          <div class="my-auto ml-auto mr-0 d-flex"> 
-              <?php // languages_list_navbar();?>
-          </div>  
+          <div class="my-auto ml-auto mr-2 d-flex"> 
+              <?php languages_list_navbar();?>
+          </div>
+          <button  onclick="location.href='<?php echo site_url(); ?>#contact'" class="mr-2 button">Contact</button>
+         
     </div>
 
   </header>
@@ -92,7 +94,7 @@
   </header>
   <div class="mx-0 p-2  w-100 d-flex d-lg-none" style="position:absolute;z-index:9999;margin-top:96px;">
     <div class="ml-auto mr-0">
-      <?php // languages_list_navbar_mobile();?>
+      <?php languages_list_navbar_mobile();?>
     </div>
 
     </div>
