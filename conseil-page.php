@@ -224,7 +224,7 @@ endif;
 
 
               <?php if ($conclusion) :  ?>
-                <div class="col-12 col-lg-9  ">
+                <div class="w-100">
                   <p>
                     <?= $conclusion ?>
                   </p>
