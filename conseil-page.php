@@ -71,8 +71,8 @@ endif;
       $subtitle = get_sub_field('subtitle');
       $content = get_sub_field('content'); 
       ?>
-        <section id="control" class="section d-flex   py-3 py-lg-5 bg-dark"  data-aos="slide-up">
-            <div class="container m-auto   " >
+        <section id="control" class="section d-flex   py-3 py-lg-5 bg-dark" >
+            <div class="container m-auto   "  data-aos="fade-up" data-aos-duration="800" >
               <div class="row my-3  ">
                 <div class="col-12 col-lg-9 mx-auto mx-lg-0 ">
                   <?php if ($title) :  ?>
@@ -164,8 +164,8 @@ endif;
       $conclusion = get_sub_field('conclusion'); 
       $image = get_sub_field('image');
       ?>
-        <section id="mandats" class="section bg-white  py-3 py-lg-5"   data-aos="slide-up"  >
-          <div class="container m-auto  services">
+        <section id="mandats" class="section bg-white  py-3 py-lg-5">
+          <div class="container m-auto  services"  data-aos="fade-up" data-aos-duration="800">
             <div class="row">
               <?php if ($title) :  ?>
                 <div class="col-12 col-lg-9  ">

@@ -84,7 +84,7 @@ endif;
           class="  bg-dark text-white" 
  
         >  
-          <div class="container  py-3 py-lg-5 "          data-aos="fade-up" data-aos-duration="800">
+          <div class="container  py-3 py-lg-5 "  data-aos="fade-up" data-aos-duration="800">
             <div class="row my-3">
               <div class="col-12 col-lg-9 p-0 p-lg-2" id=" " >
                 <div class="section-text m-auto">
@@ -152,7 +152,7 @@ endif;
 
           style="border-top: solid 1px #002369;border-bottom: solid 1px #002369; width: 100%;"
         >  
-          <div class="container  py-3 py-lg-5 "           data-aos="slide-right" data-aos-duration="800" >
+          <div class="container  py-3 py-lg-5 "           data-aos="fade-up" data-aos-duration="800" >
             <div class="row my-3">
               <div class="col-12 col-lg-9 p-0 p-lg-2" id=" " >
                 <div class="section-text m-auto">
@@ -215,7 +215,7 @@ endif;
 
           style="border-top: solid 1px #002369;border-bottom: solid 1px #002369; width: 100%;"
         >  
-          <div class="container  py-3 py-lg-5 "           data-aos="slide-up" data-aos-duration="800" >
+          <div class="container  py-3 py-lg-5 "  data-aos="fade-up" data-aos-duration="800" >
             <div class="row my-3">
               <div class="col-12 col-lg-9 p-0 p-lg-2" id=" " >
                 <div class="section-text m-auto">
