@@ -4,7 +4,8 @@
       while( have_rows('group_mandats') ): the_row(); 
         $title = get_sub_field('title');
         $description = get_sub_field('description'); 
-        $conclusion = get_sub_field('conclusion'); 
+        $conclusion = get_sub_field('conclusion');
+        $image = get_sub_field('image');
       ?>
         <section id=" " class="section bg-white  py-3 py-lg-5"   data-aos="slide-up">
           <div class="container m-auto  services"    >
@@ -70,6 +71,13 @@
                     </p>
                   </div>
                 <?php endif;?>
+              </div>
+              <div class="col-12 col-lg-3 d-flex">
+                <div class="my-3 my-lg-auto mx-auto w-100 d-flex"> 
+                  <img class="w-75 m-auto"
+                  src=" <?php echo $image['url']; ?> "
+                  >
+                </div>  
               </div>
             </div>
           </div>
