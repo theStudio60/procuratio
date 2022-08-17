@@ -22,12 +22,12 @@ endif;
               <?php
               $startupsTitle = get_sub_field('title'); 
               ?>
-              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-n3"  data-aos="flip-up" data-aos-duration="800"  >
-                  <button class="button m-2 m-lg-auto d-flex p-3 w-100   bg-dark">
-                    <h5 class="font-sans text-white m-auto">
+              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-3 mt-lg-n3"  data-aos="flip-up" data-aos-duration="800"  >
+                <button class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
+                    <h5 class="font-sans text-white text-uppercase m-auto ">
                       <?= $startupsTitle ?>
                     </h5>
-                  </button>
+                </button>
               </div> 
             <?php endwhile; ?>
           <?php endif; ?>
@@ -36,9 +36,9 @@ endif;
               <?php
               $enterprisesTitle = get_sub_field('title'); 
               ?>
-              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-n3"  data-aos="flip-up" data-aos-duration="800"  >
-                  <button class="button m-2 m-lg-auto d-flex p-3 w-100   bg-dark">
-                    <h5 class="font-sans text-white m-auto">
+              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-3 mt-lg-n3"  data-aos="flip-up" data-aos-duration="800"  >
+                  <button class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
+                    <h5 class="font-sans text-white text-uppercase m-auto ">
                       <?= $enterprisesTitle ?>
                     </h5>
                   </button>
@@ -50,9 +50,9 @@ endif;
               <?php
               $personsTitle = get_sub_field('title'); 
               ?>
-              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-n3"  data-aos="flip-up" data-aos-duration="800"  >
-                  <button class="button m-2 m-lg-auto d-flex p-3 w-100   bg-dark">
-                    <h5 class="font-sans text-white m-auto">
+              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-3 mt-lg-n3 "  data-aos="flip-up" data-aos-duration="800"  >
+                <button class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
+                    <h5 class="font-sans text-white text-uppercase m-auto ">
                       <?= $personsTitle ?>
                     </h5>
                   </button>

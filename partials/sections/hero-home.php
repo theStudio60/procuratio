@@ -23,7 +23,7 @@ if ( has_post_thumbnail() ) {
   <div class="hero__overlay hero__overlay--default h-100 " >
     <div class="container-fluid m-0 w-100">
       <div class="row h-100">
-        <div class="col-12 col-lg-8 h-100 d-flex p-0"  >
+        <div class="col-12 col-lg-8 h-100 d-flex p-2"  >
           <?php //<div class="my-auto " style="  border-left:16px solid #00AE9B ;"> ?>
           <div class="d-flex w-75 mx-auto  " style=" "> 
             <div class="p-0 my-auto" data-aos="fade-right" data-aos-duration="800">

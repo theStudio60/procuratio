@@ -17,7 +17,7 @@ endif;
       <div class="row h-100">
         <div class="col-12 col-lg-8 h-100 d-flex p-0" >
         <div class="d-flex w-100 mx-auto  " style=" "> 
-            <div class="p-0 my-auto" data-aos="fade-right" data-aos-duration="800">
+            <div class="p-2 my-auto" data-aos="fade-right" data-aos-duration="800">
           <h1 class="hero__title"  > 
               <?php the_title(); ?> 
           </h1>

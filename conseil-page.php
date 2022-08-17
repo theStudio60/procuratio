@@ -24,8 +24,8 @@ endif;
  
             ?>
             
-              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-n3"  data-aos="flip-up" data-aos-duration="800"  >
-                  <button class="button m-2 m-lg-auto  p-3 w-100 d-flex bg-dark">
+              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-3 mt-lg-n3"  data-aos="flip-up" data-aos-duration="800"  >
+                <button class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
                     <h5 class="font-sans text-white text-uppercase m-auto ">
                       <?= $thisTitle ?>
                     </h5>
@@ -44,8 +44,8 @@ endif;
  
             ?>
             
-              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-n3"  data-aos="flip-up" data-aos-duration="800"  >
-                <button class="button m-2 m-lg-auto  p-3 w-100 d-flex bg-dark">
+              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-3 mt-lg-n3"  data-aos="flip-up" data-aos-duration="800"  >
+                <button class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
                     <h5 class="font-sans text-white text-uppercase m-auto ">
                       <?= $thisTitle ?>
                     </h5>
