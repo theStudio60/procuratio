@@ -74,8 +74,9 @@
               </div>
               <div class="col-12 col-lg-3 d-flex">
                 <div class="my-3 my-lg-auto mx-auto w-100 d-flex"> 
-                  <img class="w-75 m-auto"
+                  <img class="w-100 m-auto"
                   src=" <?php echo $image['url']; ?> "
+                  style="min-width:320px!important;"
                   >
                 </div>  
               </div>
