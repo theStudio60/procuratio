@@ -24,7 +24,7 @@ endif;
  
             ?>
             
-              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-3 mt-lg-n3"  data-aos="flip-up" data-aos-duration="800"  >
+              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-1 mt-3 mt-lg-n3"  data-aos="flip-up" data-aos-duration="800"  >
                 <button 
                 onclick="location.href='#control'"
                 class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
@@ -46,7 +46,7 @@ endif;
  
             ?>
             
-              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-0 mt-3 mt-lg-n3"  data-aos="flip-up" data-aos-duration="800"  >
+              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-1 mt-3 mt-lg-n3"  data-aos="flip-up" data-aos-duration="800"  >
                 <button 
                 onclick="location.href='#mandats'"
                 class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
