@@ -82,7 +82,7 @@ endif;
         <section  
           id="startups"
           class="  bg-dark text-white" 
-          data-aos="slide-up" data-aos-duration="800"
+          data-aos="fade-up" data-aos-duration="800"
         >  
           <div class="container  py-3 py-lg-5 ">
             <div class="row my-3">
@@ -149,7 +149,7 @@ endif;
         <section  
           id="enterprises"
           class="  bg-white text-dark" 
-          data-aos="slide-up" data-aos-duration="800" 
+          data-aos="slide-right" data-aos-duration="800" 
           style="border-top: solid 1px #002369;border-bottom: solid 1px #002369; width: 100%;"
         >  
           <div class="container  py-3 py-lg-5 ">
@@ -212,7 +212,7 @@ endif;
         <section  
           id="persons"
           class="  bg-light text-dark" 
-          data-aos="slide-up" data-aos-duration="800"
+          data-aos="slide-left" data-aos-duration="800"
           style="border-top: solid 1px #002369;border-bottom: solid 1px #002369; width: 100%;"
         >  
           <div class="container  py-3 py-lg-5 ">
