@@ -36,6 +36,9 @@
         width: 100%;
         justify-content: space-around;
     }
+    li.nav-item {
+        @extend .mx-5;
+    }
     a.nav-link {
         @extend .pb-3;
         font-family: $font-family-serif;
