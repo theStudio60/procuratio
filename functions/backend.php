@@ -146,8 +146,9 @@ function my_mce4_options($init) {
         "3C3C3C", "Normal",
         "000", "Noir",
         "fff", "Blanc",
-        "00707D" , "Bleu Pétrole",
-        "00AE9B" , "Teal Paisible"
+        "2970FF", "Bleu",
+        "002369" , "Bleu Foncé",
+        "29FFFF" , "Cyan"
     ';
 
     // build color grid default+custom colors
