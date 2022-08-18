@@ -3,23 +3,27 @@ if( have_rows('acf_group_homepage') ):
   while( have_rows('acf_group_homepage') ): the_row(); 
     if( have_rows('group_hero') ):
       while( have_rows('group_hero') ): the_row();
-        $title = get_sub_field('title');
-        $subtitle = get_sub_field('subtitle');
-        $content = get_sub_field('wysiwyg'); 
-      endwhile; 
-    endif; 
-  endwhile; 
-endif; 
-?>
-<?php
-if( have_rows('page-fiduciaire_acf_group') ): 
-  while( have_rows('page-fiduciaire_acf_group') ): the_row(); 
- 
-    if( have_rows('group_hero') ):
-      while( have_rows('group_hero') ): the_row();
-  
-        $subtitleF = get_sub_field('subtitle');
-        $contentF = get_sub_field('wysiwyg'); 
+        if( have_rows('group_slider1') ):
+          while( have_rows('group_slider1') ): the_row();
+            $title1 = get_sub_field('title');
+            $subtitle1 = get_sub_field('subtitle');
+            $content1 = get_sub_field('wysiwyg'); 
+          endwhile; 
+        endif; 
+        if( have_rows('group_slider2') ):
+          while( have_rows('group_slider2') ): the_row();
+            $title2 = get_sub_field('title');
+            $subtitle2 = get_sub_field('subtitle');
+            $content2 = get_sub_field('wysiwyg'); 
+          endwhile; 
+        endif;
+        if( have_rows('group_slider3') ):
+          while( have_rows('group_slider3') ): the_row();
+            $title3 = get_sub_field('title');
+            $subtitle3 = get_sub_field('subtitle');
+            $content3 = get_sub_field('wysiwyg'); 
+          endwhile; 
+        endif;
       endwhile; 
     endif; 
   endwhile; 
@@ -29,8 +33,8 @@ endif;
 //$titleC =  get_the_title(175); // id of page conseil
 
 // Staging
-$titleF =  get_the_title(29106); // id of page fiduciaire 
-$titleC =  get_the_title(29111); // id of page conseil
+//$titleF =  get_the_title(29106); // id of page fiduciaire 
+//$titleC =  get_the_title(29111); // id of page conseil
 ?> 
 
 <style>
@@ -54,28 +58,21 @@ if ( has_post_thumbnail() ) {
           <?php //<div class="my-auto " style="  border-left:16px solid #00AE9B ;"> ?>
           <div class="d-flex w-75 mx-auto hero-slider  " style=" "> 
             <div class="p-0 my-auto"  >
-              <?php if ($title) :  ?>
+ 
                 <h1 class="hero__title mb-2 mt-5 mt-lg-auto"> 
-                  <?= $title ?> 
-                </h1> 
-
-              <?php endif;?>
-              <?php if ($subtitle) :  ?>
-
+                  <?= $title1  ?> 
+                </h1>  
                 <h3 class="hero__subtitle mb-2"  > 
-                  <?= $subtitle ?>
-                </h3>
-               
-              <?php endif;?>
-              <?php if ($content) :  ?>
+                  <?= $subtitle1  ?>
+                </h3> 
+ 
                
                 <style > .hero-content p{color:white!important;}</style>
                 <div class="hero__content my-2"> 
-                  <?= $content?>
+                  <?= $content1 ?>
                 </div>
-               
-              <?php endif;?>
-              <?php if( have_rows('website_settings', 'option') ): ?>
+                
+                <?php if( have_rows('website_settings', 'option') ): ?>
                 <div class="w-100 d-md-flex  text-center">
                   <?php if (have_rows('website_settings','option')):
                     while (have_rows('website_settings','option')):the_row();
@@ -103,29 +100,33 @@ if ( has_post_thumbnail() ) {
                     </button> 
                   <?php endif;?>   
                 </div> 
-              <?php endif;?>   
+                <?php endif;?>   
             </div>
-            <div class="p-0 my-auto" onclick="location.href='<?php echo site_url(); ?>/fiduciaire'">
+            <div class="p-0 my-auto">
               <h1 class="hero__title mb-2 mt-5 mt-lg-auto"> 
-                <?= $titleF ?>
-                <?php if( have_rows('page-fiduciaire_acf_group') ): 
-                  while( have_rows('page-fiduciaire_acf_group') ): the_row(); 
-                    if( have_rows('group_hero') ):
-                      while( have_rows('group_hero') ): the_row();
-                       
-                        // $subtitleF = get_sub_field('subtitle');
-                        get_sub_field('intro'); 
-                      endwhile; 
-                    endif; 
-                  endwhile; 
-                endif; ?>
-                 
-              </h1> 
+                <?= $title2  ?> 
+              </h1>  
+              <h3 class="hero__subtitle mb-2"  > 
+                <?= $subtitle2  ?>
+              </h3> 
+              <style > .hero-content p{color:white!important;}</style>
+              <div class="hero__content my-2"> 
+                <?= $content2 ?>
+              </div>
+              <button class="button"  onclick="location.href='<?php echo site_url(); ?>/fiduciaire'">En savoir plus</button>
             </div>
-            <div class="p-0 my-auto" onclick="location.href='<?php echo site_url(); ?>/conseil'">
+            <div class="p-0 my-auto"  >
               <h1 class="hero__title mb-2 mt-5 mt-lg-auto"> 
-                  <?= $titleC ?>
-              </h1> 
+                <?= $title3  ?> 
+              </h1>  
+              <h3 class="hero__subtitle mb-2"  > 
+                <?= $subtitle3  ?>
+              </h3> 
+              <style > .hero-content p{color:white!important;}</style>
+              <div class="hero__content my-2"> 
+                <?= $content3 ?>
+              </div>
+              <button class="button"  onclick="location.href='<?php echo site_url(); ?>/conseil'">En savoir plus</button>
             </div>
           </div>
         </div>
