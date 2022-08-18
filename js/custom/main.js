@@ -50,6 +50,33 @@ function closePopup() {
     popupAlert.classList.add("popup--hidden");
 }
 
+$('.hero-slider').slick({
+    //*
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    // centerMode: false //*/ 
+    slidesToShow: 1,
+
+    //autoplaySpeed: 0,
+    speed: 4000,
+    //cssEase: 'linear',
+    infinite: true,
+    //focusOnSelect: true,
+
+    responsive: [{
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                slidesToShow: 1,
+                speed: 5000,
+            }
+        }]
+        //*/
+
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     var links = document.querySelectorAll(".mobile-menu li a:not([href='#'])");
 
