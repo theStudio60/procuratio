@@ -310,7 +310,9 @@ endif;
                   </div>
                 <?php endif;?>
               </div>
-              <div class="col-12 col-lg-4 d-flex h-100 my-auto"
+              <div
+                data-aos="flip-right" 
+                class="col-12 col-lg-4 d-flex h-100 my-auto"
                 style="background: url('<?php echo $image['url']; ?>');
                 background-repeat:no-repeat;
                 background-size:cover;
