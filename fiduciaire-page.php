@@ -124,6 +124,7 @@ endif;
                         </style>
                         <style>
                           .div-centered p {text-align:center!important;}
+                          .div-left p {text-align:left!important;}
                         </style>
                         <div class="text-white my-2 mx-auto div-white div-centered" >
                           <?= $description ?>
@@ -181,14 +182,14 @@ endif;
                       $icon = get_sub_field('icon');
                       $description = get_sub_field('description');
                     ?>
-                    <div class="col-12 col-lg-3  text-center ">
-                      <div class="text-center p-2 m-auto"> 
+                    <div class="col-12 col-lg-6 text-left ">
+                      <div class="text-left p-2 m-auto"> 
              
-                        <h4 class="text-dark text-uppercase mx-auto my-3 ">
+                        <h4 class="text-dark text-uppercase mx-auto my-1 ">
                           <?= $name ?>
                         </h4>
  
-                        <div class="text-dark my-2 mx-auto div-centered" >
+                        <div class="text-dark my-1 mx-auto div-left" >
                           <?= $description ?>
                         </div>
                       </div>
