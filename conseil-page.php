@@ -319,17 +319,7 @@ endif;
                 background-position:center ;
                 min-height:480px;
                 "
-                   
               >
-                <?php /*
-                <div class="my-3 my-lg-auto mx-auto w-100 d-flex"> 
-                  <img class="w-100 m-auto"
-                  data-aos="flip-left"
-                  src=" <?php echo $image['url']; ?> "
-                  style="min-width:320px!important;"
-                  >
-                </div>  
-                //*/ ?>
               </div>
 
             </div>

@@ -25,7 +25,7 @@
                   </p>
                 </div>
               <?php endif;?>
-              <div class="col-12 col-lg-9">
+              <div class="col-12 col-lg-8">
                 <div class="container">
                   <div class="row">
                     <?php
@@ -72,15 +72,16 @@
                   </div>
                 <?php endif;?>
               </div>
-              <div class="col-12 col-lg-3 d-flex">
-                <div class="my-3 my-lg-auto mx-auto w-100 d-flex"> 
-                  <img class="w-100 m-auto"
-                  data-aos="flip-left"
-
-                  src=" <?php echo $image['url']; ?> "
-                  style="min-width:320px!important;"
-                  >
-                </div>  
+              <div
+                data-aos="flip-right" 
+                class="col-12 col-lg-4 d-flex h-100 my-auto"
+                style="background: url('<?php echo $image['url']; ?>');
+                background-repeat:no-repeat;
+                background-size:cover;
+                background-position:center ;
+                min-height:480px;
+                "
+              >
               </div>
             </div>
           </div>
