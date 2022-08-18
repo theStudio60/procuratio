@@ -132,6 +132,83 @@ endif;
                           font-weight:600;
                           font-family:"Raleway";
                       }
+                      .wrapper-c {
+                          position: relative;
+                          margin: 40px auto;
+                          background: rgba(255,255,255,0);
+                      }
+                    
+                      .wrapper-c,
+                      .wrapper-c * {
+                          -moz-box-sizing: border-box;
+                          -webkit-box-sizing: border-box;
+                          box-sizing: border-box;
+                      }
+                    
+                      .wrapper-c {
+                          width: 196px;
+                          height: 196px;
+                      }
+                    
+                      .wrapper-c .pie {
+                          width: 50%;
+                          height: 100%;
+                          transform-origin: 100% 50%;
+                          position: absolute;
+                          background: rgba(255,255,255,1);
+                          border: 5px solid #29FFFF;
+                      }
+                    
+                      .wrapper-c .spinner {
+                          border-radius: 100% 0 0 100% / 50% 0 0 50%;
+                          z-index: 200;
+                          border-right: none;
+                          animation: rota 5s linear infinite;
+                      }
+                    
+                      .wrapper-c:hover .spinner,
+                      .wrapper-c:hover .filler,
+                      .wrapper-c:hover .mask {
+                          animation-play-state: running;
+                      }
+                    
+                      .wrapper-c .filler {
+                          border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+                          left: 50%;
+                          opacity: 0;
+                          z-index: 100;
+                          animation: opa 5s steps(1, end) infinite reverse;
+                          border-left: none;
+                      }
+                    
+                      .wrapper-c .mask {
+                          width: 50%;
+                          height: 100%;
+                          position: absolute;
+                          background: inherit;
+                          opacity: 1;
+                          z-index: 300;
+                          animation: opa 5s steps(1, end) infinite;
+                      }
+                    
+                      @keyframes rota {
+                          0% {
+                              transform: rotate(0deg);
+                          }
+                          100% {
+                              transform: rotate(360deg);
+                          }
+                      }
+                    
+                      @keyframes opa {
+                          0% {
+                              opacity: 1;
+                          }
+                          50%,
+                          100% {
+                              opacity: 0;
+                          }
+                      }
                       </style>
                       <div class="d-none d-lg-block" id="summary">
                         <div class="collapse mb-2" id="collapseSummary">
