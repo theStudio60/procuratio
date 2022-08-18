@@ -310,7 +310,13 @@ endif;
                   </div>
                 <?php endif;?>
               </div>
-              <div class="col-12 col-lg-3 d-flex h-100" style="background: url('<?php echo $image['url']; ?>');">
+              <div class="col-12 col-lg-3 d-flex h-100" $
+                style="background: url('<?php echo $image['url']; ?>');
+                background-repeat:no-repeat;
+                background-size:cover;
+                "
+                
+              >
                 <?php /*
                 <div class="my-3 my-lg-auto mx-auto w-100 d-flex"> 
                   <img class="w-100 m-auto"
