@@ -162,11 +162,7 @@
               </div>   
             <?php endif;?>
         </div> 
-        <style>
-          
-        </style>
         <div class="col-12 col-lg-3 d-flex"> 
-          
           <div class="wrapper-c">
             <div class="pie spinner"></div>
             <div class="pie filler"></div>

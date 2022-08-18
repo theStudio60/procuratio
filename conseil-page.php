@@ -219,8 +219,12 @@ endif;
                     </div>   
                   <?php endif;?>
                 </div> 
-                <div class="col-12 col-lg-3 d-flex">
-                  <i class=" m-auto fa fa-5x fa-pie-chart text-white"   ></i>
+                <div class="col-12 col-lg-3 d-flex"> 
+                  <div class="wrapper-c">
+                    <div class="pie spinner"></div>
+                    <div class="pie filler"></div>
+                    <div class="mask"></div>
+                  </div>
                 </div>
               </div>
             </div>
