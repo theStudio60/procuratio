@@ -275,7 +275,7 @@ endif;
                             $price = get_sub_field('price');
                             $content = get_sub_field('wysiwyg'); 
                     ?>
-                            <div class="col-12 col-lg-6 col-xl-4 "     data-aos="flip-up" data-aos-duration="1000"   >
+                            <div class="col-12 col-lg-6 col-xl-4" data-aos="flip-up" data-aos-duration="1000"   >
                               <div class="card w-100 mx-0 mx-md-auto px-3 d-flex"   >
                                 <div class="hide-arc"></div>
                                 <div class="arc"></div>
@@ -310,7 +310,8 @@ endif;
                   </div>
                 <?php endif;?>
               </div>
-              <div class="col-12 col-lg-3 d-flex">
+              <div class="col-12 col-lg-3 d-flex h-100" style="background: url('<?php echo $image['url']; ?>');">
+                <?php /*
                 <div class="my-3 my-lg-auto mx-auto w-100 d-flex"> 
                   <img class="w-100 m-auto"
                   data-aos="flip-left"
@@ -318,6 +319,7 @@ endif;
                   style="min-width:320px!important;"
                   >
                 </div>  
+                //*/ ?>
               </div>
 
             </div>
