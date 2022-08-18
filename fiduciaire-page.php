@@ -11,7 +11,12 @@ if( have_rows('page-fiduciaire_acf_group') ):
   endwhile;
 endif;
 ?>
-<style>body.page-wrapper{background-color:#002369!important;}</style>
+                        <style>
+                          .div-white p {color:white!important;}
+                      
+                          .div-centered p {text-align:center!important;}
+                          .div-left p {text-align:left!important;}
+         body.page-wrapper{background-color:#002369!important;}</style>
 <div class=" mx-0 bg-dark  " >
   <div class="container-fluid w-100">
     <div class="row" style=" ">
@@ -112,20 +117,14 @@ endif;
                       $icon = get_sub_field('icon');
                       $description = get_sub_field('description');
                     ?>
-                    <div class="col-12 col-lg-3  text-center ">
+                    <div class="col-12 col-lg-3  text-center mx-auto">
                       <div class="text-center p-2 m-auto">
-                        <i class="fa fa-5x  text-white <?= $icon ?> "> </i>
+                        <i class="fa fa-3x  text-white <?= $icon ?> "> </i>
              
-                        <h4 class="text-white text-uppercase mx-auto my-3 ">
+                        <h5 class="text-white text-uppercase mx-auto my-3 ">
                           <?= $name ?>
-                        </h4>
-                        <style>
-                          .div-white p {color:white!important;}
-                        </style>
-                        <style>
-                          .div-centered p {text-align:center!important;}
-                          .div-left p {text-align:left!important;}
-                        </style>
+                        </h5>
+
                         <div class="text-white my-2 mx-auto div-white div-centered" >
                           <?= $description ?>
                         </div>
