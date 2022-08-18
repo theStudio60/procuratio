@@ -314,6 +314,7 @@ endif;
                 style="background: url('<?php echo $image['url']; ?>');
                 background-repeat:no-repeat;
                 background-size:cover;
+                min-height:320px;
                 "
                 
               >
