@@ -117,11 +117,11 @@ endif;
                       $icon = get_sub_field('icon');
                       $description = get_sub_field('description');
                     ?>
-                    <div class="col-12 col-lg-3  text-center mx-auto">
+                    <div class="col-12 col-lg-4 text-center mx-auto">
                       <div class="text-center p-2 m-auto">
                         <i class="fa fa-3x  text-white <?= $icon ?> "> </i>
              
-                        <h5 class="text-white text-uppercase mx-auto my-3 ">
+                        <h5 class="text-white mx-auto my-3 ">
                           <?= $name ?>
                         </h5>
 
