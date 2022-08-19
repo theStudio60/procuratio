@@ -252,22 +252,23 @@ endif;
         <section id="mandats" class="section bg-white  py-3 py-lg-5">
           <div class="container m-auto  services"  data-aos="fade-up" data-aos-duration="800">
             <div class="row">
-              <?php if ($title) :  ?>
-                <div class="col-12 col-lg-9  ">
+              <div class="col-12 col-lg-8">
+                <?php if ($title) :  ?>
+
                   <h3 class="text-dark d-flex mb-3" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
                     <?= $title ?>
                   </h3>   
-                </div>
-              <?php endif;?>
-              <?php if ($description) :  ?>
-                <div class="col-12 col-lg-9  ">
+     
+                <?php endif;?>
+                <?php if ($description) :  ?>
+               
                   <p>
                     <?= $description ?>
                   </p>
-                </div>
-              <?php endif;?>
-              <div class="col-12 col-lg-8">
+       
+                <?php endif;?>
+      
                 <div class="container">
                   <div class="row">
                     <?php
@@ -313,7 +314,9 @@ endif;
                     </p>
                   </div>
                 <?php endif;?>
+
               </div>
+                      
               <div
                 data-aos="flip-right" 
                 class="col-12 col-lg-4 d-flex h-100 my-auto"
@@ -325,7 +328,6 @@ endif;
                 "
               >
               </div>
-
             </div>
           </div>
         </section>
