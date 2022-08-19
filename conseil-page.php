@@ -99,39 +99,43 @@ endif;
                         color:#fff;
                       }
                       #summary div.collapse:not(.show) {
-                          height:64px;
-                          overflow: hidden;
-                          display: -webkit-box;
-                          -webkit-line-clamp: 3;
-                          -webkit-box-orient: vertical;  
-                            /* Safari 10.1 */
-                            @media not all and (min-resolution:.001dpcm){ 
-                            @supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
-                            height:auto; 
-                            }}
-                      }
-                      #summary div.collapsing {
-                          min-height: 192px;
-                      }
-                      #summary a.collapsed:after  {
-                          content: 'Lire la suite'; 
-                          width: 100%;
-                          font-size:18px; 
-                          margin-left:auto ; margin-right:auto;
-                          text-align:center;
-                          font-weight:600;
-                          font-family:"Raleway";
-                      }
-                    
-                      #summary a:not(.collapsed):after {
-                          content: '- Réduire';
-                          font-size:18px;
-                          padding-top:16px;
-                          margin-left:auto ; margin-right:auto;
-                          text-align:center;
-                          font-weight:600;
-                          font-family:"Raleway";
-                      }
+                    height:64px;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;  
+                      /* Safari 10.1 */
+                      @media not all and (min-resolution:.001dpcm){ 
+                      @supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
+                      
+                      height:auto; 
+                      
+                      }}
+ 
+                }
+
+                #summary div.collapsing {
+                    min-height: 192px;
+                }
+                #summary a.reduction.collapsed:after  {
+                    content: 'Lire la suite'; 
+                    width: 100%;
+                    font-size:18px; 
+                    margin-left:auto ; margin-right:auto;
+                    text-align:center;
+                    font-weight:600;
+                    font-family:"Raleway";
+                }
+
+                #summary a.reduction:not(.collapsed):after {
+                    content: '- Réduire';
+                    font-size:18px;
+                    padding-top:16px;
+                    margin-left:auto ; margin-right:auto;
+                    text-align:center;
+                    font-weight:600;
+                    font-family:"Raleway";
+                }
                       .wrapper-c {
                           position: relative;
                           margin: 40px auto;

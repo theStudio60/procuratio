@@ -53,7 +53,7 @@
                 #summary div.collapsing {
                     min-height: 192px;
                 }
-                #summary a.collapsed:after  {
+                #summary a.reduction.collapsed:after  {
                     content: 'Lire la suite'; 
                     width: 100%;
                     font-size:18px; 
@@ -63,7 +63,7 @@
                     font-family:"Raleway";
                 }
 
-                #summary a:not(.collapsed):after {
+                #summary a.reduction:not(.collapsed):after {
                     content: '- Réduire';
                     font-size:18px;
                     padding-top:16px;
@@ -156,7 +156,7 @@
                   <div class="collapse mb-2" id="collapseSummary">
                     <?= $content?>
                   </div>
-                  <a class="collapsed text-secondary" data-toggle="collapse" href="#collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
+                  <a class="collapsed text-secondary reduction" data-toggle="collapse" href="#collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
                 </div>
 
               </div>   
