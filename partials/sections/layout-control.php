@@ -6,8 +6,8 @@
       $subtitle = get_sub_field('subtitle');
       $content = get_sub_field('content'); 
       ?>
-<section id="control" class="section d-flex   py-3 py-lg-5 bg-dark"  data-aos="slide-up" >
-    <div class="container m-auto   " >
+<section id="control" class="section d-flex   py-3 py-lg-5 bg-dark"  >
+    <div class="container m-auto   " data-aos="fade-up" data-aos-mirror="false"  >
       <div class="row my-3  ">
         <div class="col-12 col-lg-9 mx-auto mx-lg-0 ">
           <?php if ($title) :  ?>

@@ -72,7 +72,7 @@ endif;
       $content = get_sub_field('content'); 
       ?>
         <section id="control" class="section d-flex   py-3 py-lg-5 bg-dark" >
-            <div class="container m-auto   "  data-aos="fade-up" data-aos-duration="800" >
+            <div class="container m-auto   " data-aos="fade-up" data-aos-mirror="false" >
               <div class="row my-3  ">
                 <div class="col-12 col-lg-9 mx-auto mx-lg-0 ">
                   <?php if ($title) :  ?>
