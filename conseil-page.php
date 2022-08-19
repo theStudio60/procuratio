@@ -378,16 +378,20 @@ endif;
           <div class="dash mr-2 ml-n4 my-auto"></div>
           Contact
         </h3>
-        <div class="div-center">
-            <div class="text-center div-center text-white">
-              <?= $cta_call ?>
-              <button class="mx-auto button mt-3"  onclick="location.href='<?php echo site_url(); ?>#contact'">Contact</button>
-
-            </div>
-            
-          </div>
-
       </div>
+      <div class="col-12 col-lg-9 mx-auto ">
+
+        <div class="div-center d-flex ">
+            <p class="text-center div-center text-white mx-auto ">
+              
+              <?= $cta_call ?>
+            </p>
+            <button class="mx-auto button mt-3"  onclick="location.href='<?php echo site_url(); ?>#contact'">Contact</button>
+
+        </div>
+            
+      </div>
+
 
     </div>
   </div>
@@ -395,3 +399,4 @@ endif;
 </section>
 <?php
 get_footer();
+
