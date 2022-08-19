@@ -85,15 +85,15 @@
 
         <div class="d-flex p-0 mr-2"> 
           <div onclick="openMenu()" title="toggle menu" id="burger" class="header-mobile__burger  header-mobile__burger--visible"  aria-expanded="false">
-            <?php if ( is_front_page() ):?>
+            <?php // if ( is_front_page() ):?>
               <?php get_template_part('partials/nav/burger','light'); ?>
-            <?php  endif?>
+            <?php // endif?>
           </div>
 
           <div onclick="closeMenu()" title="close menu" id="close" class="header-mobile__burger  header-mobile__burger--hidden"  aria-expanded="false"> 
-            <?php if ( is_front_page() ):?>
+            <?php // if ( is_front_page() ):?>
               <?php get_template_part('partials/nav/close','light'); ?>
-            <?php  endif?>
+            <?php // endif?>
           </div>
         </div>
       </div>
@@ -115,7 +115,7 @@
       'container'       => ' ',
       'container_class' => ' ',
       'container_id'    => 'navMenu',
-      'menu_class'      => 'm-auto p-0',
+      'menu_class'      => 'm-auto p-0',  
       'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
       'walker'          => new WP_Bootstrap_Navwalker(),
       ));
