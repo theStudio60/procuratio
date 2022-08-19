@@ -10,22 +10,23 @@
         <section id=" " class="section bg-white  py-3 py-lg-5"   data-aos="slide-up">
           <div class="container m-auto  services"    >
             <div class="row">
-              <?php if ($title) :  ?>
-                <div class="col-12 col-lg-9  ">
+            <div class="col-12 col-lg-8">
+                <?php if ($title) :  ?>
+
                   <h3 class="text-dark d-flex mb-3" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
                     <?= $title ?>
                   </h3>   
-                </div>
-              <?php endif;?>
-              <?php if ($description) :  ?>
-                <div class="col-12 col-lg-9  ">
+     
+                <?php endif;?>
+                <?php if ($description) :  ?>
+               
                   <p>
                     <?= $description ?>
                   </p>
-                </div>
-              <?php endif;?>
-              <div class="col-12 col-lg-8">
+       
+                <?php endif;?>
+      
                 <div class="container">
                   <div class="row">
                     <?php
@@ -37,7 +38,7 @@
                             $price = get_sub_field('price');
                             $content = get_sub_field('wysiwyg'); 
                     ?>
-                            <div class="col-12 col-lg-6 col-xl-4 " >
+                            <div class="col-12 col-lg-6 col-xl-4">
                               <div class="card w-100 mx-0 mx-md-auto px-3 d-flex"   >
                                 <div class="hide-arc"></div>
                                 <div class="arc"></div>
@@ -71,15 +72,28 @@
                     </p>
                   </div>
                 <?php endif;?>
+
               </div>
+                      
               <div
                 data-aos="flip-right" 
-                class="col-12 col-lg-4 d-flex h-100 my-auto"
+                class="col-lg-4 d-none d-lg-flex h-100 my-auto"
                 style="background: url('<?php echo $image['url']; ?>');
                 background-repeat:no-repeat;
                 background-size:cover;
                 background-position:center ;
-                min-height:480px;
+                min-height:100vh;
+                "
+              >
+              </div>
+              <div
+                data-aos="flip-up" 
+                class="col-12 d-block d-lg-none"
+                style="background: url('<?php echo $image['url']; ?>');
+                background-repeat:no-repeat;
+                background-size:cover;
+                background-position:center ;
+                min-height:380px;
                 "
               >
               </div>

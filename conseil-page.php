@@ -319,12 +319,23 @@ endif;
                       
               <div
                 data-aos="flip-right" 
-                class="col-12 col-lg-4 d-flex h-100 my-auto"
+                class="col-lg-4 d-none d-lg-flex h-100 my-auto"
                 style="background: url('<?php echo $image['url']; ?>');
                 background-repeat:no-repeat;
                 background-size:cover;
                 background-position:center ;
-                min-height:480px;
+                min-height:100vh;
+                "
+              >
+              </div>
+              <div
+                data-aos="flip-up" 
+                class="col-12 d-block d-lg-none"
+                style="background: url('<?php echo $image['url']; ?>');
+                background-repeat:no-repeat;
+                background-size:cover;
+                background-position:center ;
+                min-height:380px;
                 "
               >
               </div>
