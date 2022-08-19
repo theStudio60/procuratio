@@ -204,11 +204,12 @@ acf_add_local_field_group(array(
 					),
 					'layout' => 'block',
 					'sub_fields' => array(
-                        array(
+						
+            array(
 							'key' => 'field_6039692dcf336',
-							'label' => 'Adresse du Cabinet',
-							'name' => 'post_address_cabinet',
-							'type' => 'text',
+							'label' => 'Appel au contact',
+							'name' => 'contact_call',
+							'type' => 'textarea',
 							'instructions' => '',
 							'required' => 0,
 							'conditional_logic' => 0,
@@ -217,11 +218,11 @@ acf_add_local_field_group(array(
 								'class' => '',
 								'id' => '',
 							),
-							'default_value' => ' ',
+							'default_value' => 'Nom de la rue 99 à Ville',
 							'placeholder' => '',
-							'prepend' => '',
-							'append' => '',
 							'maxlength' => '',
+							'rows' => '',
+							'new_lines' => 'br',
 						),
 						array(
 							'key' => 'field_60394b1de0331',
@@ -280,7 +281,7 @@ acf_add_local_field_group(array(
 							'append' => '',
 							'maxlength' => '',
 						),
-						array(
+						array( 
 							'key' => 'field_6039699ccfa87',
 							'label' => 'Email',
 							'name' => 'email',
@@ -298,6 +299,7 @@ acf_add_local_field_group(array(
 							'prepend' => '',
 							'append' => '',
 						),
+						/*
 						array(
 							'key' => 'field_60399113f019a',
 							'label' => 'Réseaux sociaux',
@@ -399,9 +401,11 @@ acf_add_local_field_group(array(
 								),
 							),
 						),
- 
+ //*/
 					),
 				),
+				
+				/*
 				array(
 					'key' => 'field_603a2df815448',
 					'label' => 'Pied de Page',
@@ -857,6 +861,7 @@ acf_add_local_field_group(array(
 						),
 					),
 				),
+				//*/
 								// popup tab
 								array(
 									'key' => 'field_6039615218f3f',
