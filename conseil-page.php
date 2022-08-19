@@ -348,8 +348,7 @@ endif;
   <?php endwhile; ?>
   <?php wp_reset_postdata(  ) ;?>
 <?php endif; ?> 
-
-<?php //get_template_part( 'partials/sections/layout','contact' ); ?>
+ 
 <?php
 if( have_rows('website_settings', 'option') ): 
   while( have_rows('website_settings', 'option') ): 
@@ -369,7 +368,7 @@ if( have_rows('contact_infos') ):
   endwhile; 
 endif; 
 ?>
-<section id=" " class="section bg-dark h-50 d-flex   py-3 py-lg-5 " >
+<section id=" " class="section bg-dark h-25 d-flex   py-3 py-lg-5 " >
   <div class="container m-auto   " data-aos="fade-up" data-aos-mirror="false" >
     <div class="row my-3  ">
       <div class="col-12 col-lg-9">

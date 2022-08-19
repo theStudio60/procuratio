@@ -270,6 +270,51 @@ endif;
     <?php endif; ?>  
   <?php endwhile; ?>
 <?php endif; ?> 
-<?php // get_template_part( 'partials/sections/layout','contact' ); ?>
+
+<?php
+if( have_rows('website_settings', 'option') ): 
+  while( have_rows('website_settings', 'option') ): 
+//  print_r(the_row());
+  the_row(); 
+if( have_rows('contact_infos') ): 
+  while( have_rows('contact_infos') ): the_row();
+  $cta_call = get_sub_field('contact_call');
+  $adress = get_sub_field('post_address');
+  $phone = get_sub_field('phone');
+  $email = get_sub_field('email');
+  $gmap = get_sub_field('gmap_url');
+?>
+ <?php
+        endwhile; 
+    endif; 
+  endwhile; 
+endif; 
+?>
+<section id=" " class="section bg-dark h-25 d-flex   py-3 py-lg-5 " >
+  <div class="container m-auto   " data-aos="fade-up" data-aos-mirror="false" >
+    <div class="row my-3  ">
+      <div class="col-12 col-lg-9">
+           
+        <h3 class="text-white d-flex">
+          <div class="dash mr-2 ml-n4 my-auto"></div>
+          Contact
+        </h3>
+      </div>
+      <div class="col-12 col-lg-9 mx-auto ">
+ 
+        <p class="text-center div-center text-white mx-auto ">
+          
+          <?= $cta_call ?>
+        </p>
+      </div>
+      <div class="col-12 col-lg-9 mx-auto d-flex">
+            <button class="mx-auto button mt-3"  onclick="location.href='<?php echo site_url(); ?>#contact'">Contact</button>
+      </div>
+
+    </div>
+  </div>
+
+</section>
 <?php
 get_footer();
+
