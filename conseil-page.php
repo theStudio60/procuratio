@@ -380,18 +380,15 @@ endif;
         </h3>
       </div>
       <div class="col-12 col-lg-9 mx-auto ">
-
-        <div class="div-center d-flex ">
-            <p class="text-center div-center text-white mx-auto ">
-              
-              <?= $cta_call ?>
-            </p>
-            <button class="mx-auto button mt-3"  onclick="location.href='<?php echo site_url(); ?>#contact'">Contact</button>
-
-        </div>
-            
+ 
+        <p class="text-center div-center text-white mx-auto ">
+          
+          <?= $cta_call ?>
+        </p>
       </div>
-
+      <div class="col-12 col-lg-9 mx-auto d-flex">
+            <button class="mx-auto button mt-3"  onclick="location.href='<?php echo site_url(); ?>#contact'">Contact</button>
+      </div>
 
     </div>
   </div>
