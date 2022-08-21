@@ -10,19 +10,12 @@
         <section id=" " class="section bg-white h-25 py-3 py-lg-5"   data-aos="slide-up">
           <div class="container m-auto  services"    >
             <div class="row">
-              <div class="col-12 col-lg-8">
+              <div class="col-12">
                 <?php if ($title) :  ?>
                   <h3 class="text-dark d-flex mb-3" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
                     <?= $title ?>
                   </h3>   
-                <?php endif;?>
-                <?php if ($description) :  
-                  $this_excerpt = wp_trim_words( $description, 35, ' ...  '); 
-                ?>
-                  <p>
-                    <?= $this_excerpt ?>
-                  </p>
                 <?php endif;?>
               </div>
               <div
@@ -36,6 +29,17 @@
                 "
               >
               </div>
+              <div class="col-12 col-lg-8 my-auto">
+
+                <?php if ($description) :  
+                  $this_excerpt = wp_trim_words( $description, 35, ' ...  '); 
+                ?>
+                  <p>
+                    <?= $this_excerpt ?>
+                  </p>
+                <?php endif;?>
+              </div>
+              
               <div
                 data-aos="flip-up" 
                 class="col-12 d-block d-lg-none bg-primary"
