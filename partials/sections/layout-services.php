@@ -8,7 +8,7 @@
         $image = get_sub_field('image');
       ?>
         <section id=" " class="section bg-white h-25 py-3 py-lg-5" >
-          <div class="container m-auto  services"    data-aos="slide-up"  >
+          <div class="container m-auto  services h-100"    data-aos="slide-up"  >
             <div class="row">
               <div class="col-12">
                 <?php if ($title) :  ?>
