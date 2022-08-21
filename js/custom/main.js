@@ -52,7 +52,7 @@ function closePopup() {
 
 $('.hero-slider').slick({
     //*
-    dots: true,
+    dots: false,
     arrows: false,
     infinite: true,
     autoplay: true,
