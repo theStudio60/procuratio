@@ -10,7 +10,7 @@
             <div class="section__row">
               <div class="section__col mt-5">
                 <?= $content ?>
-				  
+
               </div>
             </div>
           </div>
