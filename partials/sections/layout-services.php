@@ -14,7 +14,7 @@
                 <?php if ($title) :  ?>
                   <h3 class="text-dark d-flex mb-3" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
-                    <?= $title ?>
+                    <?= $title ?> AAAAA
                   </h3>
                 <?php endif;?>
               </div>
