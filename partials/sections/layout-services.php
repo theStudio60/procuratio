@@ -1,9 +1,9 @@
-<?php if( have_rows('option-group_conseil','option') ): 
-  while( have_rows('option-group_conseil','option') ): the_row();  
-    if( have_rows('group_mandats') ): 
-      while( have_rows('group_mandats') ): the_row(); 
+<?php if( have_rows('option-group_conseil','option') ):
+  while( have_rows('option-group_conseil','option') ): the_row();
+    if( have_rows('group_mandats') ):
+      while( have_rows('group_mandats') ): the_row();
         $title = get_sub_field('title');
-        $description = get_sub_field('description'); 
+        $description = get_sub_field('description');
         $conclusion = get_sub_field('conclusion');
         $image = get_sub_field('image');
       ?>
@@ -14,12 +14,12 @@
                 <?php if ($title) :  ?>
                   <h3 class="text-dark d-flex mb-3" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
-                    <?= $title ?>
-                  </h3>   
+                    <?= $title ?> AAAAA
+                  </h3>
                 <?php endif;?>
               </div>
               <div
-                data-aos="flip-right" 
+                data-aos="flip-right"
                 class="col-lg-4 d-none d-lg-flex h-100 my-auto bg-primary"
                 style="background: url('<?php echo $image['url']; ?>');
                 background-repeat:no-repeat;
@@ -31,17 +31,17 @@
               </div>
               <div class="col-12 col-lg-8 my-auto p-2">
 
-                <?php if ($description) :  
-                  $this_excerpt = wp_trim_words( $description, 35, ' ...  '); 
+                <?php if ($description) :
+                  $this_excerpt = wp_trim_words( $description, 35, ' ...  ');
                 ?>
                   <p>
                     <?= $this_excerpt ?>
                   </p>
                 <?php endif;?>
               </div>
-              
+
               <div
-                data-aos="flip-up" 
+                data-aos="flip-up"
                 class="col-12 d-block d-lg-none bg-primary"
                 style="background: url('<?php echo $image['url']; ?>');
                 background-repeat:no-repeat;
@@ -59,7 +59,7 @@
         </section>
       <?php endwhile; ?>
       <?php wp_reset_postdata(  ) ;?>
-    <?php endif; ?> 
+    <?php endif; ?>
   <?php endwhile; ?>
   <?php wp_reset_postdata(  ) ;?>
-<?php endif; ?> 
+<?php endif; ?>
