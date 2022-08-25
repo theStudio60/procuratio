@@ -143,7 +143,7 @@ if ( has_post_thumbnail() ) {
                   ?>
                   <div class="mt-auto ml-auto mr-0 mb-0 text-white   d-none d-lg-flex w-100 py-2">
                     <div class="d-block d-xl-flex w-100 my-auto">
-                      <i class="fa fa-phone my-auto mr-2 text-secondary" aria-hidden="true"></i><span class="my-auto font-serif text-white"><b><?= $phone ?>AAAAA</b></span>
+                      <i class="fa fa-phone my-auto mr-2 text-secondary" aria-hidden="true"></i><span class="my-auto font-serif text-white"><b><?= $phone ?>AAAAA </b></span>
                       <div class="mx-3"></div>
                       <i class="fa fa-envelope my-auto mr-2 text-secondary" aria-hidden="true"></i><span class="my-auto font-serif  text-white"><b><?= $email ?></b></span>
                       <div class="dash ml-auto mr-0 d-none d-xl-block"></div>
