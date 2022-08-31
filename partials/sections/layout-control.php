@@ -1,10 +1,10 @@
-<?php if( have_rows('option-group_conseil','option') ): 
-  while( have_rows('option-group_conseil','option') ): the_row();  
-    if( have_rows('group_control') ): 
-      while( have_rows('group_control') ): the_row(); 
+<?php if( have_rows('option-group_conseil','option') ):
+  while( have_rows('option-group_conseil','option') ): the_row();
+    if( have_rows('group_control') ):
+      while( have_rows('group_control') ): the_row();
       $title = get_sub_field('name');
       $subtitle = get_sub_field('subtitle');
-      $content = get_sub_field('content'); 
+      $content = get_sub_field('content');
       ?>
 <section id="control" class="section d-flex   py-3 py-lg-5 bg-dark"  >
     <div class="container m-auto   " data-aos="fade-up" data-aos-mirror="false"  >
@@ -15,7 +15,7 @@
               <div class="dash mr-2 ml-n4 my-auto"></div>
               <h3 class="text-white d-flex mb-3" >
                   <?= $title ?>
-              </h3>  
+              </h3>
             </div>
           <?php endif;?>
           <style>
@@ -102,31 +102,31 @@
               }
           }
           </style>
-          <?php if ($content) :  
-            $this_excerpt = wp_trim_words( $content, 50, ' ...  '); 
+          <?php if ($content) :
+            $this_excerpt = wp_trim_words( $content, 50, ' ...  ');
           ?>
             <div class="text-white d-block px-2 font-serif w-100 lead mb-3 "  >
               <?= $this_excerpt ?>
-            </div>  
-            
-            <button class="button" onclick="location.href='<?php echo site_url(); ?>/conseil#control'">En savoir plus</button> 
+            </div>
+
+            <button class="button" onclick="location.href='<?php echo site_url(); ?>/conseil#control'">En savoir plus</button>
 
           <?php endif;?>
-        </div> 
-        <div class="col-12 col-lg-3 d-flex"> 
-          <div class="wrapper-c">
+        </div>
+        <div class="col-12 col-lg-3 d-flex">
+          <!--div class="wrapper-c">
             <div class="pie spinner"></div>
             <div class="pie filler"></div>
             <div class="mask"></div>
-          </div>
+          </div-->
         </div>
       </div>
     </div>
 </section>
 <?php endwhile; ?>
-<?php endif; ?> 
+<?php endif; ?>
 <?php endwhile; ?>
-<?php endif; ?> 
+<?php endif; ?>
 
 
 
