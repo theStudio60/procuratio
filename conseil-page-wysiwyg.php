@@ -5,11 +5,18 @@
  * @package studio_soixante
  */
 get_header();
-if( have_rows('page-conseil_acf_group_wysiwyg') ):
+/*if( have_rows('page-conseil_acf_group_wysiwyg') ):
   while( have_rows('page-conseil_acf_group_wysiwyg') ): the_row();
     get_template_part( 'partials/sections/hero', 'page' );
   endwhile;
+endif;*/
+
+if( have_rows('page-conseil_acf_group') ):
+	while( have_rows('page-conseil_acf_group') ): the_row();
+		get_template_part( 'partials/sections/hero', 'page' );
+	endwhile;
 endif;
+
 ?>
 <style>body.page-wrapper{background-color:#002369!important;}</style>
 <div class=" mx-0 bg-dark  " >
