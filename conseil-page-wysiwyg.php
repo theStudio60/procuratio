@@ -6,8 +6,8 @@
  */
 get_header();
 
-if( have_rows('page-conseil_acf_group_wysiwyg') ):
-  while( have_rows('page-conseil_acf_group_wysiwyg') ): the_row();
+if( have_rows('page-conseil_acf_group') ):
+  while( have_rows('page-conseil_acf_group') ): the_row();
     get_template_part( 'partials/sections/hero', 'page' );
   endwhile;
 endif;
