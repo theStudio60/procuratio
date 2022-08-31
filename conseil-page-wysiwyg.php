@@ -4,7 +4,7 @@
  *
  * @package studio_soixante
  */
-//get_header();
+get_header();
 
 if( have_rows('page-conseil_acf_group_wysiwyg') ):
   while( have_rows('page-conseil_acf_group_wysiwyg') ): the_row();
