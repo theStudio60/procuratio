@@ -4,9 +4,9 @@
  *
  * @package studio_soixante
  */
-get_header(); 
-if( have_rows('page-conseil_acf_group') ): 
-  while( have_rows('page-conseil_acf_group') ): the_row(); 
+get_header();
+if( have_rows('page-conseil_acf_group') ):
+  while( have_rows('page-conseil_acf_group') ): the_row();
     get_template_part( 'partials/sections/hero', 'page' );
   endwhile;
 endif;
@@ -17,15 +17,15 @@ endif;
     <div class="row" style=" ">
 
       <?php if( have_rows('option-group_conseil','option') ): ?>
-        <?php while( have_rows('option-group_conseil','option') ): the_row(); ?>  
+        <?php while( have_rows('option-group_conseil','option') ): the_row(); ?>
           <?php if( have_rows('group_control') ): ?>
             <?php while( have_rows('group_control') ): the_row();
               $thisTitle = get_sub_field('title');
- 
+
             ?>
-            
+
               <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-1 mt-3 mt-lg-n3"  data-aos="flip-up" data-aos-duration="800"  >
-                <button 
+                <button
                 onclick="location.href='#control'"
                 class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
                     <h5 class="font-sans text-white text-uppercase m-auto ">
@@ -39,15 +39,15 @@ endif;
       <?php endif; ?>
 
       <?php if( have_rows('option-group_conseil','option') ): ?>
-        <?php while( have_rows('option-group_conseil','option') ): the_row(); ?>  
+        <?php while( have_rows('option-group_conseil','option') ): the_row(); ?>
           <?php if( have_rows('group_mandats') ): ?>
             <?php while( have_rows('group_mandats') ): the_row();
               $thisTitle = get_sub_field('title');
- 
+
             ?>
-            
+
               <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-1 mt-3 mt-lg-n3"  data-aos="flip-up" data-aos-duration="800"  >
-                <button 
+                <button
                 onclick="location.href='#mandats'"
                 class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
                     <h5 class="font-sans text-white text-uppercase m-auto ">
@@ -60,16 +60,16 @@ endif;
         <?php endwhile; ?>
       <?php endif; ?>
 
-    </div>  
+    </div>
   </div>
 </div>
-<?php if( have_rows('option-group_conseil','option') ): 
-  while( have_rows('option-group_conseil','option') ): the_row();  
-    if( have_rows('group_control') ): 
-      while( have_rows('group_control') ): the_row(); 
+<?php if( have_rows('option-group_conseil','option') ):
+  while( have_rows('option-group_conseil','option') ): the_row();
+    if( have_rows('group_control') ):
+      while( have_rows('group_control') ): the_row();
       $title = get_sub_field('name');
       $subtitle = get_sub_field('subtitle');
-      $content = get_sub_field('content'); 
+      $content = get_sub_field('content');
       ?>
       <section id="control" class="section d-flex   py-3 py-lg-5 bg-dark"  >
           <div class="container m-auto   " data-aos="fade-up" data-aos-mirror="false"  >
@@ -80,14 +80,14 @@ endif;
                     <div class="dash mr-2 ml-n4 my-auto"></div>
                     <h3 class="text-white d-flex mb-3" >
                         <?= $title ?>
-                    </h3>  
+                    </h3>
                   </div>
                 <?php endif;?>
                   <?php if ($content) :  ?>
                     <div class="text-white d-block d-lg-none px-2"  >
                         <?= $content?>
                     </div>
-                    <div class="text-white d-none d-lg-block"> 
+                    <div class="text-white d-none d-lg-block">
                       <style>
                       #summary { line-height: 1.5; }
                       .text-white p {
@@ -103,30 +103,30 @@ endif;
                           overflow: hidden;
                           display: -webkit-box;
                           -webkit-line-clamp: 3;
-                          -webkit-box-orient: vertical;  
+                          -webkit-box-orient: vertical;
                             /* Safari 10.1 */
-                            @media not all and (min-resolution:.001dpcm){ 
+                            @media not all and (min-resolution:.001dpcm){
                             @supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
-                            
-                            height:auto; 
-                            
+
+                            height:auto;
+
                             }}
-                          
+
                       }
-                    
+
                       #summary div.collapsing {
                           min-height: 192px;
                       }
                       #summary a.reduction.collapsed:after  {
-                          content: 'Lire la suite'; 
+                          content: 'Lire la suite';
                           width: 100%;
-                          font-size:18px; 
+                          font-size:18px;
                           margin-left:auto ; margin-right:auto;
                           text-align:center;
                           font-weight:600;
                           font-family:"Raleway";
                       }
-                    
+
                       #summary a.reduction:not(.collapsed):after {
                           content: '- Réduire';
                           font-size:18px;
@@ -136,25 +136,25 @@ endif;
                           font-weight:600;
                           font-family:"Raleway";
                       }
-                    
+
                       .wrapper-c {
                           position: relative;
                           margin: 40px auto;
                           background: rgba(255,255,255,0);
                       }
-                    
+
                       .wrapper-c,
                       .wrapper-c * {
                           -moz-box-sizing: border-box;
                           -webkit-box-sizing: border-box;
                           box-sizing: border-box;
                       }
-                    
+
                       .wrapper-c {
                           width: 196px;
                           height: 196px;
                       }
-                    
+
                       .wrapper-c .pie {
                           width: 50%;
                           height: 100%;
@@ -163,20 +163,20 @@ endif;
                           background: rgba(255,255,255,1);
                           border: 5px solid #29FFFF;
                       }
-                    
+
                       .wrapper-c .spinner {
                           border-radius: 100% 0 0 100% / 50% 0 0 50%;
                           z-index: 200;
                           border-right: none;
                           animation: rota 5s linear infinite;
                       }
-                    
+
                       .wrapper-c:hover .spinner,
                       .wrapper-c:hover .filler,
                       .wrapper-c:hover .mask {
                           animation-play-state: running;
                       }
-                    
+
                       .wrapper-c .filler {
                           border-radius: 0 100% 100% 0 / 0 50% 50% 0;
                           left: 50%;
@@ -185,7 +185,7 @@ endif;
                           animation: opa 5s steps(1, end) infinite reverse;
                           border-left: none;
                       }
-                    
+
                       .wrapper-c .mask {
                           width: 50%;
                           height: 100%;
@@ -195,7 +195,7 @@ endif;
                           z-index: 300;
                           animation: opa 5s steps(1, end) infinite;
                       }
-                    
+
                       @keyframes rota {
                           0% {
                               transform: rotate(0deg);
@@ -204,7 +204,7 @@ endif;
                               transform: rotate(360deg);
                           }
                       }
-                    
+
                       @keyframes opa {
                           0% {
                               opacity: 1;
@@ -222,11 +222,11 @@ endif;
                         </div>
                         <a class="collapsed text-secondary reduction" data-toggle="collapse" href="#collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
                       </div>
-                    
-                    </div>   
+
+                    </div>
                   <?php endif;?>
-              </div> 
-              <div class="col-12 col-lg-3 d-flex"> 
+              </div>
+              <div class="col-12 col-lg-3 d-flex">
                 <div class="wrapper-c">
                   <div class="pie spinner"></div>
                   <div class="pie filler"></div>
@@ -238,18 +238,18 @@ endif;
         </section>
       <?php endwhile; ?>
       <?php wp_reset_postdata(  ) ;?>
-    <?php endif; ?> 
+    <?php endif; ?>
   <?php endwhile; ?>
   <?php wp_reset_postdata(  ) ;?>
-<?php endif; ?> 
+<?php endif; ?>
 
-<?php if( have_rows('option-group_conseil','option') ): 
-  while( have_rows('option-group_conseil','option') ): the_row();  
-    if( have_rows('group_mandats') ): 
-      while( have_rows('group_mandats') ): the_row(); 
+<?php if( have_rows('option-group_conseil','option') ):
+  while( have_rows('option-group_conseil','option') ): the_row();
+    if( have_rows('group_mandats') ):
+      while( have_rows('group_mandats') ): the_row();
       $title = get_sub_field('title');
-      $description = get_sub_field('description'); 
-      $conclusion = get_sub_field('conclusion'); 
+      $description = get_sub_field('description');
+      $conclusion = get_sub_field('conclusion');
       $image = get_sub_field('image');
       ?>
         <section id="mandats" class="section bg-white  py-3 py-lg-5">
@@ -261,17 +261,17 @@ endif;
                   <h3 class="text-dark d-flex mb-3" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
                     <?= $title ?>
-                  </h3>   
-     
+                  </h3>
+
                 <?php endif;?>
                 <?php if ($description) :  ?>
-               
+
                   <p>
                     <?= $description ?>
                   </p>
-       
+
                 <?php endif;?>
-      
+
                 <div class="container">
                   <div class="row">
                     <?php
@@ -281,7 +281,7 @@ endif;
                           while( have_rows('mandat') ): the_row();
                             $subtitle = get_sub_field('service');
                             $price = get_sub_field('price');
-                            $content = get_sub_field('wysiwyg'); 
+                            $content = get_sub_field('wysiwyg');
                     ?>
                             <div class="col-12 col-lg-6 col-xl-4">
                               <div class="card w-100 mx-0 mx-md-auto px-3 d-flex"   >
@@ -319,9 +319,9 @@ endif;
                 <?php endif;?>
 
               </div>
-                      
+
               <div
-                data-aos="flip-right" 
+                data-aos="flip-right"
                 class="col-lg-4 d-none d-lg-flex h-100 my-auto"
                 style="background: url('<?php echo $image['url']; ?>');
                 background-repeat:no-repeat;
@@ -332,7 +332,7 @@ endif;
               >
               </div>
               <div
-                data-aos="flip-up" 
+                data-aos="flip-up"
                 class="col-12 d-block d-lg-none"
                 style="background: url('<?php echo $image['url']; ?>');
                 background-repeat:no-repeat;
@@ -347,17 +347,17 @@ endif;
         </section>
       <?php endwhile; ?>
       <?php wp_reset_postdata(  ) ;?>
-    <?php endif; ?> 
+    <?php endif; ?>
   <?php endwhile; ?>
   <?php wp_reset_postdata(  ) ;?>
-<?php endif; ?> 
- 
+<?php endif; ?>
+
 <?php
-if( have_rows('website_settings', 'option') ): 
-  while( have_rows('website_settings', 'option') ): 
+if( have_rows('website_settings', 'option') ):
+  while( have_rows('website_settings', 'option') ):
 //  print_r(the_row());
-  the_row(); 
-if( have_rows('contact_infos') ): 
+  the_row();
+if( have_rows('contact_infos') ):
   while( have_rows('contact_infos') ): the_row();
   $cta_call = get_sub_field('contact_call');
   $adress = get_sub_field('post_address');
@@ -366,25 +366,25 @@ if( have_rows('contact_infos') ):
   $gmap = get_sub_field('gmap_url');
 ?>
  <?php
-        endwhile; 
-    endif; 
-  endwhile; 
-endif; 
+        endwhile;
+    endif;
+  endwhile;
+endif;
 ?>
 <section id=" " class="section bg-dark h-25 d-flex   py-3 py-lg-5 " >
   <div class="container m-auto   " data-aos="fade-up" data-aos-mirror="false" >
     <div class="row my-3  ">
       <div class="col-12 col-lg-9">
-           
+
         <h3 class="text-white d-flex">
           <div class="dash mr-2 ml-n4 my-auto"></div>
           Contact
         </h3>
       </div>
       <div class="col-12 col-lg-9 mx-auto ">
- 
+
         <p class="text-center div-center text-white mx-auto ">
-          
+
           <?= $cta_call ?>
         </p>
       </div>
