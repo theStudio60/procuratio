@@ -20,7 +20,7 @@
 
 	<style>
 		#menu-main-nav {
-			padding-top: 2%;
+			padding-top: 2% !important;
 		}
 
 		#language_list {
