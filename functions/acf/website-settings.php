@@ -82,8 +82,8 @@ acf_add_local_field_group(array(
 							),
 							'layout' => 'block',
 							'sub_fields' => array(
-		 
-								 
+
+
 								array(
 									'key' => 'field_67009ae00350c',
 									'label' => 'Contenu',
@@ -122,7 +122,7 @@ acf_add_local_field_group(array(
 							),
 							'layout' => 'block',
 							'sub_fields' => array(
- 
+
 								array(
 									'key' => 'field_67709ac06350d',
 									'label' => 'Image',
@@ -147,7 +147,7 @@ acf_add_local_field_group(array(
 									'max_size' => '',
 									'mime_types' => '',
 								),
-						 
+
 								array(
 									'key' => 'field_677a2caa2d7da',
 									'label' => 'Contenu',
@@ -204,7 +204,7 @@ acf_add_local_field_group(array(
 					),
 					'layout' => 'block',
 					'sub_fields' => array(
-						
+
             array(
 							'key' => 'field_6039692dcf336',
 							'label' => 'Appel au contact',
@@ -263,6 +263,25 @@ acf_add_local_field_group(array(
 							'maxlength' => '',
 						),
 						array(
+							'key' => 'field_6039692dcab97',
+							'label' => 'Adresse Postale 1',
+							'name' => 'post_address1',
+							'type' => 'text',
+							'instructions' => '',
+							'required' => 0,
+							'conditional_logic' => 0,
+							'wrapper' => array(
+								'width' => '',
+								'class' => '',
+								'id' => '',
+							),
+							'default_value' => ' Z.I. la Pierreire, Route de Bellevue 7',
+							'placeholder' => '',
+							'prepend' => '',
+							'append' => '',
+							'maxlength' => '',
+						),
+						array(
 							'key' => 'field_60394b1de0e2e',
 							'label' => 'N° de Téléphone',
 							'name' => 'phone',
@@ -281,7 +300,7 @@ acf_add_local_field_group(array(
 							'append' => '',
 							'maxlength' => '',
 						),
-						array( 
+						array(
 							'key' => 'field_6039699ccfa87',
 							'label' => 'Email',
 							'name' => 'email',
@@ -404,7 +423,7 @@ acf_add_local_field_group(array(
  //*/
 					),
 				),
-				
+
 				/*
 				array(
 					'key' => 'field_603a2df815448',
@@ -499,7 +518,7 @@ acf_add_local_field_group(array(
 									'new_lines' => 'br',
 								),
 							),
-						), 
+						),
 						array(
 							'key' => 'field_603a2caa2d7d8',
 							'label' => 'Accroche Téléphone',
@@ -555,7 +574,7 @@ acf_add_local_field_group(array(
 										'class' => '',
 										'id' => '',
 									),
-									'default_value' => 'Appellez nous 
+									'default_value' => 'Appellez nous
                   099/123 45 67',
 									'placeholder' => '',
 									'maxlength' => '',
