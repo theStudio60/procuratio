@@ -53,14 +53,14 @@ function closePopup() {
 $('.hero-slider').slick({
     //*
     dots: false,
-    arrows: false,
+    arrows: true,
     infinite: true,
     autoplay: true,
-    // centerMode: false //*/ 
+    // centerMode: false //*/
     slidesToShow: 1,
 
     //autoplaySpeed: 0,
-    speed: 4000,
+    speed: 2000,
     cssEase: 'linear',
     infinite: true,
     //focusOnSelect: true,
@@ -89,9 +89,9 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function preventScroll() {
-    // Get the current page scroll position 
+    // Get the current page scroll position
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft; // if any scroll is attempted, set this to the previous value 
+    var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft; // if any scroll is attempted, set this to the previous value
 
     window.onscroll = function() {
         window.scrollTo(scrollLeft, scrollTop);
