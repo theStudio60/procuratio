@@ -53,14 +53,14 @@ function closePopup() {
 $('.hero-slider').slick({
     //*
     dots: false,
-    arrows: true,
+    arrows: false,
     infinite: true,
     autoplay: true,
     // centerMode: false //*/
     slidesToShow: 1,
 
     //autoplaySpeed: 0,
-    speed: 2000,
+    speed: 3100,
     cssEase: 'linear',
     infinite: true,
     //focusOnSelect: true,
