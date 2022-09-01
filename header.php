@@ -16,8 +16,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <?php wp_head(); ?> 
-</head> 
+  <?php wp_head(); ?>
+
+	<style>
+		#menu-main-nav {
+			padding-top: 2%;
+		}
+
+		#language_list {
+			padding-top: 1%;
+		}
+
+	</style>
+
+</head>
 <?php get_template_part('partials/preloader/preloader','style'); ?>
 <?php get_template_part('partials/preloader/preloader','script'); ?>
 <body class="page-wrapper">
@@ -25,19 +37,19 @@
   <?php
   $custom_logo_id = get_theme_mod( 'custom_logo' );
   //$logotype_d = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-  $logotype_d = THEME_URI . "/images/logo-procuratio-black.png"; 
-  $logotype_w = THEME_URI . "/images/logo-procuratio-white.png"; 
-  $logotype_b = THEME_URI . "/images/logo-procuratio-blue.png"; 
-  $logotype = $logotype_b; 
+  $logotype_d = THEME_URI . "/images/logo-procuratio-black.png";
+  $logotype_w = THEME_URI . "/images/logo-procuratio-white.png";
+  $logotype_b = THEME_URI . "/images/logo-procuratio-blue.png";
+  $logotype = $logotype_b;
   $logotypeMobile = $logotype_b;
   $bg_color="";
   $bg_color_mobile="";
   $position="";
   ?>
-  
+
 
   <header id="masthead" class="header px-0 m-0 " style="height:128px">
- 
+
     <div class="container-fluid   d-flex  my-auto">
         <a class="my-auto " href="<?= get_home_url() ?>">
             <img width="auto"  class="" id="headerBrand" style="height:72px;margin-left:16px;transition:500ms" src="<?= $logotype_w ?>" alt="<?= get_bloginfo() ?>">
@@ -53,22 +65,22 @@
           'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
           'walker'          => new WP_Bootstrap_Navwalker(),
           ));
- 
-          ?>  
-      
-          <div class="my-auto mr-2 d-flex"> 
+
+          ?>
+
+          <div id="language_list" class="my-auto mr-2 d-flex">
               <?php languages_list_navbar();?>
           </div>
           <button  onclick="location.href='<?php echo site_url(); ?>#contact'" class="mr-2 button">Contact</button>
-         
+
     </div>
 
   </header>
-   
-  
+
+
   <header id="masthead" class="header-mobile border-bottom " >
-    <div class="header-mobile__container"> 
-      <div class="header-mobile__row "> 
+    <div class="header-mobile__container">
+      <div class="header-mobile__row ">
         <div class="header-mobile__brand mr-auto ml-2 ">
           <a href="<?= get_home_url() ?>" onclick="closeMenu()" >
             <div class=" header-mobile__brand__logo">
@@ -77,20 +89,20 @@
           </a>
         </div>
         <button
-         onclick="location.href='<?php echo site_url(); ?>#contact'" 
+         onclick="location.href='<?php echo site_url(); ?>#contact'"
          class="ml-auto mr-4 button"
         >
          Contact
         </button>
 
-        <div class="d-flex p-0 mr-2"> 
+        <div class="d-flex p-0 mr-2">
           <div onclick="openMenu()" title="toggle menu" id="burger" class="header-mobile__burger  header-mobile__burger--visible"  aria-expanded="false">
             <?php // if ( is_front_page() ):?>
               <?php get_template_part('partials/nav/burger','light'); ?>
             <?php // endif?>
           </div>
 
-          <div onclick="closeMenu()" title="close menu" id="close" class="header-mobile__burger  header-mobile__burger--hidden"  aria-expanded="false"> 
+          <div onclick="closeMenu()" title="close menu" id="close" class="header-mobile__burger  header-mobile__burger--hidden"  aria-expanded="false">
             <?php // if ( is_front_page() ):?>
               <?php get_template_part('partials/nav/close','light'); ?>
             <?php // endif?>
@@ -107,7 +119,7 @@
   </div>
   <div id="overlayMenu" class="mobile-menu mobile-menu--hidden " style=" ">
 
-    <div class="mobile-menu__menu">        
+    <div class="mobile-menu__menu">
 
       <?php wp_nav_menu( array(
       'theme_location'  => 'header-menu',
@@ -115,25 +127,25 @@
       'container'       => ' ',
       'container_class' => ' ',
       'container_id'    => 'navMenu',
-      'menu_class'      => 'm-auto p-0',  
+      'menu_class'      => 'm-auto p-0',
       'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
       'walker'          => new WP_Bootstrap_Navwalker(),
       ));
-      ?> 
+      ?>
 
     </div>
 
   </div>
   <script>
 /*
-    $('.dropdown').mouseenter(function(){ $(this).find('.dropdown-menu').show();}) 
-    $('.dropdown').mouseleave(function(){ 
+    $('.dropdown').mouseenter(function(){ $(this).find('.dropdown-menu').show();})
+    $('.dropdown').mouseleave(function(){
       $(this).find('.dropdown-menu').hide();
-    }) ; 
+    }) ;
 //*/
   </script>
         <?php get_template_part('partials/elements/popup') ?>
 
 
   <?php get_template_part('partials/nav/btn','scollToTop')?>
-<?php 
+<?php
