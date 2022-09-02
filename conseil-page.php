@@ -367,24 +367,24 @@ if( have_rows('contact_infos') ):
   endwhile;
 endif;
 ?>
-<section id=" " class="section bg-dark h-25 d-flex   py-3 py-lg-5 " >
+<section id="contact" class="section bg-dark h-25 d-flex   py-3 py-lg-5 " >
   <div class="container m-auto   " data-aos="fade-up" data-aos-mirror="false" >
     <div class="row my-3  ">
-      <div class="col-12 col-lg-9">
+      <div class="col-12 col-lg-12">
 
         <h3 class="text-white d-flex">
           <div class="dash mr-2 ml-n4 my-auto"></div>
           Contact
         </h3>
       </div>
-      <div class="col-12 col-lg-9 mx-auto ">
+      <div class="col-12 col-lg-12 mx-auto ">
 
         <p class="text-center div-center text-white mx-auto ">
 
           <?= $cta_call ?>
         </p>
       </div>
-      <div class="col-12 col-lg-9 mx-auto d-flex">
+      <div class="col-12 col-lg-12 mx-auto d-flex">
             <button class="mx-auto button mt-3"  onclick="location.href='<?php echo site_url(); ?>#contact'">Contact</button>
       </div>
 
