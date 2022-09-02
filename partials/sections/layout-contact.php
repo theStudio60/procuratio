@@ -44,7 +44,7 @@ endif;
 <section  id="contact"  class="section  py-3 py-lg-4  bg-<?= $bg_color ?> text-<?= $txt_color ?>">
   <div class="container mx-auto my-3">
     <div class="row">
-      <div class="col-12 col-lg-9 ">
+      <div class="col-12 col-lg-12 ">
 
               <h3 class="text-white d-flex">
                 <div class="dash mr-2 ml-n4 my-auto"></div>
