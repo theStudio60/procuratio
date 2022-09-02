@@ -379,7 +379,7 @@ endif;
       </div>
       <div class="col-12 col-lg-12 mx-auto ">
 
-        <p class="text-center div-center text-white mx-auto ">
+        <p class="text-white mx-auto ">
 
           <?= $cta_call ?>
         </p>
