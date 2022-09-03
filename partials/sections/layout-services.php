@@ -29,7 +29,7 @@
                 "
               >
               </div>
-              <div class="col-12 col-lg-8 my-auto p-2">
+              <div class="col-12 col-lg-8 my-auto p-2" style="margin-left: 4%">
 
                 <?php if ($description) :
                   $this_excerpt = wp_trim_words( $description, 35, ' ...  ');
