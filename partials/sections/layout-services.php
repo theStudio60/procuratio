@@ -35,7 +35,7 @@
                   $this_excerpt = wp_trim_words( $description, 35, ' ...  ');
                 ?>
                   <p>
-                    <?= $this_excerpt ?> fsdafasfasf
+                    <?= $this_excerpt ?>
                   </p>
                 <?php endif;?>
               </div>
