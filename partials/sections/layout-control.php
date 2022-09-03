@@ -1,4 +1,7 @@
 <?php if( have_rows('option-group_conseil','option') ):
+
+	$piechart = THEME_URI . "/images/piechart.svg";
+
   while( have_rows('option-group_conseil','option') ): the_row();
     if( have_rows('group_control') ):
       while( have_rows('group_control') ): the_row();
@@ -119,6 +122,7 @@
             <div class="pie filler"></div>
             <div class="mask"></div>
           </div-->
+			<img src="<?php echo $piechart ?>" />
         </div>
       </div>
     </div>
