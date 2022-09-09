@@ -354,7 +354,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                 </ul>
               </div>
               <div class="col-12 d-flex">
-                <div class="container mx-auto bg-dark text-white p-lg-4">
+                <div class="container mx-auto bg-dark text-white p-lg-5">
                   <div class="row">
                     <div class="col-12 d-flex">
                       <h2 class="text-white text-center font-serif mx-auto ">
@@ -362,7 +362,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                       </h2> 
                     </div>
                     <div class="col-12 d-flex">
-                      <div class="dash mx-auto my-5"></div>
+                      <div class="dash mx-auto mt-3 mb-5"></div>
                     </div>
                     
                     <?php if( have_rows('repeater_avantages') ): 
@@ -373,7 +373,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                             $picto = get_sub_field('picto'); 
                     ?>
                             <div class="col-12 col-md-6 col-lg-3">
-                              <div class="w-100">
+                              <div class="container">
                                 <div class="row">
                                   <div class="col-12 d-flex">
                                   <?php if ($picto) :  ?>
