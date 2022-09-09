@@ -344,7 +344,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                           <?php if ($name) :  ?>
                               
                             <span class=" my-auto ml-0 mr-2 d-flex w-25 ">
-                              <i class="fa fa-2x far fa-chevron-right m-auto"> </i>
+                              <i class="fa fa-md far fa-chevron-right ml-auto mr-0 my-auto text-secondary"> </i>
                             </span>
                             <span class="text-dark font-sans my-auto ml-0 w-75 ">
                               <?= $name ?>
