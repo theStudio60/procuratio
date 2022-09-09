@@ -151,7 +151,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
         $conclusion = get_sub_field('conclusion');
         //$image = get_sub_field('image');
     ?>
-        <section id="compta" class="section bg-white  py-3 py-lg-5">
+        <section id="compta" class="section bg-light  py-3 py-lg-5">
           <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="800">
             <div class="row">
               <div class="col-12 col-lg-9 mx-auto">
@@ -176,7 +176,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                             $name = get_sub_field('name'); 
                             $picto = get_sub_field('picto'); 
                     ?>
-                            <div class="col-12 col-md-6 col-lg-3">
+                            <div class="col-12 col-md-6 col-lg-4">
                               <?php if ($picto) :  ?>
                                 <span class="text-dark font-sans my-auto ml-auto w-75 ">
                                   <img src="<?php echo $picto['url']; ?>" alt="">
