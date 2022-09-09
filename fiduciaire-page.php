@@ -369,7 +369,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                             $name = get_sub_field('name'); 
                             $picto = get_sub_field('picto'); 
                     ?>
-                            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                            <div class="col-12 col-md-6 col-lg-3 d-flex">
                               <?php if ($picto) :  ?>
                                 <span class=" mt-auto mx-auto">
                                   <img width="64px" height="64px" src="<?php echo $picto['url']; ?>" alt="">
@@ -386,7 +386,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                       <?php endwhile; ?>
                     <?php endif; ?>
                     <?php if ($conclusion) :  ?>
-                      <div class="div-centered">
+                      <div class="col-12 div-centered">
                           <?= $conclusion ?>
                       </div>
                     <?php endif;?>
