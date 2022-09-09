@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Page fiduciaire
+ * Template Name: Page fiduciaire new
  *
  * @package studio_soixante
  */
@@ -8,20 +8,19 @@ get_header();
 if( have_rows('page-fiduciaire_acf_group') ):
   while( have_rows('page-fiduciaire_acf_group') ): the_row();
     get_template_part( 'partials/sections/hero', 'page' );
-  endwhile;
-endif;
-?>
-                        <style>
-                          .div-white p {color:white!important;}
 
-                          .div-centered p {text-align:center!important;}
-                          .div-left p {text-align:left!important;}
-         body.page-wrapper{background-color:#002369!important;}</style>
-<div class=" mx-0 bg-dark  " >
-  <div class="container-fluid w-100">
-    <div class="row" style=" ">
-      <?php if( have_rows('option-group_fiduciaire','option') ): ?>
-        <?php while( have_rows('option-group_fiduciaire','option') ): the_row();?>
+?>
+    <style>
+      .div-white p {color:white!important;}
+
+      .div-centered p {text-align:center!important;}
+      .div-left p {text-align:left!important;}
+      body.page-wrapper{background-color:#002369!important;}
+    </style>
+    <div class=" mx-0 bg-dark  " >
+      <div class="container-fluid w-100">
+        <div class="row" style=" ">
+ 
           <?php if( have_rows('pack_startups') ): ?>
             <?php while( have_rows('pack_startups') ): the_row(); ?>
               <?php
@@ -70,13 +69,250 @@ endif;
               </div>
             <?php endwhile; ?>
           <?php endif; ?>
-        <?php endwhile; ?>
-      <?php endif; ?>
+
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<?php if( have_rows('option-group_fiduciaire','option') ): ?>
-  <?php while( have_rows('option-group_fiduciaire','option') ): the_row(); ?>
+    <?php
+    if( have_rows('group_startups') ):
+      while( have_rows('group_startups') ): the_row();
+        $title = get_sub_field('title');
+        $description = get_sub_field('wysiwyg');
+        $conclusion = get_sub_field('conclusion');
+        $image = get_sub_field('image');
+    ?>
+        <section id="startups" class="section bg-white  py-3 py-lg-5">
+          <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="800">
+            <div class="row">
+              <div class="col-12 col-lg-8">
+                <?php if ($title) :  ?>
+                  <h3 class="text-dark d-flex mb-3" >
+                    <div class="dash mr-2 ml-n4 my-auto"></div>
+                    <?= $title ?>
+                  </h3>
+                <?php endif;?>
+                <?php if ($description) :  ?>
+                  <div>
+                    <?= $description ?>
+                  </div>
+                <?php endif;?>
+                <div class="container">
+                  <div class="row">
+                    <?php 
+                    if( have_rows('repeater_services') ):
+                      while( have_rows('repeater_services') ): the_row();
+                        if( have_rows('service') ):
+                          while( have_rows('service') ): the_row();
+                            $name = get_sub_field('name'); 
+                    ?>
+                            <div class="col-12 col-lg-6 col-xl-4">
+                              <div class="card w-100 mx-0 mx-md-auto px-3 d-flex"   >
+                                <div class="hide-arc"></div>
+                                <div class="arc"></div>
+                                <?php if ($name) :  ?>
+                                  <span class="text-dark font-sans my-auto ml-auto w-75 ">
+                                    <?= $name ?>
+                                  </span>
+                                <?php endif;?> 
+                              </div> <?php //end  card  ?>
+                            </div>
+                          <?php endwhile; ?>
+                        <?php endif; ?>
+                      <?php endwhile; ?>
+                    <?php endif; ?>
+                  </div>
+                </div>
+                <?php if ($conclusion) :  ?>
+                  <div class="w-100">
+                    <p>
+                      <?= $conclusion ?>
+                    </p>
+                  </div>
+                <?php endif;?>
+              </div>
+              <div
+                data-aos="flip-right"
+                class="col-lg-4 d-none d-lg-flex h-100 my-auto"
+                style="background: url('<?php echo $image['url']; ?>');
+                background-repeat:no-repeat;
+                background-size:cover;
+                background-position:center ;
+                min-height:100vh;
+                "
+              >
+              </div>
+              <div
+                data-aos="flip-up"
+                class="col-12 d-block d-lg-none"
+                style="background: url('<?php echo $image['url']; ?>');
+                background-repeat:no-repeat;
+                background-size:cover;
+                background-position:center ;
+                min-height:380px;
+                "
+              >
+              </div>
+            </div>
+          </div>
+        </section>
+      <?php endwhile; ?>
+      <?php wp_reset_postdata(  ) ;?>
+    <?php endif; ?>
+
+
+    <?php
+    if( have_rows('group_compta') ):
+      while( have_rows('group_compta') ): the_row();
+        $title = get_sub_field('title');
+        $description = get_sub_field('wysiwyg');
+        $conclusion = get_sub_field('conclusion');
+        //$image = get_sub_field('image');
+    ?>
+        <section id="compta" class="section bg-white  py-3 py-lg-5">
+          <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="800">
+            <div class="row">
+              <div class="col-12 col-lg-9 mx-auto">
+                <?php if ($title) :  ?>
+                  <h3 class="text-dark d-flex mb-3" >
+                    <div class="dash mr-2 ml-n4 my-auto"></div>
+                    <?= $title ?>
+                  </h3>
+                <?php endif;?>
+                <?php if ($description) :  ?>
+                  <div class="div-centered">
+                    <?= $description ?>
+                  </div>
+                <?php endif;?>
+                <div class="container mx-auto">
+                  <div class="row">
+                    <?php 
+                    if( have_rows('repeater_services') ):
+                      while( have_rows('repeater_services') ): the_row();
+                        if( have_rows('service') ):
+                          while( have_rows('service') ): the_row();
+                            $name = get_sub_field('name'); 
+                            $picto = get_sub_field('picto'); 
+                    ?>
+                            <div class="col-12 col-md-6 col-lg-3">
+                              <?php if ($picto) :  ?>
+                                <span class="text-dark font-sans my-auto ml-auto w-75 ">
+                                  <img src="<?php echo $picto['url']; ?>" alt="">
+                                </span>
+                              <?php endif;?> 
+                              <?php if ($name) :  ?>
+                                <span class="text-dark font-sans my-auto ml-auto w-75 ">
+                                  <?= $name ?>
+                                </span>
+                              <?php endif;?> 
+                            </div>
+                          <?php endwhile; ?>
+                        <?php endif; ?>
+                      <?php endwhile; ?>
+                    <?php endif; ?>
+                  </div>
+                </div>
+                <?php if ($conclusion) :  ?>
+                  <div class="div-centered">
+                    <p>
+                      <?= $conclusion ?>
+                    </p>
+                  </div>
+                <?php endif;?>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+      <?php endwhile; ?>
+      <?php wp_reset_postdata(  ) ;?>
+    <?php endif; ?>
+    <?php
+    if( have_rows('group_ana') ):
+      while( have_rows('group_ana') ): the_row();
+        $title = get_sub_field('title');
+        $description = get_sub_field('wysiwyg');
+        $conclusion = get_sub_field('conclusion');
+        $image = get_sub_field('image');
+    ?>
+        <section id="analyses" class="section bg-white  py-3 py-lg-5">
+          <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="800">
+            <div class="row">
+              <div
+                data-aos="flip-right"
+                class="col-lg-4 d-none d-lg-flex h-100 my-auto"
+                style="background: url('<?php echo $image['url']; ?>');
+                background-repeat:no-repeat;
+                background-size:cover;
+                background-position:center ;
+                min-height:100vh;
+                "
+              >
+              </div>
+
+              <div class="col-12 col-lg-8">
+                <?php if ($title) :  ?>
+                  <h3 class="text-dark d-flex mb-3" >
+                    <div class="dash mr-2 ml-n4 my-auto"></div>
+                    <?= $title ?>
+                  </h3>
+                <?php endif;?>
+                <?php if ($description) :  ?>
+                  <div>
+                    <?= $description ?>
+                  </div>
+                <?php endif;?>
+                <div class="container">
+                  <div class="row">
+                    <?php 
+                    if( have_rows('repeater_services') ):
+                      while( have_rows('repeater_services') ): the_row();
+                        if( have_rows('service') ):
+                          while( have_rows('service') ): the_row();
+                            $name = get_sub_field('name'); 
+                    ?>
+                            <div class="col-12 col-lg-6 col-xl-4">
+                              <div class="card w-100 mx-0 mx-md-auto px-3 d-flex"   >
+                                <div class="hide-arc"></div>
+                                <div class="arc"></div>
+                                <?php if ($name) :  ?>
+                                  <span class="text-dark font-sans my-auto ml-auto w-75 ">
+                                    <?= $name ?>
+                                  </span>
+                                <?php endif;?> 
+                              </div> <?php //end  card  ?>
+                            </div>
+                          <?php endwhile; ?>
+                        <?php endif; ?>
+                      <?php endwhile; ?>
+                    <?php endif; ?>
+                  </div>
+                </div>
+                <?php if ($conclusion) :  ?>
+                  <div class="w-100">
+                    <p>
+                      <?= $conclusion ?>
+                    </p>
+                  </div>
+                <?php endif;?>
+              </div>
+              <div
+                data-aos="flip-up"
+                class="col-12 d-block d-lg-none"
+                style="background: url('<?php echo $image['url']; ?>');
+                background-repeat:no-repeat;
+                background-size:cover;
+                background-position:center ;
+                min-height:280px;
+                "
+              >
+              </div>
+            </div>
+          </div>
+        </section>
+      <?php endwhile; ?>
+      <?php wp_reset_postdata(  ) ;?>
+    <?php endif; ?>
+
     <?php if( have_rows('pack_startups') ): ?>
       <?php while( have_rows('pack_startups') ): the_row();
         $title = get_sub_field('title');
@@ -268,8 +504,11 @@ endif;
         </section>
       <?php endwhile?>
     <?php endif; ?>
+
+
   <?php endwhile; ?>
 <?php endif; ?>
+ 
 
 <?php
 if( have_rows('website_settings', 'option') ):

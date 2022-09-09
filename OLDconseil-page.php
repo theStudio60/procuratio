@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Page conseil
+ * Template Name: OLD Page conseil
  *
  * @package studio_soixante
  */
@@ -63,6 +63,7 @@ endif;
     </div>
   </div>
 </div>
+
 <?php if( have_rows('option-group_conseil','option') ):
   while( have_rows('option-group_conseil','option') ): the_row();
     if( have_rows('group_control') ):
