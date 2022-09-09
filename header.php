@@ -17,7 +17,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <?php wp_head(); ?>
-
+  <link rel="stylesheet" href="<?= $THEME_URI ?>/inc/fa/css/font-awesome.min.css">
 	<style>
 		#menu-main-nav {
 			padding-top: 2% !important;
@@ -69,7 +69,7 @@
           ?>
 
           <div id="language_list" class="my-auto mr-2 d-flex">
-              <?php languages_list_navbar();?>
+              <?php //  languages_list_navbar();?>
           </div>
           <button  onclick="location.href='<?php echo site_url(); ?>#contact'" class="mr-2 button">Contact</button>
 
@@ -113,7 +113,7 @@
   </header>
   <div class="mx-0 p-2  w-100 d-flex d-lg-none" style="position:absolute;z-index:9999;margin-top:96px;">
     <div class="ml-auto mr-0">
-      <?php languages_list_navbar_mobile();?>
+      <?php //  languages_list_navbar_mobile();?>
     </div>
 
   </div>
