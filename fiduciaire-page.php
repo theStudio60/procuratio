@@ -308,7 +308,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
             <div class="row">
 
 
-              <div class="col-12 col-lg-g">
+              <div class="col-12 col-lg-6">
                 <?php if ($title) :  ?>
                   <h3 class="text-dark d-flex mb-3" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
