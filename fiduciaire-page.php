@@ -303,6 +303,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
       <?php while( have_rows('group_mandats') ): the_row();?>
         <?php
         $title = get_sub_field('title');
+        $title_avantages = get_sub_field('title_avantages');
         $description = get_sub_field('wysiwyg');
         $conclusion = get_sub_field('conclusion');
          // $image = get_sub_field('image');
@@ -310,7 +311,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
         <section id="mandats" class="section bg-white  py-3 py-lg-5">
           <div class="container m-auto services" >
             <div class="row m-auto">
-              <div class="col-12 col-lg-7">
+              <div class="col-12 col-lg-7 my-auto">
                 <?php if ($title) :  ?>
                   <h3 class="text-dark d-flex mb-3" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
@@ -318,7 +319,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                   </h3>
                 <?php endif;?>
                 <?php if ($description) :  ?>
-                  <div>
+                  <div class="my-auto" >
                     <?= $description ?>
                   </div>
                 <?php endif;?>
@@ -353,8 +354,11 @@ if( have_rows('page-fiduciaire_acf_group') ):
                 </ul>
               </div>
               <div class="col-12 col-lg-10 col-xl-9">
-                <div class="container mx-auto bg-dark text-white">
+                <div class="container mx-auto bg-dark text-white p-lg-4">
                   <div class="row">
+                    <h2 class="text-white font-serif w-75 mx-auto col-12 ">
+                      <?= $title_avantages ?>
+                    </h2>
                     <?php 
                     if( have_rows('repeater_avantages') ):
                       while( have_rows('repeater_avantages') ): the_row();
@@ -363,7 +367,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                             $name = get_sub_field('name'); 
                             $picto = get_sub_field('picto'); 
                     ?>
-                            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                            <div class="col-12 col-md-6 col-lg-3 d-flex">
                               <?php if ($picto) :  ?>
                                 <span class=" mt-auto mx-auto">
                                   <img width="64px" height="64px" src="<?php echo $picto['url']; ?>" alt="">
