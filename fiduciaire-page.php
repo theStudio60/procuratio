@@ -305,7 +305,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
         ?>
         <section id="mandats" class="section bg-white  py-3 py-lg-5">
           <div class="container m-auto services" >
-            <div class="row">
+            <div class="row m-auto">
 
 
               <div class="col-12 col-lg-6">
@@ -336,20 +336,23 @@ if( have_rows('page-fiduciaire_acf_group') ):
                   while( have_rows('repeater_services') ): the_row(); 
                 ?>
 
-                      <?php if( have_rows('service') ):
-                        while( have_rows('service') ): the_row();
-                      ?>
-                          <?php $name = get_sub_field('name'); ?>
-                          <li class="w-100 d-flex">
-                            <?php if ($name) :  ?>
-                                <i class="fa fa-2x far fa-chevron-right my-auto ml-0 mr-2 "> </i>
-                                <span class="text-dark font-sans my-auto ml-0 w-75 ">
-                                  <?= $name ?>
-                                </span>
-                            <?php endif;?>  
-                          </li>
-                        <?php endwhile; ?>
-                      <?php endif; ?>
+                    <?php if( have_rows('service') ):
+                      while( have_rows('service') ): the_row();
+                    ?>
+                        <?php $name = get_sub_field('name'); ?>
+                        <li class="w-100 d-flex">
+                          <?php if ($name) :  ?>
+                              
+                            <span class=" my-auto ml-0 mr-2 d-flex w-25 ">
+                              <i class="fa fa-2x far fa-chevron-right m-auto"> </i>
+                            </span>
+                            <span class="text-dark font-sans my-auto ml-0 w-75 ">
+                              <?= $name ?>
+                            </span>
+                          <?php endif;?>  
+                        </li>
+                      <?php endwhile; ?>
+                    <?php endif; ?>
 
 
                   <?php endwhile; ?>
