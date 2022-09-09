@@ -156,10 +156,13 @@ if( have_rows('page-fiduciaire_acf_group') ):
             <div class="row">
               <div class="col-12 col-lg-9 mx-auto">
                 <?php if ($title) :  ?>
-                  <h3 class="text-dark d-flex mb-3" >
-                    <div class="dash mr-2 ml-n4 my-auto"></div>
-                    <?= $title ?>
-                  </h3>
+                  <div class="mx-auto d-flex w-100">
+                    <h3 class="text-dark d-flex mb-3 mx-auto text-center" >
+                      <div class="dash mr-2 ml-n4 my-auto"></div>
+                      <?= $title ?>
+                    </h3>
+                  </div>
+
                 <?php endif;?>
                 <?php if ($description) :  ?>
                   <div class="div-centered">
@@ -321,9 +324,36 @@ if( have_rows('page-fiduciaire_acf_group') ):
                   </div>
                 <?php endif;?>
 
-
+                <div class="container mx-auto">
+                  <div class="row">
+                    <?php 
+                    if( have_rows('repeater_services') ):
+                      while( have_rows('repeater_services') ): the_row();
+                        if( have_rows('service') ):
+                          while( have_rows('service') ): the_row();
+                            $name = get_sub_field('name'); 
+                            $picto = get_sub_field('picto'); 
+                    ?>
+                            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                              <?php if ($picto) :  ?>
+                                <span class=" mt-auto mx-auto">
+                                  <img width="64px" height="64px" src="<?php echo $picto['url']; ?>" alt="">
+                                </span>
+                              <?php endif;?> 
+                              <?php if ($name) :  ?>
+                                <span class="text-center text-dark font-sans m-auto mt-2 mb-auto">
+                                  <?= $name ?>
+                                </span>
+                              <?php endif;?> 
+                            </div>
+                          <?php endwhile; ?>
+                        <?php endif; ?>
+                      <?php endwhile; ?>
+                    <?php endif; ?>
+                  </div>
+                </div>
                 <?php if ($conclusion) :  ?>
-                  <div class="w-100">
+                  <div class="div-centered">
                     <p>
                       <?= $conclusion ?>
                     </p>
