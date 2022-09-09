@@ -144,8 +144,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
     <?php endif; ?>
 
 
-    <?php
-    if( have_rows('group_compta') ):
+    <?php if( have_rows('group_compta') ):
       while( have_rows('group_compta') ): the_row();
         $title = get_sub_field('title');
         $description = get_sub_field('wysiwyg');
@@ -210,8 +209,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
       <?php endwhile; ?>
       <?php wp_reset_postdata(  ) ;?>
     <?php endif; ?>
-    <?php
-    if( have_rows('group_ana') ):
+    <?php if( have_rows('group_ana') ):
       while( have_rows('group_ana') ): the_row();
         $title = get_sub_field('title');
         $description = get_sub_field('wysiwyg');
@@ -297,7 +295,71 @@ if( have_rows('page-fiduciaire_acf_group') ):
       <?php endwhile; ?>
       <?php wp_reset_postdata(  ) ;?>
     <?php endif; ?>
+    <?php if( have_rows('group_mandats') ): ?>
+      <?php while( have_rows('group_mandats') ): the_row();?>
+        <?php
+        $title = get_sub_field('title');
+        $description = get_sub_field('wysiwyg');
+        $conclusion = get_sub_field('conclusion');
+         // $image = get_sub_field('image');
+        ?>
+        <section id="mandats" class="section bg-white  py-3 py-lg-5">
+          <div class="container m-auto services" >
+            <div class="row">
 
+
+              <div class="col-12 col-lg-8">
+                <?php if ($title) :  ?>
+                  <h3 class="text-dark d-flex mb-3" >
+                    <div class="dash mr-2 ml-n4 my-auto"></div>
+                    <?= $title ?>
+                  </h3>
+                <?php endif;?>
+                <?php if ($description) :  ?>
+                  <div>
+                    <?= $description ?>
+                  </div>
+                <?php endif;?>
+
+
+                <?php if ($conclusion) :  ?>
+                  <div class="w-100">
+                    <p>
+                      <?= $conclusion ?>
+                    </p>
+                  </div>
+                <?php endif;?>
+              </div>
+              <div class="col-lg-4  col-12 d-lg-flex h-100 my-auto">
+                <?php if( have_rows('repeater_services') ):
+                  while( have_rows('repeater_services') ): the_row(); 
+                ?>
+                    <ul class="">
+                      <?php if( have_rows('service') ):
+                        while( have_rows('service') ): the_row();
+                      ?>
+                          <?php $name = get_sub_field('name'); ?>
+                          <li class="w-100 d-flex">
+                            <?php if ($name) :  ?>
+                                <i class="text-primary fa fa-2x fa-chevron-right my-auto ml-0 mr-2 w-25 "> </i>
+                                <span class="text-dark font-sans my-auto ml-0 w-75 ">
+                                  <?= $name ?>
+                                </span>
+                            <?php endif;?>  
+                          </li>
+                        <?php endwhile; ?>
+                      <?php endif; ?>
+                    </ul>
+
+                  <?php endwhile; ?>
+                <?php endif; ?>
+              </div>
+            </div>
+          </div>
+        </section>
+      <?php endwhile; ?>
+      <?php wp_reset_postdata(  ) ;?>
+    <?php endif; ?>
     <?php if( have_rows('pack_startups') ): ?>
       <?php while( have_rows('pack_startups') ): the_row();
         $title = get_sub_field('title');
