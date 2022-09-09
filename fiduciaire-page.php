@@ -359,7 +359,9 @@ if( have_rows('page-fiduciaire_acf_group') ):
                     <div class="col-12 d-flex">
                       <h2 class="text-white text-center font-serif mx-auto ">
                         <?= $title_avantages ?>
-                      </h2>
+                      </h2> 
+                    </div>
+                    <div class="col-12 d-flex">
                       <div class="dash mx-auto my-5"></div>
                     </div>
                     
@@ -373,14 +375,14 @@ if( have_rows('page-fiduciaire_acf_group') ):
                             <div class="col-12 col-md-6 col-lg-3">
                               <div class="w-100">
                                 <div class="row">
-                                  <div class="col-12">
+                                  <div class="col-12 d-flex">
                                   <?php if ($picto) :  ?>
-                                <span class=" mt-auto mx-auto">
-                                  <img width="64px" height="64px" src="<?php echo $picto['url']; ?>" alt="">
+                                <span class=" mt-auto mx-auto w-100 d-flex">
+                                  <img class="mx-auto" width="64px" height="64px" src="<?php echo $picto['url']; ?>" alt="">
                                 </span>
                               <?php endif;?> 
                               <?php if ($name) :  ?>
-                                <span class="text-center text-white font-sans m-auto mt-2 mb-auto">
+                                <span class="text-center text-white font-sans mx-auto mt-2 mb-auto">
                                   <?= $name ?>
                                 </span>
                               <?php endif;?> 
