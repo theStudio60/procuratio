@@ -327,10 +327,10 @@ if( have_rows('page-fiduciaire_acf_group') ):
                 <div class="container mx-auto bg-dark text-white">
                   <div class="row">
                     <?php 
-                    if( have_rows('repeater_services') ):
-                      while( have_rows('repeater_services') ): the_row();
-                        if( have_rows('service') ):
-                          while( have_rows('service') ): the_row();
+                    if( have_rows('repeater_avantages') ):
+                      while( have_rows('repeater_avantages') ): the_row();
+                        if( have_rows('avantage') ):
+                          while( have_rows('avantage') ): the_row();
                             $name = get_sub_field('name'); 
                             $picto = get_sub_field('picto'); 
                     ?>
