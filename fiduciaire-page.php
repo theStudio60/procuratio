@@ -80,11 +80,10 @@ if( have_rows('page-fiduciaire_acf_group') ):
                   <div>
                     <?= $description ?>
                   </div>
-                <?php endif;?>
-                <p>
-                  <?php var_dump($startupimage); ?>
-                  <?php var_dump($startupimageUrl); ?>
-                </p>
+                <?php endif;?> 
+                  <?php //var_dump($startupimage); ?>
+                  <?php // var_dump($startupimageUrl); ?>
+               
                 <div class="container">
                   <div class="row">
                     <?php 
