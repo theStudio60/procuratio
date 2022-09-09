@@ -5,18 +5,18 @@
     $image = get_sub_field('image'); 
 ?>
     <section  
-      id="presentation"
-      class=" bg-white" 
+      id="values"
+      class=" bg-light" 
     >  
       <div class="container  py-3 py-lg-5 ">
         <div class="row my-3">
-          <div class="col-12 col-lg-6 d-flex" data-aos="zoom-in" data-aos-duration="800"> 
+          <div class="col-12 col-lg-6 d-flex order-2 order-lg-1" data-aos="fade-right" data-aos-duration="800"> 
             <div class="my-3 my-lg-auto mx-auto w-100 d-flex"> 
              <img class="w-75 m-auto"
               src=" <?php echo $image['url']; ?> ">
             </div>  
           </div>
-          <div class="col-12 col-lg-6 p-4 p-lg-2" id="values" data-aos="slide-right" data-aos-duration="800"  >
+          <div class="col-12 col-lg-6 p-4 p-lg-2  order-1 order-lg-2" id="values" data-aos="fade-left" data-aos-duration="800"  >
             <div class="section-text m-auto">
               <?php if ($title) :  ?>
                 <h3 class="text-dark d-flex mb-3" >
