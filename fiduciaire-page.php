@@ -212,13 +212,14 @@ if( have_rows('page-fiduciaire_acf_group') ):
       <?php endwhile; ?>
       <?php wp_reset_postdata(  ) ;?>
     <?php endif; ?>
-    <?php if( have_rows('group_ana') ):
-      while( have_rows('group_ana') ): the_row();
+    <?php if( have_rows('group_ana') ): ?>
+      <?php while( have_rows('group_ana') ): the_row(); ?>
+        <?php
         $title = get_sub_field('title');
         $description = get_sub_field('wysiwyg');
         $conclusion = get_sub_field('conclusion');
         $image = get_sub_field('image');
-    ?>
+        ?>
         <section id="analyses" class="section bg-white  py-3 py-lg-5">
           <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="800">
             <div class="row">
@@ -309,8 +310,6 @@ if( have_rows('page-fiduciaire_acf_group') ):
         <section id="mandats" class="section bg-white  py-3 py-lg-5">
           <div class="container m-auto services" >
             <div class="row m-auto">
-
-
               <div class="col-12 col-lg-7">
                 <?php if ($title) :  ?>
                   <h3 class="text-dark d-flex mb-3" >
@@ -321,42 +320,6 @@ if( have_rows('page-fiduciaire_acf_group') ):
                 <?php if ($description) :  ?>
                   <div>
                     <?= $description ?>
-                  </div>
-                <?php endif;?>
-
-                <div class="container mx-auto bg-dark text-white">
-                  <div class="row">
-                    <?php 
-                    if( have_rows('repeater_avantages') ):
-                      while( have_rows('repeater_avantages') ): the_row();
-                        if( have_rows('avantage') ):
-                          while( have_rows('avantage') ): the_row();
-                            $name = get_sub_field('name'); 
-                            $picto = get_sub_field('picto'); 
-                    ?>
-                            <div class="col-12 col-md-6 col-lg-4 d-flex">
-                              <?php if ($picto) :  ?>
-                                <span class=" mt-auto mx-auto">
-                                  <img width="64px" height="64px" src="<?php echo $picto['url']; ?>" alt="">
-                                </span>
-                              <?php endif;?> 
-                              <?php if ($name) :  ?>
-                                <span class="text-center text-white font-sans m-auto mt-2 mb-auto">
-                                  <?= $name ?>
-                                </span>
-                              <?php endif;?> 
-                            </div>
-                          <?php endwhile; ?>
-                        <?php endif; ?>
-                      <?php endwhile; ?>
-                    <?php endif; ?>
-                  </div>
-                </div>
-                <?php if ($conclusion) :  ?>
-                  <div class="div-centered">
-                    <p>
-                      <?= $conclusion ?>
-                    </p>
                   </div>
                 <?php endif;?>
               </div>
@@ -388,6 +351,41 @@ if( have_rows('page-fiduciaire_acf_group') ):
                   <?php endwhile; ?>
                 <?php endif; ?>
                 </ul>
+              </div>
+              <div class="col-12 col-lg-10 col-xl-9">
+                <div class="container mx-auto bg-dark text-white">
+                  <div class="row">
+                    <?php 
+                    if( have_rows('repeater_avantages') ):
+                      while( have_rows('repeater_avantages') ): the_row();
+                        if( have_rows('avantage') ):
+                          while( have_rows('avantage') ): the_row();
+                            $name = get_sub_field('name'); 
+                            $picto = get_sub_field('picto'); 
+                    ?>
+                            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                              <?php if ($picto) :  ?>
+                                <span class=" mt-auto mx-auto">
+                                  <img width="64px" height="64px" src="<?php echo $picto['url']; ?>" alt="">
+                                </span>
+                              <?php endif;?> 
+                              <?php if ($name) :  ?>
+                                <span class="text-center text-white font-sans m-auto mt-2 mb-auto">
+                                  <?= $name ?>
+                                </span>
+                              <?php endif;?> 
+                            </div>
+                          <?php endwhile; ?>
+                        <?php endif; ?>
+                      <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php if ($conclusion) :  ?>
+                      <div class="div-centered">
+                          <?= $conclusion ?>
+                      </div>
+                    <?php endif;?>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
