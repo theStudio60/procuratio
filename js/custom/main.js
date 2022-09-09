@@ -11,7 +11,7 @@ if (isTouch) {
 
 AOS.init({
     disable: 'mobile',
-//    debounceDelay: 1500,
+    //    debounceDelay: 1500,
     // offset: 120, // offset (in px) from the original trigger point
     delay: 400, // values from 0 to 3000, with step 50ms
     duration: 800, // values from 0 to 3000, with step 50ms
@@ -52,18 +52,13 @@ function closePopup() {
 
 $('.hero-slider').slick({
     //*
-    dots: false,
-    arrows: false,
     infinite: true,
     autoplay: true,
-    // centerMode: false //*/
-    slidesToShow: 1,
-
-    //autoplaySpeed: 0,
-    speed: 3100,
+    speed: 10000,
+    autoplaySpeed: 0,
     cssEase: 'linear',
-    infinite: true,
-    //focusOnSelect: true,
+    arrows: false,
+    dots: false,
 
     responsive: [{
             breakpoint: 480,
