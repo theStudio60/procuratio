@@ -176,14 +176,14 @@ if( have_rows('page-fiduciaire_acf_group') ):
                             $name = get_sub_field('name'); 
                             $picto = get_sub_field('picto'); 
                     ?>
-                            <div class="col-12 col-md-6 col-lg-4">
+                            <div class="col-12 col-md-6 col-lg-4 d-flex">
                               <?php if ($picto) :  ?>
-                                <span class="text-dark font-sans my-auto ml-auto w-75 ">
-                                  <img src="<?php echo $picto['url']; ?>" alt="">
+                                <span class=" mt-auto mx-auto">
+                                  <img width="64px" height="64px" src="<?php echo $picto['url']; ?>" alt="">
                                 </span>
                               <?php endif;?> 
                               <?php if ($name) :  ?>
-                                <span class="text-dark font-sans my-auto ml-auto w-75 ">
+                                <span class="text-center text-dark font-sans m-auto mt-2 mb-auto">
                                   <?= $name ?>
                                 </span>
                               <?php endif;?> 
