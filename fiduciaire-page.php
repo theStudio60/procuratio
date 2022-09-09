@@ -308,7 +308,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
             <div class="row">
 
 
-              <div class="col-12 col-lg-8">
+              <div class="col-12 col-lg-g">
                 <?php if ($title) :  ?>
                   <h3 class="text-dark d-flex mb-3" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
@@ -330,7 +330,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                   </div>
                 <?php endif;?>
               </div>
-              <div class="col-lg-4  col-12 d-lg-flex h-100 my-auto">
+              <div class="col-lg-6   col-12 d-lg-flex h-100 my-auto">
                 <ul class="">
                 <?php if( have_rows('repeater_services') ):
                   while( have_rows('repeater_services') ): the_row(); 
@@ -342,7 +342,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                           <?php $name = get_sub_field('name'); ?>
                           <li class="w-100 d-flex">
                             <?php if ($name) :  ?>
-                                <i class="text-primary fa fa-2x fa-chevron-right my-auto ml-0 mr-2 w-25 "> </i>
+                                <i class="fa fa-2x far fa-chevron-right my-auto ml-0 mr-2 "> </i>
                                 <span class="text-dark font-sans my-auto ml-0 w-75 ">
                                   <?= $name ?>
                                 </span>
