@@ -64,6 +64,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
         $description = get_sub_field('wysiwyg');
         $conclusion = get_sub_field('conclusion');
         $startupimage = get_sub_field('image');
+        $startupimageUrl =  $startupimage['url'];
     ?>
         <section id="startups" class="section bg-white  py-3 py-lg-5">
           <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="800">
@@ -82,6 +83,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                 <?php endif;?>
                 <p>
                   <?php var_dump($startupimage); ?>
+                  <?php var_dump($startupimageUrl); ?>
                 </p>
                 <div class="container">
                   <div class="row">
