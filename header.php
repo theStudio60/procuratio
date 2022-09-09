@@ -17,7 +17,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <?php wp_head(); ?>
-  <link rel="stylesheet" href="<?= $THEME_URI ?>/inc/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<?= THEME_URI ?>/inc/fa/css/font-awesome.min.css">
 	<style>
 		#menu-main-nav {
 			padding-top: 2% !important;
