@@ -382,7 +382,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                                 </span>
                               <?php endif;?> 
                               <?php if ($name) :  ?>
-                                <span class="text-center text-white font-sans mx-auto mt-2 mb-auto">
+                                <span class="w-100 text-center text-white font-sans mx-auto mt-2 mb-auto">
                                   <?= $name ?>
                                 </span>
                               <?php endif;?> 
@@ -397,7 +397,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                       <?php endwhile; ?>
                     <?php endif; ?>
                     <?php if ($conclusion) :  ?>
-                      <div class="col-12 div-centered div-white text-white mt-3 ">
+                      <div class="col-12 div-centered div-white text-white mt-5 ">
                           <?= $conclusion ?>
                       </div>
                     <?php endif;?>
