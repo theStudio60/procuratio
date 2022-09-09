@@ -331,10 +331,11 @@ if( have_rows('page-fiduciaire_acf_group') ):
                 <?php endif;?>
               </div>
               <div class="col-lg-4  col-12 d-lg-flex h-100 my-auto">
+                <ul class="">
                 <?php if( have_rows('repeater_services') ):
                   while( have_rows('repeater_services') ): the_row(); 
                 ?>
-                    <ul class="">
+
                       <?php if( have_rows('service') ):
                         while( have_rows('service') ): the_row();
                       ?>
@@ -349,10 +350,11 @@ if( have_rows('page-fiduciaire_acf_group') ):
                           </li>
                         <?php endwhile; ?>
                       <?php endif; ?>
-                    </ul>
+
 
                   <?php endwhile; ?>
                 <?php endif; ?>
+                </ul>
               </div>
             </div>
           </div>
@@ -360,6 +362,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
       <?php endwhile; ?>
       <?php wp_reset_postdata(  ) ;?>
     <?php endif; ?>
+    <?php /*
     <?php if( have_rows('pack_startups') ): ?>
       <?php while( have_rows('pack_startups') ): the_row();
         $title = get_sub_field('title');
@@ -551,7 +554,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
         </section>
       <?php endwhile?>
     <?php endif; ?>
-
+                    //*/ ?>
 
   <?php endwhile; ?>
 <?php endif; ?>
