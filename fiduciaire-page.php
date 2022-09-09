@@ -353,21 +353,23 @@ if( have_rows('page-fiduciaire_acf_group') ):
                 <?php endif; ?>
                 </ul>
               </div>
-              <div class="col-12 col-lg-10 col-xl-9">
+              <div class="col-12 d-flex">
                 <div class="container mx-auto bg-dark text-white p-lg-4">
                   <div class="row">
-                    <h2 class="text-white font-serif w-75 mx-auto col-12 ">
-                      <?= $title_avantages ?>
-                    </h2>
-                    <?php 
-                    if( have_rows('repeater_avantages') ):
+                    <div class="col-12 d-flex">
+                      <h2 class="text-white text-center font-serif mx-auto ">
+                        <?= $title_avantages ?>
+                      </h2>
+                    </div>
+
+                    <?php if( have_rows('repeater_avantages') ): 
                       while( have_rows('repeater_avantages') ): the_row();
                         if( have_rows('avantage') ):
                           while( have_rows('avantage') ): the_row();
                             $name = get_sub_field('name'); 
                             $picto = get_sub_field('picto'); 
                     ?>
-                            <div class="col-12 col-md-6 col-lg-3 d-flex">
+                            <div class="col-12 col-md-6 col-lg-3">
                               <?php if ($picto) :  ?>
                                 <span class=" mt-auto mx-auto">
                                   <img width="64px" height="64px" src="<?php echo $picto['url']; ?>" alt="">
