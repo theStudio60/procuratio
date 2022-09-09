@@ -324,7 +324,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                   </div>
                 <?php endif;?>
 
-                <div class="container mx-auto">
+                <div class="container mx-auto bg-dark text-white">
                   <div class="row">
                     <?php 
                     if( have_rows('repeater_services') ):
@@ -341,7 +341,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                                 </span>
                               <?php endif;?> 
                               <?php if ($name) :  ?>
-                                <span class="text-center text-dark font-sans m-auto mt-2 mb-auto">
+                                <span class="text-center text-white font-sans m-auto mt-2 mb-auto">
                                   <?= $name ?>
                                 </span>
                               <?php endif;?> 
