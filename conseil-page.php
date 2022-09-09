@@ -296,14 +296,13 @@ if( have_rows('page-conseil_acf_group') ):
     </div>
   </div>
 </div>
-<?php if( have_rows('option-group_conseil','option') ):
-  while( have_rows('option-group_conseil','option') ): the_row();
-    if( have_rows('group_control') ):
-      while( have_rows('group_control') ): the_row();
+<?php if( have_rows('group_control') ): ?>
+  <?php  while( have_rows('group_control') ): the_row(); ?>
+    <?php
       $title = get_sub_field('name');
       $subtitle = get_sub_field('subtitle');
       $content = get_sub_field('content');
-      ?>
+    ?>
       <section id="control" class="section d-flex   py-3 py-lg-5 bg-dark"  >
           <div class="container m-auto   " data-aos="fade-up" data-aos-mirror="false"  >
             <div class="row my-3  ">
@@ -445,8 +444,8 @@ if( have_rows('page-conseil_acf_group') ):
                       <a class="collapsed text-secondary reduction" data-toggle="collapse" href="#collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
                     </div>
 
-                    </div>
-                  <?php endif;?>
+                  </div>
+                <?php endif;?>
               </div>
               <div class="col-12 col-lg-3 d-flex">
 
@@ -457,9 +456,6 @@ if( have_rows('page-conseil_acf_group') ):
       <?php endwhile; ?>
       <?php wp_reset_postdata(  ) ;?>
     <?php endif; ?>
-  <?php endwhile; ?>
-  <?php wp_reset_postdata(  ) ;?>
-<?php endif; ?>
 
 <?php if( have_rows('option-group_conseil','option') ):
   while( have_rows('option-group_conseil','option') ): the_row();
