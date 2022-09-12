@@ -159,7 +159,7 @@ if( have_rows('page-conseil_acf_group') ):
             <div class="row my-3  ">
               <div class="col-12 col-lg-9 mx-auto mx-lg-0 ">
                 <?php if ($title) :  ?>
-                  <div class="d-flex w-100 ">
+                  <div class="d-flex w-100 text-dark">
                     <div class="dash mr-2 ml-n4 my-auto"></div>
                     <h3 class="text-dark d-flex mb-3" >
                         <?= $title ?>
@@ -308,7 +308,7 @@ if( have_rows('page-conseil_acf_group') ):
                   <?php endif;?>
               </div>
               <div class="col-12 col-lg-3 d-flex">
-                
+                <img src="<?= $image['url']?>" alt="">
               </div>
             </div>
           </div>
