@@ -48,7 +48,7 @@
                                   <?php if ($name) :  ?>
                                     <div class="col-12 d-flex">
 
-                                      <span class="w-100 text-center text-white font-sans mx-auto mt-2 mb-auto">
+                                      <span class="w-100 text-center text-dark font-sans mx-auto mt-2 mb-auto">
                                         <?= $name ?>
                                       </span>
                                     </div>
