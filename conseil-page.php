@@ -93,9 +93,11 @@ if( have_rows('page-conseil_acf_group') ):
       <?php endwhile; ?>
       <?php wp_reset_postdata(  ) ;?>
     <?php endif; ?>
+
+
     <?php if( have_rows('group_control') ):
       while( have_rows('group_control') ): the_row();
-        $title = get_sub_field('name');
+        $title = get_sub_field('title');
         $subtitle = get_sub_field('subtitle');
         $content = get_sub_field('content');
       ?>
@@ -461,10 +463,10 @@ if( have_rows('page-conseil_acf_group') ):
   while( have_rows('option-group_conseil','option') ): the_row();
     if( have_rows('group_mandats') ):
       while( have_rows('group_mandats') ): the_row();
-      $title = get_sub_field('title');
-      $description = get_sub_field('description');
-      $conclusion = get_sub_field('conclusion');
-      $image = get_sub_field('image');
+        $title = get_sub_field('title');
+        $description = get_sub_field('description');
+        $conclusion = get_sub_field('conclusion');
+        $image = get_sub_field('image');
       ?>
         <section id="mandats" class="section bg-white  py-3 py-lg-5">
           <div class="container m-auto  services"  data-aos="fade-up" data-aos-duration="800">
