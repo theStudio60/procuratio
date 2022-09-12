@@ -70,10 +70,9 @@ endif;
                   <h4 class="my-3 text-white">
                     <?= $name ?>
                   </h4>
-                  <h6 class="my-3 text-white">
+                  <h6 class="mt-3 mb-5 text-white">
                     <?= $details ?>
                   </h6>
-                  <br>
                   <p class="my-3 text-white">
                     <i class="text-secondary fa fa-phone mr-1"></i> <?= $phone ?>
                   </p>
