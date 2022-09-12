@@ -428,15 +428,16 @@ if( have_rows('page-fiduciaire_acf_group') ):
         $title = get_sub_field('title');
         $description = get_sub_field('wysiwyg');
         $conclusion = get_sub_field('conclusion');
-        $anaImage = get_sub_field('image');
+        $group_ana_image = get_sub_field('image');
         ?>
+        <?php var_dump($group_ana_image) ;?>
         <section id="analyses" class="section bg-white  py-3 py-lg-5">
           <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="800">
             <div class="row">
               <div
                 data-aos="flip-right"
                 class="col-lg-4 d-none d-lg-flex h-100 my-auto"
-                style="background: url('<?php echo $anaImage['url']; ?>');
+                style="background: url('<?php echo $group_ana_image['url']; ?>');
                 background-repeat:no-repeat;
                 background-size:cover;
                 background-position:center ;
@@ -495,7 +496,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
               <div
                 data-aos="flip-up"
                 class="col-12 d-block d-lg-none "
-                style="background: url('<?php echo $anaImage['url']; ?>');
+                style="background: url('<?php echo $group_ana_image['url']; ?>');
                 background-repeat:no-repeat;
                 background-size:cover;
                 background-position:center ;

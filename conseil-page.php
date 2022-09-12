@@ -18,7 +18,7 @@ if( have_rows('page-conseil_acf_group') ):
 //echo $group_conseil_image['url'];
 
     ?>
-                      <?php var_dump($group_conseil_image) ;?>
+                      
 
         <section id="conseil" class="section bg-white  py-3 py-lg-5">
           <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="800">
@@ -86,7 +86,7 @@ if( have_rows('page-conseil_acf_group') ):
               <div
                 data-aos="flip-up"
                 class="col-12 d-block d-lg-none"
-                style="background: url('<?php echo $image['url']; ?>');
+                style="background: url('<?php echo $group_conseil_image['url']; ?>');
                 background-repeat:no-repeat;
                 background-size:cover;
                 background-position:center ;
