@@ -14,7 +14,9 @@ if( have_rows('page-conseil_acf_group') ):
         $description = get_sub_field('wysiwyg');
         $conclusion = get_sub_field('conclusion');
         $image = get_sub_field('image');
+        $imageUrl = $image['url'];
     ?>
+
         <section id="conseil" class="section bg-white  py-3 py-lg-5">
           <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="800">
             <div class="row">
@@ -29,7 +31,8 @@ if( have_rows('page-conseil_acf_group') ):
                 "
               >
               </div>
-
+              <?php var_dump($image);?>
+              <?= $imageUrl ?>
               <div class="col-12 col-lg-8">
                 <?php if ($title) :  ?>
                   <h3 class="text-dark d-flex mb-3" >
@@ -93,7 +96,53 @@ if( have_rows('page-conseil_acf_group') ):
       <?php endwhile; ?>
       <?php wp_reset_postdata(  ) ;?>
     <?php endif; ?>
-
+    <?php /*
+<style>body.page-wrapper{background-color:#002369!important;}</style>
+<div class=" mx-0 bg-dark  " >
+  <div class="container-fluid w-100">
+    <div class="row" style=" ">
+      <?php if( have_rows('option-group_conseil','option') ): ?>
+        <?php while( have_rows('option-group_conseil','option') ): the_row(); ?>
+          <?php if( have_rows('group_control') ): ?>
+            <?php while( have_rows('group_control') ): the_row();
+              $thisTitle = get_sub_field('title');
+            ?>
+              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-1 mt-3 mt-lg-n3"  data-aos="flip-up" data-aos-duration="800"  >
+                <button
+                onclick="location.href='#control'"
+                class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
+                    <h5 class="font-sans text-white text-uppercase m-auto ">
+                      <?= $thisTitle ?>
+                    </h5>
+                </button>
+              </div>
+            <?php endwhile?>
+          <?php endif ?>
+        <?php endwhile; ?>
+      <?php endif; ?>
+      <?php if( have_rows('option-group_conseil','option') ): ?>
+        <?php while( have_rows('option-group_conseil','option') ): the_row(); ?>
+          <?php if( have_rows('group_mandats') ): ?>
+            <?php while( have_rows('group_mandats') ): the_row();
+              $thisTitle = get_sub_field('title');
+            ?>
+              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-1 mt-3 mt-lg-n3"  data-aos="flip-up" data-aos-duration="800"  >
+                <button
+                onclick="location.href='#mandats'"
+                class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
+                    <h5 class="font-sans text-white text-uppercase m-auto ">
+                      <?= $thisTitle ?>
+                    </h5>
+                </button>
+              </div>
+            <?php endwhile?>
+          <?php endif ?>
+        <?php endwhile; ?>
+      <?php endif; ?>
+    </div>
+  </div>
+</div>
+//*/ ?>
 
     <?php if( have_rows('group_control') ):
       while( have_rows('group_control') ): the_row();
@@ -254,53 +303,7 @@ if( have_rows('page-conseil_acf_group') ):
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif;?>
-<?php /*
-<style>body.page-wrapper{background-color:#002369!important;}</style>
-<div class=" mx-0 bg-dark  " >
-  <div class="container-fluid w-100">
-    <div class="row" style=" ">
-      <?php if( have_rows('option-group_conseil','option') ): ?>
-        <?php while( have_rows('option-group_conseil','option') ): the_row(); ?>
-          <?php if( have_rows('group_control') ): ?>
-            <?php while( have_rows('group_control') ): the_row();
-              $thisTitle = get_sub_field('title');
-            ?>
-              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-1 mt-3 mt-lg-n3"  data-aos="flip-up" data-aos-duration="800"  >
-                <button
-                onclick="location.href='#control'"
-                class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
-                    <h5 class="font-sans text-white text-uppercase m-auto ">
-                      <?= $thisTitle ?>
-                    </h5>
-                </button>
-              </div>
-            <?php endwhile?>
-          <?php endif ?>
-        <?php endwhile; ?>
-      <?php endif; ?>
-      <?php if( have_rows('option-group_conseil','option') ): ?>
-        <?php while( have_rows('option-group_conseil','option') ): the_row(); ?>
-          <?php if( have_rows('group_mandats') ): ?>
-            <?php while( have_rows('group_mandats') ): the_row();
-              $thisTitle = get_sub_field('title');
-            ?>
-              <div class="col-10 col-md-4 col-lg-4 mx-auto text-center p-1 mt-3 mt-lg-n3"  data-aos="flip-up" data-aos-duration="800"  >
-                <button
-                onclick="location.href='#mandats'"
-                class="button m-2 my-lg-auto mx-lg-auto d-flex p-3 w-100 bg-dark">
-                    <h5 class="font-sans text-white text-uppercase m-auto ">
-                      <?= $thisTitle ?>
-                    </h5>
-                </button>
-              </div>
-            <?php endwhile?>
-          <?php endif ?>
-        <?php endwhile; ?>
-      <?php endif; ?>
-    </div>
-  </div>
-</div>
-//*/ ?>
+
 <?php if( have_rows('group_control') ): ?>
   <?php  while( have_rows('group_control') ): the_row(); ?>
     <?php
