@@ -15,7 +15,7 @@ if( have_rows('page-conseil_acf_group') ):
         $conclusion = get_sub_field('conclusion');
         $group_conseil_image = get_sub_field('image');
         //$imageUrl = $image['url'];
-echo $group_conseil_image['url'];
+//echo $group_conseil_image['url'];
 
     ?>
         <section id="conseil" class="section bg-white  py-3 py-lg-5">
@@ -45,7 +45,7 @@ echo $group_conseil_image['url'];
                   <div>
                     <?= $description ?>
                   </div>
-              <?php var_dump($group_conseil_image);?>
+              <?php var_dump($group_conseil_image['url']);?>
 
                 <?php endif;?>
                 <div class="container">
