@@ -661,7 +661,9 @@ endif;
     
         <?php if ($cta_call) :  ?>
           <div class="div-centered font-sans div-white text-white">
-            <?= $cta_call ?>
+            <p>
+              <?= $cta_call ?>
+            </p>
           </div>
         <?php endif;?>
  
