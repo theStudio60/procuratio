@@ -31,7 +31,7 @@ if( have_rows('page-conseil_acf_group') ):
                 "
               >
               </div>
-              <?php var_dump($image);?>
+              <?php var_dump($imageUrl);?>
               <?= $imageUrl ?>
               <div class="col-12 col-lg-8">
                 <?php if ($title) :  ?>
