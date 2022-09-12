@@ -100,6 +100,7 @@ if( have_rows('page-conseil_acf_group') ):
         $title = get_sub_field('title');
         $subtitle = get_sub_field('subtitle');
         $content = get_sub_field('content');
+
       ?>
         <section id="control" class="section d-flex   py-3 py-lg-5 bg-dark"  >
           <div class="container m-auto   " data-aos="fade-up" data-aos-mirror="false"  >
@@ -253,6 +254,7 @@ if( have_rows('page-conseil_acf_group') ):
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif;?>
+<?php /*
 <style>body.page-wrapper{background-color:#002369!important;}</style>
 <div class=" mx-0 bg-dark  " >
   <div class="container-fluid w-100">
@@ -298,6 +300,7 @@ if( have_rows('page-conseil_acf_group') ):
     </div>
   </div>
 </div>
+//*/ ?>
 <?php if( have_rows('group_control') ): ?>
   <?php  while( have_rows('group_control') ): the_row(); ?>
     <?php
@@ -318,135 +321,10 @@ if( have_rows('page-conseil_acf_group') ):
                   </div>
                 <?php endif;?>
                 <?php if ($content) :  ?>
-                  <div class="text-white d-block d-lg-none px-2"  >
+                  <div class="text-white px-2"  >
                       <?= $content?>
                   </div>
-                  <div class="text-white d-none d-lg-block">
-                    <style>
-                      #summary { line-height: 1.5; }
-                      .text-white p {
-                        font-size: 18px;
-                        color:#fff;
-                      }
-                      #summary p {
-                        font-size: 20px;
-                        color:#fff;
-                      }
-                      #summary div.collapse:not(.show) {
-                          height:64px;
-                          overflow: hidden;
-                          display: -webkit-box;
-                          -webkit-line-clamp: 3;
-                          -webkit-box-orient: vertical;
-                            /* Safari 10.1 */
-                            @media not all and (min-resolution:.001dpcm){
-                            @supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
-                               height:auto;
-                            }}
-                      }
-                      #summary div.collapsing {
-                          min-height: 192px;
-                      }
-                      #summary a.reduction.collapsed:after  {
-                          content: 'Lire la suite';
-                          width: 100%;
-                          font-size:18px;
-                          margin-left:auto ; margin-right:auto;
-                          text-align:center;
-                          font-weight:600;
-                          font-family:"Raleway";
-                      }
-                      #summary a.reduction:not(.collapsed):after {
-                          content: '- Réduire';
-                          font-size:18px;
-                          padding-top:16px;
-                          margin-left:auto ; margin-right:auto;
-                          text-align:center;
-                          font-weight:600;
-                          font-family:"Raleway";
-                      }
-                      .wrapper-c {
-                          position: relative;
-                          margin: 40px auto;
-                          background: rgba(255,255,255,0);
-                      }
-                      .wrapper-c,
-                      .wrapper-c * {
-                          -moz-box-sizing: border-box;
-                          -webkit-box-sizing: border-box;
-                          box-sizing: border-box;
-                      }
-                      .wrapper-c {
-                          width: 196px;
-                          height: 196px;
-                      }
-                      .wrapper-c .pie {
-                          width: 50%;
-                          height: 100%;
-                          transform-origin: 100% 50%;
-                          position: absolute;
-                          background: rgba(255,255,255,1);
-                          border: 5px solid #29FFFF;
-                      }
-                      .wrapper-c .spinner {
-                          border-radius: 100% 0 0 100% / 50% 0 0 50%;
-                          z-index: 200;
-                          border-right: none;
-                          animation: rota 5s linear infinite;
-                      }
-                      .wrapper-c:hover .spinner,
-                      .wrapper-c:hover .filler,
-                      .wrapper-c:hover .mask {
-                          animation-play-state: running;
-                      }
 
-                      .wrapper-c .filler {
-                          border-radius: 0 100% 100% 0 / 0 50% 50% 0;
-                          left: 50%;
-                          opacity: 0;
-                          z-index: 100;
-                          animation: opa 5s steps(1, end) infinite reverse;
-                          border-left: none;
-                      }
-
-                      .wrapper-c .mask {
-                          width: 50%;
-                          height: 100%;
-                          position: absolute;
-                          background: inherit;
-                          opacity: 1;
-                          z-index: 300;
-                          animation: opa 5s steps(1, end) infinite;
-                      }
-
-                      @keyframes rota {
-                          0% {
-                              transform: rotate(0deg);
-                          }
-                          100% {
-                              transform: rotate(360deg);
-                          }
-                      }
-
-                      @keyframes opa {
-                          0% {
-                              opacity: 1;
-                          }
-                          50%,
-                          100% {
-                              opacity: 0;
-                          }
-                      }
-                    </style>
-
-                    <div class="d-none d-lg-block" id="summary">
-                      <div class="collapse mb-2" id="collapseSummary">
-                        <?= $content?>
-                      </div>
-                      <a class="collapsed text-secondary reduction" data-toggle="collapse" href="#collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
-                    </div>
-
-                  </div>
                 <?php endif;?>
               </div>
               <div class="col-12 col-lg-3 d-flex">
