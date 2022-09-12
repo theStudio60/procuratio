@@ -495,7 +495,6 @@ endif;
           </div>
         <?php endif;?>
  
- 
       </div>
       <br>
       <div class="col-12 col-lg-9 mx-auto mt-3 d-flex">
