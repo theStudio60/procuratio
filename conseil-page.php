@@ -18,6 +18,8 @@ if( have_rows('page-conseil_acf_group') ):
 //echo $group_conseil_image['url'];
 
     ?>
+                      <?php var_dump($group_conseil_image) ;?>
+
         <section id="conseil" class="section bg-white  py-3 py-lg-5">
           <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="800">
             <div class="row">
@@ -45,7 +47,6 @@ if( have_rows('page-conseil_acf_group') ):
                   <div>
                     <?= $description ?>
                   </div>
-              <?php var_dump($group_conseil_image['url']);?>
 
                 <?php endif;?>
                 <div class="container">
