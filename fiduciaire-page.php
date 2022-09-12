@@ -430,7 +430,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
         $conclusion = get_sub_field('conclusion');
         $group_ana_image = get_sub_field('image');
         ?>
-        <?php var_dump($group_ana_image) ;?>
+        <?php // var_dump($group_ana_image) ;?>
         <section id="analyses" class="section bg-white  py-3 py-lg-5">
           <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="800">
             <div class="row">
