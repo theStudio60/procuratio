@@ -1,6 +1,6 @@
 <?php if( have_rows('option-group_conseil','option') ):
 
-	$piechart = THEME_URI . "/images/piechart.svg";
+	$piechart = THEME_URI . "/images/piechart.png";
 
   while( have_rows('option-group_conseil','option') ): the_row();
     if( have_rows('group_control') ):

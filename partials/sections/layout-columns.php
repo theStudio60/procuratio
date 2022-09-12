@@ -40,26 +40,19 @@ div#desc p
         <div class="row my-3">
           <?php if( have_rows('pack_startups') ): ?>
             <?php while( have_rows('pack_startups') ): the_row();
-              $startupTitle = get_sub_field('title');
-              $startupContent = get_sub_field('content');
-              $startupSubtitle = get_sub_field('subtitle');
+              $title = get_sub_field('title');
+              //$content = get_sub_field('content');
+              //$enterprisesSubtitle = get_sub_field('subtitle');
               //$thisId = get_sub_field('pack_title');
             ?>
               <div class="col-12 col-lg-3 p-0 p-lg-2 my-5 my-lg-2 d-flex border-left border-right" id=" " >
                 <div class="w-100 p-1 ">
-                  <?php if ($startupTitle) :  ?>
+                  <?php if ($title) :  ?>
                     <h4 class="text-dark mb-3 mx-auto text-center">
 
-                      <?= $startupTitle ?>
+                      <?= $title ?>
                     </h4>
                   <?php endif;?>
-                  <?php if ($startupSubtitle) :  ?>
-                    <h5 class="text-dark my-3 mx-auto text-center">
-
-                      <?= $startupSubtitle ?>
-                    </h5>
-                  <?php endif;?>
-                  <br>
                   <?php if( have_rows('repeater_services') ): ?>
                     <?php while( have_rows('repeater_services') ): the_row(); ?>
                       <?php if( have_rows('service') ): ?>
@@ -116,25 +109,18 @@ div#desc p
           <?php endif; ?>
           <?php if( have_rows('pack_ana') ): ?>
             <?php while( have_rows('pack_ana') ): the_row();
-              $enterprisesTitle = get_sub_field('title');
-              $enterprisesContent = get_sub_field('content');
-              $enterprisesSubtitle = get_sub_field('subtitle');
+              $title = get_sub_field('title');
+              //$content = get_sub_field('content');
+              //$enterprisesSubtitle = get_sub_field('subtitle');
               //$thisId = get_sub_field('pack_title');
             ?>
               <div class="col-12 col-lg-3 p-0 p-lg-2 my-5 my-lg-2 d-flex border-left border-right" id=" " >
                 <div class="w-100 p-1 ">
-                  <?php if ($enterprisesTitle) :  ?>
+                  <?php if ($title) :  ?>
                     <h4 class="text-dark mb-3 mx-auto text-center">
 
-                      <?= $enterprisesTitle ?>
+                      <?= $title ?>
                     </h4>
-                  <?php endif;?>
-                  <?php if ($enterprisesSubtitle) :  ?>
-                    <h5 class="text-dark my-3 mx-auto text-center">
-
-                      <?= $enterprisesSubtitle ?>
-                    </h5>
-                    <br>
                   <?php endif;?>
                   <?php if( have_rows('repeater_services') ): ?>
                     <?php while( have_rows('repeater_services') ): the_row(); ?>
@@ -157,25 +143,18 @@ div#desc p
           <?php endif; ?>
           <?php if( have_rows('pack_mandats') ): ?>
             <?php while( have_rows('pack_mandats') ): the_row();
-              $personsTitle = get_sub_field('title');
-              $personsContent = get_sub_field('content');
-              $personsSubtitle = get_sub_field('subtitle');
+              $title = get_sub_field('title');
+              //$content = get_sub_field('content');
+              //$enterprisesSubtitle = get_sub_field('subtitle');
               //$thisId = get_sub_field('pack_title');
             ?>
               <div class="col-12 col-lg-3 p-0 p-lg-2 my-5 my-lg-2 d-flex border-left border-right" id=" " >
                 <div class="w-100 p-1 ">
-                  <?php if ($personsTitle) :  ?>
+                  <?php if ($title) :  ?>
                     <h4 class="text-dark mb-3 mx-auto text-center">
 
-                      <?= $personsTitle ?>
+                      <?= $title ?>
                     </h4>
-                  <?php endif;?>
-                  <?php if ($personsSubtitle) :  ?>
-                    <h5 class="text-dark my-3 mx-auto text-center">
-
-                      <?= $personsSubtitle ?>
-                    </h5>
-                    <br>
                   <?php endif;?>
                   <?php if( have_rows('repeater_services') ): ?>
                     <?php while( have_rows('repeater_services') ): the_row(); ?>
