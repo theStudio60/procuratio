@@ -377,16 +377,27 @@ if( have_rows('page-fiduciaire_acf_group') ):
                             $picto = get_sub_field('picto'); 
                     ?>
                             <div class="col-12 col-md-6 col-lg-4 d-flex">
-                              <?php if ($picto) :  ?>
-                                <span class=" mt-auto mx-auto d-flex">
-                                  <img class="mx-auto" width="64px" height="64px" src="<?php echo $picto['url']; ?>" alt="">
-                                </span>
-                              <?php endif;?> 
-                              <?php if ($name) :  ?>
-                                <span class="text-center text-dark font-sans m-auto mt-2 mb-auto">
-                                  <?= $name ?>
-                                </span>
-                              <?php endif;?> 
+                              <div class="container">
+                                <div class="row">
+                                  
+                                  <?php if ($picto) :  ?>
+                                    <div class="col-12 d-flex">
+                                      <span class=" mt-auto mx-auto w-100 d-flex">
+                                        <img class="mx-auto" width="64px" height="64px" src="<?php echo $picto['url']; ?>" alt="">
+                                      </span>
+                                    </div>
+
+                                  <?php endif;?> 
+                                  <?php if ($name) :  ?>
+                                    <div class="col-12 d-flex">
+
+                                      <span class="w-100 text-center text-dark font-sans mx-auto mt-2 mb-auto">
+                                        <?= $name ?>
+                                      </span>
+                                    </div>
+                                  <?php endif;?> 
+                                </div>
+                              </div>
                             </div>
                           <?php endwhile; ?>
                         <?php endif; ?>
