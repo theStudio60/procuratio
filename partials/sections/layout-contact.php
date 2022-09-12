@@ -67,12 +67,12 @@ endif;
             <div class="col-12 col-lg-6 order-1 order-lg-2">
               <div class="row">
                 <div class="contact-text col-12">
-                  <h5 class="my-3 text-white">
-                    <?= $name ?>
-                  </h5>
                   <h4 class="my-3 text-white">
-                    <?= $details ?>
+                    <?= $name ?>
                   </h4>
+                  <h6 class="my-3 text-white">
+                    <?= $details ?>
+                  </h6>
                   <br>
                   <p class="my-3 text-white">
                     <i class="text-secondary fa fa-phone mr-1"></i> <?= $phone ?>
