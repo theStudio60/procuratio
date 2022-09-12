@@ -112,6 +112,8 @@
           ?>
             <div class="text-white d-block px-2 font-serif w-100 lead mb-3 "  >
               <?= $this_excerpt ?>
+              <br>
+              <a href="<?php echo site_url(); ?>/conseil#control">Lire la suite</a>
             </div>
 
             <button class="button" onclick="location.href='<?php echo site_url(); ?>/conseil#control'">En savoir plus</button>
