@@ -152,7 +152,9 @@ if( have_rows('page-conseil_acf_group') ):
         $content = get_sub_field('content');
 
       ?>
-        <section id="control" class="section d-flex   py-3 py-lg-5 bg-dark"  >
+        <section id="control" class="section d-flex   py-3 py-lg-5 bg-light"  
+        style="border-top: solid 1px #002369;border-bottom: solid 1px #002369; width: 100%;"
+        >
           <div class="container m-auto   " data-aos="fade-up" data-aos-mirror="false"  >
             <div class="row my-3  ">
               <div class="col-12 col-lg-9 mx-auto mx-lg-0 ">
@@ -165,9 +167,14 @@ if( have_rows('page-conseil_acf_group') ):
                   </div>
                 <?php endif;?>
                 <?php if ($content) :  ?>
+                  <div class="text-white d-block px-2"  >
+                      <?= $content?>
+                  </div>
+                  <?php /*
                   <div class="text-white d-block d-lg-none px-2"  >
                       <?= $content?>
                   </div>
+                  
                   <div class="text-white d-none d-lg-block">
                     <style>
                       #summary { line-height: 1.5; }
@@ -185,7 +192,7 @@ if( have_rows('page-conseil_acf_group') ):
                           display: -webkit-box;
                           -webkit-line-clamp: 3;
                           -webkit-box-orient: vertical;
-                            /* Safari 10.1 */
+                            // Safari 10.1
                             @media not all and (min-resolution:.001dpcm){
                             @supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
                                height:auto;
@@ -285,16 +292,23 @@ if( have_rows('page-conseil_acf_group') ):
                           }
                       }
                     </style>
+
+
+
+
                     <div class="d-none d-lg-block" id="summary">
                       <div class="collapse mb-2" id="collapseSummary">
                         <?= $content?>
                       </div>
                       <a class="collapsed text-secondary reduction" data-toggle="collapse" href="#collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
                     </div>
+                  
                   </div>
-                <?php endif;?>
+                  //*/?>
+                  <?php endif;?>
               </div>
               <div class="col-12 col-lg-3 d-flex">
+                
               </div>
             </div>
           </div>
