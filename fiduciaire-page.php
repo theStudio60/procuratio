@@ -378,8 +378,8 @@ if( have_rows('page-fiduciaire_acf_group') ):
                     ?>
                             <div class="col-12 col-md-6 col-lg-4 d-flex">
                               <?php if ($picto) :  ?>
-                                <span class=" mt-auto mx-auto">
-                                  <img width="64px" height="64px" src="<?php echo $picto['url']; ?>" alt="">
+                                <span class=" mt-auto mx-auto d-flex">
+                                  <img class="mx-auto" width="64px" height="64px" src="<?php echo $picto['url']; ?>" alt="">
                                 </span>
                               <?php endif;?> 
                               <?php if ($name) :  ?>
