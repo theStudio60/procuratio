@@ -115,9 +115,9 @@
               <br>
               <a href="<?php echo site_url(); ?>/conseil#control">Lire la suite</a>
             </div>
-
+            <?php /*
             <button class="button" onclick="location.href='<?php echo site_url(); ?>/conseil#control'">En savoir plus</button>
-
+            //*/ ?>
           <?php endif;?>
         </div>
         <div class="col-12 col-lg-3 py-2 d-flex">
