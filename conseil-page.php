@@ -457,7 +457,6 @@ if( have_rows('option-group_conseil','option') ):
   <?php endwhile; ?>
   <?php wp_reset_postdata(  ) ;?>
 <?php endif; //*/?>
-
 <?php
 if( have_rows('website_settings', 'option') ):
   while( have_rows('website_settings', 'option') ):
@@ -490,7 +489,7 @@ endif;
         </div>
     
         <?php if ($cta_call) :  ?>
-          <div class="div-centered font-sans div-white text-center text-white">
+          <div class="div-centered font-sans div-white text-white">
             <?= $cta_call ?>
           </div>
         <?php endif;?>
