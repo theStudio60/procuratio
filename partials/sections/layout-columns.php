@@ -45,7 +45,7 @@ div#desc p
               $startupSubtitle = get_sub_field('subtitle');
               //$thisId = get_sub_field('pack_title');
             ?>
-              <div class="col-12 col-lg-4 p-0 p-lg-2 my-5 my-lg-2 d-flex border-left border-right" id=" " >
+              <div class="col-12 col-lg-3 p-0 p-lg-2 my-5 my-lg-2 d-flex border-left border-right" id=" " >
                 <div class="w-100 p-1 ">
                   <?php if ($startupTitle) :  ?>
                     <h4 class="text-dark mb-3 mx-auto text-center">
@@ -86,7 +86,7 @@ div#desc p
               //$enterprisesSubtitle = get_sub_field('subtitle');
               //$thisId = get_sub_field('pack_title');
             ?>
-              <div class="col-12 col-lg-4 p-0 p-lg-2 my-5 my-lg-2 d-flex border-left border-right" id=" " >
+              <div class="col-12 col-lg-3 p-0 p-lg-2 my-5 my-lg-2 d-flex border-left border-right" id=" " >
                 <div class="w-100 p-1 ">
                   <?php if ($enterprisesTitle) :  ?>
                     <h4 class="text-dark mb-3 mx-auto text-center">
@@ -121,7 +121,7 @@ div#desc p
               $enterprisesSubtitle = get_sub_field('subtitle');
               //$thisId = get_sub_field('pack_title');
             ?>
-              <div class="col-12 col-lg-4 p-0 p-lg-2 my-5 my-lg-2 d-flex border-left border-right" id=" " >
+              <div class="col-12 col-lg-3 p-0 p-lg-2 my-5 my-lg-2 d-flex border-left border-right" id=" " >
                 <div class="w-100 p-1 ">
                   <?php if ($enterprisesTitle) :  ?>
                     <h4 class="text-dark mb-3 mx-auto text-center">
@@ -162,7 +162,7 @@ div#desc p
               $personsSubtitle = get_sub_field('subtitle');
               //$thisId = get_sub_field('pack_title');
             ?>
-              <div class="col-12 col-lg-4 p-0 p-lg-2 my-5 my-lg-2 d-flex border-left border-right" id=" " >
+              <div class="col-12 col-lg-3 p-0 p-lg-2 my-5 my-lg-2 d-flex border-left border-right" id=" " >
                 <div class="w-100 p-1 ">
                   <?php if ($personsTitle) :  ?>
                     <h4 class="text-dark mb-3 mx-auto text-center">
