@@ -43,7 +43,7 @@ if( have_rows('page-conseil_acf_group') ):
                   <div>
                     <?= $description ?>
                   </div>
-              <?php var_dump($imageUrl);?>
+              <?php var_dump($image);?>
 
                 <?php endif;?>
                 <div class="container">
@@ -150,7 +150,7 @@ if( have_rows('page-conseil_acf_group') ):
         $title = get_sub_field('title');
         $subtitle = get_sub_field('subtitle');
         $content = get_sub_field('content');
-
+        $image = get_sub_field('image');
       ?>
         <section id="control" class="section d-flex   py-3 py-lg-5 bg-light"  
         style="border-top: solid 1px #002369;border-bottom: solid 1px #002369; width: 100%;"
@@ -161,13 +161,13 @@ if( have_rows('page-conseil_acf_group') ):
                 <?php if ($title) :  ?>
                   <div class="d-flex w-100 ">
                     <div class="dash mr-2 ml-n4 my-auto"></div>
-                    <h3 class="text-white d-flex mb-3" >
+                    <h3 class="text-dark d-flex mb-3" >
                         <?= $title ?>
                     </h3>
                   </div>
                 <?php endif;?>
                 <?php if ($content) :  ?>
-                  <div class="text-white d-block px-2"  >
+                  <div class="text-dark d-block px-2"  >
                       <?= $content?>
                   </div>
                   <?php /*
@@ -319,7 +319,7 @@ if( have_rows('page-conseil_acf_group') ):
   <?php endwhile; ?>
 <?php endif;?>
 
-<?php if( have_rows('group_control') ): ?>
+<?php /* if( have_rows('group_control') ): ?>
   <?php  while( have_rows('group_control') ): the_row(); ?>
     <?php
       $title = get_sub_field('name');
@@ -353,7 +353,9 @@ if( have_rows('page-conseil_acf_group') ):
         </section>
       <?php endwhile; ?>
       <?php wp_reset_postdata(  ) ;?>
-    <?php endif; ?>
+    <?php endif; 
+    //*/ 
+?>
 
 <?php /*
 if( have_rows('option-group_conseil','option') ):
