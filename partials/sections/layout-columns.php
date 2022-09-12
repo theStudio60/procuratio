@@ -81,17 +81,17 @@ div#desc p
           <?php endif; ?>
           <?php if( have_rows('pack_compta') ): ?>
             <?php while( have_rows('pack_compta') ): the_row();
-              $comptaTitle = get_sub_field('title');
-              $conmptaContent = get_sub_field('content');
+              $title = get_sub_field('title');
+              //$content = get_sub_field('content');
               //$enterprisesSubtitle = get_sub_field('subtitle');
               //$thisId = get_sub_field('pack_title');
             ?>
               <div class="col-12 col-lg-3 p-0 p-lg-2 my-5 my-lg-2 d-flex border-left border-right" id=" " >
                 <div class="w-100 p-1 ">
-                  <?php if ($enterprisesTitle) :  ?>
+                  <?php if ($title) :  ?>
                     <h4 class="text-dark mb-3 mx-auto text-center">
 
-                      <?= $enterprisesTitle ?>
+                      <?= $title ?>
                     </h4>
                   <?php endif;?>
  
