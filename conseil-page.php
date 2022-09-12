@@ -337,7 +337,8 @@ if( have_rows('page-conseil_acf_group') ):
       <?php wp_reset_postdata(  ) ;?>
     <?php endif; ?>
 
-<?php if( have_rows('option-group_conseil','option') ):
+<?php /*
+if( have_rows('option-group_conseil','option') ):
   while( have_rows('option-group_conseil','option') ): the_row();
     if( have_rows('group_mandats') ):
       while( have_rows('group_mandats') ): the_row();
@@ -386,16 +387,7 @@ if( have_rows('page-conseil_acf_group') ):
                                     <?= $subtitle ?>
                                   </span>
                                 <?php endif;?>
-                                <?php /*
-                                <?php if ($content) :  ?>
-                                    <?= $content ?>
-                                <?php endif;?>
-                                <?php if ($price) :  ?>
-                                  <div class="price">
-                                    <?= $price ?>
-                                  </div>
-                                <?php endif;?>
-                                //*/ ?>
+ 
                               </div> <?php //end  card  ?>
                             </div>
                           <?php endwhile; ?>
@@ -444,7 +436,7 @@ if( have_rows('page-conseil_acf_group') ):
     <?php endif; ?>
   <?php endwhile; ?>
   <?php wp_reset_postdata(  ) ;?>
-<?php endif; ?>
+<?php endif; //*/?>
 
 <?php
 if( have_rows('website_settings', 'option') ):
