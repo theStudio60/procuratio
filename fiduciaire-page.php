@@ -10,6 +10,199 @@ if( have_rows('page-fiduciaire_acf_group') ):
     get_template_part( 'partials/sections/hero', 'page' );
 
 ?>
+    <?php if( have_rows('pack_startups') ): ?>
+      <?php while( have_rows('pack_startups') ): the_row();
+        $title = get_sub_field('title');
+        $content = get_sub_field('content');
+        $subtitle = get_sub_field('subtitle');
+        //$thisId = get_sub_field('pack_title');
+      ?>
+        <section
+          id="startups"
+          class="  bg-dark text-white"
+
+        >
+          <div class="container  py-3 py-lg-5 "  data-aos="fade-up" data-aos-duration="800">
+            <div class="row my-3">
+              <div class="col-12 col-lg-9 p-0 p-lg-2" id=" " >
+                <div class="section-text m-auto">
+                  <?php if ($subtitle) :  ?>
+                    <h3 class="text-white d-flex mb-3">
+                      <div class="dash mr-2 ml-0 ml-lg-n4 my-auto"></div>
+                      <?= $subtitle ?>
+                    </h3>
+                  <?php endif;?>
+                  <?php if ($content) :  ?>
+                    <div class="mt-2 ml-2 ml-lg-0 text-white div-white"  >
+                      <?= $content?>
+                    </div>
+                  <?php endif;?>
+                </div>
+              </div>
+            </div>
+            <div class="row w-100 h-100 py-2">
+              <?php if( have_rows('repeater_services') ): ?>
+                <?php while( have_rows('repeater_services') ): the_row(); ?>
+                  <?php if( have_rows('service') ): ?>
+                    <?php while( have_rows('service') ): the_row();
+                      //$title = get_sub_field('title');
+                      $name = get_sub_field('name');
+                      $icon = get_sub_field('icon');
+                      $description = get_sub_field('description');
+                    ?>
+                    <div class="col-12 col-lg-4 text-center mx-auto">
+                      <div class="text-center p-2 m-auto">
+                        <i class="fa fa-3x  text-white <?= $icon ?> "> </i>
+
+                        <h5 class="text-white mx-auto my-3 ">
+                          <?= $name ?>
+                        </h5>
+
+                        <div class="text-white my-2 mx-auto div-white div-centered" >
+                          <?= $description ?>
+                        </div>
+                      </div>
+                    </div>
+                    <?php endwhile; ?>
+                  <?php endif; ?>
+                <?php endwhile; ?>
+              <?php endif; ?>
+            </div>
+          </div>
+        </section>
+      <?php endwhile?>
+    <?php endif; ?>
+    <?php if( have_rows('pack_enterprises') ): ?>
+      <?php while( have_rows('pack_enterprises') ): the_row();
+        $title = get_sub_field('title');
+        $content = get_sub_field('content');
+        $subtitle = get_sub_field('subtitle');
+        //$thisId = get_sub_field('pack_title');
+      ?>
+        <section
+          id="enterprises"
+          class="  bg-white text-dark"
+
+          style="border-top: solid 1px #002369;border-bottom: solid 1px #002369; width: 100%;"
+        >
+          <div class="container  py-3 py-lg-5 "           data-aos="fade-up" data-aos-duration="800" >
+            <div class="row my-3">
+              <div class="col-12 col-lg-9 p-0 p-lg-2" id=" " >
+                <div class="section-text m-auto">
+                  <?php if ($subtitle) :  ?>
+                    <h3 class="text-dark d-flex mb-3">
+                      <div class="dash mr-2 ml-0 ml-lg-n4 my-auto"></div>
+                      <?= $subtitle ?>
+                    </h3>
+                  <?php endif;?>
+                  <?php if ($content) :  ?>
+                    <div class="mt-2 ml-2 ml-lg-0 text-dark">
+                      <?= $content?>
+                    </div>
+
+                  <?php endif;?>
+                </div>
+              </div>
+            </div>
+            <div class="row w-100 h-100 py-2">
+              <?php if( have_rows('repeater_services') ): ?>
+                <?php while( have_rows('repeater_services') ): the_row(); ?>
+                  <?php if( have_rows('service') ): ?>
+                    <?php while( have_rows('service') ): the_row();
+                      //$title = get_sub_field('title');
+                      $name = get_sub_field('name');
+                      $icon = get_sub_field('icon');
+                      $description = get_sub_field('description');
+                    ?>
+                    <div class="col-12 col-lg-6 text-left ">
+                      <div class="text-left p-2 m-auto">
+
+                        <h4 class="text-dark text-uppercase mx-auto my-1 ">
+                          <?= $name ?>
+                        </h4>
+
+                        <div class="text-dark my-1 mx-auto div-left" >
+                          <?= $description ?>
+                        </div>
+                      </div>
+                    </div>
+                    <?php endwhile; ?>
+                  <?php endif; ?>
+                <?php endwhile; ?>
+              <?php endif; ?>
+            </div>
+          </div>
+        </section>
+      <?php endwhile?>
+    <?php endif; ?>
+    <?php if( have_rows('pack_persons') ): ?>
+      <?php while( have_rows('pack_persons') ): the_row();
+        $title = get_sub_field('title');
+        $content = get_sub_field('content');
+        $subtitle = get_sub_field('subtitle');
+        //$thisId = get_sub_field('pack_title');
+      ?>
+        <section
+          id="persons"
+          class="  bg-light text-dark"
+
+          style="border-top: solid 1px #002369;border-bottom: solid 1px #002369; width: 100%;"
+        >
+          <div class="container  py-3 py-lg-5 "  data-aos="fade-up" data-aos-duration="800" >
+            <div class="row my-3">
+              <div class="col-12 col-lg-9 p-0 p-lg-2" id=" " >
+                <div class="section-text m-auto">
+                  <?php if ($subtitle) :  ?>
+                    <h3 class="text-dark d-flex mb-3">
+                      <div class="dash mr-2 ml-0 ml-lg-n4 my-auto"></div>
+                      <?= $subtitle ?>
+                    </h3>
+                  <?php endif;?>
+                  <?php if ($content) :  ?>
+                    <div class="mt-2 ml-2 ml-lg-0 text-dark"  >
+                      <?= $content?>
+                    </div>
+                  <?php endif;?>
+                </div>
+              </div>
+            </div>
+            <div class="row w-100 h-100 py-2">
+              <?php if( have_rows('repeater_services') ): ?>
+                <?php while( have_rows('repeater_services') ): the_row(); ?>
+                  <?php if( have_rows('service') ): ?>
+                    <?php while( have_rows('service') ): the_row();
+                      //$title = get_sub_field('title');
+                      $name = get_sub_field('name');
+                      $icon = get_sub_field('icon');
+                      $description = get_sub_field('description');
+                    ?>
+                    <div class="col-12 col-lg-4  text-center ">
+                      <div class="text-center p-2 m-auto">
+                        <i class="fa fa-5x  text-white <?= $icon ?> "> </i>
+
+                        <h4 class="text-dark text-uppercase mx-auto my-3 ">
+                          <?= $name ?>
+                        </h4>
+
+                        <style>
+                          .div-centered p {text-align:center!important;}
+                        </style>
+                        <div class="text-dark my-2 mx-auto div-centered" >
+                          <?= $description ?>
+                        </div>
+                      </div>
+                    </div>
+                    <?php endwhile; ?>
+                  <?php endif; ?>
+                <?php endwhile; ?>
+              <?php endif; ?>
+            </div>
+          </div>
+        </section>
+      <?php endwhile?>
+    <?php endif; ?> 
+
+    
     <style>
       .div-white p {color:white!important;}
 
@@ -416,200 +609,8 @@ if( have_rows('page-fiduciaire_acf_group') ):
         </section>
       <?php endwhile; ?>
       <?php wp_reset_postdata(  ) ;?>
-    <?php endif; ?>
-    <?php /*
-    <?php if( have_rows('pack_startups') ): ?>
-      <?php while( have_rows('pack_startups') ): the_row();
-        $title = get_sub_field('title');
-        $content = get_sub_field('content');
-        $subtitle = get_sub_field('subtitle');
-        //$thisId = get_sub_field('pack_title');
-      ?>
-        <section
-          id="startups"
-          class="  bg-dark text-white"
+    <?php endif; ?> 
 
-        >
-          <div class="container  py-3 py-lg-5 "  data-aos="fade-up" data-aos-duration="800">
-            <div class="row my-3">
-              <div class="col-12 col-lg-9 p-0 p-lg-2" id=" " >
-                <div class="section-text m-auto">
-                  <?php if ($subtitle) :  ?>
-                    <h3 class="text-white d-flex mb-3">
-                      <div class="dash mr-2 ml-0 ml-lg-n4 my-auto"></div>
-                      <?= $subtitle ?>
-                    </h3>
-                  <?php endif;?>
-                  <?php if ($content) :  ?>
-                    <div class="mt-2 ml-2 ml-lg-0 text-white div-white"  >
-                      <?= $content?>
-                    </div>
-                  <?php endif;?>
-                </div>
-              </div>
-            </div>
-            <div class="row w-100 h-100 py-2">
-              <?php if( have_rows('repeater_services') ): ?>
-                <?php while( have_rows('repeater_services') ): the_row(); ?>
-                  <?php if( have_rows('service') ): ?>
-                    <?php while( have_rows('service') ): the_row();
-                      //$title = get_sub_field('title');
-                      $name = get_sub_field('name');
-                      $icon = get_sub_field('icon');
-                      $description = get_sub_field('description');
-                    ?>
-                    <div class="col-12 col-lg-4 text-center mx-auto">
-                      <div class="text-center p-2 m-auto">
-                        <i class="fa fa-3x  text-white <?= $icon ?> "> </i>
-
-                        <h5 class="text-white mx-auto my-3 ">
-                          <?= $name ?>
-                        </h5>
-
-                        <div class="text-white my-2 mx-auto div-white div-centered" >
-                          <?= $description ?>
-                        </div>
-                      </div>
-                    </div>
-                    <?php endwhile; ?>
-                  <?php endif; ?>
-                <?php endwhile; ?>
-              <?php endif; ?>
-            </div>
-          </div>
-        </section>
-      <?php endwhile?>
-    <?php endif; ?>
-    <?php if( have_rows('pack_enterprises') ): ?>
-      <?php while( have_rows('pack_enterprises') ): the_row();
-        $title = get_sub_field('title');
-        $content = get_sub_field('content');
-        $subtitle = get_sub_field('subtitle');
-        //$thisId = get_sub_field('pack_title');
-      ?>
-        <section
-          id="enterprises"
-          class="  bg-white text-dark"
-
-          style="border-top: solid 1px #002369;border-bottom: solid 1px #002369; width: 100%;"
-        >
-          <div class="container  py-3 py-lg-5 "           data-aos="fade-up" data-aos-duration="800" >
-            <div class="row my-3">
-              <div class="col-12 col-lg-9 p-0 p-lg-2" id=" " >
-                <div class="section-text m-auto">
-                  <?php if ($subtitle) :  ?>
-                    <h3 class="text-dark d-flex mb-3">
-                      <div class="dash mr-2 ml-0 ml-lg-n4 my-auto"></div>
-                      <?= $subtitle ?>
-                    </h3>
-                  <?php endif;?>
-                  <?php if ($content) :  ?>
-                    <div class="mt-2 ml-2 ml-lg-0 text-dark">
-                      <?= $content?>
-                    </div>
-
-                  <?php endif;?>
-                </div>
-              </div>
-            </div>
-            <div class="row w-100 h-100 py-2">
-              <?php if( have_rows('repeater_services') ): ?>
-                <?php while( have_rows('repeater_services') ): the_row(); ?>
-                  <?php if( have_rows('service') ): ?>
-                    <?php while( have_rows('service') ): the_row();
-                      //$title = get_sub_field('title');
-                      $name = get_sub_field('name');
-                      $icon = get_sub_field('icon');
-                      $description = get_sub_field('description');
-                    ?>
-                    <div class="col-12 col-lg-6 text-left ">
-                      <div class="text-left p-2 m-auto">
-
-                        <h4 class="text-dark text-uppercase mx-auto my-1 ">
-                          <?= $name ?>
-                        </h4>
-
-                        <div class="text-dark my-1 mx-auto div-left" >
-                          <?= $description ?>
-                        </div>
-                      </div>
-                    </div>
-                    <?php endwhile; ?>
-                  <?php endif; ?>
-                <?php endwhile; ?>
-              <?php endif; ?>
-            </div>
-          </div>
-        </section>
-      <?php endwhile?>
-    <?php endif; ?>
-    <?php if( have_rows('pack_persons') ): ?>
-      <?php while( have_rows('pack_persons') ): the_row();
-        $title = get_sub_field('title');
-        $content = get_sub_field('content');
-        $subtitle = get_sub_field('subtitle');
-        //$thisId = get_sub_field('pack_title');
-      ?>
-        <section
-          id="persons"
-          class="  bg-light text-dark"
-
-          style="border-top: solid 1px #002369;border-bottom: solid 1px #002369; width: 100%;"
-        >
-          <div class="container  py-3 py-lg-5 "  data-aos="fade-up" data-aos-duration="800" >
-            <div class="row my-3">
-              <div class="col-12 col-lg-9 p-0 p-lg-2" id=" " >
-                <div class="section-text m-auto">
-                  <?php if ($subtitle) :  ?>
-                    <h3 class="text-dark d-flex mb-3">
-                      <div class="dash mr-2 ml-0 ml-lg-n4 my-auto"></div>
-                      <?= $subtitle ?>
-                    </h3>
-                  <?php endif;?>
-                  <?php if ($content) :  ?>
-                    <div class="mt-2 ml-2 ml-lg-0 text-dark"  >
-                      <?= $content?>
-                    </div>
-                  <?php endif;?>
-                </div>
-              </div>
-            </div>
-            <div class="row w-100 h-100 py-2">
-              <?php if( have_rows('repeater_services') ): ?>
-                <?php while( have_rows('repeater_services') ): the_row(); ?>
-                  <?php if( have_rows('service') ): ?>
-                    <?php while( have_rows('service') ): the_row();
-                      //$title = get_sub_field('title');
-                      $name = get_sub_field('name');
-                      $icon = get_sub_field('icon');
-                      $description = get_sub_field('description');
-                    ?>
-                    <div class="col-12 col-lg-4  text-center ">
-                      <div class="text-center p-2 m-auto">
-                        <i class="fa fa-5x  text-white <?= $icon ?> "> </i>
-
-                        <h4 class="text-dark text-uppercase mx-auto my-3 ">
-                          <?= $name ?>
-                        </h4>
-
-                        <style>
-                          .div-centered p {text-align:center!important;}
-                        </style>
-                        <div class="text-dark my-2 mx-auto div-centered" >
-                          <?= $description ?>
-                        </div>
-                      </div>
-                    </div>
-                    <?php endwhile; ?>
-                  <?php endif; ?>
-                <?php endwhile; ?>
-              <?php endif; ?>
-            </div>
-          </div>
-        </section>
-      <?php endwhile?>
-    <?php endif; ?>
-                    //*/ ?>
 
   <?php endwhile; ?>
 <?php endif; ?>
