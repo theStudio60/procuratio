@@ -29,6 +29,8 @@ if( have_rows('website_settings', 'option') ):
   the_row();
 if( have_rows('contact_infos') ):
   while( have_rows('contact_infos') ): the_row();
+  $name = get_sub_field('name');
+  $details = get_sub_field('details');
   $adress = get_sub_field('post_address');
   $adress1 = get_sub_field('post_address1');
   $phone = get_sub_field('phone');
@@ -65,18 +67,24 @@ endif;
             <div class="col-12 col-lg-6 order-1 order-lg-2">
               <div class="row">
                 <div class="contact-text col-12">
-                  <p class="my-3">
+                  <h5 class="my-3 text-white">
+                    <?= $name ?>
+                  </h5>
+                  <p class="my-3 text-white">
+                    <?= $details ?>
+                  </p>
+                  <p class="my-3 text-white">
                     <i class="text-secondary fa fa-phone mr-1"></i> <?= $phone ?>
                   </p>
-                  <p class="my-3">
+                  <p class="my-3 text-white">
                     <i class="text-secondary fa fa-envelope mr-1"></i> <?= $email ?>
                   </p>
-                  <p class="my-3">
+                  <p class="my-3 text-white">
                     <i class="text-secondary fa fa-map-marker mr-1"></i> <?= $adress ?>
                   </p>
-					<p class="my-3">
-						<i class="text-secondary fa fa-map-marker mr-1"></i> <?= $adress1 ?>
-					</p>
+					        <p class="my-3 text-white">
+					        	<i class="text-secondary fa fa-map-marker mr-1"></i> <?= $adress1 ?>
+					        </p>
                 </div>
 
                 <iframe class="contact-map w-100 my-3"  src="<?= $gmap ?>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
