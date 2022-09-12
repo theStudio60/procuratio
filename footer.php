@@ -7,7 +7,7 @@ $logotype = $logotype_d ;
 $logotypeMobile = $logotype;
 $txt_color="";
 $link_color="";
-$bg_color="";
+$bg_color="dark";
 $bg_color_mobile="";
 $position="";
 ?>
