@@ -74,7 +74,7 @@ if( have_rows('contact_infos') ):
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 my-1 text-center " style="font-size:13px;">
-        <span class="text-white">  © <?= date('Y');?> - <?= get_bloginfo(); ?> - <a class="ml-1 mr-2 text-<?= $link_color ?>"href="<?= get_home_url() ?>/login"><i class="text-<?= $link_color ?> fa fa-lock"></i></a> - </span>
+        <span class="text-white">  © <?= date('Y');?> - <?= get_bloginfo(); ?> - <a class="ml-1 mr-2 text-<?= $link_color ?>"href="<?= get_home_url() ?>/login"><i class="text-<?= $link_color ?> fa fa-lock"></i></a></span>
 
         <?php /*  <span> <a class="ml-1 text-<?php // echo $link_color ?>" href="<?php // echo get_home_url() ?>/mention-legales">Mentions Légales</a> - </span> //*/ ?>
         <?php /*  <span> <a class="ml-1 text-<?php // echo $link_color ?>" href="<?php // echo get_home_url() ?>/rgpd">Politique de Confidentialité</a></span> //*/ ?>
