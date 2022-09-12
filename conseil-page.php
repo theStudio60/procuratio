@@ -8,6 +8,17 @@ get_header();
 if( have_rows('page-conseil_acf_group') ):
   while( have_rows('page-conseil_acf_group') ): the_row();
     get_template_part( 'partials/sections/hero', 'page' ); 
+
+
+    ?>
+        <style>
+      .div-white p {color:white!important;}
+
+      .div-centered p {text-align:center!important;}
+      .div-left p {text-align:left!important;}
+      body.page-wrapper{background-color:#002369!important;}
+    </style>
+    <?php
     if( have_rows('group_conseil') ):
       while( have_rows('group_conseil') ): the_row();
         $title = get_sub_field('title');
@@ -18,6 +29,9 @@ if( have_rows('page-conseil_acf_group') ):
 //echo $group_conseil_image['url'];
 
     ?>
+
+
+
                       
 
         <section id="conseil" class="section bg-white  py-3 py-lg-5">
