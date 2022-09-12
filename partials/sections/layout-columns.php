@@ -156,7 +156,7 @@ div#desc p
             <?php endwhile?>
           <?php endif; ?>
           <?php if( have_rows('pack_mandats') ): ?>
-            <?php while( have_rows('pack_persons') ): the_row();
+            <?php while( have_rows('pack_mandats') ): the_row();
               $personsTitle = get_sub_field('title');
               $personsContent = get_sub_field('content');
               $personsSubtitle = get_sub_field('subtitle');
