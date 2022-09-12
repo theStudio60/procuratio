@@ -647,7 +647,7 @@ if( have_rows('contact_infos') ):
   endwhile;
 endif;
 ?>
-<section id=" " class="section bg-dark h-25 d-flex   py-3 py-lg-5 " >
+<section id="ccontact" class="section bg-dark h-25 d-flex   py-3 py-lg-5 " >
   <div class="container m-auto   " data-aos="fade-up" data-aos-mirror="false" >
     <div class="row my-3  ">
       <div class="col-12 col-lg-9 mx-auto">
@@ -668,7 +668,7 @@ endif;
  
       </div>
       <br>
-      <div class="col-12 col-lg-9 mx-auto d-flex">
+      <div class="col-12 col-lg-9 mx-auto mt-3 d-flex">
             <button class="mx-auto button mt-3"  onclick="location.href='<?php echo site_url(); ?>#contact'">Contact</button>
       </div>
 
