@@ -650,17 +650,17 @@ endif;
 <section id=" " class="section bg-dark h-25 d-flex   py-3 py-lg-5 " >
   <div class="container m-auto   " data-aos="fade-up" data-aos-mirror="false" >
     <div class="row my-3  ">
-      <div class="col-12 col-lg-9 ">
+      <div class="col-12 col-lg-9 mx-auto">
 
         <div class="mx-auto d-flex w-100">
-          <h3 class="text-dark d-flex mb-3 mx-auto text-center" >
+          <h3 class="text-white d-flex mb-3 mx-auto text-center" >
             <div class="dash mr-2 ml-n4 my-auto"></div>
             Contact
           </h3>
         </div>
     
         <?php if ($cta_call) :  ?>
-          <div class="div-centered">
+          <div class="div-centered font-sans div-white text-white">
             <?= $cta_call ?>
           </div>
         <?php endif;?>
