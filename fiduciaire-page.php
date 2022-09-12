@@ -330,7 +330,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                 background-repeat:no-repeat;
                 background-size:cover;
                 background-position:center ;
-                min-height:380px;
+                min-height:280px;
                 "
               >
               </div>
