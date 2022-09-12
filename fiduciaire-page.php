@@ -652,18 +652,22 @@ endif;
     <div class="row my-3  ">
       <div class="col-12 col-lg-9 ">
 
-        <h3 class="text-white d-flex">
-          <div class="dash mr-2 ml-n4 my-auto"></div>
-          Contact
-        </h3>
-      </div>
-      <div class="col-12 col-lg-9 text-center text-white mx-auto ">
-
-   
-
-          <?= $cta_call ?>
+        <div class="mx-auto d-flex w-100">
+          <h3 class="text-dark d-flex mb-3 mx-auto text-center" >
+            <div class="dash mr-2 ml-n4 my-auto"></div>
+            Contact
+          </h3>
+        </div>
+    
+        <?php if ($cta_call) :  ?>
+          <div class="div-centered">
+            <?= $cta_call ?>
+          </div>
+        <?php endif;?>
+ 
  
       </div>
+      <br>
       <div class="col-12 col-lg-9 mx-auto d-flex">
             <button class="mx-auto button mt-3"  onclick="location.href='<?php echo site_url(); ?>#contact'">Contact</button>
       </div>
