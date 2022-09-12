@@ -494,7 +494,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
               </div>
               <div
                 data-aos="flip-up"
-                class="col-12 d-block d-lg-none"
+                class="col-12 d-block d-lg-none "
                 style="background: url('<?php echo $anaImage['url']; ?>');
                 background-repeat:no-repeat;
                 background-size:cover;

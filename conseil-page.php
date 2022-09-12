@@ -13,8 +13,8 @@ if( have_rows('page-conseil_acf_group') ):
         $title = get_sub_field('title');
         $description = get_sub_field('wysiwyg');
         $conclusion = get_sub_field('conclusion');
-        $image = get_sub_field('image');
-        $imageUrl = $image['url'];
+        $group_conseil_image = get_sub_field('image');
+        //$imageUrl = $image['url'];
     ?>
 
         <section id="conseil" class="section bg-white  py-3 py-lg-5">
@@ -23,11 +23,12 @@ if( have_rows('page-conseil_acf_group') ):
               <div
                 data-aos="flip-right"
                 class="col-lg-4 d-none d-lg-flex h-100 my-auto"
-                style="background: url('<?php echo $image['url']; ?>');
+                style="background: url('<?php echo $group_conseil_image['url']; ?>');
                 background-repeat:no-repeat;
                 background-size:cover;
                 background-position:center ;
-                min-height:100vh;
+                min-height:480px;
+                max-height:100%;
                 "
               >
               </div>
@@ -43,7 +44,7 @@ if( have_rows('page-conseil_acf_group') ):
                   <div>
                     <?= $description ?>
                   </div>
-              <?php var_dump($image);?>
+              <?php var_dump($group_conseil_image);?>
 
                 <?php endif;?>
                 <div class="container">
