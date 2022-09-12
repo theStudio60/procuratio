@@ -32,7 +32,7 @@ div#desc p
                 <p class="text-dark d-flex mb-3">
                   <div class="dash mr-2 ml-0 ml-lg-n4 my-auto"></div>
                   <?= $content ?>
-              </p>
+                </p>
               <?php endif;?>
             </div>
           </div>
@@ -79,8 +79,8 @@ div#desc p
               <br>
             <?php endwhile?>
           <?php endif; ?>
-          <?php if( have_rows('pack_enterprises') ): ?>
-            <?php while( have_rows('pack_enterprises') ): the_row();
+          <?php if( have_rows('pack_compta') ): ?>
+            <?php while( have_rows('pack_compta') ): the_row();
               $enterprisesTitle = get_sub_field('title');
               $enterprisesContent = get_sub_field('content');
               $enterprisesSubtitle = get_sub_field('subtitle');
@@ -120,7 +120,48 @@ div#desc p
               <br>
             <?php endwhile?>
           <?php endif; ?>
-          <?php if( have_rows('pack_persons') ): ?>
+          <?php if( have_rows('pack_ana') ): ?>
+            <?php while( have_rows('pack_ana') ): the_row();
+              $enterprisesTitle = get_sub_field('title');
+              $enterprisesContent = get_sub_field('content');
+              $enterprisesSubtitle = get_sub_field('subtitle');
+              //$thisId = get_sub_field('pack_title');
+            ?>
+              <div class="col-12 col-lg-4 p-0 p-lg-2 my-5 my-lg-2 d-flex border-left border-right" id=" " >
+                <div class="w-100 p-1 ">
+                  <?php if ($enterprisesTitle) :  ?>
+                    <h4 class="text-dark mb-3 mx-auto text-center">
+
+                      <?= $enterprisesTitle ?>
+                    </h4>
+                  <?php endif;?>
+                  <?php if ($enterprisesSubtitle) :  ?>
+                    <h5 class="text-dark my-3 mx-auto text-center">
+
+                      <?= $enterprisesSubtitle ?>
+                    </h5>
+                    <br>
+                  <?php endif;?>
+                  <?php if( have_rows('repeater_services') ): ?>
+                    <?php while( have_rows('repeater_services') ): the_row(); ?>
+                      <?php if( have_rows('service') ): ?>
+                        <?php while( have_rows('service') ): the_row();
+                          $name = get_sub_field('name');
+
+                        ?>
+                          <h6 class="text-dark text-uppercase text-center mx-auto my-3">
+                            <?= $name ?>
+                          </h6>
+                        <?php endwhile; ?>
+                      <?php endif; ?>
+                    <?php endwhile; ?>
+                  <?php endif; ?>
+                </div>
+              </div>
+              <br>
+            <?php endwhile?>
+          <?php endif; ?>
+          <?php if( have_rows('pack_mandats') ): ?>
             <?php while( have_rows('pack_persons') ): the_row();
               $personsTitle = get_sub_field('title');
               $personsContent = get_sub_field('content');
