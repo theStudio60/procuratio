@@ -197,15 +197,13 @@ if( have_rows('page-conseil_acf_group') ):
             <div class="row my-3  ">
               <div class="col-12 col-lg-9 mx-auto mx-lg-0 ">
                 <?php if ($title) :  ?>
-                  <div class="d-flex w-100 text-dark">
+                  <h3 class="text-dark d-flex mb-3" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
-                    <h3 class="text-dark d-flex mb-3" >
-                        <?= $title ?>
-                    </h3>
-                  </div>
+                    <?= $title ?>
+                  </h3>
                 <?php endif;?>
                 <?php if ($content) :  ?>
-                  <div class="text-dark d-block px-2"  >
+                  <div class="div-left text-dark d-block px-2"  >
                       <?= $content?>
                   </div>
                   <?php /*

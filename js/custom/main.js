@@ -54,7 +54,7 @@ $('.hero-slider').slick({
     //*
     infinite: true,
     autoplay: true,
-    speed: 10000,
+    speed: 4000,
     autoplaySpeed: 0,
     cssEase: 'linear',
     arrows: false,
