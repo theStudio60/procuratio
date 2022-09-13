@@ -14,7 +14,9 @@
             //        flex-direction: column;
             //        height: 100px;
             li {
-                @extend .m-0;
+                @extend .m-0,
+                .col-12,
+                .col-lg-4;
             }
             a.nav-link,
             a.nav-link:visited {

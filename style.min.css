@@ -764,8 +764,8 @@ p{color:#343a40;font-family:"Raleway",Times,"Times New Roman",Georgia,serif !imp
 .font-serif{font-family:"Raleway",Times,"Times New Roman",Georgia,serif !important}
 .font-sans{font-family:"Josefin Sans","Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important}
 body{overflow-x:hidden !important;overflow-y:scroll}
-a{border-bottom:4px solid #29ffff rgba(255,255,255,0)}
-a span{border-bottom:4px solid #29ffff rgba(255,255,255,0)}
+a{border-bottom:4px solid rgba(255,255,255,0)}
+a span{border-bottom:4px solid rgba(255,255,255,0)}
 .div-white p{color:white !important}
 .div-centered p{text-align:center !important}
 .div-left p{text-align:left !important}
