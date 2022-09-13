@@ -168,6 +168,7 @@ if( have_rows('page-conseil_acf_group') ):
         $subtitle = get_sub_field('subtitle');
         $content = get_sub_field('content');
         $image = get_sub_field('image');
+        //$piechart = THEME_URI . "/images/piechart.png";
       ?>
         <section id="control" class="section d-flex   py-3 py-lg-5 bg-light"  
         style="border-top: solid 1px #002369;border-bottom: solid 1px #002369; width: 100%;"
@@ -325,7 +326,7 @@ if( have_rows('page-conseil_acf_group') ):
                   <?php endif;?>
               </div>
               <div class="col-12 col-lg-3 d-flex">
-                <img height="128" width="128" class="mx-auto" src="<?= $image['url']?>" alt="">
+                <img height="128" width="128" class="m-auto" src="<?= $image['url']?>" alt="">
               </div>
             </div>
           </div>
