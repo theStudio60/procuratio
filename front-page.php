@@ -17,6 +17,18 @@ get_header();
 	}
 //*/
 </style>
+<style>
+      .div-white p {color:white!important;}
+
+      .div-centered p {text-align:center!important;}
+      .div-left p {text-align:left!important;}
+ 
+div p a {border-bottom: 4px solid #29FFFF!important;}
+div p a span{border-bottom: 4px solid #29FFFF!important;}
+div a{border-bottom: 4px solid #29FFFF!important;}
+div a span{border-bottom: 4px solid #29FFFF!important;}
+      body.page-wrapper{background-color:#002369!important;}
+    </style>
 <?php
 
     get_template_part( 'partials/sections/hero','home' );
