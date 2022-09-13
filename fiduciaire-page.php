@@ -302,10 +302,8 @@ if( have_rows('page-fiduciaire_acf_group') ):
                   </div>
                 </div>
                 <?php if ($conclusion) :  ?>
-                  <div class="w-100">
-                    <p>
+                  <div class="div-conclusion div-left mt-3">
                       <?= $conclusion ?>
-                    </p>
                   </div>
                 <?php endif;?>
               </div>
@@ -405,13 +403,8 @@ if( have_rows('page-fiduciaire_acf_group') ):
                   </div>
                 </div>
                 <?php if ($conclusion) :  ?>
-                  <div class="div-centered div-conclusion mt-3">
-                   
-                  
+                  <div class="div-conclusion div-centered mt-3">
                       <?= $conclusion ?>
- 
-      
-                    
                   </div>
                 <?php endif;?>
               </div>
@@ -486,10 +479,8 @@ if( have_rows('page-fiduciaire_acf_group') ):
                   </div>
                 </div>
                 <?php if ($conclusion) :  ?>
-                  <div class="w-100">
-                    <p>
+                  <div class="div-conclusion div-left mt-3">
                       <?= $conclusion ?>
-                    </p>
                   </div>
                 <?php endif;?>
               </div>
