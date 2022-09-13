@@ -31,7 +31,7 @@ if( have_rows('group_values') ):
                       $image = get_sub_field('picto');
                       $content = get_sub_field('wysiwyg');
                       ?>
-                      <div class="col-12 col-lg-4 mx-0 mx-lg-auto p-3" data-aos-mirror="false" data-aos="flip-left">
+                      <div class="col-12 col-lg-4 mx-0 mx-lg-auto p-3" data-aos-mirror="false" data-aos="flip-left" >
                         <div class="d-flex mb-3" >
                           <img class="my-auto ml-n3 mr-2 img-fluid"  width="64px" src=" <?php echo $image['url']; ?> ">
 
