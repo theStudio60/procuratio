@@ -13,7 +13,7 @@ div#desc p
  id="partners"
 >
 
-  <div class="container  h-100 px-0   ">
+  <div class="container  h-100 px-0   " data-aos="slide-up" data-aos-duration="800" >
     <?php if( have_rows('option-group_fiduciaire','option') ): ?>
       <?php while( have_rows('option-group_fiduciaire','option') ): the_row();
         $title = get_sub_field('title');
