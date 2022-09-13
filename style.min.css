@@ -763,7 +763,15 @@ h1,h2,h3,h4,h5,h6{font-family:"Josefin Sans","Inter",system-ui,-apple-system,"Se
 p{color:#343a40;font-family:"Raleway",Times,"Times New Roman",Georgia,serif !important;font-size:1.15rem}
 .font-serif{font-family:"Raleway",Times,"Times New Roman",Georgia,serif !important}
 .font-sans{font-family:"Josefin Sans","Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important}
-i.conclusion,i.conclusion p{font-family:"Josefin Sans","Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;max-height:2rem;margin-top:24px;font-weight:700}
+.div-white p{color:white !important}
+.div-centered p{text-align:center !important}
+.div-left p{text-align:left !important}
+.div-conclusion p{text-transform:italic !important;font-family:"Josefin Sans","Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;margin-top:24px;font-weight:700;font-size:large}
+.div-centered p a{border-bottom:4px solid #29ffff !important;text-decoration:none !important}
+.div-centered p a span{border-bottom:4px solid #29ffff !important}
+.div-left p a{border-bottom:4px solid #29ffff !important;text-decoration:none !important}
+.div-left p a span{border-bottom:4px solid #29ffff !important}
+body.page-wrapper{background-color:#002369 !important}
 body{overflow-x:hidden !important;overflow-y:scroll}
 a{border-bottom:4px solid #29ffff !important}
 a span{border-bottom:4px solid #29ffff !important}

@@ -247,6 +247,27 @@ if( have_rows('page-fiduciaire_acf_group') ):
         </div>
       </div>
     </div>
+    <style>
+  /*
+	body.page-wrapper{
+		background-color:#002369!important;
+	}
+
+	#slick-slide {
+		margin-right: 50px;
+	}
+//*/
+.div-white p {color:white!important;}
+
+.div-centered p {text-align:center!important;}
+.div-left p {text-align:left!important;}
+
+.div-centered p a {border-bottom: 4px solid #29FFFF!important;text-decoration:none!important}
+.div-centered p a span{border-bottom: 4px solid #29FFFF!important;} 
+.div-left p a {border-bottom: 4px solid #29FFFF!important;text-decoration:none!important}
+.div-left p a span{border-bottom: 4px solid #29FFFF!important;} 
+      body.page-wrapper{background-color:#002369!important;}
+    </style>
     <?php
 
     if( have_rows('group_startups') ):
