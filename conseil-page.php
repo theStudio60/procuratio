@@ -58,7 +58,7 @@ if( have_rows('page-conseil_acf_group') ):
                   </h3>
                 <?php endif;?>
                 <?php if ($description) :  ?>
-                  <div>
+                  <div class="div-left ml-lg-2">
                     <?= $description ?>
                   </div>
 
@@ -90,10 +90,8 @@ if( have_rows('page-conseil_acf_group') ):
                   </div>
                 </div>
                 <?php if ($conclusion) :  ?>
-                  <div class="w-100">
-                    <p>
+                  <div class="div-conclusion div-left mt-3">
                       <?= $conclusion ?>
-                    </p>
                   </div>
                 <?php endif;?>
               </div>
