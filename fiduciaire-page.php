@@ -269,10 +269,10 @@ if( have_rows('page-fiduciaire_acf_group') ):
 .div-conclusion p {
     font-style: italic!important;
     font-family: "Josefin Sans"!important;
-    //max-height: 2rem;
+ 
     margin-top: 24px;
     font-weight: 700;
-    font-size: large;
+    font-size: 28px;
 }
       body.page-wrapper{background-color:#002369!important;}
     </style>
