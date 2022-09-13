@@ -52,7 +52,7 @@
 
     <div class="container-fluid   d-flex  my-auto">
         <a class="my-auto " href="<?= get_home_url() ?>">
-            <img width="auto"  class="" id="headerBrand" style="height:72px;margin-left:16px;transition:500ms" src="<?= $logotype_w ?>" alt="<?= get_bloginfo() ?>">
+            <img width="auto"  class="" id="headerBrand" style="height:72px;margin-left:16px;transition:200ms" src="<?= $logotype_w ?>" alt="<?= get_bloginfo() ?>">
         </a>
         <?php
           wp_nav_menu( array(
