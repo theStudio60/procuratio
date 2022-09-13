@@ -61,18 +61,13 @@ div#desc p
 
                         ?>
                           <div class="d-flex">
-
-
                             <span class=" my-auto ml-0 mr-2 d-flex">
                               <i class="fa fa-md far fa-chevron-right ml-auto mr-0 my-auto text-secondary"> </i>
                             </span>
                             <h6 class="text-dark text-left ml-1 my-2">
                               <?= $name ?>
                             </h6>
-                          </div>
-                 
-                
-                        </li>
+                          </div> 
                         <?php endwhile; ?>
                       <?php endif; ?>
                     <?php endwhile; ?>
@@ -105,9 +100,14 @@ div#desc p
                           $name = get_sub_field('name');
 
                         ?>
-                          <h6 class="text-dark text-uppercase text-center mx-auto my-3">
-                            <?= $name ?>
-                          </h6>
+                          <div class="d-flex">
+                            <span class=" my-auto ml-0 mr-2 d-flex">
+                              <i class="fa fa-md far fa-chevron-right ml-auto mr-0 my-auto text-secondary"> </i>
+                            </span>
+                            <h6 class="text-dark text-left ml-1 my-2">
+                              <?= $name ?>
+                            </h6>
+                          </div> 
                         <?php endwhile; ?>
                       <?php endif; ?>
                     <?php endwhile; ?>
@@ -139,9 +139,14 @@ div#desc p
                           $name = get_sub_field('name');
 
                         ?>
-                          <h6 class="text-dark text-uppercase text-center mx-auto my-3">
-                            <?= $name ?>
-                          </h6>
+                          <div class="d-flex">
+                            <span class=" my-auto ml-0 mr-2 d-flex">
+                              <i class="fa fa-md far fa-chevron-right ml-auto mr-0 my-auto text-secondary"> </i>
+                            </span>
+                            <h6 class="text-dark text-left ml-1 my-2">
+                              <?= $name ?>
+                            </h6>
+                          </div> 
                         <?php endwhile; ?>
                       <?php endif; ?>
                     <?php endwhile; ?>
@@ -173,9 +178,14 @@ div#desc p
                           $name = get_sub_field('name');
 
                         ?>
-                          <h6 class="text-dark text-uppercase text-center mx-auto my-3">
-                            <?= $name ?>
-                          </h6>
+                          <div class="d-flex">
+                            <span class=" my-auto ml-0 mr-2 d-flex">
+                              <i class="fa fa-md far fa-chevron-right ml-auto mr-0 my-auto text-secondary"> </i>
+                            </span>
+                            <h6 class="text-dark text-left ml-1 my-2">
+                              <?= $name ?>
+                            </h6>
+                          </div> 
                         <?php endwhile; ?>
                       <?php endif; ?>
                     <?php endwhile; ?>
