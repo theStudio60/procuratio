@@ -414,9 +414,12 @@ if( have_rows('page-fiduciaire_acf_group') ):
                   </div>
                 </div>
                 <?php if ($conclusion) :  ?>
-                  <div class="div-centered">
+                  <div class="div-centered mt-3">
                     <i class="conclusion">
+                      <h5>
                       <?= $conclusion ?>
+
+                      </h5>
                     </i>
                     
                   </div>
