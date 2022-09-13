@@ -57,7 +57,7 @@ if ( has_post_thumbnail() ) {
         <div class="col-12 col-lg-8 h-100 d-flex p-2"  >
           <?php //<div class="my-auto " style="  border-left:16px solid #00AE9B ;"> ?>
           <div class="d-flex w-75 mx-auto hero-slider  " style=" ">
-            <div class="p-0 my-auto"  >
+            <div class="p-0 my-auto "  >
 
                 <h1 class="hero__title mb-2 mt-5 mt-lg-auto">
                   <?= $title1  ?>
@@ -68,7 +68,7 @@ if ( has_post_thumbnail() ) {
 
 
                 <style > .hero-content p{color:white!important;}</style>
-                <div class="hero__content my-2">
+                <div class="div-left hero__content my-2">
                   <?= $content1 ?>
                 </div>
 
@@ -110,7 +110,7 @@ if ( has_post_thumbnail() ) {
                 <?= $subtitle2  ?>
               </h3>
               <style > .hero-content p{color:white!important;}</style>
-              <div class="hero__content my-2">
+              <div class="div-left hero__content my-2">
                 <?= $content2 ?>
               </div>
               <button class="button"  onclick="location.href='<?php echo site_url(); ?>/fiduciaire'">En savoir plus</button>
@@ -123,7 +123,7 @@ if ( has_post_thumbnail() ) {
                 <?= $subtitle3  ?>
               </h3>
               <style > .hero-content p{color:white!important;}</style>
-              <div class="hero__content my-2">
+              <div class="div-left hero__content my-2">
                 <?= $content3 ?>
               </div>
               <button class="button"  onclick="location.href='<?php echo site_url(); ?>/conseil'">En savoir plus</button>

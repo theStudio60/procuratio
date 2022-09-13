@@ -16,16 +16,14 @@ get_header();
 		margin-right: 50px;
 	}
 //*/
-</style>
-<style>
-      .div-white p {color:white!important;}
+.div-white p {color:white!important;}
 
-      .div-centered p {text-align:center!important;}
-      .div-left p {text-align:left!important;}
- 
-.div-centered p a {border-bottom: 4px solid #29FFFF!important;}
+.div-centered p {text-align:center!important;}
+.div-left p {text-align:left!important;}
+
+.div-centered p a {border-bottom: 4px solid #29FFFF!important;text-decoration:none!important}
 .div-centered p a span{border-bottom: 4px solid #29FFFF!important;} 
-.div-left p a {border-bottom: 4px solid #29FFFF!important;}
+.div-left p a {border-bottom: 4px solid #29FFFF!important;text-decoration:none!important}
 .div-left p a span{border-bottom: 4px solid #29FFFF!important;} 
       body.page-wrapper{background-color:#002369!important;}
     </style>

@@ -43,7 +43,9 @@ if( have_rows('group_values') ):
                         </div>
 
                           <?php if ($content) :  ?>
+                            <div class="div-centered">
                               <?= $content ?>
+                            </div>
                           <?php endif;?>
                       </div>
                     <?php endwhile; ?>
