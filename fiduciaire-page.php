@@ -542,7 +542,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
         <section id="mandats" class="section bg-white  py-3 py-lg-5">
           <div class="container m-auto services" >
             <div class="row m-auto">
-              <div class="col-12 col-lg-7 my-auto">
+              <div class="col-12 col-lg-8 my-auto">
                 <?php if ($title) :  ?>
                   <h3 class="text-dark d-flex mb-3" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
@@ -555,7 +555,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                   </div>
                 <?php endif;?>
               </div>
-              <div class="col-lg-5   col-12 d-lg-flex h-100 my-auto">
+              <div class="col-lg-4 col-12 d-lg-flex h-100 my-auto">
                 <ul class="align-items-start flex-column d-flex">
                 <?php if( have_rows('repeater_services') ):
                   while( have_rows('repeater_services') ): the_row(); 
