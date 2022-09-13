@@ -13,7 +13,7 @@
             .p-0;
             //        flex-direction: column;
             //        height: 100px;
-            li {
+            li.nav-item {
                 @extend .m-0,
                 .col-12,
                 .col-lg-4;
