@@ -56,10 +56,10 @@ endif;
       </div>
 
 
-         <div class="container  w-100 py-3 py-lg-5">
+        <div class="container  w-100 py-3 py-lg-5">
            <div class="row mx-0 mx-lg-auto ">
 
-             <div class="col-12 col-lg-6 order-2 order-lg-1 py-0 pr-0 pr-lg-5 pl-0">
+             <div class="col-12 col-lg-6 order-2 order-lg-1 py-0 pr-0 pr-lg-5 pl-0 my-lg-auto">
                 <div class="my-2 mx-0 p-0  w-100 bg-dark  d-flex d-lg-none  " style="height:4px">
                 </div>
               <?= do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]')?>
@@ -95,4 +95,4 @@ endif;
 
     </div>
   </div>
-
+</section>
