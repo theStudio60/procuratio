@@ -16,7 +16,7 @@
           <?php if ($title) :  ?>
             <div class="d-flex w-100 ">
 
-              <h3 class="text-white d-flex mb-3" >
+              <h3 class="text-white d-flex my-3" >
                 <div class="dash mr-2 ml-n4 my-auto"></div>
                 <?= $title ?>
               </h3>
@@ -114,7 +114,7 @@
             <div class="text-white d-block px-2 font-serif w-100 lead mb-3 "  >
               <?= $this_excerpt ?>
               <br>
-              <a href="<?php echo site_url(); ?>/conseil#control">Lire la suite</a>
+              <a class="" href="<?php echo site_url(); ?>/conseil#control">Lire la suite</a>
             </div>
             <?php /*
             <button class="button" onclick="location.href='<?php echo site_url(); ?>/conseil#control'">En savoir plus</button>

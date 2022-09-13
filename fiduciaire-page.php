@@ -27,7 +27,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
               <div class="col-12 col-lg-9 p-0 p-lg-2" id=" " >
                 <div class="section-text m-auto">
                   <?php if ($subtitle) :  ?>
-                    <h3 class="text-white d-flex mb-3">
+                    <h3 class="text-white d-flex my-3">
                       <div class="dash mr-2 ml-0 ml-lg-n4 my-auto"></div>
                       <?= $subtitle ?>
                     </h3>
@@ -380,7 +380,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
               <div class="col-12 col-lg-9 mx-auto">
                 <?php if ($title) :  ?>
                   <div class="mx-auto d-flex w-100">
-                    <h3 class="text-dark d-flex mb-3 mx-auto text-center" >
+                    <h3 class="text-dark d-flex my-3 mx-auto text-center" >
                       <div class="dash mr-2 ml-n4 my-auto"></div>
                       <?= $title ?>
                     </h3>
@@ -471,7 +471,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
 
               <div class="col-12 col-lg-8">
                 <?php if ($title) :  ?>
-                  <h3 class="text-dark d-flex mb-3" >
+                  <h3 class="text-dark d-flex my-3" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
                     <?= $title ?>
                   </h3>
@@ -544,7 +544,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
             <div class="row m-auto">
               <div class="col-12 col-lg-8 my-auto">
                 <?php if ($title) :  ?>
-                  <h3 class="text-dark d-flex mb-3" >
+                  <h3 class="text-dark d-flex my-3" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
                     <?= $title ?>
                   </h3>
@@ -675,7 +675,7 @@ endif;
       <div class="col-12 col-lg-9 mx-auto">
 
         <div class="mx-auto d-flex w-100">
-          <h3 class="text-white d-flex mb-3 mx-auto text-center" >
+          <h3 class="text-white d-flex my-3 mx-auto text-center" >
             <div class="dash mr-2 ml-n4 my-auto"></div>
             Contact
           </h3>

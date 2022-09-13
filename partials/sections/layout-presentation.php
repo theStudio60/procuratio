@@ -23,7 +23,7 @@ if( have_rows('group_presentation') ):
         <div class="col-12 col-lg-6 p-4 p-lg-2" id="quisommesnous" data-aos="fade-right" data-aos-duration="800"  >
           <div class="section-text m-auto">
             <?php if ($title) :  ?>
-              <h3 class="text-dark d-flex mb-3" >
+              <h3 class="text-dark d-flex my-3" >
                 <div class="dash mr-2 ml-n4 my-auto"></div>
                 <?= $title ?>
               </h3>  

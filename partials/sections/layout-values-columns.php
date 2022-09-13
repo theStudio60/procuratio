@@ -13,7 +13,7 @@ if( have_rows('group_values') ):
         <div class="row"> 
       	  <div class="col-12 col-lg-9 ">
             <?php if ($title) :  ?>
-              <h3 class="text-dark d-flex">
+              <h3 class="text-dark d-flex my-3">
                 <div class="dash mr-2 ml-n4 my-auto"></div>
                 <?= $title ?>
               </h3>

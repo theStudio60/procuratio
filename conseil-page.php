@@ -74,7 +74,7 @@ if( have_rows('page-conseil_acf_group') ):
              
               <div class="col-12 col-lg-8">
                 <?php if ($title) :  ?>
-                  <h3 class="text-dark d-flex mb-3" >
+                  <h3 class="text-dark d-flex my-3" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
                     <?= $title ?>
                   </h3>
@@ -195,9 +195,9 @@ if( have_rows('page-conseil_acf_group') ):
         >
           <div class="container m-auto   " data-aos="fade-up" data-aos-mirror="false"  >
             <div class="row my-3  ">
-              <div class="col-12 col-lg-9 mx-auto mx-lg-0 ">
+              <div class="col-12 col-lg-9 mx-auto mx-lg-0 my-3 ">
                 <?php if ($title) :  ?>
-                  <h3 class="text-dark d-flex mb-3" >
+                  <h3 class="text-dark d-flex my-3" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
                     <?= $title ?>
                   </h3>
@@ -518,7 +518,7 @@ endif;
       <div class="col-12 col-lg-9 mx-auto">
 
         <div class="mx-auto d-flex w-100">
-          <h3 class="text-white d-flex mb-3 mx-auto text-center" >
+          <h3 class="text-white d-flex my-3 mx-auto text-center" >
             <div class="dash mr-2 ml-n4 my-auto"></div>
             Contact
           </h3>
