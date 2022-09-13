@@ -45,7 +45,7 @@ if( have_rows('contact_infos') ):
       'theme_location'  => 'header-menu',
       'depth'           => 1, // 1 = no dropdowns, 2 = with dropdowns.
       'container'       => 'nav',
-      'container_class' => 'd-none d-lg-flex container mt-5 mb-2',
+      'container_class' => 'd-none d-lg-flex container mt-5 mb-2 px-0',
       'container_id'    => 'footerMenu',
       'menu_class'      => 'footer__menu d-none d-lg-flex w-100 justify-content-around',
       'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',

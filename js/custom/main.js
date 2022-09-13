@@ -52,13 +52,14 @@ function closePopup() {
 
 $('.hero-slider').slick({
     //*
+    centerMode: true,
+    centerPadding: '30px',
+    slidesToShow: 1,
+    useTransform: false,
+    speed: 1300,
     infinite: true,
-    autoplay: true,
-    speed: 4000,
-    autoplaySpeed: 0,
-    cssEase: 'linear',
-    arrows: false,
-    dots: false,
+    arrows: true,
+    dots: true,
 
     responsive: [{
             breakpoint: 480,

@@ -4,6 +4,7 @@
  *
  * @package studio_soixante
  */
+/*
 get_header(); 
 if( have_rows('simplepage_acf_group') ): 
   while( have_rows('simplepage_acf_group') ): the_row();  
@@ -22,3 +23,4 @@ if( have_rows('simplepage_acf_group') ):
   endwhile;
 endif;
 get_footer();
+//*/
