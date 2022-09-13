@@ -111,3 +111,22 @@ p {
 .font-sans {
     font-family: $font-family-sans-serif!important;
 }
+
+i.conclusion {
+    font-family: $font-family-sans-serif!important;
+    max-height: 2rem;
+    margin-top: 24px;
+}
+
+i.conclusion ::before {
+    position: absolute;
+    content: "\f2ba";
+    font: normal normal normal 14px/1 FontAwesome;
+    right: 40%;
+    color: $secondary;
+    bottom: 0;
+    height: 30px;
+    width: 60px;
+    // background: green;
+    z-index: 1;
+}
