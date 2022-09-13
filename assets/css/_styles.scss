@@ -22,3 +22,46 @@ a {
 a span {
     border-bottom: 4px solid $secondary!important;
 }
+
+.div-white p {
+    color: white!important;
+}
+
+.div-centered p {
+    text-align: center!important;
+}
+
+.div-left p {
+    text-align: left!important;
+}
+
+.div-conclusion p {
+    text-transform: italic!important;
+    font-family: $font-family-sans-serif!important;
+    //max-height: 2rem;
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: large;
+}
+
+.div-centered p a {
+    border-bottom: 4px solid #29FFFF!important;
+    text-decoration: none!important
+}
+
+.div-centered p a span {
+    border-bottom: 4px solid #29FFFF!important;
+}
+
+.div-left p a {
+    border-bottom: 4px solid #29FFFF!important;
+    text-decoration: none!important
+}
+
+.div-left p a span {
+    border-bottom: 4px solid #29FFFF!important;
+}
+
+body.page-wrapper {
+    background-color: #002369!important;
+}
