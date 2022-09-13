@@ -2494,7 +2494,7 @@ body.page-wrapper { background-color: #002369 !important; }
 
 .overheader__container__row div { color: #495057; }
 
-.header { position: fixed; top: 0; background: rgba(255, 255, 255, 0); width: 100vw !important; z-index: 9999; -webkit-transition: 300ms; transition: 300ms; }
+.header { position: fixed; top: 0; background: rgba(255, 255, 255, 0); width: 100vw !important; z-index: 9999; -webkit-transition: 400ms; transition: 400ms; }
 
 .header__row { width: 100%; }
 
