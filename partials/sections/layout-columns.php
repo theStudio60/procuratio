@@ -66,7 +66,7 @@ div#desc p
                             <span class=" my-auto ml-0 mr-2 d-flex">
                               <i class="fa fa-md far fa-chevron-right ml-auto mr-0 my-auto text-secondary"> </i>
                             </span>
-                            <h6 class="text-dark text-left ml-2 my-3">
+                            <h6 class="text-dark text-left ml-1 my-2">
                               <?= $name ?>
                             </h6>
                           </div>
