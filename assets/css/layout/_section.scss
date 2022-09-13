@@ -197,22 +197,17 @@ p {
         border: none;
         clip-path: polygon(44% 44%, 100% 28%, 100% 100%, 30% 100%);
     }
-    h3 {
-        // text-align: center;
-    }
     span.lead {
         font-family: $font-title;
     }
-    p {
-        //    @extend .col-12,
-        //    .col-md-9;
-        //    margin: 0 auto;
-    }
 }
 
+
+/*
 .presentation {
     //   background: $white;
 }
+//*/
 
 .line {
     height: 2px;

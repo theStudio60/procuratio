@@ -10,23 +10,9 @@
 * +General stuff
 */
 
-html {}
-
 body {
     overflow-x: hidden!important;
     overflow-y: scroll;
-}
-
-.section {}
-
-
-/*
-* +Google maps
-*/
-
-.map {
-    //    width: 100%;
-    //    height: 400px;
 }
 
 a {
@@ -36,5 +22,3 @@ a {
 a span {
     border-bottom: 4px solid $secondary!important;
 }
-
-i.conclusion {}
