@@ -763,6 +763,9 @@ h1,h2,h3,h4,h5,h6{font-family:"Josefin Sans","Inter",system-ui,-apple-system,"Se
 p{color:#343a40;font-family:"Raleway",Times,"Times New Roman",Georgia,serif !important;font-size:1.15rem}
 .font-serif{font-family:"Raleway",Times,"Times New Roman",Georgia,serif !important}
 .font-sans{font-family:"Josefin Sans","Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important}
+body{overflow-x:hidden !important;overflow-y:scroll}
+a{border-bottom:4px solid #29ffff !important}
+a span{border-bottom:4px solid #29ffff !important}
 .div-white p{color:white !important}
 .div-centered p{text-align:center !important}
 .div-left p{text-align:left !important}
@@ -772,9 +775,6 @@ p{color:#343a40;font-family:"Raleway",Times,"Times New Roman",Georgia,serif !imp
 .div-left p a{border-bottom:4px solid #29ffff !important;text-decoration:none !important}
 .div-left p a span{border-bottom:4px solid #29ffff !important}
 body.page-wrapper{background-color:#002369 !important}
-body{overflow-x:hidden !important;overflow-y:scroll}
-a{border-bottom:4px solid #29ffff !important}
-a span{border-bottom:4px solid #29ffff !important}
 .overheader{position:sticky;height:36px;background-color:#fff}
 .overheader__container{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:left;-ms-flex-align:left;align-items:left;position:relative;height:100%}
 .overheader__container__row{font-size:12px;font-weight:400;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}
