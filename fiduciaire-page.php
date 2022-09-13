@@ -267,7 +267,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
 .div-left p a {border-bottom: 4px solid #29FFFF!important;text-decoration:none!important}
 .div-left p a span{border-bottom: 4px solid #29FFFF!important;} 
 .div-conclusion p {
-    text-transform: italic!important;
+    font-style: italic!important;
     font-family: "Josefin Sans"!important;
     //max-height: 2rem;
     margin-top: 24px;
