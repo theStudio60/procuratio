@@ -769,7 +769,7 @@ a span{border-bottom:4px solid #29ffff !important}
 .div-white p{color:white !important}
 .div-centered p{text-align:center !important}
 .div-left p{text-align:left !important}
-.div-conclusion p{text-transform:italic !important;font-family:"Josefin Sans","Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;margin-top:24px;font-weight:700;font-size:large}
+.div-conclusion p{font-style:italic !important;font-family:"Josefin Sans","Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;margin-top:24px;font-weight:700;font-size:large}
 .div-centered p a{border-bottom:4px solid #29ffff !important;text-decoration:none !important}
 .div-centered p a span{border-bottom:4px solid #29ffff !important}
 .div-left p a{border-bottom:4px solid #29ffff !important;text-decoration:none !important}
