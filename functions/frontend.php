@@ -54,7 +54,8 @@ add_action('wp_enqueue_scripts', function () {
     wp_register_style('fonts', 'https://fonts.googleapis.com/css2??family=Josefin+Sans&family=Raleway:wght@300;400;600;700&display=swap', false, 1);
     wp_enqueue_style('fonts');
 
-    wp_register_style('styles', THEME_URI.'/style.min.css', false, 1);
+    wp_register_style('styles', THEME_URI.'/style.css', false, 1);
+    //wp_register_style('styles', THEME_URI.'/style.min.css', false, 1);
     wp_enqueue_style('styles');
 
     wp_deregister_script('wp-embed');
