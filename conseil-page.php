@@ -326,7 +326,7 @@ if( have_rows('page-conseil_acf_group') ):
                   <?php endif;?>
               </div>
               <div class="col-12 col-lg-3 d-flex">
-                <img height="128" width="128" class="m-auto" src="<?= $image['url']?>" alt="">
+                <img height="256px" width="256px" class="m-auto" src="<?= $image['url']?>" alt="">
               </div>
             </div>
           </div>
