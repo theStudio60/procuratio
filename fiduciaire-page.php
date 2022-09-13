@@ -205,16 +205,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
     
     <style>
 
-.div-white p {color:white!important;}
 
-.div-centered p {text-align:center!important;}
-.div-left p {text-align:left!important;}
-
-.div-centered p a {border-bottom: 4px solid #29FFFF!important;text-decoration:none!important}
-.div-centered p a span{border-bottom: 4px solid #29FFFF!important;} 
-.div-left p a {border-bottom: 4px solid #29FFFF!important;text-decoration:none!important}
-.div-left p a span{border-bottom: 4px solid #29FFFF!important;} 
-      body.page-wrapper{background-color:#002369!important;}
     </style>
     <div class=" mx-0 bg-dark  " >
       <div class="container-fluid w-100">
@@ -414,12 +405,12 @@ if( have_rows('page-fiduciaire_acf_group') ):
                   </div>
                 </div>
                 <?php if ($conclusion) :  ?>
-                  <div class="div-centered mt-3">
-                    <i class="conclusion">
+                  <div class="div-centered div-conclusion mt-3">
+                   
                   
                       <?= $conclusion ?>
  
-                    </i>
+      
                     
                   </div>
                 <?php endif;?>
