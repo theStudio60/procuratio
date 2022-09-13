@@ -15,9 +15,10 @@
         <div class="col-12 col-lg-9 mx-auto mx-lg-0 ">
           <?php if ($title) :  ?>
             <div class="d-flex w-100 ">
-              <div class="dash mr-2 ml-n4 my-auto"></div>
+
               <h3 class="text-white d-flex mb-3" >
-                  <?= $title ?>
+                <div class="dash mr-2 ml-n4 my-auto"></div>
+                <?= $title ?>
               </h3>
             </div>
           <?php endif;?>
