@@ -477,7 +477,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                   </h3>
                 <?php endif;?>
                 <?php if ($description) :  ?>
-                  <div>
+                  <div class="div-left ml-lg-2">
                     <?= $description ?>
                   </div>
                 <?php endif;?>
