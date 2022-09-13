@@ -139,14 +139,14 @@ function languages_list_navbar_mobile(){
           //*
           
           if(!$l['active']) :
-            echo '<li class="nav-link" ><a style=" text-decoration:none; text-transform:uppercase;" class=" " href="'.$l['url'].'">';
+            echo '<li class="nav-link" ><a style=" text-decoration:none; text-transform:uppercase;" class="text-uppercase text-secondary" href="'.$l['url'].'">';
             echo icl_disp_language($l['language_code']);
             //if(!$l['active']) 
             echo '</a></li>';
           endif;
         //*/
         if( $l['active']) :
-        echo '<li class="nav-link" ><a style=" text-decoration:underline; text-transform:uppercase;" class=" " href="'.$l['url'].'">';
+        echo '<li class="nav-link" ><a style=" text-decoration:underline; text-transform:uppercase;" class="text-uppercase text-secondary" href="'.$l['url'].'">';
         echo icl_disp_language($l['language_code']);
         //if(!$l['active']) 
         echo '</a></li>';
