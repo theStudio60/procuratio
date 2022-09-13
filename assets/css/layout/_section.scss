@@ -37,7 +37,8 @@ p {
             font-size: 1.2rem;
         }
     }
-    a {
+    a,
+    a span {
         cursor: pointer;
         text-decoration: none;
         font-family: $font-base;
