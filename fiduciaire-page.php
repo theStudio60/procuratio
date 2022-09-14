@@ -203,7 +203,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
       <?php endwhile?>
     <?php endif; ?> 
 //*/ ?>
-              <?php /*
+<?php /*
     <div class=" mx-0 bg-dark  " >
       <div class="container-fluid w-100">
         <div class="row" style=" ">
@@ -244,7 +244,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
         </div>
       </div>
     </div>
-       //*/ ?>
+//*/ ?>
     <style>
     /*
     body.page-wrapper{
@@ -309,7 +309,18 @@ if( have_rows('page-fiduciaire_acf_group') ):
                             $name = get_sub_field('name'); 
                     ?>
                             <div class="col-12 col-lg-6 col-xl-4">
-                              <div class="card w-100 mx-0 mx-md-auto px-3 d-flex"   >
+                              <div class="d-flex d-lg-none">
+                                <span class=" my-auto ml-0 mr-2 d-flex w-  ">
+                                  <i class="fa fa-md far fa-chevron-right ml-auto mr-0 my-auto text-secondary"> </i>
+                                </span>
+                                <?php if ($name) :  ?>
+                                  <span class="text-dark font-sans my-auto ml-0 w-  ">
+                                    <?= $name ?>
+                                  </span>
+                                <?php endif;?> 
+                              </div>
+
+                              <div class="card w-100 mx-0 mx-md-auto px-3 d-none d-lg-flex"   >
                                 <div class="hide-arc"></div>
                                 <div class="arc"></div>
                                 <?php if ($name) :  ?>
@@ -493,9 +504,11 @@ if( have_rows('page-fiduciaire_acf_group') ):
                                 <span class=" my-auto ml-0 mr-2 d-flex w-  ">
                                   <i class="fa fa-md far fa-chevron-right ml-auto mr-0 my-auto text-secondary"> </i>
                                 </span>
-                                <span class="text-dark font-sans my-auto ml-0 w-  ">
-                                  <?= $name ?>
-                                </span>
+                                <?php if ($name) :  ?>
+                                  <span class="text-dark font-sans my-auto ml-0 w-  ">
+                                    <?= $name ?>
+                                  </span>
+                                <?php endif;?> 
                               </div>
 
                               <div class="card w-100 mx-0 mx-md-auto px-3 d-none d-lg-flex"   >
