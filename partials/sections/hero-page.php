@@ -16,14 +16,14 @@ endif;
     <div class="container p-2 p-lg-5 w-100" >
       <div class="row h-100">
         <div class="col-12 col-lg-8 h-100 d-flex p-0" >
-          <div class="d-flex w-100 mx-auto  " style=" "> 
-            <div class="p-3 my-auto">
+           
+            <div class="div-white div-left p-3 my-auto">
               <h1 class="hero__title"  > 
                 <?php the_title(); ?> 
               </h1>
               <?php if ($content) :  ?>
                   <style > .hero-content p{color:white!important;}</style>
-                  <div class="hero__content my-2"> 
+                  <div class="div-left div-white my-2"> 
                     <?= $content?>
                   </div>
               <?php endif;?>
@@ -44,7 +44,7 @@ endif;
                 </div> 
               <?php endif;?>   
             </div>
-          </div>
+        
         </div>
       </div>
     </div>
