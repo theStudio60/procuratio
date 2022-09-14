@@ -9,7 +9,7 @@ if( have_rows('group_values') ):
     
     style="border-top: solid 1px #002369;border-bottom: solid 1px #002369; width: 100%;"
     >
-	    <div class="container m-auto ">
+	    <div class="container m-auto " data-aos="fade-up" data-aos-duration="400" >
         <div class="row"> 
       	  <div class="col-12 col-lg-9 ">
             <?php if ($title) :  ?>
@@ -31,7 +31,7 @@ if( have_rows('group_values') ):
                       $image = get_sub_field('picto');
                       $content = get_sub_field('wysiwyg');
                       ?>
-                      <div class="col-12 col-lg-4 mx-0 mx-lg-auto p-3" data-aos-mirror="false" data-aos="flip-left" >
+                      <div class="col-12 col-lg-4 mx-0 mx-lg-auto p-3" data-aos-mirror="false" data-aos="flip-left" data-aos-duration="600" >
                         <div class="d-flex mb-3" >
                           <img class="my-auto ml-n3 mr-2 img-fluid"  width="64px" src=" <?php echo $image['url']; ?> ">
 

@@ -12,33 +12,29 @@ if( have_rows('page-conseil_acf_group') ):
 
     ?>
     <style>
-  /*
-	body.page-wrapper{
-		background-color:#002369!important;
-	}
-
-	#slick-slide {
-		margin-right: 50px;
-	}
-//*/
-.div-white p {color:white!important;}
-
-.div-centered p {text-align:center!important;}
-.div-left p {text-align:left!important;}
-
-.div-centered p a {border-bottom: 4px solid #29FFFF!important;text-decoration:none!important}
-.div-centered p a span{border-bottom: 4px solid #29FFFF!important;} 
-.div-left p a {border-bottom: 4px solid #29FFFF!important;text-decoration:none!important}
-.div-left p a span{border-bottom: 4px solid #29FFFF!important;} 
-.div-conclusion p {
-    font-style: italic!important;
-    font-family: "Josefin Sans"!important;
- 
-    margin-top: 24px;
-    font-weight: 700;
-    font-size: 28px;
-}
-      body.page-wrapper{background-color:#002369!important;}
+    /*
+    body.page-wrapper{
+    	background-color:#002369!important;
+    }
+    #slick-slide {
+    	margin-right: 50px;
+    }
+    //*/
+    .div-white p {color:white!important;}
+    .div-centered p {text-align:center!important;}
+    .div-left p {text-align:left!important;}
+    .div-centered p a {border-bottom: 4px solid #29FFFF!important;text-decoration:none!important}
+    .div-centered p a span{border-bottom: 4px solid #29FFFF!important;} 
+    .div-left p a {border-bottom: 4px solid #29FFFF!important;text-decoration:none!important}
+    .div-left p a span{border-bottom: 4px solid #29FFFF!important;} 
+    .div-conclusion p {
+        font-style: italic!important;
+        font-family: "Josefin Sans"!important;
+        margin-top: 24px;
+        font-weight: 700;
+        font-size: 28px;
+    }
+    body.page-wrapper{background-color:#002369!important;}
     </style>
     <?php
     if( have_rows('group_conseil') ):
@@ -57,7 +53,7 @@ if( have_rows('page-conseil_acf_group') ):
                       
 
         <section id="conseil" class="section bg-white  py-3 py-lg-5">
-          <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="800">
+          <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="400">
             <div class="row">
               <div
                 data-aos="flip-right"
@@ -193,7 +189,7 @@ if( have_rows('page-conseil_acf_group') ):
         <section id="control" class="section d-flex   py-3 py-lg-5 bg-light"  
         style="border-top: solid 1px #002369;border-bottom: solid 1px #002369; width: 100%;"
         >
-          <div class="container m-auto   " data-aos="fade-up" data-aos-mirror="false"  >
+          <div class="container m-auto   " data-aos="fade-up" data-aos-duration="400"  >
             <div class="row my-3  ">
               <div class="col-12 col-lg-9 mx-auto mx-lg-0 my-3 ">
                 <?php if ($title) :  ?>

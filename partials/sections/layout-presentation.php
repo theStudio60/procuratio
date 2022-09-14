@@ -20,7 +20,7 @@ if( have_rows('group_presentation') ):
    
     <div class="container  py-3 py-lg-5 ">
       <div class="row my-3">
-        <div class="col-12 col-lg-6 p-4 p-lg-2" id="quisommesnous" data-aos="fade-right" data-aos-duration="800"  >
+        <div class="col-12 col-lg-6 p-4 p-lg-2" id="quisommesnous" data-aos="fade-right" data-aos-duration="400"  >
           <div class="section-text m-auto">
             <?php if ($title) :  ?>
               <h3 class="text-dark d-flex my-3" >
@@ -38,7 +38,7 @@ if( have_rows('group_presentation') ):
           </div>   
         </div> 
 
-        <div class="col-12 col-lg-6 d-flex" data-aos="fade-left" data-aos-duration="800"> 
+        <div class="col-12 col-lg-6 d-flex" data-aos="fade-left" data-aos-duration="400"> 
           <div class="my-3 my-lg-auto mx-auto w-100 d-flex"> 
            <img class="w-75 m-auto"
             src=" <?php echo $image['url']; ?> ">

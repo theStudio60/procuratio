@@ -6,7 +6,7 @@
         //$image = get_sub_field('image');
     ?>
         <section id="conseil" class="section bg-white  py-3 py-lg-5">
-          <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="800">
+          <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="400">
             <div class="row">
               <div class="col-12 col-lg-9 mx-auto">
                 <?php if ($title) :  ?>

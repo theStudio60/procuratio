@@ -10,6 +10,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
     get_template_part( 'partials/sections/hero', 'page' );
 
 ?>
+<?php /*
     <?php if( have_rows('pack_startups') ): ?>
       <?php while( have_rows('pack_startups') ): the_row();
         $title = get_sub_field('title');
@@ -22,7 +23,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
           class="  bg-dark text-white"
 
         >
-          <div class="container  py-3 py-lg-5 "  data-aos="fade-up" data-aos-duration="800">
+          <div class="container  py-3 py-lg-5 "  data-aos="fade-up" data-aos-duration="400">
             <div class="row my-3">
               <div class="col-12 col-lg-9 p-0 p-lg-2" id=" " >
                 <div class="section-text m-auto">
@@ -201,16 +202,12 @@ if( have_rows('page-fiduciaire_acf_group') ):
         </section>
       <?php endwhile?>
     <?php endif; ?> 
-
-    
-    <style>
-
-
-    </style>
+//*/ ?>
+              <?php /*
     <div class=" mx-0 bg-dark  " >
       <div class="container-fluid w-100">
         <div class="row" style=" ">
-          <?php /*
+
           <?php if( have_rows('pack_startups') ): ?>
             <?php while( have_rows('pack_startups') ): the_row(); ?>
               <?php
@@ -243,41 +240,37 @@ if( have_rows('page-fiduciaire_acf_group') ):
               </div>
             <?php endwhile; ?>
           <?php endif; ?>
-          //*/ ?>
+       
         </div>
       </div>
     </div>
+       //*/ ?>
     <style>
-  /*
-	body.page-wrapper{
-		background-color:#002369!important;
-	}
-
-	#slick-slide {
-		margin-right: 50px;
-	}
-//*/
-.div-white p {color:white!important;}
-
-.div-centered p {text-align:center!important;}
-.div-left p {text-align:left!important;}
-
-.div-centered p a {border-bottom: 4px solid #29FFFF!important;text-decoration:none!important}
-.div-centered p a span{border-bottom: 4px solid #29FFFF!important;} 
-.div-left p a {border-bottom: 4px solid #29FFFF!important;text-decoration:none!important}
-.div-left p a span{border-bottom: 4px solid #29FFFF!important;} 
-.div-conclusion p {
-    font-style: italic!important;
-    font-family: "Josefin Sans"!important;
- 
-    margin-top: 24px;
-    font-weight: 700;
-    font-size: 28px;
-}
-      body.page-wrapper{background-color:#002369!important;}
+    /*
+    body.page-wrapper{
+    	background-color:#002369!important;
+    }
+    #slick-slide {
+    	margin-right: 50px;
+    }
+    //*/
+    .div-white p {color:white!important;}
+    .div-centered p {text-align:center!important;}
+    .div-left p {text-align:left!important;}
+    .div-centered p a {border-bottom: 4px solid #29FFFF!important;text-decoration:none!important}
+    .div-centered p a span{border-bottom: 4px solid #29FFFF!important;} 
+    .div-left p a {border-bottom: 4px solid #29FFFF!important;text-decoration:none!important}
+    .div-left p a span{border-bottom: 4px solid #29FFFF!important;} 
+    .div-conclusion p {
+        font-style: italic!important;
+        font-family: "Josefin Sans"!important;
+        margin-top: 24px;
+        font-weight: 700;
+        font-size: 28px;
+    }
+    body.page-wrapper{background-color:#002369!important;}
     </style>
     <?php
-
     if( have_rows('group_startups') ):
       while( have_rows('group_startups') ): the_row();
         $title = get_sub_field('title');
@@ -287,7 +280,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
         $startupimageUrl =  $startupimage['url'];
     ?>
         <section id="startups" class="section bg-white  py-3 py-lg-5">
-          <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="800">
+          <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="400">
             <div class="row">
               <div class="col-12 col-lg-8">
                 <?php if ($title) :  ?>
@@ -375,7 +368,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
         //$image = get_sub_field('image');
     ?>
         <section id="compta" class="section bg-light  py-3 py-lg-5">
-          <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="800">
+          <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="400">
             <div class="row">
               <div class="col-12 col-lg-9 mx-auto">
                 <?php if ($title) :  ?>
@@ -454,7 +447,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
         ?>
         <?php // var_dump($group_ana_image) ;?>
         <section id="analyses" class="section bg-white  py-3 py-lg-5">
-          <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="800">
+          <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="400">
             <div class="row">
               <div
                 data-aos="flip-right"
@@ -540,7 +533,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
          // $image = get_sub_field('image');
         ?>
         <section id="mandats" class="section bg-white  py-3 py-lg-5">
-          <div class="container m-auto services" >
+          <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="400" >
             <div class="row m-auto">
               <div class="col-12 col-lg-8 my-auto">
                 <?php if ($title) :  ?>
@@ -585,7 +578,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                 </ul>
               </div>
               <div class="col-12 d-flex">
-                <div class="container mx-auto bg-dark text-white p-lg-5">
+                <div class="container mx-auto bg-dark text-white p-lg-5"  data-aos="fade-up" data-aos-duration="400">
                   <div class="row">
                     <div class="col-12 d-flex">
                       <h2 class="text-white text-center font-serif mx-auto ">
