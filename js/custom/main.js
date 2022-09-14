@@ -61,13 +61,12 @@ $('.hero-slider').slick({
     arrows: true,
     dots: true,
     slidesToShow: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3500,
     cssEase: 'linear',
 
     focusOnSelect: false,
-    arrows: true,
-    //dots:true,
+
     prevArrow: $('.prev'),
     nextArrow: $('.next'),
 
