@@ -132,12 +132,15 @@ if ( has_post_thumbnail() ) {
               </div>
             </div>
             <style>
-            a.prev,a.next{cursor:pointer; i{color:white}}
+            a.prev,a.next{cursor:pointer; }
+
             a.prev:hover,a.next:hover{cursor:pointer; i{color:#29FFFF!important;}}
-            </style>
+            a.prev i, a.next i{color:white}
+            a.prev:hover i, a.next:hover i{color:white}
+          </style>
             <div class="w-100 d-flex  p-3">
-              <a class="prev"><i class=" fa fa-lg fa-arrow-left my-auto mr-3"></i> </a>
-              <a class="next"><i class=" fa fa-lg fa-arrow-right my-auto ml-3"></i></a>
+              <a class="prev"><i class=" fa fa-lg fa-arrow-left text-white my-auto mr-3"></i> </a>
+              <a class="next"><i class=" fa fa-lg fa-arrow-right text-white my-auto ml-3"></i></a>
             </div>
           </div>
 
