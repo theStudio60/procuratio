@@ -663,7 +663,7 @@ if( have_rows('contact_infos') ):
 endif;
 ?>
 <section id="ccontact" class="section bg-dark h-25 d-flex   py-3 py-lg-5 " >
-  <div class="container m-auto   " data-aos="fade-up" data-aos-mirror="false" >
+  <div class="container m-auto   " data-aos="fade-up" data-aos-duration="400"  >
     <div class="row my-3  ">
       <div class="col-12 col-lg-9 mx-auto">
 
