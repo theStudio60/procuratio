@@ -279,7 +279,9 @@ if( have_rows('page-fiduciaire_acf_group') ):
         $startupimage = get_sub_field('image');
         $startupimageUrl =  $startupimage['url'];
     ?>
-        <section id="startups" class="section bg-white  py-3 py-lg-5">
+        <section id="startups" class="section bg-white  py-3 py-lg-5"
+        style="border-bottom:1px solid #002369;border-top:1px solid #002369;"
+        >
           <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="400">
             <div class="row">
               <div class="col-12 col-lg-8">
@@ -367,7 +369,9 @@ if( have_rows('page-fiduciaire_acf_group') ):
         $conclusion = get_sub_field('conclusion');
         //$image = get_sub_field('image');
     ?>
-        <section id="compta" class="section bg-light  py-3 py-lg-5">
+        <section id="compta" class="section bg-light  py-3 py-lg-5" 
+        style="border-bottom:1px solid #002369;border-top:1px solid #002369;"
+        >
           <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="400">
             <div class="row">
               <div class="col-12 col-lg-9 mx-auto">
@@ -446,7 +450,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
         $group_ana_image = get_sub_field('image');
         ?>
         <?php // var_dump($group_ana_image) ;?>
-        <section id="analyses" class="section bg-white  py-3 py-lg-5">
+        <section id="analyses" class="section bg-white  py-3 py-lg-5"         style="border-bottom:1px solid #002369;border-top:1px solid #002369;">
           <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="400">
             <div class="row">
               <div
@@ -532,7 +536,9 @@ if( have_rows('page-fiduciaire_acf_group') ):
         $conclusion = get_sub_field('conclusion');
          // $image = get_sub_field('image');
         ?>
-        <section id="mandats" class="section bg-white  py-3 py-lg-5">
+        <section id="mandats" class="section bg-white  py-3 py-lg-5" 
+
+        >
           <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="400" >
             <div class="row m-auto">
               <div class="col-12 col-lg-8 my-auto">
