@@ -59,7 +59,7 @@ if ( has_post_thumbnail() ) {
           <div class="d-flex w-75 mx-auto hero-slider  " style=" ">
             <div class="bg-dark p-3 my-auto "  >
 
-              <h1 class="hero__title mb-2 mt-5 mt-lg-auto">
+              <h1 class="hero__title mb-2 mt-3 mt-lg-auto">
                 <?= $title1  ?>
               </h1>
               <h3 class="hero__subtitle mb-2"  >
@@ -103,7 +103,7 @@ if ( has_post_thumbnail() ) {
               <?php endif;?>
             </div>
             <div class="bg-dark p-3  my-auto">
-              <h1 class="hero__title mb-2 mt-5 mt-lg-auto">
+              <h1 class="hero__title mb-2 mt-3 mt-lg-auto">
                 <?= $title2  ?>
               </h1>
               <h3 class="hero__subtitle mb-2"  >
@@ -116,7 +116,7 @@ if ( has_post_thumbnail() ) {
               <button class="button"  onclick="location.href='<?php echo site_url(); ?>/fiduciaire'">En savoir plus</button>
             </div>
             <div class="bg-dark p-3  my-auto"  >
-              <h1 class="hero__title mb-2 mt-5 mt-lg-auto">
+              <h1 class="hero__title mb-2 mt-3 mt-lg-auto">
                 <?= $title3  ?>
               </h1>
               <h3 class="hero__subtitle mb-2"  >
