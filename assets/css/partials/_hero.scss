@@ -16,6 +16,7 @@
     //*
     @media (max-width: $screen-lg-min) {
         height: auto!important;
+        min-height: 50vh;
     }
     /*
     &--home {
