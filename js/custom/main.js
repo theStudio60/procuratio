@@ -62,14 +62,17 @@ $('.hero-slider').slick({
     dots: true,
 
     responsive: [{
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                slidesToShow: 1,
-                speed: 5000,
-            }
-        }]
-        //*/
+        breakpoint: 480,
+        settings: {
+            arrows: false,
+            slidesToShow: 1,
+            speed: 5000,
+        }
+    }],
+    //*/
+
+    nextArrow: '<button class="button"><i class="fa fa-lg text-white arrow-right"></button>',
+    prevArrow: '< button class="button"> <i class= "fa fa-lg text-white arrow-left"></button>'
 
 });
 
