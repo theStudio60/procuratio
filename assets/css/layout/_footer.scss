@@ -7,6 +7,11 @@
         color: $light;
         margin-bottom: 0;
     }
+    a,
+    a span {
+        color: $secondary!important;
+        text-decoration: none!important
+    }
     nav {
         ul {
             @extend .m-0,
