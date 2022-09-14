@@ -57,8 +57,8 @@ if ( has_post_thumbnail() ) {
         <div class="col-12 col-lg-8 h-100 d-flex p-2"  >
           <?php //<div class="my-auto " style="  border-left:16px solid #00AE9B ;"> ?>
 
-          <div class="d-flex w-100 mx-auto" style=" ">
-            <div class="hero-slider w-100">
+          <div class="d-flex w-75 m-auto" style=" ">
+            <div class="hero-slider w-100 d-flex ">
               <div class="bg-dark p-3 my-auto "  >
 
               <h1 class="hero__title mb-2 mt-3 mt-lg-auto">
