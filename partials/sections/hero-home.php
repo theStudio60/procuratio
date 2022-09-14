@@ -173,15 +173,15 @@ if ( has_post_thumbnail() ) {
 $('.hero-slider').slick({
     //*
     centerMode: true,
-    centerPadding: '30px',
+    //centerPadding: '30px',
     slidesToShow: 1,
     useTransform: false,
-    speed: 3500,
+    speed: 500,
     infinite: true,
     arrows: true,
     dots: true,
     slidesToShow: 1,
-    autoplay: false,
+    autoplay: true,
     //autoplaySpeed: 3500,
     cssEase: 'linear',
 
