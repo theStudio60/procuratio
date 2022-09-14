@@ -286,7 +286,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
             <div class="row">
               <div class="col-12 col-lg-8 px-0">
                 <?php if ($title) :  ?>
-                  <h3 class="text-dark d-flex mb-3" >
+                  <h3 class="text-dark d-flex my-3 mx-auto text-left" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
                     <?= $title ?>
                   </h3>
@@ -479,7 +479,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
 
               <div class="col-12 col-lg-8 px-0">
                 <?php if ($title) :  ?>
-                  <h3 class="text-dark d-flex my-3" >
+                  <h3 class="text-white d-flex my-3 mx-auto text-left" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
                     <?= $title ?>
                   </h3>
@@ -566,7 +566,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
             <div class="row m-auto">
               <div class="col-12 col-lg-8 px-0 my-auto">
                 <?php if ($title) :  ?>
-                  <h3 class="text-dark d-flex my-3" >
+                  <h3 class="text-white d-flex my-3 mx-auto text-left" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
                     <?= $title ?>
                   </h3>
