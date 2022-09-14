@@ -779,7 +779,7 @@ body.page-wrapper{background-color:#002369 !important}
 .overheader__container{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:left;-ms-flex-align:left;align-items:left;position:relative;height:100%}
 .overheader__container__row{font-size:12px;font-weight:400;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}
 .overheader__container__row div{color:#495057}
-.header{position:fixed;top:0;background:rgba(255,255,255,0);width:100vw !important;z-index:9999;-webkit-transition:300ms;transition:300ms}
+.header{position:fixed;top:0;background:rgba(255,255,255,0);width:100vw !important;z-index:9999;-webkit-transition:400ms;transition:400ms}
 .header__row{width:100%}
 .header__menu{width:100%}
 .header .overheader{height:36px;color:#fff}
