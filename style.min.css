@@ -1161,14 +1161,14 @@ span.gform_description{font-family:var(--bs-font-sans-serif);font-size:1.75rem}
 .slick-prev:before [dir='rtl'] .slick-next,.slick-next:before [dir='rtl'] .slick-next{right:auto;left:-25px}
 .slick-prev:before .slick-next:before,.slick-next:before .slick-next:before{content:'→'}
 .slick-prev:before [dir='rtl'] .slick-next:before,.slick-next:before [dir='rtl'] .slick-next:before{content:'←'}
-.slick-prev:before .slick-slider,.slick-next:before .slick-slider{margin-bottom:30px}
-.slick-prev:before .slick-dots,.slick-next:before .slick-dots{position:absolute;bottom:8px;display:block;width:100%;padding:0;z-index:50 !important;list-style:none;text-align:center}
-.slick-prev:before .slick-dots li,.slick-next:before .slick-dots li{position:relative;display:inline-block;width:20px;height:20px;margin:0 5px;padding:0;cursor:pointer}
-.slick-prev:before .slick-dots li button,.slick-next:before .slick-dots li button{font-size:0;line-height:0;display:block;width:20px;height:20px;padding:5px;cursor:pointer;color:transparent;border:0;outline:0;background:transparent}
-.slick-prev:before .slick-dots li button:hover,.slick-prev:before .slick-dots li button:focus,.slick-next:before .slick-dots li button:hover,.slick-next:before .slick-dots li button:focus{outline:0}
-.slick-prev:before .slick-dots li button:hover:before,.slick-prev:before .slick-dots li button:focus:before,.slick-next:before .slick-dots li button:hover:before,.slick-next:before .slick-dots li button:focus:before{opacity:1}
-.slick-prev:before .slick-dots li button:before,.slick-next:before .slick-dots li button:before{font-family:'';font-size:16px;line-height:20px;position:absolute;top:0;left:0;width:20px;height:20px;content:'◉';text-align:center;opacity:.35;color:white;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-.slick-prev:before .slick-dots li.slick-active button:before,.slick-next:before .slick-dots li.slick-active button:before{opacity:.75;color:white}
+.slick-slider{margin-bottom:30px}
+.slick-dots{position:absolute;bottom:8px;display:block;width:100%;padding:0;z-index:50 !important;list-style:none;text-align:center}
+.slick-dots li{position:relative;display:inline-block;width:20px;height:20px;margin:0 5px;padding:0;cursor:pointer}
+.slick-dots li button{font-size:0;line-height:0;display:block;width:20px;height:20px;padding:5px;cursor:pointer;color:transparent;border:0;outline:0;background:transparent}
+.slick-dots li button:hover,.slick-dots li button:focus{outline:0}
+.slick-dots li button:hover:before,.slick-dots li button:focus:before{opacity:1}
+.slick-dots li button:before{font-family:'';font-size:16px;line-height:20px;position:absolute;top:0;left:0;width:20px;height:20px;content:'◉';text-align:center;opacity:.35;color:white;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.slick-dots li.slick-active button:before{opacity:.75;color:white}
 .gfield{overflow-x:hidden;margin:0}
 .gf_left_half:first-child+.gf_right_half{margin-top:0}
 .gform_wrapper.gravity-theme .gfield_label{font-size:16px;font-weight:300;text-transform:uppercase;font-family:"Raleway",sans-serif;display:inline-block;padding:0}
