@@ -399,7 +399,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                             $name = get_sub_field('name'); 
                             $picto = get_sub_field('picto'); 
                     ?>
-                            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                            <div class="col-12 col-md-6 col-lg-4 d-flex py-4">
                               <div class="container">
                                 <div class="row">
                                   
