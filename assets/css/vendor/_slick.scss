@@ -87,13 +87,14 @@
     }
 }
 
-.slick-arrow {
+a.slick-arrow {
+    cursor: pointer;
     i.fa {
         color: white!important
     }
 }
 
-.slick-arrow:hover {
+a.slick-arrow:hover {
     cursor: pointer;
     i.fa {
         color: $secondary!important
