@@ -132,8 +132,8 @@ if ( has_post_thumbnail() ) {
               </div>
             </div>
             <div class="w-100 d-flex  p-3">
-              <span class="prev"><i class=" fa fa-lg fa-arrow-left text-white my-auto mr-3"></i> </span>
-              <span class="next"><i class=" fa fa-lg fa-arrow-right text-white my-auto ml-3"></i></span>
+              <a class="prev"><i class=" fa fa-lg fa-arrow-left my-auto mr-3"></i> </a>
+              <a class="next"><i class=" fa fa-lg fa-arrow-right my-auto ml-3"></i></a>
             </div>
           </div>
 
