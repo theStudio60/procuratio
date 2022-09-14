@@ -60,12 +60,11 @@ $('.hero-slider').slick({
     infinite: true,
     arrows: true,
     dots: true,
-
     slidesToShow: 1,
     autoplay: true,
     autoplaySpeed: 3500,
     cssEase: 'linear',
-    infinite: true,
+
     focusOnSelect: false,
     arrows: true,
     //dots:true,
@@ -83,8 +82,8 @@ $('.hero-slider').slick({
     }],
     //*/
 
-    nextArrow: '<button class="button"><i class="fa fa-lg text-white arrow-right"></button>',
-    prevArrow: '< button class="button"> <i class= "fa fa-lg text-white arrow-left"></button>'
+    //    nextArrow: '<button class="button"><i class="fa fa-lg text-white arrow-right"></button>',
+    //  prevArrow: '<button class="button"> <i class= "fa fa-lg text-white arrow-left"></button>'
 
 });
 
