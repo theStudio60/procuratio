@@ -3413,7 +3413,7 @@ span.gform_description { font-family: var(--bs-font-sans-serif); font-size: 1.75
 /* Dots */
 .slick-slider { margin-bottom: 30px; }
 
-.slick-dots { position: absolute; top: 32px; display: block; width: 100%; padding: 0; z-index: 50 !important; list-style: none; text-align: center; }
+.slick-dots { position: absolute; top: 96px; display: block; width: 100%; padding: 0; z-index: 50 !important; list-style: none; text-align: center; }
 
 .slick-dots li { position: relative; display: inline-block; width: 20px; height: 20px; margin: 0 5px; padding: 0; cursor: pointer; }
 
