@@ -57,7 +57,7 @@ if ( has_post_thumbnail() ) {
         <div class="col-12 col-lg-8 h-100 d-flex p-2"  >
           <?php //<div class="my-auto " style="  border-left:16px solid #00AE9B ;"> ?>
 
-          <div class="d-flex w-75 m-auto" style=" ">
+          <div class="d-block w-75 m-auto" style=" ">
             <div class="hero-slider w-100 d-flex ">
               <div class="bg-dark p-3 my-auto "  >
 
@@ -132,9 +132,9 @@ if ( has_post_thumbnail() ) {
               </div>
             </div>
             <div class="w-100 d-flex justify-content-between p-3">
-            <div class="prev d-flex"><i class=" fa fa-md fa-arrow-left text-white my-auto mr-3"></i> </div>
-            <div class="next d-flex"><i class=" fa fa-md fa-arrow-right text-white my-auto ml-3"></i></div>
-          </div>
+              <div class="prev d-flex"><i class=" fa fa-md fa-arrow-left text-white my-auto mr-3"></i> </div>
+              <div class="next d-flex"><i class=" fa fa-md fa-arrow-right text-white my-auto ml-3"></i></div>
+            </div>
           </div>
 
         </div>
