@@ -13,7 +13,7 @@ endif;
   } ; ?>
 <section class="hero--page" style="background: url('<?php echo $backgroundImg[0]; ?>');"> 
   <div class="hero--page__overlay hero--page__overlay--default h-100">
-    <div class="container p-5 w-100" >
+    <div class="container p-4 w-100" >
       <div class="row h-100">
         <div class="col-12 col-lg-8 h-100 d-flex p-0" >
            

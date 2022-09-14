@@ -282,9 +282,9 @@ if( have_rows('page-fiduciaire_acf_group') ):
         <section id="startups" class="section bg-white  py-3 py-lg-5"
         style="border-bottom:1px solid #002369; solid #002369;"
         >
-          <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="400">
+          <div class="container m-auto p-0 services"  data-aos="fade-up" data-aos-duration="400">
             <div class="row">
-              <div class="col-12 col-lg-8">
+              <div class="col-12 col-lg-8 px-0">
                 <?php if ($title) :  ?>
                   <h3 class="text-dark d-flex mb-3" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
@@ -383,7 +383,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
         <section id="compta" class="section bg-light  py-3 py-lg-5" 
         style="border-bottom:1px solid #002369; solid #002369;"
         >
-          <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="400">
+          <div class="container m-auto p-0 services"  data-aos="fade-up" data-aos-duration="400">
             <div class="row">
               <div class="col-12 col-lg-9 mx-auto">
                 <?php if ($title) :  ?>
@@ -462,7 +462,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
         ?>
         <?php // var_dump($group_ana_image) ;?>
         <section id="analyses" class="section bg-white  py-3 py-lg-5"         style="border-bottom:1px solid #002369;">
-          <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="400">
+          <div class="container m-auto p-0 services"  data-aos="fade-up" data-aos-duration="400">
             <div class="row">
               <div
                 data-aos="flip-right"
@@ -477,7 +477,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
               >
               </div>
 
-              <div class="col-12 col-lg-8">
+              <div class="col-12 col-lg-8 px-0">
                 <?php if ($title) :  ?>
                   <h3 class="text-dark d-flex my-3" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
@@ -562,9 +562,9 @@ if( have_rows('page-fiduciaire_acf_group') ):
         <section id="mandats" class="section bg-white  py-3 py-lg-5" 
 
         >
-          <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="400" >
+          <div class="container m-auto p-0 services"  data-aos="fade-up" data-aos-duration="400" >
             <div class="row m-auto">
-              <div class="col-12 col-lg-8 my-auto">
+              <div class="col-12 col-lg-8 px-0 my-auto">
                 <?php if ($title) :  ?>
                   <h3 class="text-dark d-flex my-3" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
