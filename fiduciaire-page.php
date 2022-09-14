@@ -581,7 +581,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                 <div class="container mx-auto bg-dark text-white p-lg-5"  data-aos="fade-up" data-aos-duration="400">
                   <div class="row">
                     <div class="col-12 d-flex">
-                      <h2 class="text-white text-center font-serif mx-auto ">
+                      <h2 class="text-white text-center font-serif mx-auto mt-3">
                         <?= $title_avantages ?>
                       </h2> 
                     </div>
