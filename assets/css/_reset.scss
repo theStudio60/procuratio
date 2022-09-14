@@ -5,8 +5,8 @@
     list-style: none;
     scroll-behavior: smooth;
     /* the line that rules them all */
-    scrollbar-width: none;
     /* */
+    scrollbar-width: none;
 }
 
 html {
@@ -26,6 +26,7 @@ html {
     list-style: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scrollbar-width: none;
 }
 
 body {
@@ -46,6 +47,7 @@ body {
     z-index: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scrollbar-width: none;
 }
 
 // scrollbar
