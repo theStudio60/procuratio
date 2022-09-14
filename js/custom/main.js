@@ -64,9 +64,9 @@ $('.hero-slider').slick({
     responsive: [{
         breakpoint: 480,
         settings: {
-            arrows: false,
+            arrows: true,
             slidesToShow: 1,
-            speed: 5000,
+            speed: 1300,
         }
     }],
     //*/

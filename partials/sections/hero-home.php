@@ -155,6 +155,8 @@ if ( has_post_thumbnail() ) {
           <?php endif ?>
         </div>
       </div>
+      <div class="prev d-flex"><i class="prev fa fa-2x fa-arrow-left text-secondary my-auto"></i> </div>
+      <div class="next d-flex"><i class="next fa fa-2x fa-arrow-right text-secondary my-auto"></i></div>
     </div>
   </div>
 </section>
