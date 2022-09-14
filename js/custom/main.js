@@ -56,10 +56,22 @@ $('.hero-slider').slick({
     centerPadding: '30px',
     slidesToShow: 1,
     useTransform: false,
-    speed: 1300,
+    speed: 800,
     infinite: true,
     arrows: true,
     dots: true,
+
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 3500,
+    cssEase: 'linear',
+    infinite: true,
+    focusOnSelect: false,
+    arrows: true,
+    //dots:true,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+
 
     responsive: [{
         breakpoint: 480,
