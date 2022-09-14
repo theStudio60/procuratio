@@ -129,8 +129,9 @@ if ( has_post_thumbnail() ) {
               <button class="button"  onclick="location.href='<?php echo site_url(); ?>/conseil'">En savoir plus</button>
             </div>
           </div>
-          <div class="prev d-flex"><i class="prev fa fa-2x fa-arrow-left text-primary my-auto"></i> </div>
-          <div class="next d-flex"><i class="next fa fa-2x fa-arrow-right text-primary my-auto"></i></div>
+          <div class="prev d-flex"><i class=" fa fa-2x fa-arrow-left text-primary my-auto mr-3"></i> </div>
+          <div class="next d-flex"><i class=" fa fa-2x fa-arrow-right text-primary my-auto ml-3"></i></div>
+
         </div>
         <div class="col-12 col-lg-4 p-0 h-100 d-flex">
           <?php if( have_rows('website_settings', 'option') ) : ?>
