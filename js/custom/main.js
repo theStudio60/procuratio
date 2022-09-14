@@ -230,7 +230,7 @@ $(document).ready(function() {
             //$("#headerBrand").css({})
             //
         }
-        if (scroll > 300) {
+        if (scroll > 50) {
             $(".header").css({ "background-color": "rgba(0, 35, 105, 1)" });
             $(".header").css({ "height": "80px" });
             $(".header").css({ "border-bottom": "1px solid rgba(255, 255, 255, 1)" });
