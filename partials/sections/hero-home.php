@@ -131,9 +131,9 @@ if ( has_post_thumbnail() ) {
                 <button class="button"  onclick="location.href='<?php echo site_url(); ?>/conseil'">En savoir plus</button>
               </div>
             </div>
-            <div class="w-100 d-flex justify-content-around p-3">
-              <div class="prev d-flex"><i class=" fa fa-lg fa-arrow-left text-white my-auto mr-3"></i> </div>
-              <div class="next d-flex"><i class=" fa fa-lg fa-arrow-right text-white my-auto ml-3"></i></div>
+            <div class="w-100 d-flex  p-3">
+              <span class="prev d-flex"><i class=" fa fa-lg fa-arrow-left text-white my-auto mr-3"></i> </span>
+              <span class="next d-flex"><i class=" fa fa-lg fa-arrow-right text-white my-auto ml-3"></i></span>
             </div>
           </div>
 
