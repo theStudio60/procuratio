@@ -129,6 +129,8 @@ if ( has_post_thumbnail() ) {
               <button class="button"  onclick="location.href='<?php echo site_url(); ?>/conseil'">En savoir plus</button>
             </div>
           </div>
+          <div class="prev d-flex"><i class="prev fa fa-2x fa-arrow-left text-secondary my-auto"></i> </div>
+          <div class="next d-flex"><i class="next fa fa-2x fa-arrow-right text-secondary my-auto"></i></div>
         </div>
         <div class="col-12 col-lg-4 p-0 h-100 d-flex">
           <?php if( have_rows('website_settings', 'option') ) : ?>
@@ -155,8 +157,7 @@ if ( has_post_thumbnail() ) {
           <?php endif ?>
         </div>
       </div>
-      <div class="prev d-flex"><i class="prev fa fa-2x fa-arrow-left text-secondary my-auto"></i> </div>
-      <div class="next d-flex"><i class="next fa fa-2x fa-arrow-right text-secondary my-auto"></i></div>
+
     </div>
   </div>
 </section>
