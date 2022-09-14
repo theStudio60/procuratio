@@ -873,6 +873,7 @@ p{font-family:"Josefin Sans",sans-serif;color:#002369;font-weight:300;text-align
 .grid-wrapper a:hover{border:none !important;border-bottom:none !important}
 .footer{padding:1rem 2rem}
 .footer p{color:#e7ffff;margin-bottom:0}
+.footer a,.footer a span{color:#29ffff !important;text-decoration:none !important}
 .footer nav ul a.nav-link,.footer nav ul a.nav-link:visited{color:#29ffff !important;font-family:"Raleway",sans-serif;font-weight:700;text-align:center}
 .footer__container{margin:0 auto}
 .hero{min-height:99vh;margin:0 0 0 0 !important;padding:0 !important;display:-webkit-box;display:-ms-flexbox;display:flex;background:#002369;background-size:cover !important;background-repeat:no-repeat !important;background-position:center center !important;z-index:1}
