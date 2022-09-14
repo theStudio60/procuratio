@@ -87,6 +87,19 @@
     }
 }
 
+.slick-arrow {
+    i.fa {
+        color: white!important
+    }
+}
+
+.slick-arrow:hover {
+    cursor: pointer;
+    i.fa {
+        color: $secondary!important
+    }
+}
+
 .slick-arrow.slick-hidden {
     display: none;
 }
