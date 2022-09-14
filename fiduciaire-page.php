@@ -280,7 +280,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
         $startupimageUrl =  $startupimage['url'];
     ?>
         <section id="startups" class="section bg-white  py-3 py-lg-5"
-        style="border-bottom:1px solid #002369;border-top:1px solid #002369;"
+        style="border-bottom:1px solid #002369; solid #002369;"
         >
           <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="400">
             <div class="row">
@@ -370,7 +370,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
         //$image = get_sub_field('image');
     ?>
         <section id="compta" class="section bg-light  py-3 py-lg-5" 
-        style="border-bottom:1px solid #002369;border-top:1px solid #002369;"
+        style="border-bottom:1px solid #002369; solid #002369;"
         >
           <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="400">
             <div class="row">
@@ -450,7 +450,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
         $group_ana_image = get_sub_field('image');
         ?>
         <?php // var_dump($group_ana_image) ;?>
-        <section id="analyses" class="section bg-white  py-3 py-lg-5"         style="border-bottom:1px solid #002369;border-top:1px solid #002369;">
+        <section id="analyses" class="section bg-white  py-3 py-lg-5"         style="border-bottom:1px solid #002369;">
           <div class="container m-auto services"  data-aos="fade-up" data-aos-duration="400">
             <div class="row">
               <div
