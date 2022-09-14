@@ -172,7 +172,7 @@ if ( has_post_thumbnail() ) {
 
 $('.hero-slider').slick({
     //*
-    centerMode: true,
+    //centerMode: true,
     //centerPadding: '30px',
     slidesToShow: 1,
     useTransform: false,
