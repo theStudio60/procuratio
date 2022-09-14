@@ -9,7 +9,7 @@
       $subtitle = get_sub_field('subtitle');
       $content = get_sub_field('content');
       ?>
-<section id="control" class="section d-flex   py-3 py-lg-5 bg-dark"  >
+<section id="control" class="section d-flex py-3 py-lg-5 bg-dark"  >
     <div class="container m-auto   " data-aos="fade-up" data-aos-duration="400" >
       <div class="row my-3  ">
         <div class="col-12 col-lg-9 mx-auto mx-lg-0 ">
@@ -111,7 +111,7 @@
           <?php if ($content) :
             $this_excerpt = wp_trim_words( $content, 50, ' ...  ');
           ?>
-            <div class="text-white d-block px-2 font-serif w-100 lead mb-3 "  >
+            <div class="text-white d-block font-serif w-100 lead mb-3 "  >
               <?= $this_excerpt ?>
               <br>
               <a class="text-secondary" href="<?php echo site_url(); ?>/conseil#control">Lire la suite</a>
