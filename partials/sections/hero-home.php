@@ -57,7 +57,7 @@ if ( has_post_thumbnail() ) {
         <div class="col-12 col-lg-8 h-100 d-flex p-2"  >
           <?php //<div class="my-auto " style="  border-left:16px solid #00AE9B ;"> ?>
 
-          <div class="d-flex w-75 mx-auto hero-slider  " style=" ">
+          <div class="d-flex w-100 mx-auto hero-slider  " style=" ">
             <div class="hero-slider">
             <div class="bg-dark p-3 my-auto "  >
 
@@ -130,14 +130,14 @@ if ( has_post_thumbnail() ) {
               </div>
               <button class="button"  onclick="location.href='<?php echo site_url(); ?>/conseil'">En savoir plus</button>
             </div>
-            </div>
-
           </div>
-          <div class="w-25 d-flex p-3">
+          <div class="w-100 d-flex justify-content-between p-3">
             <div class="prev d-flex"><i class=" fa fa-md fa-arrow-left text-white my-auto mr-3"></i> </div>
             <div class="next d-flex"><i class=" fa fa-md fa-arrow-right text-white my-auto ml-3"></i></div>
 
           </div>
+        </div>
+
           
         </div>
         <div class="col-12 col-lg-4 p-0 h-100 d-flex">
