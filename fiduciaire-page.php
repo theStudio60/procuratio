@@ -602,7 +602,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                             $name = get_sub_field('name'); 
                             $picto = get_sub_field('picto'); 
                     ?>
-                            <div class="col-12 col-md-6 col-lg-3">
+                            <div class="col-12 col-md-6 col-lg-3 p-2">
                               <div class="container">
                                 <div class="row">
                                   
@@ -630,7 +630,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                       <?php endwhile; ?>
                     <?php endif; ?>
                     <?php if ($conclusion) :  ?>
-                      <div class="div-conclusion div-center text-center div-white mx-auto mt-3">
+                      <div class="div-conclusion div-center text-center div-white mx-auto mt-3 p-2 ">
                         <?= $conclusion ?>
                       </div>
                     <?php endif;?>

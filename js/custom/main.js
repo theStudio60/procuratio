@@ -13,8 +13,8 @@ AOS.init({
     disable: 'mobile',
     //    debounceDelay: 1500,
     // offset: 120, // offset (in px) from the original trigger point
-    delay: 400, // values from 0 to 3000, with step 50ms
-    duration: 800, // values from 0 to 3000, with step 50ms
+    delay: 200, // values from 0 to 3000, with step 50ms
+    duration: 400, // values from 0 to 3000, with step 50ms
     easing: 'ease-in-out', // default easing for AOS animations
     once: false, // whether animation should happen only once - while scrolling down
     mirror: true // whether elements should animate out while scrolling past them
