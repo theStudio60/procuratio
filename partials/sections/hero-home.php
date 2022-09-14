@@ -132,8 +132,8 @@ if ( has_post_thumbnail() ) {
               </div>
             </div>
             <div class="w-100 d-flex  p-3">
-              <span class="prev d-flex"><i class=" fa fa-lg fa-arrow-left text-white my-auto mr-3"></i> </span>
-              <span class="next d-flex"><i class=" fa fa-lg fa-arrow-right text-white my-auto ml-3"></i></span>
+              <span class="prev"><i class=" fa fa-lg fa-arrow-left text-white my-auto mr-3"></i> </span>
+              <span class="next"><i class=" fa fa-lg fa-arrow-right text-white my-auto ml-3"></i></span>
             </div>
           </div>
 
@@ -167,3 +167,42 @@ if ( has_post_thumbnail() ) {
     </div>
   </div>
 </section>
+
+<script>
+
+$('.hero-slider').slick({
+    //*
+    centerMode: true,
+    centerPadding: '30px',
+    slidesToShow: 1,
+    useTransform: false,
+    speed: 3500,
+    infinite: true,
+    arrows: true,
+    dots: true,
+    slidesToShow: 1,
+    autoplay: false,
+    //autoplaySpeed: 3500,
+    cssEase: 'linear',
+
+    focusOnSelect: false,
+
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+
+
+    responsive: [{
+        breakpoint: 480,
+        settings: {
+            arrows: true,
+            slidesToShow: 1,
+            speed: 1300,
+        }
+    }],
+    //*/
+
+    //    nextArrow: '<button class="button"><i class="fa fa-lg text-white arrow-right"></button>',
+    //  prevArrow: '<button class="button"> <i class= "fa fa-lg text-white arrow-left"></button>'
+
+});
+</script>
