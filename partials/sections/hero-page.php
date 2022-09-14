@@ -11,7 +11,7 @@ endif;
 <?php if ( has_post_thumbnail() ) { 
   $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
   } ; ?>
-<section class=" hero hero--page" style="background: url('<?php echo $backgroundImg[0]; ?>');"> 
+<section class="hero--page" style="background: url('<?php echo $backgroundImg[0]; ?>');"> 
   <div class="hero--page__overlay hero--page__overlay--default h-100">
     <div class="container p-2 p-lg-5 w-100" >
       <div class="row h-100">
