@@ -1147,6 +1147,10 @@ span.gform_description{font-family:var(--bs-font-sans-serif);font-size:1.75rem}
 .slick-initialized .slick-slide{display:block}
 .slick-loading .slick-slide{visibility:hidden}
 .slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}
+a.slick-arrow{cursor:pointer}
+a.slick-arrow i.fa{color:white !important}
+a.slick-arrow:hover{cursor:pointer}
+a.slick-arrow:hover i.fa{color:#29ffff !important}
 .slick-arrow.slick-hidden{display:none}
 .slick-loading .slick-list{background:#fff url("./ajax-loader.gif") center center no-repeat}
 .slick-prev:hover,.slick-prev:focus,.slick-next:hover,.slick-next:focus{color:transparent;outline:0;background:transparent}
