@@ -721,12 +721,20 @@ endif;
       </div>
       <br>
       <div class="col-12 col-lg-9 mx-auto mt-3 d-flex">
-            <button
-              class="mx-auto button mt-3"  
-              onclick="location.href='<?php echo $link_url ?>'"
-            >
-              Contact
-            </button>
+        <?php if ($thisLink) :
+          $link_url = $thisLink['url'];
+          $link_title = $thisLink['title'];
+          $link_target = $thisLink['target'] ? $thisLink['target'] : '_self';
+        ?>
+          <button
+            class="mx-auto button mt-3"  
+            onclick="location.href='<?php echo $link_url ?>'"
+          >
+            <?= $link_title ?>
+          </button>
+
+        <?php endif;?>
+
       </div>
 
     </div>
