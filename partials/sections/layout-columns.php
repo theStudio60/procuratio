@@ -80,6 +80,7 @@ div#desc p
           <?php if( have_rows('pack_compta') ): ?>
             <?php while( have_rows('pack_compta') ): the_row();
               $title = get_sub_field('title');
+              $thisLink = get_sub_field('link');
               //$content = get_sub_field('content');
               //$enterprisesSubtitle = get_sub_field('subtitle');
               //$thisId = get_sub_field('pack_title');
@@ -92,7 +93,6 @@ div#desc p
                       <?= $title ?>
                     </h4>
                   <?php endif;?>
- 
                   <?php if( have_rows('repeater_services') ): ?>
                     <?php while( have_rows('repeater_services') ): the_row(); ?>
                       <?php if( have_rows('service') ): ?>
@@ -112,6 +112,8 @@ div#desc p
                       <?php endif; ?>
                     <?php endwhile; ?>
                   <?php endif; ?>
+
+
                 </div>
               </div>
               <br>
@@ -198,8 +200,22 @@ div#desc p
         </div>
       <?php endwhile?>
     <?php endif; ?>
-    <div class="row w-100">
-      <button  onclick="location.href='<?php echo site_url(); ?>/fiduciaire'" class="mx-auto button">En savoir plus</button>
-    </div>
+    <?php if ($thisLink) :
+      $link_url = $thisLink['url'];
+      $link_title = $thisLink['title'];
+      $link_target = $thisLink['target'] ? $thisLink['target'] : '_self';
+    ?>
+      <div class="row w-100 my-3">
+        <button
+         type="button"
+         style=""
+         onclick="location.href='<?php echo $link_url ?>'"
+         class="mx-auto button"
+         >
+          <?= $link_title ?>
+        </button>
+      </div>
+    <?php endif;?>
+
   </div>
 </section>
