@@ -52,8 +52,8 @@ if ( has_post_thumbnail() ) {
  style="background: url('<?= $backgroundImg[0]; ?>');"
 >
   <div class="hero__overlay hero__overlay--default h-100 " >
-    <div class="container-fluid m-0 w-100">
-      <div class="row h-100">
+    <div class="container-fluid m-0 w-100 pt-5 px-0">
+      <div class="row h-100 pt-5 px-0">
         <style>
             a.prev,a.next{cursor:pointer; }
 
@@ -144,9 +144,9 @@ if ( has_post_thumbnail() ) {
               <a class="next"><i class=" fa fa-lg fa-arrow-right text-white my-auto ml-3"></i></a>
             </div>
           </div>
-          <div class="d-block d-lg-none w-100 " style="margin-top:104px:!important">
+          <div class="d-block d-lg-none w-100 my-auto " style="margin-top:104px:!important">
             <div class="hero-slider w-100 d-flex h-100 ">
-              <div class="bg-dark p-2 my-4 "  >
+              <div class="bg-dark p-2 my-auto "  >
 
               <h1 class="hero__title mb-2 mt-3 mt-lg-auto">
                 <?= $title1  ?>
