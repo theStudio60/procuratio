@@ -204,7 +204,7 @@ acf_add_local_field_group(array(
 					),
 					'layout' => 'block',
 					'sub_fields' => array(
-						array(
+				
 							array(
 								'key' => 'field_5130602bdfa86',
 								'label' => 'titre de la section contact',
@@ -224,7 +224,7 @@ acf_add_local_field_group(array(
 								'append' => '',
 								'maxlength' => '',
 							),
-
+							array(
 							'key' => 'field_6049992fa3786',
 							'label' => 'Nom',
 							'name' => 'name',
