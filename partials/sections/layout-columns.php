@@ -18,6 +18,7 @@ div#desc p
       <?php while( have_rows('option-group_fiduciaire','option') ): the_row();
         $title = get_sub_field('title');
         $content = get_sub_field('content');
+        $thisLink = get_sub_field('link');
       ?>
         <div class="row p-0 h-100 w-100">
           <div class="col-12 col-lg-9 p-0 p-lg-2" id=" " >
@@ -197,25 +198,24 @@ div#desc p
               <br>
             <?php endwhile?>
           <?php endif; ?>
-        </div>
+        </div> 
+        <?php if ($thisLink) :
+          $link_url = $thisLink['url'];
+          $link_title = $thisLink['title'];
+          $link_target = $thisLink['target'] ? $thisLink['target'] : '_self';
+        ?>
+          <div class="row w-100 my-3">
+            <button
+             type="button"
+             style=""
+             onclick="location.href='<?php echo $link_url ?>'"
+             class="mx-auto button"
+             >
+              <?= $link_title ?>
+            </button>
+          </div>
+        <?php endif;?>
       <?php endwhile?>
     <?php endif; ?>
-    <?php if ($thisLink) :
-      $link_url = $thisLink['url'];
-      $link_title = $thisLink['title'];
-      $link_target = $thisLink['target'] ? $thisLink['target'] : '_self';
-    ?>
-      <div class="row w-100 my-3">
-        <button
-         type="button"
-         style=""
-         onclick="location.href='<?php echo $link_url ?>'"
-         class="mx-auto button"
-         >
-          <?= $link_title ?>
-        </button>
-      </div>
-    <?php endif;?>
-
   </div>
 </section>
