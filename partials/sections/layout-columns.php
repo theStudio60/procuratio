@@ -18,7 +18,7 @@ div#desc p
       <?php while( have_rows('option-group_fiduciaire','option') ): the_row();
         $title = get_sub_field('title');
         $content = get_sub_field('content');
-        $thisLink = get_sub_field('link');
+
       ?>
         <div class="row p-0 h-100 w-100">
           <div class="col-12 col-lg-9 p-0 p-lg-2" id=" " >
@@ -199,6 +199,10 @@ div#desc p
             <?php endwhile?>
           <?php endif; ?>
         </div> 
+        <?php
+                $thisLink = get_sub_field('link');
+        
+        var_dump( $thisLink ); ?>
         <?php if ($thisLink) :
           $link_url = $thisLink['url'];
           $link_title = $thisLink['title'];
