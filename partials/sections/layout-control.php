@@ -8,6 +8,10 @@
       $title = get_sub_field('name');
       $subtitle = get_sub_field('subtitle');
       $content = get_sub_field('content');
+      $thisLink = get_sub_field('link');
+      $link_url = $thisLink['url'];
+      $link_title = $thisLink['title'];
+      $link_target = $thisLink['target'] ? $thisLink['target'] : '_self';
       ?>
 <section id="control" class="section d-flex py-3 py-lg-5 bg-dark"  >
     <div class="container m-auto   " data-aos="fade-up" data-aos-duration="400" >
@@ -114,12 +118,12 @@
             <div class="text-white d-block font-serif w-100 lead mb-3 "  >
               <?= $this_excerpt ?>
               <br>
-              <a class="text-secondary" href="<?php echo site_url(); ?>/conseil#control">Lire la suite</a>
+              <a class="text-secondary" href="<?php echo link_url(); ?>"><?= $link_title ?></a>
             </div>
             <?php /*
             <button class="button" onclick="location.href='<?php echo site_url(); ?>/conseil#control'">En savoir plus</button>
             //*/ ?>
-          <?php endif;?>
+          <?php  endif;?>
         </div>
         <div class="col-12 col-lg-3 py-2 d-flex">
           <!--div class="wrapper-c">
