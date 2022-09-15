@@ -64,7 +64,7 @@ if ( has_post_thumbnail() ) {
         <div class="col-12 col-lg-8 h-100 d-flex p-1 p-lg-2"  >
           <?php //<div class="my-auto " style="  border-left:16px solid #00AE9B ;"> ?>
 
-          <div class="d-none d-lg-block w-75 m-auto" style=" ">
+          <div class="d-block w-75 m-auto" style=" ">
             <div class="hero-slider w-100 d-flex ">
               <div class="bg-dark p-3 my-auto "  >
 
@@ -144,86 +144,7 @@ if ( has_post_thumbnail() ) {
               <a class="next"><i class=" fa fa-lg fa-arrow-right text-white my-auto ml-3"></i></a>
             </div>
           </div>
-          <div class="d-block d-lg-none w-100 mx-2" style="margin-top:104px:!important">
-            <div class="hero-slider w-100 d-flex h-100 ">
-              <div class="bg- w-100 p-2 my-auto " style="min-width:320px!important;max-width:321px!important; " >
-
-              <h1 class="hero__title mb-2 mt-3 mt-lg-auto">
-                <?= $title1  ?>
-              </h1>
-              <h3 class="hero__subtitle mb-2"  >
-                <?= $subtitle1  ?>
-              </h3>
-
-
-              <style > .hero-content p{color:white!important;}</style>
-              <div class="div-left hero__content my-2">
-                <?= $content1 ?>
-              </div>
-
-              <?php if( have_rows('website_settings', 'option') ): ?>
-                <div class="w-100 d-md-flex  text-center">
-                  <?php if (have_rows('website_settings','option')):
-                    while (have_rows('website_settings','option')):the_row();
-                      if (have_rows('global_settings')):
-                        while (have_rows('global_settings')):the_row();
-                          $thisLink = get_sub_field('main_cta');
-                        ?>
-                        <?php endwhile; ?>
-                      <?php endif; ?>
-                    <?php endwhile;?>
-                  <?php endif;?>
-                      
-                  <?php if ($thisLink) :
-                    $link_url = $thisLink['url'];
-                    $link_title = $thisLink['title'];
-                    $link_target = $thisLink['target'] ? $thisLink['target'] : '_self';
-                  ?>
-                    <button
-                    type="button"
-                    style=""
-                    onclick="location.href='<?php echo $link_url ?>'"
-                    class="button"
-                    >
-                        <?= $link_title ?>
-                    </button>
-                  <?php endif;?>
-                </div>
-              <?php endif;?>
-              </div>
-              <div class="bg- w-100 p-2 my-auto" style="min-width:320px!important;max-width:321px!important; " >
-              <h1 class="hero__title mb-2 mt-3 mt-lg-auto">
-                <?= $title2  ?>
-              </h1>
-              <h3 class="hero__subtitle mb-2"  >
-                <?= $subtitle2  ?>
-              </h3>
-              <style > .hero-content p{color:white!important;}</style>
-              <div class="div-left hero__content my-2">
-                <?= $content2 ?>
-              </div>
-              <button class="button"  onclick="location.href='<?php echo site_url(); ?>/fiduciaire'">En savoir plus</button>
-              </div>
-              <div class="bg- w-100 p-2 my-auto"  style="min-width:320px!important;max-width:321px!important; " >
-                <h1 class="hero__title mb-2 mt-3 mt-lg-auto">
-                  <?= $title3  ?>
-                </h1>
-                <h3 class="hero__subtitle mb-2"  >
-                  <?= $subtitle3  ?>
-                </h3>
-                <style > .hero-content p{color:white!important;}</style>
-                <div class="div-left hero__content my-2">
-                  <?= $content3 ?>
-                </div>
-                <button class="button"  onclick="location.href='<?php echo site_url(); ?>/conseil'">En savoir plus</button>
-              </div>
-            </div>
-
-            <div class="w-100 d-flex  p-3">
-              <a class="prev"><i class=" fa fa-lg fa-arrow-left text-white my-auto mr-3"></i> </a>
-              <a class="next"><i class=" fa fa-lg fa-arrow-right text-white my-auto ml-3"></i></a>
-            </div>
-          </div>
+        
 
         </div>
         <div class="col-12 col-lg-4 p-0 h-100 d-flex">
