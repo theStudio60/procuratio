@@ -47,11 +47,28 @@ endif;
   <div class="container mx-auto my-3">
     <div class="row">
       <div class="col-12 col-lg-9 ">
-
+        <?php if( have_rows('website_settings', 'option') ): ?>
+        
+            <?php if (have_rows('website_settings','option')):
+             while (have_rows('website_settings','option')):the_row();
+               if (have_rows('contact_infos')):
+                 while (have_rows('contact_infos')):the_row();
+                   $thisTitle = get_sub_field('title_contact');
+                 ?>
+                 <?php endwhile; ?>
+               <?php endif; ?>
+             <?php endwhile;?>
+            <?php endif;?>
+                
+            <?php if ($thisTitle) : ?>
               <h3 class="text-white d-flex">
                 <div class="dash mr-2 ml-n4 my-auto"></div>
-                Contact
+                <?= $thisTitle ?>
               </h3>
+            <?php endif;?>
+          </div>
+        <?php endif;?>
+            
 
       </div>
 
