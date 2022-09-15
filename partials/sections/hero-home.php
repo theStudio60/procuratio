@@ -8,6 +8,7 @@ if( have_rows('acf_group_homepage') ):
             $title1 = get_sub_field('title');
             $subtitle1 = get_sub_field('subtitle');
             $content1 = get_sub_field('wysiwyg');
+            $link1 = get_sub_field('link');
           endwhile;
         endif;
         if( have_rows('group_slider2') ):
@@ -15,6 +16,8 @@ if( have_rows('acf_group_homepage') ):
             $title2 = get_sub_field('title');
             $subtitle2 = get_sub_field('subtitle');
             $content2 = get_sub_field('wysiwyg');
+            $link2 = get_sub_field('link');
+
           endwhile;
         endif;
         if( have_rows('group_slider3') ):
@@ -22,6 +25,8 @@ if( have_rows('acf_group_homepage') ):
             $title3 = get_sub_field('title');
             $subtitle3 = get_sub_field('subtitle');
             $content3 = get_sub_field('wysiwyg');
+            $link3 = get_sub_field('link');
+
           endwhile;
         endif;
       endwhile;
@@ -60,7 +65,7 @@ if ( has_post_thumbnail() ) {
             a.prev:hover,a.next:hover{cursor:pointer; i{color:#29FFFF!important;}}
             a.prev i, a.next i{color:white}
             a.prev:hover i, a.next:hover i{color:white}
-          </style>
+        </style>
         <div class="col-12 col-lg-8 h-100 d-flex px-0 px-lg-2 pt-5 "  >
           <?php //<div class="my-auto " style="  border-left:16px solid #00AE9B ;"> ?>
 
@@ -68,75 +73,112 @@ if ( has_post_thumbnail() ) {
             <div class="hero-slider w-100 d-flex ">
               <div class="bg-dark p-3 my-auto "  >
 
-              <h1 class="hero__title mb-2 mt-3 mt-lg-auto">
-                <?= $title1  ?>
-              </h1>
-              <h3 class="hero__subtitle mb-2"  >
-                <?= $subtitle1  ?>
-              </h3>
+                <h1 class="hero__title mb-2 mt-3 mt-lg-auto">
+                  <?= $title1  ?>
+                </h1>
+                <h3 class="hero__subtitle mb-2"  >
+                  <?= $subtitle1  ?>
+                </h3>
 
 
-              <style > .hero-content p{color:white!important;}</style>
-              <div class="div-left hero__content my-2">
-                <?= $content1 ?>
+                <style > .hero-content p{color:white!important;}</style>
+                <div class="div-left hero__content my-2">
+                  <?= $content1 ?>
+                </div>
+  
+                  <div class="w-100 d-md-flex  text-center">
+
+
+                    <?php if ($link1) :
+                      $link_url1 = $link1['url'];
+                      $link_title1 = $link1['title'];
+                      $link_target1 = $link1['target'] ? $link1['target'] : '_self';
+                    ?>
+                      <button
+                      type="button"
+                      style=""
+                      onclick="location.href='<?php echo $link_url2 ?>'"
+                      class="button"
+                      >
+                          <?= $link_title1 ?>
+                      </button>
+                    <?php endif;?>
+                  </div>
+                    
               </div>
 
-              <?php if( have_rows('website_settings', 'option') ): ?>
+              <div class="bg-dark p-3 my-auto "  >
+
+                <h1 class="hero__title mb-2 mt-3 mt-lg-auto">
+                  <?= $title2  ?>
+                </h1>
+                <h3 class="hero__subtitle mb-2"  >
+                  <?= $subtitle2  ?>
+                </h3>
+
+
+                <style > .hero-content p{color:white!important;}</style>
+                <div class="div-left hero__content my-2">
+                  <?= $content2 ?>
+                </div>
+ 
                 <div class="w-100 d-md-flex  text-center">
-                  <?php if (have_rows('website_settings','option')):
-                    while (have_rows('website_settings','option')):the_row();
-                      if (have_rows('global_settings')):
-                        while (have_rows('global_settings')):the_row();
-                          $thisLink = get_sub_field('main_cta');
-                        ?>
-                        <?php endwhile; ?>
-                      <?php endif; ?>
-                    <?php endwhile;?>
-                  <?php endif;?>
-                      
-                  <?php if ($thisLink) :
-                    $link_url = $thisLink['url'];
-                    $link_title = $thisLink['title'];
-                    $link_target = $thisLink['target'] ? $thisLink['target'] : '_self';
+
+
+                  <?php if ($link2) :
+                    $link_url2 = $link2['url'];
+                    $link_title2 = $link2['title'];
+                    $link_target2 = $link2['target'] ? $link2['target'] : '_self';
                   ?>
                     <button
                     type="button"
                     style=""
-                    onclick="location.href='<?php echo $link_url ?>'"
+                    onclick="location.href='<?php echo $link_url2 ?>'"
                     class="button"
                     >
-                        <?= $link_title ?>
+                        <?= $link_title2 ?>
                     </button>
                   <?php endif;?>
                 </div>
-              <?php endif;?>
+       
               </div>
-              <div class="bg-dark p-3  my-auto">
-              <h1 class="hero__title mb-2 mt-3 mt-lg-auto">
-                <?= $title2  ?>
-              </h1>
-              <h3 class="hero__subtitle mb-2"  >
-                <?= $subtitle2  ?>
-              </h3>
-              <style > .hero-content p{color:white!important;}</style>
-              <div class="div-left hero__content my-2">
-                <?= $content2 ?>
-              </div>
-              <button class="button"  onclick="location.href='<?php echo site_url(); ?>/fiduciaire'">En savoir plus</button>
-              </div>
-              <div class="bg-dark p-3  my-auto"  >
+              <div class="bg-dark p-3 my-auto "  >
+
                 <h1 class="hero__title mb-2 mt-3 mt-lg-auto">
                   <?= $title3  ?>
                 </h1>
                 <h3 class="hero__subtitle mb-2"  >
                   <?= $subtitle3  ?>
                 </h3>
+
+
                 <style > .hero-content p{color:white!important;}</style>
                 <div class="div-left hero__content my-2">
                   <?= $content3 ?>
                 </div>
-                <button class="button"  onclick="location.href='<?php echo site_url(); ?>/conseil'">En savoir plus</button>
+ 
+                  <div class="w-100 d-md-flex  text-center">
+
+
+                    <?php if ($link3) :
+                      $link_url3 = $link3['url'];
+                      $link_title3 = $link3['title'];
+                      $link_target3 = $link3['target'] ? $link3['target'] : '_self';
+                    ?>
+                      <button
+                      type="button"
+                      style=""
+                      onclick="location.href='<?php echo $link_url3 ?>'"
+                      class="button"
+                      >
+                          <?= $link_title3 ?>
+                      </button>
+                    <?php endif;?>
+                  </div>
+       
+                    
               </div>
+ 
             </div>
 
             <div class="w-100 d-flex  p-3">
