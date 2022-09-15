@@ -146,7 +146,7 @@ if ( has_post_thumbnail() ) {
           </div>
           <div class="d-block d-lg-none w-100 mx-2" style="margin-top:104px:!important">
             <div class="hero-slider w-100 d-flex h-100 ">
-              <div class="bg-dark p-2 my-auto " style="margin-left:-24px!important" >
+              <div class="bg-dark p-2 my-auto " >
 
               <h1 class="hero__title mb-2 mt-3 mt-lg-auto">
                 <?= $title1  ?>
@@ -257,20 +257,18 @@ if ( has_post_thumbnail() ) {
 </section>
 
 <script>
-
-$('.hero-slider').slick({
     //*
-    //centerMode: true,
-    //centerPadding: '30px',
+    centerMode: true,
+    centerPadding: '30px',
     slidesToShow: 1,
     useTransform: false,
-    speed: 1000,
+    speed: 3500,
     infinite: true,
     arrows: true,
     dots: true,
     slidesToShow: 1,
-    autoplay: true,
-    autoplaySpeed: 3500,
+    autoplay: false,
+    //autoplaySpeed: 3500,
     cssEase: 'linear',
 
     focusOnSelect: false,
@@ -280,8 +278,12 @@ $('.hero-slider').slick({
 
 
     responsive: [{
-        breakpoint: 480,
+        breakpoint: 768,
         settings: {
+            centerMode: false,
+            //centerPadding: '30px',
+            //centerPadding: '0px',
+            dots: false,
             arrows: true,
             slidesToShow: 1,
             speed: 1300,
