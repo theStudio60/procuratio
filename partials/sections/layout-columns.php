@@ -200,9 +200,9 @@ div#desc p
           <?php endif; ?>
         </div> 
         <?php
-                $thisLink = get_sub_field('link');
+          $thisLink = get_sub_field('link');
         
-        var_dump( $thisLink ); ?>
+       // var_dump( $thisLink ); ?>
         <?php if ($thisLink) :
           $link_url = $thisLink['url'];
           $link_title = $thisLink['title'];
