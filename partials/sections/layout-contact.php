@@ -66,7 +66,7 @@ endif;
                 <?= $thisTitle ?>
               </h3>
             <?php endif;?>
-          </div>
+         
         <?php endif;?>
             
 
