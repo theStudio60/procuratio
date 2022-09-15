@@ -146,7 +146,7 @@ if ( has_post_thumbnail() ) {
           </div>
           <div class="d-block d-lg-none w-100 mx-2" style="margin-top:104px:!important">
             <div class="hero-slider w-100 d-flex h-100 ">
-              <div class="bg-dark p-2 my-auto "  >
+              <div class="bg-dark p-2 my-auto " style="margin-left:-24px!important" >
 
               <h1 class="hero__title mb-2 mt-3 mt-lg-auto">
                 <?= $title1  ?>
