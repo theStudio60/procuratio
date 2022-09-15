@@ -690,7 +690,7 @@ if( have_rows('website_settings', 'option') ):
     if (have_rows('global_settings')):
       while (have_rows('global_settings')):the_row();
         $thisLink = get_sub_field('main_cta');
-        $link_url = $thisLink['url'];
+        //$link_url = $thisLink['url'];
       endwhile; 
     endif ;
   endwhile;

@@ -183,12 +183,12 @@ if ( has_post_thumbnail() ) {
     centerPadding: '30px',
     slidesToShow: 1,
     useTransform: false,
-    speed: 3500,
+    speed: 1500,
     infinite: true,
     arrows: true,
     dots: true,
     slidesToShow: 1,
-    autoplay: true,
+    autoplay: false,
     //autoplaySpeed: 3500,
     cssEase: 'linear',
 
@@ -207,7 +207,7 @@ if ( has_post_thumbnail() ) {
             dots: false,
             arrows: true,
             slidesToShow: 1,
-            speed: 3500,
+            speed: 2500,
     infinite: true,
   
     slidesToShow: 1,

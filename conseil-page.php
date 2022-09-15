@@ -512,11 +512,17 @@ if( have_rows('contact_infos') ):
   $phone = get_sub_field('phone');
   $email = get_sub_field('email');
   $gmap = get_sub_field('gmap_url');
-?>
- <?php
-        endwhile;
-    endif;
-  endwhile;
+
+  $thisTitle = get_sub_field('title_contact');
+endwhile;
+endif;
+if (have_rows('global_settings')):
+while (have_rows('global_settings')):the_row();
+  $thisLink = get_sub_field('main_cta');
+  //$link_url = $thisLink['url'];
+endwhile; 
+endif ;
+endwhile;
 endif;
 ?>
 <section id="ccontact" class="section bg-dark h-25 d-flex   py-3 py-lg-5 " >
@@ -524,12 +530,15 @@ endif;
     <div class="row my-3  ">
       <div class="col-12 col-lg-9 mx-auto">
 
-        <div class="mx-auto d-flex w-100">
-          <h3 class="text-white d-flex my-3 mx-auto text-center" >
-            <div class="dash mr-2 ml-n4 my-auto"></div>
-            Contact
-          </h3>
-        </div>
+        <?php if ($thisTitle) : ?>
+          <div class="mx-auto d-flex w-100">
+            <h3 class="text-white d-flex my-3 mx-auto text-center" >
+              <div class="dash mr-2 ml-n4 my-auto"></div>
+              <?= $thisTitle ?>
+            </h3>
+          </div>
+       
+        <?php endif;?>
         <?php if ($cta_call) :  ?>
           <div class="div-centered font-sans div-white text-white">
             <p>
@@ -541,7 +550,20 @@ endif;
       </div>
       <br>
       <div class="col-12 col-lg-9 mx-auto mt-3 d-flex">
-            <button class="mx-auto button mt-3"  onclick="location.href='<?php echo site_url(); ?>#contact'">Contact</button>
+        <?php if ($thisLink) :
+          $link_url = $thisLink['url'];
+          $link_title = $thisLink['title'];
+          $link_target = $thisLink['target'] ? $thisLink['target'] : '_self';
+        ?>
+          <button
+            class="mx-auto button mt-3"  
+            onclick="location.href='<?php echo $link_url ?>'"
+          >
+            <?= $link_title ?>
+          </button>
+
+        <?php endif;?>
+
       </div>
 
     </div>
