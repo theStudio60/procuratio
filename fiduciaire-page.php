@@ -284,7 +284,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
         >
           <div class="container m-auto p-0 services"  data-aos="fade-up" data-aos-duration="400">
             <div class="row">
-              <div class="col-12 col-lg-8 px-0">
+              <div class="col-12 col-lg-8 pr-4">
                 <?php if ($title) :  ?>
                   <h3 class="text-dark d-flex my-3 mx-auto text-left" >
                     <div class="dash mr-2 ml-n4 my-auto"></div>
@@ -292,7 +292,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                   </h3>
                 <?php endif;?>
                 <?php if ($description) :  ?>
-                  <div>
+                  <div class="div-left p-2">
                     <?= $description ?>
                   </div>
                 <?php endif;?> 
@@ -606,7 +606,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                 <?php endif; ?>
                 </ul>
               </div>
-              <div class="col-12 d-flex">
+              <div class="col-12 col-lg-9 mx-auto mt-4">
                 <div class="container mx-auto bg-dark text-white p-lg-5"  data-aos="fade-up" data-aos-duration="400">
                   <div class="row">
                     <div class="col-12 d-flex">
