@@ -205,6 +205,26 @@ acf_add_local_field_group(array(
 					'layout' => 'block',
 					'sub_fields' => array(
 						array(
+							array(
+								'key' => 'field_5130602bdfa86',
+								'label' => 'titre de la section contact',
+								'name' => 'title_contact',
+								'type' => 'text',
+								'instructions' => '',
+								'required' => 0,
+								'conditional_logic' => 0,
+								'wrapper' => array(
+									'width' => '',
+									'class' => '',
+									'id' => '',
+								),
+								'default_value' => 'Contact',
+								'placeholder' => '',
+								'prepend' => '',
+								'append' => '',
+								'maxlength' => '',
+							),
+
 							'key' => 'field_6049992fa3786',
 							'label' => 'Nom',
 							'name' => 'name',
