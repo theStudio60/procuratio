@@ -291,7 +291,7 @@ if ( has_post_thumbnail() ) {
   
     slidesToShow: 1,
     autoplay: true,
-    autoplaySpeed: 3500,
+    autoplaySpeed: 0,
         }
     }],
     //*/
