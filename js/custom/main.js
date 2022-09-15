@@ -119,6 +119,8 @@ $('.hero-slider').slick({
     responsive: [{
         breakpoint: 768,
         settings: {
+            centerMode: true,
+            centerPadding: '0px',
             dots: false,
             arrows: true,
             slidesToShow: 1,
