@@ -61,7 +61,7 @@ if ( has_post_thumbnail() ) {
             a.prev i, a.next i{color:white}
             a.prev:hover i, a.next:hover i{color:white}
           </style>
-        <div class="col-12 col-lg-8 h-100 d-flex p-0 p-lg-2"  >
+        <div class="col-12 col-lg-8 h-100 d-flex p-1 p-lg-2"  >
           <?php //<div class="my-auto " style="  border-left:16px solid #00AE9B ;"> ?>
 
           <div class="d-none d-lg-block w-75 m-auto" style=" ">
@@ -144,7 +144,7 @@ if ( has_post_thumbnail() ) {
               <a class="next"><i class=" fa fa-lg fa-arrow-right text-white my-auto ml-3"></i></a>
             </div>
           </div>
-          <div class="d-block d-lg-none w-100 my-auto " style="margin-top:104px:!important">
+          <div class="d-block d-lg-none w-100 mx-2" style="margin-top:104px:!important">
             <div class="hero-slider w-100 d-flex h-100 ">
               <div class="bg-dark p-2 my-auto "  >
 
