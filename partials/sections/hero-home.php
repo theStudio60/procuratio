@@ -280,7 +280,7 @@ if ( has_post_thumbnail() ) {
     responsive: [{
         breakpoint: 768,
         settings: {
-            centerMode: false,
+            centerMode: true,
             //centerPadding: '30px',
             //centerPadding: '0px',
             dots: false,
