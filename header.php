@@ -119,7 +119,38 @@ $(document).ready(function() {
           <div id="language_list" class="my-auto mr-2 d-flex">
               <?php  languages_list_navbar();?>
           </div>
-          <button  onclick="location.href='<?php echo site_url(); ?>#contact'" class="mr-2 button">Contact</button>
+
+          <?php if( have_rows('website_settings', 'option') ): ?>
+              <?php if (have_rows('website_settings','option')):
+                while (have_rows('website_settings','option')):the_row();
+                  if (have_rows('global_settings')):
+                    while (have_rows('global_settings')):the_row();
+                      $thisLink = get_sub_field('main_cta');
+                    ?>
+                    <?php endwhile; ?>
+                  <?php endif; ?>
+                <?php endwhile;?>
+              <?php endif;?>
+                  
+              <?php if ($thisLink) :
+                $link_url = $thisLink['url'];
+                $link_title = $thisLink['title'];
+                $link_target = $thisLink['target'] ? $thisLink['target'] : '_self';
+              ?>
+                <button
+                type="button"
+                style=""
+                onclick="location.href='<?php echo $link_url ?>'"
+                class="button"
+                >
+                    <?= $link_title ?>
+                </button>
+              <?php endif;?>
+
+              <?php /*
+              <button  onclick="location.href='<?php echo site_url(); ?>#contact'" class="mr-2 button">Contact</button>
+              //*/?>
+            <?php endif;?>
 
     </div>
 
