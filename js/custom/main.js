@@ -101,7 +101,7 @@ $('.hero-slider').slick({
     centerPadding: '30px',
     slidesToShow: 1,
     useTransform: false,
-    speed: 3500,
+    speed: 2500,
     infinite: true,
     arrows: true,
     dots: true,
