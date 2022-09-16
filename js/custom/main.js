@@ -96,7 +96,7 @@ function closePopup() {
 }
 
 $('.hero-slider').slick({
-    //*
+    /*
     centerMode: true,
     centerPadding: '30px',
     slidesToShow: 1,
