@@ -253,8 +253,8 @@ if ( has_post_thumbnail() ) {
     infinite: true,
   
     slidesToShow: 1,
-    autoplay: true,
-    autoplaySpeed: 0,
+    autoplay: false,
+  //  autoplaySpeed: 0,
         }
     }],
     //*/
