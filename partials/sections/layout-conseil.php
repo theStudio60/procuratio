@@ -68,9 +68,30 @@
                       <?= $conclusion ?>
                     </p>
                   </div>
+
+                <?php endif;?>
+                <?php
+                $thisLink = get_sub_field('link');
+                  
+                // var_dump( $thisLink ); ?>
+                <?php if ($thisLink) :
+                  $link_url = $thisLink['url'];
+                  $link_title = $thisLink['title'];
+                  $link_target = $thisLink['target'] ? $thisLink['target'] : '_self';
+                ?>
+                  <div class="row w-100 my-3">
+                    <button
+                     type="button"
+                     style=""
+                     onclick="location.href='<?php echo $link_url ?>'"
+                     class="mx-auto button"
+                     >
+                      <?= $link_title ?>
+                    </button>
+                  </div>
                 <?php endif;?>
               </div>
-              
+             
             </div>
           </div>
         </section>
