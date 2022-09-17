@@ -46,10 +46,10 @@ div#desc p
               //$enterprisesSubtitle = get_sub_field('subtitle');
               //$thisId = get_sub_field('pack_title');
             ?>
-              <div class="col-12 col-lg-3 p-0 p-lg-2 my-5 my-lg-2 d-flex border-left border-right" id=" " >
+              <div class="col-10 col-lg-3 p-0 p-lg-2 my-2 my-lg-2 d-flex " id=" " >
                 <div class="w-100 p-1 ">
                   <?php if ($title) :  ?>
-                    <h4 class="text-dark mb-3 mx-auto text-center">
+                    <h4 class="text-dark my-1 mb-lg-3 mx-auto text-center">
 
                       <?= $title ?>
                     </h4>
