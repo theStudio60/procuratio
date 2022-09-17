@@ -49,11 +49,11 @@ div#desc p
               <div class="col-10 col-lg-3 p-0 p-lg-2 my-2 my-lg-2 d-flex " id=" " >
                 <div class="w-100 p-1 ">
                   <?php if ($title) :  ?>
-                    <h4 class="text-dark mb-lg-3 mx-auto text-center">
+                    <h4 class="text-dark mb-lg-3 mx-auto text-center d-none d-lg-block">
 
                       <?= $title ?>
                     </h4>
-                    <h4 class="text-dark my-1 ml-0 text-left">
+                    <h4 class="text-dark my-1 ml-0 text-left d-block d-lg-none">
 
                     <?= $title ?>
                     </h4>
