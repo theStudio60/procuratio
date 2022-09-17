@@ -21,7 +21,7 @@ div#desc p
 
       ?>
         <div class="row p-0 h-100 w-100">
-          <div class="col-12 col-lg-9 p-0 p-lg-2" id=" " >
+          <div class="col-12 p-0 p-lg-2" id=" " >
             <div class="section-text m-auto">
               <?php if ($title) :  ?>
                 <h3 class="text-dark d-flex my-3">
