@@ -53,16 +53,17 @@ endif;
     font-size: 0;
     width: 30px;
     height: 30px;
+
 }
 
 .hero-slider .slick-arrow.slick-prev {
-    left: 0;
-    background: url("https://img.icons8.com/ios/50/000000/long-arrow-left.png") 0 0 / 100% no-repeat !important;
+    left: -32px;
+    background: url("https://procuratio-finances.com/wp-content/themes/procuratio/images/arrow-w-left.png") 0 0 / 100% no-repeat !important;
 }
 
 .hero-slider .slick-arrow.slick-next {
-    right: 0;
-    background: url("https://img.icons8.com/ios/50/000000/long-arrow-right.png") 0 0 / 100% no-repeat;
+    right: -32px;
+    background: url("https://procuratio-finances.com/wp-content/themes/procuratio/images/arrow-w-right.png") 0 0 / 100% no-repeat;
 }
 
 .hero-slider .slick-arrow.slick-disabled {
