@@ -227,7 +227,7 @@ if ( has_post_thumbnail() ) {
     useTransform: false,
     speed: 1500,
     infinite: true,
-    arrows: true,
+    arrows: false,
     dots: true,
     slidesToShow: 1,
     autoplay: false,
