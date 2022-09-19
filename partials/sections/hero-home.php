@@ -182,10 +182,10 @@ if ( has_post_thumbnail() ) {
               </div>
 
             </div>
+
+            <div class="w-100 d-flex  p-3">
               <a class="prev"><i class=" fa fa-lg fa-arrow-left text-white my-auto mr-3"></i> </a>
               <a class="next"><i class=" fa fa-lg fa-arrow-right text-white my-auto ml-3"></i></a>
-            <div class="w-100 d-flex  p-3">
-
             </div>
           </div>
         
@@ -230,7 +230,7 @@ if ( has_post_thumbnail() ) {
     speed: 1500,
     infinite: true,
     arrows: true,
-    dots: true,
+    dots: false,
     slidesToShow: 1,
     autoplay: false,
     //autoplaySpeed: 3500,
@@ -238,8 +238,9 @@ if ( has_post_thumbnail() ) {
 
     focusOnSelect: false,
 
-     prevArrow: $('.prev'),
-     nextArrow: $('.next'),
+//     prevArrow: $('.prev'),
+prevArrow: '<button class="button"> <i class= "fa fa-lg text-white arrow-left"></button>'  
+nextArrow: $('.next'),
 
 
     responsive: [{
@@ -260,8 +261,8 @@ if ( has_post_thumbnail() ) {
         }
     }],
     //*/
-
-    //    nextArrow: '<button class="button"><i class="fa fa-lg text-white arrow-right"></button>',
+//<a class="next"><i class=" fa fa-lg fa-arrow-right text-white my-auto ml-3"></i></a>
+    //nextArrow: '<button class="button"><i class="fa fa-lg text-white arrow-right"></button>',
     //prevArrow: '<button class="button"> <i class= "fa fa-lg text-white arrow-left"></button>'
 
 });
