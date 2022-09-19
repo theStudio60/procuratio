@@ -238,8 +238,8 @@ if ( has_post_thumbnail() ) {
 
     focusOnSelect: false,
 
-    //prevArrow: $('.prev'),
-    //nextArrow: $('.next'),
+     prevArrow: $('.prev'),
+     nextArrow: $('.next'),
 
 
     responsive: [{
