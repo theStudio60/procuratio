@@ -238,7 +238,7 @@ if ( has_post_thumbnail() ) {
 
     focusOnSelect: false,
 
-     //prevArrow: $('.prev'),
+     prevArrow: $('.prev'),
      nextArrow: $('.next'),
 
 
@@ -262,7 +262,7 @@ if ( has_post_thumbnail() ) {
     //*/
 
     //    nextArrow: '<button class="button"><i class="fa fa-lg text-white arrow-right"></button>',
-    prevArrow: '<button class="button"> <i class= "fa fa-lg text-white arrow-left"></button>'
+    //prevArrow: '<button class="button"> <i class= "fa fa-lg text-white arrow-left"></button>'
 
 });
 </script>
