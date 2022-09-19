@@ -137,5 +137,18 @@ add_filter('login_headerurl', 'get_home_url');
 
 add_filter( 'gform_submit_button', 'form_submit_button', 10, 2 );
 function form_submit_button( $button, $form ) {
-return "<button class='button gform_button' id='gform_submit_button_{$form['id']}'><span>Envoyer</span></button>";
+
+    if($l['language_code'] == 'it-it'){
+        return "<button class='button gform_button' id='gform_submit_button_{$form['id']}'><span>Inviare</span></button>";
+
+      }
+      if($l['language_code'] == 'fr-fr'){
+        return "<button class='button gform_button' id='gform_submit_button_{$form['id']}'><span>Envoyer</span></button>";
+
+      }
+      if($l['language_code'] == 'en-en'){
+        return "<button class='button gform_button' id='gform_submit_button_{$form['id']}'><span>Send</span></button>";
+
+      }
+
 }
