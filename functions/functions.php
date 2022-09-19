@@ -66,7 +66,7 @@ acf_add_options_page(array(
 function languages_list_navbar_mobile(){
   $languages = icl_get_languages('skip_missing=0&orderby=id&order=ASC');
   if(!empty($languages)){
-    echo '<ul id="navbar__language-list" class="d-flex d-xl-none mr-0">';
+    echo '<ul id="navbar__language-list" class="d-flex d-lg-none mr-0">';
     foreach($languages as $l){
        //echo '<li class=" ">';
       if($l['language_code']){
@@ -113,7 +113,7 @@ function languages_list_navbar_mobile(){
     function languages_list_navbar(){
       $languages = icl_get_languages('skip_missing=0&orderby=id&order=ASC');
       if(!empty($languages)){
-        echo '<ul id="navbar__language-list" class="w-25 d-block d-xl-flex p-0 ml-0 ml-lg-auto mr-auto">';
+        echo '<ul id="navbar__language-list" class="w-25 d-block d-lg-flex p-0 ml-0 ml-lg-auto mr-auto">';
         foreach($languages as $l){
            //echo '<li class=" ">';
           if($l['language_code']){
