@@ -115,10 +115,12 @@ a.slick-arrow:hover {
 
 /* Arrows */
 
-
-/*
+//*
 .slick-prev,
 .slick-next {
+    display: none;
+    visibility: hidden;
+    /*
     @extend .button;
     font-size: 15px;
     line-height: 0;
@@ -135,9 +137,12 @@ a.slick-arrow:hover {
     outline: none;
     z-index: 50;
     background: transparent;
+    //*/
 }
+
 //*/
 
+/*
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
@@ -189,6 +194,8 @@ a.slick-arrow:hover {
         content: '←';
     }
 }
+
+//*/
 
 
 /* Dots */
