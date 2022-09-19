@@ -65,7 +65,7 @@ if ( has_post_thumbnail() ) {
             a.prev:hover,a.next:hover{cursor:pointer; i{color:#29FFFF!important;}}
             a.prev i, a.next i{color:white}
             a.prev:hover i, a.next:hover i{color:white}
-            .slick-prev.slick-arrow{display:none!important;}
+            //.slick-prev.slick-arrow{display:none!important;}
             .slick-next.slick-arrow{display:none!important;}
         </style>
         <div class="col-12 col-lg-8 h-100 d-flex px-0 px-lg-2 pt-5 "  >
@@ -184,7 +184,7 @@ if ( has_post_thumbnail() ) {
             </div>
 
             <div class="w-100 d-flex  p-3">
-              <a class="prev"><i class=" fa fa-lg fa-arrow-left text-white my-auto mr-3"></i> </a>
+                <a class="prev"><i class=" fa fa-lg fa-arrow-left text-white my-auto mr-3"></i> </a>
               <a class="next"><i class=" fa fa-lg fa-arrow-right text-white my-auto ml-3"></i></a>
             </div>
           </div>
