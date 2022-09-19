@@ -44,6 +44,30 @@ endif;
 
 <style>
 //  .slick-list.draggable{margin:auto!important}
+
+.hero-slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -20px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.hero-slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url("https://img.icons8.com/ios/50/000000/long-arrow-left.png") 0 0 / 100% no-repeat !important;
+}
+
+.hero-slider .slick-arrow.slick-next {
+    right: 0;
+    background: url("https://img.icons8.com/ios/50/000000/long-arrow-right.png") 0 0 / 100% no-repeat;
+}
+
+.hero-slider .slick-arrow.slick-disabled {
+    opacity: 0.2;
+}
 </style>
 
 <?php
