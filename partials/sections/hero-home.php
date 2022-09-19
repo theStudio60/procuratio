@@ -266,7 +266,7 @@ if ( has_post_thumbnail() ) {
     dots: false,
     slidesToShow: 1,
     autoplay: true,
-    //autoplaySpeed: 3500,
+    autoplaySpeed: 3500,
     cssEase: 'linear',
 
     focusOnSelect: false, 
