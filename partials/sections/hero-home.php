@@ -99,7 +99,7 @@ if ( has_post_thumbnail() ) {
                       <button
                       type="button"
                       style=""
-                      onclick="location.href='<?php echo $link_url2 ?>'"
+                      onclick="location.href='<?php echo $link_url1 ?>'"
                       class="button"
                       >
                           <?= $link_title1 ?>
