@@ -211,11 +211,15 @@ if ( has_post_thumbnail() ) {
               </div>
 
             </div>
-
+<?php /*
             <div class="w-100 d-flex  p-3">
               <a class="prev slick-prev slick-arrow"><i class=" fa fa-lg fa-arrow-left text-white my-auto mr-3"></i> </a>
               <a class="next"><i class=" fa fa-lg fa-arrow-right text-white my-auto ml-3"></i></a>
             </div>
+//*/ ?>
+
+
+
           </div>
         
 
