@@ -43,7 +43,7 @@ endif;
 ?>
 
 <style>
-  .slick-list.draggable{margin:auto!important}
+//  .slick-list.draggable{margin:auto!important}
 </style>
 
 <?php
@@ -65,6 +65,8 @@ if ( has_post_thumbnail() ) {
             a.prev:hover,a.next:hover{cursor:pointer; i{color:#29FFFF!important;}}
             a.prev i, a.next i{color:white}
             a.prev:hover i, a.next:hover i{color:white}
+            .slick-prev.slick-arrow{display:none!important;}
+            .slick-next.slick-arrow{display:none!important;}
         </style>
         <div class="col-12 col-lg-8 h-100 d-flex px-0 px-lg-2 pt-5 "  >
           <?php //<div class="my-auto " style="  border-left:16px solid #00AE9B ;"> ?>
