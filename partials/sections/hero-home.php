@@ -57,12 +57,16 @@ endif;
 }
 
 .hero-slider .slick-arrow.slick-prev {
-    left: -32px;
+    left: -48px;
+    border: none!important;
+
     background: url("https://procuratio-finances.com/wp-content/themes/procuratio/images/arrow-w-left.png") 0 0 / 100% no-repeat !important;
 }
 
 .hero-slider .slick-arrow.slick-next {
-    right: -32px;
+    right: -48px;
+    border: none!important;
+
     background: url("https://procuratio-finances.com/wp-content/themes/procuratio/images/arrow-w-right.png") 0 0 / 100% no-repeat;
 }
 
