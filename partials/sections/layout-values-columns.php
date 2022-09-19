@@ -36,14 +36,14 @@ if( have_rows('group_values') ):
                           <img class="my-auto ml-n3 mr-2 img-fluid"  width="64px" src=" <?php echo $image['url']; ?> ">
 
                           <?php if ($subtitle) :  ?>
-                            <h4 class="text-dark my-auto">
+                            <h4 class="text-dark my-lg-auto my-2">
                               <?= $subtitle ?>
                             </h4>
                           <?php endif; ?>
                         </div>
 
                           <?php if ($content) :  ?>
-                            <div class="div-left">
+                            <div class="my-lg-auto my-2">
                               <?= $content ?>
                             </div>
                           <?php endif;?>
