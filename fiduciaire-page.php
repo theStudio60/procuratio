@@ -256,7 +256,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
     //*/
     .div-white p {color:white!important;}
     .div-centered p {text-align:center!important;}
-    .div-left p {text-align:left!important;}
+    .div-left p {/*text-align:left!important;//*/}
     .div-centered p a {border-bottom: 4px solid #29FFFF!important;text-decoration:none!important}
     .div-centered p a span{border-bottom: 4px solid #29FFFF!important;} 
     .div-left p a {border-bottom: 4px solid #29FFFF!important;text-decoration:none!important}
