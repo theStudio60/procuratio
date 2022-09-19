@@ -133,3 +133,9 @@ add_filter('login_headertitle', '__return_empty_string');
 add_filter('login_headerurl', 'get_home_url');
 
 
+
+
+add_filter( 'gform_submit_button', 'form_submit_button', 10, 2 );
+function form_submit_button( $button, $form ) {
+return "<button class='button gform_button' id='gform_submit_button_{$form['id']}'><span>Envoyer</span></button>";
+}
