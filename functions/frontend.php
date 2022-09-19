@@ -138,7 +138,7 @@ add_filter('login_headerurl', 'get_home_url');
 add_filter( 'gform_submit_button', 'form_submit_button', 10, 2 );
 function form_submit_button( $button, $form ) {
     $languages = icl_get_languages('skip_missing=0&orderby=id&order=ASC');
-    foreach($languages as $l){
+    echo icl_disp_language($l['language_code']);
     if($l['language_code'] == 'it-it'){
         return "<button class='button gform_button' id='gform_submit_button_{$form['id']}'><span>Inviare</span></button>";
 
@@ -151,6 +151,5 @@ function form_submit_button( $button, $form ) {
         return "<button class='button gform_button' id='gform_submit_button_{$form['id']}'><span>Send</span></button>";
 
       }
-    }
 
 }
