@@ -180,10 +180,10 @@ if ( has_post_thumbnail() ) {
        
                     
               </div>
+
+            </div>
               <a class="prev"><i class=" fa fa-lg fa-arrow-left text-white my-auto mr-3"></i> </a>
               <a class="next"><i class=" fa fa-lg fa-arrow-right text-white my-auto ml-3"></i></a>
-            </div>
-
             <div class="w-100 d-flex  p-3">
 
             </div>
