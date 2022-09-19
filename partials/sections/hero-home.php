@@ -236,8 +236,8 @@ if ( has_post_thumbnail() ) {
 
     focusOnSelect: false,
 
-    prevArrow: $('.prev'),
-    nextArrow: $('.next'),
+    //prevArrow: $('.prev'),
+    //nextArrow: $('.next'),
 
 
     responsive: [{
@@ -247,7 +247,7 @@ if ( has_post_thumbnail() ) {
             //centerPadding: '30px',
             //centerPadding: '0px',
             dots: false,
-            arrows: true,
+            arrows: false,
             slidesToShow: 1,
             speed: 2500,
     infinite: true,
