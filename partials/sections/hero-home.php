@@ -65,8 +65,8 @@ if ( has_post_thumbnail() ) {
             a.prev:hover,a.next:hover{cursor:pointer; i{color:#29FFFF!important;}}
             a.prev i, a.next i{color:white}
             a.prev:hover i, a.next:hover i{color:white}
-            button.slick-prev.slick-arrow{display:none!important;}
-            button.slick-next.slick-arrow{display:none!important;}
+            //button.slick-prev.slick-arrow{display:none!important;}
+            //button.slick-next.slick-arrow{display:none!important;}
         </style>
         <div class="col-12 col-lg-8 h-100 d-flex px-0 px-lg-2 pt-5 "  >
           <?php //<div class="my-auto " style="  border-left:16px solid #00AE9B ;"> ?>
@@ -184,7 +184,7 @@ if ( has_post_thumbnail() ) {
             </div>
 
             <div class="w-100 d-flex  p-3">
-              <a class="prev"><i class=" fa fa-lg fa-arrow-left text-white my-auto mr-3"></i> </a>
+              <a class="prev slick-prev slick-arrow"><i class=" fa fa-lg fa-arrow-left text-white my-auto mr-3"></i> </a>
               <a class="next"><i class=" fa fa-lg fa-arrow-right text-white my-auto ml-3"></i></a>
             </div>
           </div>
@@ -232,7 +232,7 @@ if ( has_post_thumbnail() ) {
     arrows: true,
     dots: false,
     slidesToShow: 1,
-    autoplay: false,
+    autoplay: true,
     //autoplaySpeed: 3500,
     cssEase: 'linear',
 
@@ -247,17 +247,17 @@ if ( has_post_thumbnail() ) {
             arrows: true,
             slidesToShow: 1,
             speed: 2500,
-    infinite: true,
-  
-    slidesToShow: 1,
-    autoplay: false,
+            infinite: true,
+                
+            slidesToShow: 1,
+            autoplay: false,
   //  autoplaySpeed: 0,
         }
     }],
     //*/
 //<a class="next"><i class=" fa fa-lg fa-arrow-right text-white my-auto ml-3"></i></a>
-    //nextArrow: '<button class="button"><i class="fa fa-lg text-white arrow-right"></button>',
-    //prevArrow: '<button class="button"> <i class= "fa fa-lg text-white arrow-left"></button>'
+     nextArrow: '<button class="button"><i class="fa fa-lg text-white arrow-right"></button>',
+     prevArrow: '<button class="button"> <i class= "fa fa-lg text-white arrow-left"></button>'
 
 });
 </script>
