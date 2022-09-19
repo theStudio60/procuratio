@@ -236,13 +236,7 @@ if ( has_post_thumbnail() ) {
     //autoplaySpeed: 3500,
     cssEase: 'linear',
 
-    focusOnSelect: false,
-
-//     prevArrow: $('.prev'),
-prevArrow: '<button class="button"> <i class= "fa fa-lg text-white arrow-left"></button>'  
-nextArrow: $('.next'),
-
-
+    focusOnSelect: false, 
     responsive: [{
         breakpoint: 768,
         settings: {
