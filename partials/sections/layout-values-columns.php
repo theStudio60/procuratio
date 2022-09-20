@@ -50,7 +50,7 @@ if( have_rows('group_values') ):
                         </div>
 
                           <?php if ($content) :  ?>
-                            <div class="my-lg-auto my-2">
+                            <div class="div-left my-lg-auto my-2">
                               <?= $content ?>
                             </div>
                           <?php endif;?>
