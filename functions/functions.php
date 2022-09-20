@@ -36,6 +36,36 @@ function disable_block_editor($use_block_editor) {
 /**
  *  Add ACF options pages
  */
+add_menu_page( 
+  'homepage', 
+  'Page d\'accueil', 
+  'edit_pages', 
+  'post.php?post=36&action=edit', 
+  '', 
+  'dashicons-admin-home', 
+  3
+);
+add_menu_page( 
+  'conseil', 
+  'Page Conseil', 
+  'edit_pages', 
+  'post.php?post=29111&action=edit', 
+  '', 
+  'dashicons-admin-page', 
+  4
+);
+
+add_menu_page( 
+'fiduciaire', 
+'Page Fiduciaire', 
+'edit_pages', 
+'post.php?post=29106&action=edit', 
+'', 
+'dashicons-admin-home', 
+5
+);
+ 
+
 
 acf_add_options_page(array(
 		'page_title' 	=> 'Réglages du Site',
@@ -47,7 +77,7 @@ acf_add_options_page(array(
 
 acf_add_options_page(array(
   'page_title' 	=> 'Fiduciaire',
-  'menu_title'	=> 'Fiduciaire',
+  'menu_title'	=> 'Options Fiduciaire',
   'menu_slug' 	=> 'fiduciaire',
   'capability'	=> 'edit_posts',
   'redirect'		=> false, 
@@ -55,7 +85,7 @@ acf_add_options_page(array(
 
 acf_add_options_page(array(
   'page_title' 	=> 'Conseil',
-  'menu_title'	=> 'Conseil',
+  'menu_title'	=> 'Options Conseil',
   'menu_slug' 	=> 'conseil',
   'capability'	=> 'edit_posts',
   'redirect'		=> false, 
