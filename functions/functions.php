@@ -42,7 +42,7 @@ add_menu_page(
   'edit_pages', 
   'post.php?post=36&action=edit', 
   '', 
-  'dashicons-admin-home', 
+  'dashicons-welcome-write-blog', 
   3
 );
 add_menu_page( 
@@ -51,7 +51,7 @@ add_menu_page(
   'edit_pages', 
   'post.php?post=29111&action=edit', 
   '', 
-  'dashicons-admin-page', 
+  'dashicons-welcome-write-blog', 
   4
 );
 
@@ -61,7 +61,7 @@ add_menu_page(
 'edit_pages', 
 'post.php?post=29106&action=edit', 
 '', 
-'dashicons-admin-home', 
+'dashicons-welcome-write-blog', 
 5
 );
  
