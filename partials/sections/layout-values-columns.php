@@ -11,7 +11,7 @@ if( have_rows('group_values') ):
     >
 	    <div class="container m-auto " data-aos="fade-up" data-aos-duration="400" >
         <div class="row"> 
-      	  <div class="col-12 col-lg-9 ">
+      	  <div class="col-12 col-lg-6 p-4 p-lg-2">
             <?php if ($title) :  ?>
               <h3 class="text-dark d-flex my-3">
                 <div class="dash mr-2 ml-n4 my-auto"></div>
