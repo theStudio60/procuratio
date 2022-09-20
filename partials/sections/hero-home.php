@@ -259,7 +259,7 @@ if ( has_post_thumbnail() ) {
 $('.hero-slider').slick({
   draggable: true,
       autoplay: true, /* this is the new line */
-      autoplaySpeed: 3000,
+      autoplaySpeed: 4000,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
