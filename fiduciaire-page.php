@@ -287,7 +287,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
               <div class="col-12 col-lg-8 pr-4">
                 <?php if ($title) :  ?>
                   <h3 class="text-dark d-flex my-3 mx-auto text-left" >
-                    <div class="dash mr-2 ml-n4 my-auto"></div>
+                    <div class="dash mr-2 ml-n4 my-auto d-none d-lg-block"></div>
                     <?= $title ?>
                   </h3>
                 <?php endif;?>
@@ -389,7 +389,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                 <?php if ($title) :  ?>
                   <div class="mx-auto d-flex w-100">
                     <h3 class="text-dark d-flex my-3 mx-auto text-center" >
-                      <div class="dash mr-2 ml-n4 my-auto"></div>
+                      <div class="dash mr-2 ml-n4 my-auto d-none d-lg-block"></div>
                       <?= $title ?>
                     </h3>
                   </div>
@@ -480,7 +480,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
               <div class="col-12 col-lg-8 px-0 pl-lg-2">
                 <?php if ($title) :  ?>
                   <h3 class="text-dark d-flex my-3 mx-auto text-left" >
-                    <div class="dash mr-2 ml-n4 my-auto"></div>
+                    <div class="dash mr-2 ml-n4 my-auto d-none d-lg-block"></div>
                     <?= $title ?>
                   </h3>
                 <?php endif;?>
@@ -567,7 +567,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
               <div class="col-12 col-lg-8 px-0 my-auto">
                 <?php if ($title) :  ?>
                   <h3 class="text-dark d-flex my-3 mx-auto text-left" >
-                    <div class="dash mr-2 ml-n4 my-auto"></div>
+                    <div class="dash mr-2 ml-n4 my-auto d-none d-lg-block"></div>
                     <?= $title ?>
                   </h3>
                 <?php endif;?>
@@ -615,7 +615,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                       </h2> 
                     </div>
                     <div class="col-12 d-flex">
-                      <div class="dash mx-auto mt-3 mb-5"></div>
+                      <div class="dash mx-auto mt-3 mb-5 d-none d-lg-block"></div>
                     </div>
                     
                     <?php if( have_rows('repeater_avantages') ): 
