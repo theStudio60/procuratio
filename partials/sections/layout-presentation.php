@@ -24,7 +24,7 @@ if( have_rows('group_presentation') ):
           <div class="section-text m-auto">
             <?php if ($title) :  ?>
               <div class="d-flex w-100">
-                <div class="dash mr-2 ml-n4 my-auto"></div>
+                <div class="dash mr-2 ml-n4 my-auto d-none d-lg-block"></div>
                 <h3 class="text-dark d-flex my-3" >
 
                   <?= $title ?>
