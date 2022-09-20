@@ -10,7 +10,7 @@
             <div class="row">
               <div class="col-12 col-lg-9 mx-auto">
                 <?php if ($title) :  ?>
-                  <div class="mx-auto d-flex w-100">
+                  <div class="mx-auto w-100">
                     <h3 class="text-dark d-flex my-3 mx-auto text-center" >
 
                       <?= $title ?>
