@@ -9,18 +9,18 @@ div#desc p
 </style>
 <section
  style="border-bottom:1px solid #002369;border-top:1px solid #002369; overflow-y:visible"
- class="w-100 section  py-3 py-lg-5 bg-light"
+ class="w-100 section  py-3 py-lg-4 bg-light"
  id="partners"
 >
 
-  <div class="container  h-100 px-0   " data-aos="fade-up" data-aos-duration="400" >
+  <div class="container m-auto   " data-aos="fade-up" data-aos-duration="400" >
     <?php if( have_rows('option-group_fiduciaire','option') ): ?>
       <?php while( have_rows('option-group_fiduciaire','option') ): the_row();
         $title = get_sub_field('title');
         $content = get_sub_field('content');
 
       ?>
-        <div class="row p-0 h-100 w-100">
+        <div class="row">
           <div class="col-12 p-4 p-lg-2" id=" " >
              
             <?php if ($title) :  ?>
