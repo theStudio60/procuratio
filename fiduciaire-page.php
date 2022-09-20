@@ -337,7 +337,7 @@ if( have_rows('page-fiduciaire_acf_group') ):
                   </div>
                 </div>
                 <?php if ($conclusion) :  ?>
-                  <div class="div-conclusion div-left mt-3">
+                  <div class="div-conclusion div-left mt-3 px-2">
                       <?= $conclusion ?>
                   </div>
                 <?php endif;?>
