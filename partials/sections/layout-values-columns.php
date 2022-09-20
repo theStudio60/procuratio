@@ -4,25 +4,28 @@ if( have_rows('group_values') ):
     $title = get_sub_field('title');
 ?>    
     <section
-     id="values" class="section py-3 py-lg-4 bg-light d-flex "
+     id="values" class="bg-light "
   
     
     style="border-top: solid 1px #002369;border-bottom: solid 1px #002369; width: 100%;"
     >
-	    <div class="container m-auto "   >
-        <div class="row"> 
+	    <div class="container m-auto  py-3 py-lg-5 "   >
+        <div class="row my-3"> 
       	  <div class="col-12  p-4 p-lg-2">
-            <?php if ($title) :  ?>
-              <div class="d-flex w-100">
-                <div class="dash mr-2 ml-n4 my-auto"></div>
-                <h3 class="text-dark d-flex my-3" >
+            <div class="section-text">
+              <?php if ($title) :  ?>
+                <div class="d-flex w-100">
+                  <div class="dash mr-2 ml-n4 my-auto d-none d-lg-block"></div>
+                  <h3 class="text-dark d-flex my-3" >
 
-                  <?= $title ?>
-                </h3>  
-              </div>
+                    <?= $title ?>
+                  </h3>  
+                </div>
 
-            <?php endif;?>
+              <?php endif;?>
             </div>
+
+          </div>
 
             <div class="col-12 mx-auto mt-3">
 
