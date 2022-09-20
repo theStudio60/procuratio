@@ -289,8 +289,9 @@ if ( has_post_thumbnail() ) {
     }],
     //*/
 //<a class="next"><i class=" fa fa-lg fa-arrow-right text-white my-auto ml-3"></i></a>
-     nextArrow: '<button class="button"><i class="fa fa-lg text-white arrow-right"></button>',
-     prevArrow: '<button class="button"> <i class= "fa fa-lg text-white arrow-left"></button>'
+    // nextArrow: '<button class="button"><i class="fa fa-lg text-white arrow-right"></button>',
+    // prevArrow: '<button class="button"> <i class= "fa fa-lg text-white arrow-left"></button>'
 
 });
 </script>
+ 
