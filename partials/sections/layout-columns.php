@@ -21,21 +21,21 @@ div#desc p
 
       ?>
         <div class="row p-0 h-100 w-100">
-          <div class="col-12 p-0 p-lg-2" id=" " >
-            <div class="section-text m-auto">
-              <?php if ($title) :  ?>
-                <h3 class="text-dark d-flex my-3">
-                  <div class="dash mr-2 ml-0 ml-lg-n4 my-auto"></div>
-                  <?= $title ?>
-                </h3>
-              <?php endif;?>
+          <div class="col-12 p-4 p-lg-2" id=" " >
+             
+            <?php if ($title) :  ?>
+              <h3 class="text-dark d-flex my-3">
+                <div class="dash mr-2 ml-n4 my-auto"></div>
+                <?= $title ?>
+              </h3>
+            <?php endif;?>  
               <?php if ($content) :  ?>
                 <p class="text-dark d-flex mb-3">
                   <div class="dash mr-2 ml-0 ml-lg-n4 my-auto"></div>
                   <?= $content ?>
                 </p>
               <?php endif;?>
-            </div>
+             
           </div>
         </div>
         <div class="row my-3">
