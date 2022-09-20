@@ -43,7 +43,7 @@ add_menu_page(
   'post.php?post=36&action=edit', 
   '', 
   'dashicons-welcome-write-blog', 
-  3
+  4
 );
 add_menu_page( 
   'conseil', 
@@ -52,20 +52,17 @@ add_menu_page(
   'post.php?post=29111&action=edit', 
   '', 
   'dashicons-welcome-write-blog', 
-  4
+  5
 );
-
 add_menu_page( 
-'fiduciaire', 
-'Page Fiduciaire', 
-'edit_pages', 
-'post.php?post=29106&action=edit', 
-'', 
-'dashicons-welcome-write-blog', 
-5
-);
- 
-
+  'fiduciaire', 
+  'Page Fiduciaire', 
+  'edit_pages', 
+  'post.php?post=29106&action=edit', 
+  '', 
+  'dashicons-welcome-write-blog', 
+  5
+); 
 
 acf_add_options_page(array(
 		'page_title' 	=> 'Réglages du Site',
