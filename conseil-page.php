@@ -69,12 +69,16 @@ if( have_rows('page-conseil_acf_group') ):
               </div>
              
               <div class="col-12 col-lg-8">
-                <?php if ($title) :  ?>
+              <?php if ($title) :  ?>
+                <div class="d-flex w-100">
+                  <div class="dash mr-2 ml-n4 my-auto d-none d-lg-block"></div>
                   <h3 class="text-dark d-flex my-3" >
-                    <div class="dash mr-2 ml-n4 my-auto"></div>
+
                     <?= $title ?>
-                  </h3>
-                <?php endif;?>
+                  </h3>  
+                </div>
+
+              <?php endif;?>
                 <?php if ($description) :  ?>
                   <div class="div-left ml-lg-2">
                     <?= $description ?>
@@ -203,12 +207,16 @@ if( have_rows('page-conseil_acf_group') ):
           <div class="container m-auto   " data-aos="fade-up" data-aos-duration="400"  >
             <div class="row my-3  ">
               <div class="col-12 col-lg-9 mx-auto mx-lg-0 my-3 ">
-                <?php if ($title) :  ?>
+              <?php if ($title) :  ?>
+                <div class="d-flex w-100">
+                  <div class="dash mr-2 ml-n4 my-auto d-none d-lg-block"></div>
                   <h3 class="text-dark d-flex my-3" >
-                    <div class="dash mr-2 ml-n4 my-auto"></div>
+
                     <?= $title ?>
-                  </h3>
-                <?php endif;?>
+                  </h3>  
+                </div>
+
+              <?php endif;?>
                 <?php if ($content) :  ?>
                   <div class="div-left text-dark d-block px-2"  >
                       <?= $content?>
