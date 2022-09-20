@@ -43,7 +43,7 @@ add_menu_page(
   'post.php?post=36&action=edit', 
   '', 
   'dashicons-welcome-write-blog', 
-  4
+  5
 );
 add_menu_page( 
   'conseil', 
@@ -52,7 +52,7 @@ add_menu_page(
   'post.php?post=29111&action=edit', 
   '', 
   'dashicons-welcome-write-blog', 
-  5
+  6
 );
 add_menu_page( 
   'fiduciaire', 
@@ -61,7 +61,7 @@ add_menu_page(
   'post.php?post=29106&action=edit', 
   '', 
   'dashicons-welcome-write-blog', 
-  5
+  6
 ); 
 
 acf_add_options_page(array(
