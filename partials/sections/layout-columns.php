@@ -41,7 +41,7 @@ div#desc p
              
           </div>
         </div>
-        <div class="row my-3">
+        <div class="row my-3 p-2 p-lg-0">
           <?php if( have_rows('pack_startups') ): ?>
             <?php while( have_rows('pack_startups') ): the_row();
               $title = get_sub_field('title');
