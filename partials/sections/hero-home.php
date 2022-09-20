@@ -255,6 +255,8 @@ if ( has_post_thumbnail() ) {
 </section>
 
 <script>
+
+$('.hero-slider').slick({
     //*
     centerMode: true,
     centerPadding: '30px',
