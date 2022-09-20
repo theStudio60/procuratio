@@ -671,43 +671,44 @@ if( have_rows('page-fiduciaire_acf_group') ):
   <?php endwhile; ?>
 <?php endif; ?>
  
-
 <?php
 if( have_rows('website_settings', 'option') ):
   while( have_rows('website_settings', 'option') ):
 //  print_r(the_row());
-    the_row();
-    if( have_rows('contact_infos') ):
-      while( have_rows('contact_infos') ): the_row();
-        $cta_call = get_sub_field('contact_call');
-        $adress = get_sub_field('post_address');
-        $phone = get_sub_field('phone');
-        $email = get_sub_field('email');
-        $gmap = get_sub_field('gmap_url');
-        $thisTitle = get_sub_field('title_contact');
-      endwhile;
-    endif;
-    if (have_rows('global_settings')):
-      while (have_rows('global_settings')):the_row();
-        $thisLink = get_sub_field('main_cta');
-        //$link_url = $thisLink['url'];
-      endwhile; 
-    endif ;
-  endwhile;
+  the_row();
+if( have_rows('contact_infos') ):
+  while( have_rows('contact_infos') ): the_row();
+  $cta_call = get_sub_field('contact_call');
+  $adress = get_sub_field('post_address');
+  $phone = get_sub_field('phone');
+  $email = get_sub_field('email');
+  $gmap = get_sub_field('gmap_url');
+
+  $thisTitle = get_sub_field('title_contact');
+endwhile;
+endif;
+if (have_rows('global_settings')):
+while (have_rows('global_settings')):the_row();
+  $thisLink = get_sub_field('main_cta');
+  //$link_url = $thisLink['url'];
+endwhile; 
+endif ;
+endwhile;
 endif;
 ?>
 <section id="ccontact" class="section bg-dark h-25 d-flex   py-3 py-lg-5 " >
-  <div class="container m-auto   " data-aos="fade-up" data-aos-duration="400"  >
+  <div class="container m-auto   " data-aos="fade-up" data-aos-duration="400" >
     <div class="row my-3  ">
       <div class="col-12 col-lg-9 mx-auto">
+
         <?php if ($thisTitle) : ?>
           <div class="mx-auto d-flex w-100">
             <h3 class="text-white d-flex my-3 mx-auto text-center" >
-              <div class="dash mr-2 ml-n4 my-auto"></div>
+              <div class="dash mr-2 ml-n4 my-auto  d-none d-lg-block"></div>
               <?= $thisTitle ?>
             </h3>
           </div>
-       
+ 
         <?php endif;?>
         <?php if ($cta_call) :  ?>
           <div class="div-centered font-sans div-white text-white">
@@ -716,7 +717,6 @@ endif;
             </p>
           </div>
         <?php endif;?>
- 
  
       </div>
       <br>
