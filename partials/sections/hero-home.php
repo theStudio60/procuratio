@@ -257,6 +257,13 @@ if ( has_post_thumbnail() ) {
 <script>
 
 $('.hero-slider').slick({
+  draggable: true,
+      autoplay: true, /* this is the new line */
+      autoplaySpeed: 3000,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      touchThreshold: 1000,
     /*
     //centerMode: true,
     //centerPadding: '30px',
