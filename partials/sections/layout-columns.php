@@ -24,15 +24,20 @@ div#desc p
           <div class="col-12 p-4 p-lg-2" id=" " >
              
           <div class="section-text m-auto">
-            <?php if ($title) :  ?>
-              <h3 class="text-dark d-flex my-3" >
+          <?php if ($title) :  ?>
+              <div class="d-flex w-100">
                 <div class="dash mr-2 ml-n4 my-auto"></div>
-                <?= $title ?>
-              </h3>  
+                <h3 class="text-dark d-flex my-3" >
+
+                  <?= $title ?>
+                </h3>  
+              </div>
+
             <?php endif;?>
  
+ 
             <?php if ($content) :  ?>
-              <div class="mt-2"  >
+              <div class="mt-2 ml-lg-2"  >
                 <?= $content?>
 
               </div>

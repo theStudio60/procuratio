@@ -9,15 +9,19 @@ if( have_rows('group_values') ):
     
     style="border-top: solid 1px #002369;border-bottom: solid 1px #002369; width: 100%;"
     >
-	    <div class="container m-auto " data-aos="fade-up" data-aos-duration="400" >
+	    <div class="container m-auto "   >
         <div class="row"> 
       	  <div class="col-12  p-4 p-lg-2">
             <?php if ($title) :  ?>
-              <h3 class="text-dark d-flex my-3">
+              <div class="d-flex w-100">
                 <div class="dash mr-2 ml-n4 my-auto"></div>
-                <?= $title ?>
-              </h3>
-            <?php endif;?>  
+                <h3 class="text-dark d-flex my-3" >
+
+                  <?= $title ?>
+                </h3>  
+              </div>
+
+            <?php endif;?>
             </div>
 
             <div class="col-12 mx-auto mt-3">
@@ -31,7 +35,7 @@ if( have_rows('group_values') ):
                       $image = get_sub_field('picto');
                       $content = get_sub_field('wysiwyg');
                       ?>
-                      <div class="col-12 col-lg-4 mx-0 mx-lg-auto p-3" data-aos-mirror="false" data-aos="flip-left" data-aos-duration="600" >
+                      <div class="col-12 col-lg-4 mx-0 mx-lg-auto p-3" data-aos-mirror="false" data-aos="flip-left" data-aos-duration="400" >
                         <div class="d-flex mb-3" >
                           <img class="my-auto ml-n3 mr-2 img-fluid"  width="64px" src=" <?php echo $image['url']; ?> ">
 

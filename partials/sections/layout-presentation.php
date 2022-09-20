@@ -34,7 +34,7 @@ if( have_rows('group_presentation') ):
             <?php endif;?>
  
             <?php if ($content) :  ?>
-              <div class="mt-2"  >
+              <div class="mt-2 ml-lg-2"  >
                 <?= $content?>
 
               </div>
