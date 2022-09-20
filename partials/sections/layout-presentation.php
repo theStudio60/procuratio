@@ -21,10 +21,11 @@ if( have_rows('group_presentation') ):
     <div class="container  py-3 py-lg-5 ">
       <div class="row my-3">
         <div class="col-12 col-lg-6 p-4 p-lg-2" id="quisommesnous" data-aos="fade-right" data-aos-duration="400"  >
-          <div class="section-text m-auto">
+          <div class="d-flex m-auto">
             <?php if ($title) :  ?>
+              <div class="dash mr-2 ml-n4 my-auto"></div>
               <h3 class="text-dark d-flex my-3" >
-                <div class="dash mr-2 ml-n4 my-auto"></div>
+
                 <?= $title ?>
               </h3>  
             <?php endif;?>
