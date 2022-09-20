@@ -257,9 +257,9 @@ if ( has_post_thumbnail() ) {
 <script>
 
 $('.hero-slider').slick({
-    //*
-    centerMode: true,
-    centerPadding: '30px',
+    /*
+    //centerMode: true,
+    //centerPadding: '30px',
     slidesToShow: 1,
     useTransform: false,
     speed: 1500,
