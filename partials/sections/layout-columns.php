@@ -9,32 +9,35 @@ div#desc p
 </style>
 <section
  style="border-bottom:1px solid #002369;border-top:1px solid #002369; overflow-y:visible"
- class="w-100 section  py-3 py-lg-4 bg-light"
+ class="bg-light"
  id="partners"
 >
 
-  <div class="container m-auto   " data-aos="fade-up" data-aos-duration="400" >
+  <div class="container  py-3 py-lg-5 " data-aos="fade-up" data-aos-duration="400" >
     <?php if( have_rows('option-group_fiduciaire','option') ): ?>
       <?php while( have_rows('option-group_fiduciaire','option') ): the_row();
         $title = get_sub_field('title');
         $content = get_sub_field('content');
 
       ?>
-        <div class="row">
+        <div class="row my-3">
           <div class="col-12 p-4 p-lg-2" id=" " >
              
+          <div class="section-text m-auto">
             <?php if ($title) :  ?>
-              <h3 class="text-dark d-flex my-3">
+              <h3 class="text-dark d-flex my-3" >
                 <div class="dash mr-2 ml-n4 my-auto"></div>
                 <?= $title ?>
-              </h3>
-            <?php endif;?>  
-              <?php if ($content) :  ?>
-                <p class="text-dark d-flex mb-3">
-                  <div class="dash mr-2 ml-0 ml-lg-n4 my-auto"></div>
-                  <?= $content ?>
-                </p>
-              <?php endif;?>
+              </h3>  
+            <?php endif;?>
+ 
+            <?php if ($content) :  ?>
+              <div class="mt-2"  >
+                <?= $content?>
+
+              </div>
+            <?php endif;?>
+          </div>   
              
           </div>
         </div>
