@@ -543,7 +543,7 @@ endif;
                   <div class="dash mr-2 ml-n4 my-auto d-none d-lg-block"></div>
                   <h3 class="text-white d-flex my-3" >
 
-                    <?= $title ?>
+                    <?= $thisTitle ?>
                   </h3>  
           </div>
        
