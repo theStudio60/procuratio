@@ -79,7 +79,7 @@ acf_add_options_page(array(
   'capability'	=> 'edit_posts',
   'redirect'		=> false, 
 ));
-
+/*
 acf_add_options_page(array(
   'page_title' 	=> 'Conseil',
   'menu_title'	=> 'Options Conseil',
@@ -87,7 +87,7 @@ acf_add_options_page(array(
   'capability'	=> 'edit_posts',
   'redirect'		=> false, 
 ));
-
+//*/
 
 // wpml language list navbar
 function languages_list_navbar_mobile(){
