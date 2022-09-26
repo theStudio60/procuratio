@@ -102,7 +102,7 @@ if ( has_post_thumbnail() ) {
 
           <div class="d-block w-75 m-auto" style=" ">
             <div class="hero-slider w-100 d-flex ">
-              <div class="bg-dark p-3 my-auto "  >
+              <div class="bg-  p-3 my-auto "  >
 
                 <h1 class="hero__title mb-2 mt-3 mt-lg-auto">
                   <?= $title1  ?>
