@@ -55,6 +55,7 @@ if ( has_post_thumbnail() ) {
     while( have_rows('group_hero') ): the_row();
       if( have_rows('group_slider') ): 
         while( have_rows('group_slider') ): the_row();?>
+
           <div class="hero__slider slick-slider">
 
             <?php if( have_rows('repeater') ): ?>
@@ -83,28 +84,12 @@ if ( has_post_thumbnail() ) {
   endif;
   ?>  
 
-  <div class="hero__slider slick-slider">
-
-
-
-
-    <div class="hero__slider__img" style="background-size:cover;background-repeat:no-repeat;background-position:center;
-    background: url('<?php echo $backgroundImg[0]; ?>');">
-
-    </div>
-    <div class="hero__slider__img" style="background-size:cover;background-repeat:no-repeat;background-position:center;
-    background: url('<?php echo $backgroundImg[0]; ?>');">
-
-  </div>
-  
-
-  </div>
 
 <style>
 
 .hero__overlay{
   position:absolute;
-  height: 80vh;
+  height: 100vh;
       //calc(100vh - 36px) !important;;
   width:100vw!important;z-index:20!important; 
     background: -webkit-gradient(linear, left bottom, right top, from(rgba(0, 35, 105, 0.8)), to(rgba(0, 35, 105, 0.99))) !important;
@@ -116,14 +101,14 @@ if ( has_post_thumbnail() ) {
     padding: 0 !important;
     position: absolute;
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
       //calc(100vh - 36px) !important;
     z-index: 1;
 }
 
 
 .hero__slider__img {
-    height: 80vh;
+    height: 100vh;
       //calc(100vh - 36px) !important;
     background-position: center;
     background-repeat: no-repeat;
