@@ -110,9 +110,9 @@ if ( has_post_thumbnail() ) {
 .hero__slider__img {
     height: 100vh;
       //calc(100vh - 36px) !important;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
 }
 </style>
 <script>
