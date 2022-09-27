@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Page fiduciaire new
+ * Template Name: Page fiduciaire
  *
  * @package studio_soixante
  */
