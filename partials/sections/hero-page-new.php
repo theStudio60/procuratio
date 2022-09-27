@@ -8,13 +8,13 @@ if( have_rows('group_hero') ):
 endif;
 ?>  
 <?php 
-//*
+/*
 if ( has_post_thumbnail() ) { 
   $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
 } ; 
 //*/  
 ?>
-<section class="hero" style="background: url('<?php echo $backgroundImg[0];?>');"> 
+<section class="hero" style="background: url('<?php //echo $backgroundImg[0];?>');"> 
   <div class="hero__overlay h-100">
     <div class="container p-4 w-100" >
       <div class="row h-100">
