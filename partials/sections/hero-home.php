@@ -138,7 +138,7 @@ if ( has_post_thumbnail() ) {
                     
               </div>
 
-              <div class="bg-dark p-3 my-auto "  >
+              <div class=" p-3 my-auto "  >
 
                 <h1 class="hero__title mb-2 mt-3 mt-lg-auto">
                   <?= $title2  ?>
@@ -173,7 +173,7 @@ if ( has_post_thumbnail() ) {
                 </div>
        
               </div>
-              <div class="bg-dark p-3 my-auto "  >
+              <div class=" p-3 my-auto "  >
 
                 <h1 class="hero__title mb-2 mt-3 mt-lg-auto">
                   <?= $title3  ?>
