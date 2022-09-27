@@ -170,7 +170,7 @@ $(document).ready(function() {
         </div>
         <button
          onclick="location.href='<?php echo site_url(); ?>#contact'"
-         class="ml-auto mr-4 button"
+         class="ml-auto mr-4 button p-2 "
         >
          Contact
         </button>
