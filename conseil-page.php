@@ -7,8 +7,7 @@
 get_header();
 if( have_rows('page-conseil_acf_group') ):
   while( have_rows('page-conseil_acf_group') ): the_row();
-    get_template_part( 'partials/sections/hero', 'page-new' ); 
-    //get_template_part( 'partials/sections/hero', 'page' ); 
+    get_template_part( 'partials/sections/hero', 'page' ); 
 
 
     ?>
