@@ -7,10 +7,16 @@ if( have_rows('group_hero') ):
   endwhile;
 endif;
 ?>  
-<?php if ( has_post_thumbnail() ) { 
+<?php 
+//*
+if ( has_post_thumbnail() ) { 
   $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
-  } ; ?>
-<section class="hero--page" style="background: url('<?php echo $backgroundImg[0]; ?>');"> 
+  } ; 
+//*/  
+?>
+<section class="hero" style="background: url(' ');"> 
+
+
   <div class="hero--page__overlay hero--page__overlay--default h-100">
     <div class="container p-4 w-100" >
       <div class="row h-100">
@@ -46,5 +52,63 @@ endif;
         </div>
       </div>
     </div> 
+
+
   </div>
+
+
+
+  <div class="hero__slider slick-slider">
+    <div class="hero__slider__img" style="background: url('<?php echo $backgroundImg[0]; ?>');">
+
+    </div>
+    <div class="hero__slider__img" style="background: url('<?php echo $backgroundImg[0]; ?>');">
+
+</div>
+<div class="hero__slider__img" style="background: url('<?php echo $backgroundImg[0]; ?>');">
+
+</div>
+  </div>
+
+<style>
+
+.hero__overlay{
+  position:absolute;
+  height: 100vh;
+      //calc(100vh - 36px) !important;;
+  width:100vw!important;z-index:20!important; 
+    background: -webkit-gradient(linear, left bottom, right top, from(rgba(0, 35, 105, 0.8)), to(rgba(0, 35, 105, 0.99))) !important;
+ 
+
+}
+.hero__slider {
+    margin: 0 0 0 0 !important;
+    padding: 0 !important;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+      //calc(100vh - 36px) !important;
+    z-index: 1;
+}
+
+
+.hero__slider__img {
+    height: 100vh;
+      //calc(100vh - 36px) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+<script>
+     $('.hero__slider').slick({
+        slidesToShow: 1,
+        autoplay: true, 
+        speed: 4000, 
+        infinite: true,
+        focusOnSelect: false, 
+        arrows:false,
+        dots:false,
+    });
+</script>
 </section> 
